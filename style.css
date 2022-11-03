@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lobster&display=swap');
+
+html{
+    font-family: "Lato" , sans-serif;
+    line-height: 1.5;
+}
+
+body{
+    margin: 0;
+    font-size: 100%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.bold-bodyText{
+    font-weight: bold;
+}
+
+body a{
+    color: rgb(9 , 148, 179);  
+    text-decoration: none;  
+}
+
+body h2{
+    font-size:1.8rem ;
+}
+
+body ul li , body p , blockquote{
+    font-size: 1.2rem;
+}
+
+h1{
+    font-family: "Lobster" , sans-serif;
+    font-size: 10vw;
+    padding: 0 0 0 0;
+    margin: 0;
+    letter-spacing: 0.5vw;
+    color: rgb(40 , 40, 40);
+}
+
+header h2{
+    /* alternative font: */
+    /* font-family: "Lobster" , sans-serif;
+    letter-spacing: 0.4vw; */
+    font-size: 7.5vw;
+    padding: 0 0 0 0;
+    margin: 0;
+    color: rgb(40 , 40, 40);
+}
+
+header h3{
+    font-weight: 700;
+    font-size: 5.5vw;
+    padding: .3vh 0 0 0;
+    margin: 0;    
+}
+
+.h3orange{
+    background: #FFB245;
+    background: radial-gradient(ellipse farthest-corner at bottom center, #FFB245 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header{
+    height: 60vh;
+    background-image: url(Images/HeaderGradient.svg);
+    background-color:white ;
+    background-repeat: no-repeat;
+    background-position:top left;
+    padding: 0 5vmin 0 0;    
+}
+
+.headerTitle{
+    position: absolute;
+    left:15vw;
+    top:15vw;
+}
+
+.header_socialMedia ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header_socialMedia ul a{
+    text-decoration: none;
+    color: rgb(9 , 148, 179);
+    font-size: 32px;
+    position: relative;
+    left:87vw;
+    top:35vh;
+}
+
+main{
+    margin: auto;  
+}
+
+/*  About Section */
+.about{
+    display: block;
+    margin: 12vmax 0 0 10%;
+    padding: 0;
+}
+
+.about p{
+    margin: 0 10% 0 0;
+    padding: 0;
+}
+
+.about img{
+    width: 40%;
+    padding: 0;
+    margin: 0;
+    float: right;
+    background:linear-gradient(to bottom, transparent 30%, rgb(255, 178, 69) 30%);
+}
+/*  End of About Section */
+/*  UX Design Section */
+.uxDesign div{
+    height: 40vmin;
+    background:linear-gradient(to left, transparent 70%, rgb(255, 178, 69) 70%);    
+    margin-top: 12vmax;
+}
+
+.uxDesign h2{
+    padding: 5vw 0 0 15vw;
+    margin: 0;
+}
+
+.uxDesign p{
+    margin: 2vw 10vw 0 10vw;
+}
+/*  End of UX Design Section */
+/*  Photography Section */
+#photoTitle{
+    height: 25vmin;
+    background:linear-gradient(to right, transparent 30%, rgb(255, 178, 69) 30%);    
+    margin-top: 12vmax;
+}
+
+#photoTitle h2{
+    padding: 5vmin 0 0 15vw;
+}
+
+.photography p{
+    margin: 2vw 10vw 2vw 10vw;   
+}
+
+.photographyImg{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat(15,1fr);
+}
+.leftImg{
+    grid-column: 1/11;
+    grid-row: 1/8;
+    width: 100%;
+}
+
+.rightImg{
+    grid-column: 7/ 17;
+    grid-row: 9/ 16;
+}
+
+.designLeft{
+    grid-column: 2/3;
+    grid-row: 6/12;
+}
+
+.designRight{
+    grid-column: 15/16;
+    grid-row: 5/11;
+}
+/*  End of Photography Section */
+/*  Graphic Section */
+#graphicTitle{
+    height: 40vmin;
+    background:linear-gradient(to left, transparent 60%, rgb(255, 178, 69) 60%);    
+    margin-top: 12vmax;
+}
+
+#graphicTitle h2{
+    padding: 5vw 0 0 25vw;
+    margin: 0;
+}
+
+#graphicBlock{
+    display: block;
+    padding: 0;
+    margin: 2vw 10vw 0 10vw;
+}
+
+#graphicBlock p{
+    margin: 0;
+    padding: 0;
+}
+
+#graphicBlock img{
+    max-width: 25vmin;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+/*  End of Graphic Section */
+/*  Professional Experiences Section */
+#proExpTitle{
+    height: 25vmin;
+    background:linear-gradient(to right, transparent 40%, rgb(255, 178, 69) 40%);    
+    margin-top: 12vmax;
+}
+
+.workExperience h2{
+    padding: 5vmin 0 0 15vw;
+}
+
+#proExp{
+    margin: 0 10vw 0 10vw;   
+}
+
+#proExp ul{
+    padding: 0;
+}
+
+#proExp ul li ul{
+    padding-left:4vw;
+}
+
+.parent-li-style{
+    font-weight: bold;
+}
+
+/*  End of Professional Experiences Section */
+/*  Interests Section */
+#interestsTitle{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(17,1fr);
+    grid-template-rows: repeat(10,5vw);
+    margin-top: 12vmax; 
+    margin-bottom: 10vw;
+}
+
+#interestsTitle SVG{
+    grid-column: 14/18;
+    grid-row: 1/4;    
+}
+
+#interestsTitle img{
+    width: 90%;
+    grid-column: 1/-2;
+    grid-row-start: 5;
+}
+
+#interestsTitle h2{
+    margin-top: -2vw;
+    grid-column: 11/-4;  
+    grid-row-end:2 ;  
+    padding: 2vw 0 0 0;
+}
+
+#interestsBlock{
+margin: 0 10vw 0 10vw;
+}
+
+#interestsBlock ul{
+    padding: 0;
+}
+
+#interestsBlock ul li ul{
+    padding-left: 4vw;
+}
+/* End of Interests Section */
+/*  Education Section */
+#educationTitle{
+    height: 25vmin;
+    background:linear-gradient(to left, transparent 40%, rgb(255, 178, 69) 40%);    
+    margin-top: 12vmax;
+}
+
+#educationTitle h2{
+    padding: 5vmin 0 0 50vw;
+    margin: 0;
+}
+
+.education ul{
+    padding: 0;
+    margin: 2vw 0 0 10vw;    
+}
+/*  End of Education Section */
+/* Footer */
+footer{
+    padding: 10vw;
+    font-size: 1.2rem;
+    background-color: rgb(40, 40, 40);
+    margin-top: 12vmax;
+    color: rgb(228, 228, 228);
+}
+
+footer h3{
+    color: rgb(255, 178, 69);
+    font-size:1.2rem;
+    text-align: center;
+}
+
+footer a{
+    color: rgb(97,193,214);
+}
+
+#footerSocial{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0;
+}
+
+#footerSocial ul{
+    padding: 0;
+}
+
+#footerSocial li a{
+    font-size: 32px;  
+}
+
+#footerContacts{
+    list-style: none;
+    padding: 0;
+
+}
+
+#reference ul{
+    padding: 0;list-style: none;
+}
+
+#reference ul li ul{
+    padding-left: 30px;
+    list-style: circle;
+}
+
+#copyRight{
+    text-align: center;
+}
+/* End of Footer */
+
+/* medium-size screen */
+@media screen and (orientation:landscape) {
+    body h2{
+        font-size:2.5rem ;
+    }
+    
+    body ul li , body p , blockquote{
+        font-size: 1.5rem;
+    }
+    
+    h1{
+        font-size: 14vh;
+    }
+    
+    header h2{
+        /* alternative font: */
+        /* font-family: "Lobster" , sans-serif;
+        letter-spacing: 0.4vw; */
+        font-size: 10.5vh;
+    }
+    
+    header h3{
+        font-size: 7.5vh; 
+    }
+    
+    header{
+        height: 200vmin;
+    }
+    
+    .headerTitle{
+        left:15vw;
+        top:10vw;
+    }
+
+    .header_socialMedia ul a{
+        font-size: 40px;
+        left:87vw;
+        top:20vh;
+    }
+
+}
+/* end of medium-size screen */
+
+/* large-size landscape screen */
+@media screen and (min-width: 1100px) and (orientation:landscape) {
+    body{max-width: 80vw;
+    margin: auto;
+    }
+    
+    body h2{
+        font-size:3rem ;
+    }
+    
+    body ul li , body p , blockquote{
+        font-size: 1.2rem;
+    }
+    
+    h1{
+        font-size: 9vh;
+    }
+    
+    header h2{
+        /* alternative font: */
+        /* font-family: "Lobster" , sans-serif;
+        letter-spacing: 0.4vw; */
+        font-size: 7vh;
+    }
+    
+    header h3{
+        font-size: 5vh; 
+    }
+    
+    header{
+        max-height: 50vh;
+        background-image: url(/Images/HeaderGradient-horizontal.svg);
+        width: 70%;
+    }
+    
+    .headerTitle{
+        left:15vw;
+        top:5vw;
+    }
+
+    .header_socialMedia ul a{
+        display: none
+    }
+
+    .about{
+        padding-bottom: 25vh;
+    }
+
+    #educationTitle h2{
+        padding: 5vmin 0 0 40vw;
+    }
+
+}
+/* end of large-size landscape screen */
+
+/* large-size landscape screen */
+@media screen and (min-width: 800px) and (orientation:portrait) {
+    #interestsTitle h2{
+        margin-top: 0;
+        grid-column: 12/-4;  
+    }
+    
+    #interestsBlock{
+    margin: 15vw 10vw 0 10vw;
+    }
+}
+/* end of large-size landscape screen */
