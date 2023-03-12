@@ -302,6 +302,13 @@ footer{
     color: rgb(228, 228, 228);
 }
 
+footer .contact{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
 footer h3{
     color: rgb(255, 178, 69);
     font-size:1.2rem;
@@ -330,9 +337,9 @@ footer a{
 }
 
 #footerContacts{
-    list-style: none;
     padding: 0;
-
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 #reference ul{
