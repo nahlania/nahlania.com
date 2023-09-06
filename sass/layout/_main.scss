@@ -1,0 +1,11 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/variables' as v;
+
+main{
+    padding: v.$TB-marg-pad-m;
+}
+
+section,
+header{
+    margin: 0 0 v.$TB-marg-pad-m 0;
+}

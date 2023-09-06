@@ -1,0 +1,63 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+
+.home main{
+    padding: 0;
+}
+
+/*  About Section */
+.about {
+    display: block; 
+    margin-bottom: 0;
+    @media screen and (min-width: v.$sw-s-m){
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        align-items: center;
+    } 
+    img {
+        background: linear-gradient(to bottom, transparent 40%, c.$primary-m 40%);
+        width: 40%;
+        float: right;
+        margin-left: v.$LR-marg-pad-s;
+        @media screen and (min-width: v.$sw-s-m){
+            width: 100%;
+            grid-column: 2/-1;
+            grid-row: 1/-1;
+        }   
+    }
+    .about-content{
+        margin: 0 v.$LR-marg-pad-m;
+        @media screen and (min-width: v.$sw-s-m){
+            grid-column: 1/2;
+            grid-row: 1/-1;
+        }  
+    }
+}
+
+/*  UX Design Section */
+.uxDesign{
+    clear: both;
+    margin-top: 0;
+    padding-top:v.$TB-marg-pad-m ;
+
+    h2{
+        background: linear-gradient(to left, transparent 70%, c.$primary-m 30%);
+        padding: calc(2*v.$LR-marg-pad-m) v.$LR-marg-pad-m;
+    }
+    p{
+        margin: 0 v.$LR-marg-pad-m;
+    }
+
+}
+
+/*  Photography Section */
+.photography{
+    h2{
+        // text-align: right;
+        background: linear-gradient(to right, transparent 30%, rgb(255, 178, 69) 30%);
+        padding: v.$LR-marg-pad-m;
+    }
+
+}

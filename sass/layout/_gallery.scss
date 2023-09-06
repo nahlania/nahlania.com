@@ -1,0 +1,63 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/colors' as c;
+@use '../abstracts/variables' as v;
+
+// enter min,max and grid-gap- defaults:300px,1fr,0.75rem
+.grid-auto-fill {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
+    grid-gap: v.$deft-gap;
+}
+
+/* showing hidden text on the images */
+:root {
+    --bmode: multiply;
+}
+
+.img-hiddenTxt-wrapper {
+    position: relative;
+    overflow: hidden;
+    
+    .hidden-text{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: c.$contrast-m;
+        opacity: .75;
+        color: c.$base-m;
+        padding: 1rem;
+        @include m.centeredFlex(0);
+        text-align: center;
+    
+        transform: translateY(100%);
+        transition: transform .5s ease-in-out;        
+    }
+
+    img{
+        mix-blend-mode: var(--bmode);
+    }
+
+    &.show-txt .hidden-text{
+        transform: translateY(0);
+    }
+}
+
+.flex-gallery-layout{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    grid-gap: v.$deft-gap;
+
+    article{
+        flex: .5 0 300px ;
+    }
+
+}
+
+
+
+
+

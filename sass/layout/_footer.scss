@@ -1,0 +1,41 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/colors' as c;
+@use '../abstracts/typography' as t;
+
+footer{
+    padding: v.$TB-marg-pad-m;
+    background-color: c.$contrast-d;
+    color: c.$base-m;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+
+    .external-links{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+
+        h3{
+            grid-column: 1/-1;
+            text-align: center;
+        }
+        div{
+            padding: v.$TB-marg-pad-m;
+        }
+    }
+
+    .social-media{
+        h3{
+            text-align: center;
+        }
+
+        ul{
+            padding: 0;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+    }
+
+}

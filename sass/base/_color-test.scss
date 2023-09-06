@@ -1,0 +1,48 @@
+@use '../abstracts/colors' as c;
+
+
+.color1{
+    background-color: c.$base-l;
+}
+.color2{
+    background-color: c.$base-m;
+}
+.color3{
+    background-color: c.$base-d;
+}
+.color4{
+    background-color: c.$contrast-l;
+}
+.color5{
+    background-color: c.$contrast-m;
+}
+.color6{
+    background-color: c.$contrast-d;
+}
+.color7{
+    background-color: c.$primary-l;
+}
+.color8{
+    background-color: c.$primary-m;
+}
+.color9{
+    background-color: c.$primary-d;
+}
+.color10{
+    background-color: c.$secondary-l;
+}
+.color11{
+    background-color: c.$secondary-m;
+}
+.color12{
+    background-color: c.$secondary-d;
+}
+.color13{
+    background-color: c.$tertiary-l;
+}
+.color14{
+    background-color: c.$tertiary-m;
+}
+.color15{
+    background-color: c.$tertiary-d;
+}

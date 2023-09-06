@@ -63,7 +63,7 @@ header h3 {
 .h3orange {
     background: #FFB245;
     background: radial-gradient(ellipse farthest-corner at bottom center, #FFB245 0%, #000000 100%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 

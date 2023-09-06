@@ -1,0 +1,107 @@
+@use 'sass:math';
+@use '../abstracts/colors' as c;
+@use '../abstracts/typography' as t;
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+
+
+/* TYPOGRAPHY ==============*/
+
+body {
+    line-height: 1.5;
+	font-family: t.$font-body;
+	font-weight: t.$fw-regular;
+    font-size: map-get(t.$font-sizes , p );
+}
+
+.bold-text {
+    font-weight: t.$fw-bold;
+}
+
+.gradient-text{
+	@include m.gradient-radial;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: t.$font-heading;
+    font-weight: t.$fw-bold;
+	line-height:1;
+	padding: 0;
+    margin: 0;
+}
+
+h1 {
+	font-size: map-get(t.$font-sizes , h1 );
+	margin-bottom: calc(map-get(t.$font-sizes , h1 )/t.$lh-ratio);
+	@media screen and (min-width: v.$sw-s-m){
+		font-size: t.$ratio2*map-get(t.$font-sizes , h1 );
+	}
+	@media screen and (min-width: v.$sw-m){
+		font-size: t.$ratio3*map-get(t.$font-sizes , h1 );
+	}
+	@media screen and (min-width: v.$sw-m-l){
+		font-size: t.$ratio4*map-get(t.$font-sizes , h1 );
+	}
+}
+h2{
+	font-size: map-get(t.$font-sizes , h2 );
+	margin-bottom: calc(map-get(t.$font-sizes , h2 )/t.$lh-ratio);
+	@media screen and (min-width: v.$sw-s-m){
+		font-size: t.$ratio2*map-get(t.$font-sizes , h2 );
+	}
+	@media screen and (min-width: v.$sw-m){
+		font-size: t.$ratio3*map-get(t.$font-sizes , h2 );
+	}
+	@media screen and (min-width: v.$sw-m-l){
+		font-size: t.$ratio4*map-get(t.$font-sizes , h2 );
+	}
+}
+h3{
+	font-size: map-get(t.$font-sizes , h3 );
+	margin-bottom: calc(map-get(t.$font-sizes , h3 )/t.$lh-ratio);
+	@media screen and (min-width: v.$sw-s-m){
+		font-size: t.$ratio2*map-get(t.$font-sizes , h3 );
+	}
+	@media screen and (min-width: v.$sw-m){
+		font-size: t.$ratio3*map-get(t.$font-sizes , h3 );
+	}
+	@media screen and (min-width: v.$sw-m-l){
+		font-size: t.$ratio4*map-get(t.$font-sizes , h3 );
+	}
+}
+h4{
+	font-size: map-get(t.$font-sizes , h4 );
+	margin-bottom: calc(map-get(t.$font-sizes , h4 )/t.$lh-ratio);
+	@media screen and (min-width: v.$sw-s-m){
+		font-size: t.$ratio2*map-get(t.$font-sizes , h4 );
+	}
+	@media screen and (min-width: v.$sw-m){
+		font-size: t.$ratio3*map-get(t.$font-sizes , h4 );
+	}
+	@media screen and (min-width: v.$sw-m-l){
+		font-size: t.$ratio4*map-get(t.$font-sizes , h4 );
+	}
+}
+
+
+a {
+	text-decoration: none;
+	color: c.$primary-m;
+
+	&:visited {
+		color: c.$contrast-l;
+	}
+
+	&:hover {
+		color: c.$primary-l;
+	}
+}
+
+.social-media a {
+	text-decoration: none;
+	color: c.$secondary-m;
+	font-size: 32px;
+}

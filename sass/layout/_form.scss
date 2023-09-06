@@ -1,0 +1,83 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/colors' as c;
+@use '../abstracts/variables' as v;
+@use '../abstracts/typography' as t;
+
+
+/* BLENDING MODE PICKER */
+.blend-mode{
+    position: relative;
+
+    .blend-mode-picker{
+        background-color: c.$contrast-m;
+        color: c.$base-m;
+        padding: 1rem;
+        position: fixed;
+        top: t.$headerHeight;
+        left: 0;
+        right: 70%;
+        z-index: 10;
+
+        transform: translateX(-100%);
+        transition: transform ease-in-out .5s;
+    }
+
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    label span {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        margin: 5px;
+        border: 3px solid c.$base-m;
+        border-radius: 50%;
+        background-color: c.$primary-m;
+    }
+    
+    label:hover span {
+        @include m.animationPulse();
+    }
+
+   
+    label:hover {
+        cursor: pointer;
+    }
+    
+    input:checked+label span {
+        background-color: c.$secondary-d;
+    }
+    
+    input[type="radio"]{
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+
+    .color-picker-container {
+        grid-column: 1/-1;
+        margin: 1rem 0;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+
+        input{
+            width: 100%;
+            min-height: 5rem;
+            color: c.$primary-m;
+        }
+    } 
+    
+    .BlendModePicker-open & .blend-mode-picker{
+        transform: translateX(0);
+    }
+
+}
+

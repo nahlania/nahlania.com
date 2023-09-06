@@ -1,0 +1,35 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/typography' as t;
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+
+
+.polygon-banner{
+    position: relative;        
+    overflow: hidden;    
+
+    .banner-heading-wrapper{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba($color: c.$base-l, $alpha: .5);
+        z-index: 10;
+        @include m.centeredFlex(0);        
+        @include m.advancedPolyClip(bottom,15%);
+
+        .banner-heading{
+            color: c.$contrast-d; 
+            padding: v.$TB-marg-pad-s;
+            text-align: center;
+        }        
+    }
+
+    img{
+        @include m.advancedPolyClip(bottom,15%);
+    }
+    
+}
+

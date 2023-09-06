@@ -1,0 +1,101 @@
+@use 'colors' as c;
+@use 'variables' as v;
+
+
+@mixin responsiveIframe($w: 560, $h: 315) {
+	width: 100%;
+	height: auto;
+	aspect-ratio: calc($w/$h);
+}
+
+
+/* LAYOUTS ================================*/
+@mixin gridAutoFill($min:300px , $max:1fr , $g:v.$deft-gap) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($min , $max));
+    grid-gap: $g;
+}
+
+@mixin centeredFlex($g:0) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: $g;
+}
+
+/* DESIGN ================================*/
+@mixin gradient-radial{
+	background: c.$primary-m;
+	background: radial-gradient(ellipse farthest-corner at bottom center, c.$primary-m 0%, c.$contrast-d 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@mixin centered {
+	margin: unset auto;
+	display: block;
+}
+
+@mixin rounded($rad: 8px) {
+	border-radius: $rad;
+}
+
+@mixin polyclip() {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+}
+
+@mixin advancedPolyClip($edge: bottom, $amt: 5%) {
+	$tl: 0 0;
+	$tm: 50% 0;
+	$tr: 100% 0;
+	$rm: 100% 50%;
+	$br: 100% 100%;
+	$bm: 50% 100%;
+	$bl: 0 100%;
+	$lm: 0 50%;
+
+	@if $edge == top {
+		$tm: 50% $amt;
+	}
+
+	@if $edge == bottom {
+		$bm: 50% calc(100% - $amt);
+	}
+
+	@if $edge == right {
+		$rm: calc(100% - $amt) 50%;
+	}
+
+	@if $edge == left {
+		$lm: $amt 50%;
+	}
+
+	clip-path: polygon($tl, $tm, $tr, $rm, $br, $bm, $bl, $lm);
+}
+
+/* ANIMATIONS */
+@mixin animationPulse($tm:1s , $sc:1.2){
+	animation: pulse $tm ease-in-out infinite;
+    @keyframes pulse {
+        50% {
+            transform: scale($sc);
+        }
+    }
+}
+
+@mixin animationShine($c1:c.$base-m , $c2:c.$secondary-m , $tm:2s){
+	background: linear-gradient(to right, $c1 20%, $c2 40%, $c2 60%, $c1 80%);
+	background-size: 200% auto;
+	color: $c1;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: shine $tm linear infinite;
+
+	@keyframes shine {
+		to {
+		background-position: 200% center;
+		}
+	}	
+}
+

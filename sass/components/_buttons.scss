@@ -1,0 +1,19 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/colors' as c;
+
+/* BUTTONS=================== */
+button.round {
+	@include m.rounded();
+}
+
+button.no-border {
+	border: none;
+}
+
+.menu-btns-wrapper button{
+	background-color: unset;
+	color: c.$base-m;
+	border: none;
+	box-shadow: none;
+}
+
