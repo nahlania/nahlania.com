@@ -3,9 +3,7 @@
 
 main{
     padding: v.$TB-marg-pad-m;
+    max-width: 1440px;
+    margin: 1rem auto;
 }
 
-section,
-header{
-    margin: 0 0 v.$TB-marg-pad-m 0;
-}

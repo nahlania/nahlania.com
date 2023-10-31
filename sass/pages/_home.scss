@@ -1,63 +1,202 @@
 @use '../abstracts/colors' as c;
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
+@use '../abstracts/typography' as t;
 
 
-.home main{
-    padding: 0;
-}
+.body-home{
+    main{
+        .hero{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2.1fr);
+            row-gap: 2rem;
 
-/*  About Section */
-.about {
-    display: block; 
-    margin-bottom: 0;
-    @media screen and (min-width: v.$sw-s-m){
-        display: grid;
-        grid-template-columns: 3fr 2fr;
-        align-items: center;
-    } 
-    img {
-        background: linear-gradient(to bottom, transparent 40%, c.$primary-m 40%);
-        width: 40%;
-        float: right;
-        margin-left: v.$LR-marg-pad-s;
-        @media screen and (min-width: v.$sw-s-m){
-            width: 100%;
-            grid-column: 2/-1;
-            grid-row: 1/-1;
-        }   
+            .main-hero-graphics{
+                grid-column: 1/-1;
+                grid-row: 1/-1;
+            }
+            .main-hero-text{
+                margin-bottom: -2rem;
+                grid-column: 2/-1;
+                grid-row: 1/2;
+                align-self: flex-end;
+
+                h1{
+                    text-align: right;
+                }
+            }
+            .main-hero-desc{
+                grid-column: 1/-1;
+
+                @media screen and (min-width: v.$sw-m){
+                    grid-column: 2/-1;
+                }
+            }
+        } 
+
+        .feat-projects{
+            .title{
+                font-weight: bold;
+                font-style: italic;
+                font-size: map-get(t.$font-sizes , h5 );
+                margin-bottom: calc(map-get(t.$font-sizes , h5 )/t.$lh-ratio);
+
+                @media screen and (min-width: v.$sw-m){
+                    font-size: t.$ratio2*map-get(t.$font-sizes , h5 );
+                }
+                @media screen and (min-width: v.$sw-l){
+                    font-size: t.$ratio4*map-get(t.$font-sizes , h5 );
+                }
+            }
+            position: relative;
+            padding: calc(3*v.$border-thickness) 0;
+            margin: calc(17*v.$border-thickness) 0;
+
+            @media screen and (min-width: v.$sw-m){
+                h2{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: inline-block;
+                    background-color: c.$contrast-d;
+                    padding-right: 1rem;
+                }                
+            }
+
+            section{
+                display: grid;
+                grid-template-columns: repeat(5,1fr);
+                grid-template-rows: 1fr  auto;
+                grid-gap: 1rem;
+
+                .proj-img{
+                    display: flex;
+                    align-items: center;
+                }
+                .proj-img-bg{
+                    padding: 1rem;
+                }
+                .BW-img{
+                    filter: grayscale(100%);
+                }
+                .see-more img{
+                    width: 5rem;
+                }
+            }
+
+            .feat-proj1, .feat-proj3{
+                padding:2rem 2rem 2rem 0;
+                @media screen and (min-width: v.$sw-m){
+                    padding:6rem 6rem 6rem 0;
+                }
+                border-top: v.$border-thickness solid c.$primary-m;
+                border-right: v.$border-thickness solid c.$primary-m;
+                border-top-right-radius: v.$highCurve-radius;
+             
+                .proj-img{
+                    grid-column: 1/-1;
+                    grid-row: 1/2;
+                    background-image: url(../../Assets/Images/BG-illust-odd.svg);
+                    background-size: cover;
+
+                    border-top-right-radius: calc(v.$highCurve-radius - 2rem);
+                    @media screen and (min-width: v.$sw-m){
+                        border-top-right-radius: 0;
+                    }  
+
+                }
+                .proj-info{
+                    grid-column: 1/-1;
+                    grid-row: 2/3;         
+                }
+                .see-more{
+                    grid-column: 4/-1;
+                    grid-row: 3/-1; 
+                    justify-self: end;               
+                }
+
+                @media screen and (min-width: v.$sw-m){
+                    .proj-img{
+                        grid-column: 1/3;
+                        grid-row: 1/-1;
+                    }
+                    .proj-info{
+                        grid-column: 3/-1;
+                        grid-row: 1/2;     
+                        align-self: center;           
+                    }
+                    .see-more{
+                        grid-column: 3/-1;
+                        grid-row: 2/-1; 
+                        justify-self: end;               
+                    }                
+                } 
+
+            }
+
+            .feat-proj2{
+                padding:2rem 0 2rem 2rem;
+                @media screen and (min-width: v.$sw-m){
+                    padding:6rem 0 6rem 6rem;
+                }
+                border-top: v.$border-thickness solid c.$primary-m;
+                border-left: v.$border-thickness solid c.$primary-m;
+                border-top-left-radius: v.$highCurve-radius;
+             
+                .proj-img{
+                    grid-column: 1/-1;
+                    grid-row: 1/2;
+                    background-image: url(../../Assets/Images/BG-illust-even.svg);
+                    background-size: cover;
+
+                    border-top-left-radius: calc(v.$highCurve-radius - 2rem);
+                    @media screen and (min-width: v.$sw-m){
+                        border-top-left-radius: 0;
+                    }  
+
+                }
+                .proj-info{
+                    grid-column: 1/-1;
+                    grid-row: 2/3;         
+                }
+                .see-more{
+                    grid-column: 4/-1;
+                    grid-row: 3/-1; 
+                    justify-self: end;               
+                }
+
+                @media screen and (min-width: v.$sw-m){
+                    .proj-img{
+                        grid-column: 4/-1;
+                        grid-row: 1/-1;
+                    }
+                    .proj-info{
+                        grid-column: 1/4;
+                        grid-row: 1/2;     
+                        align-self: center;           
+                    }
+                    .see-more{
+                        grid-column: 1/2;
+                        grid-row: 2/-1; 
+                        justify-self: start;               
+                    }                
+                } 
+
+            }
+
+            .more-proj{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+
+                h3{
+                    grid-column: 2/-1;
+                    padding: 6rem 0 0 1rem;
+                    border-top: v.$border-thickness solid c.$primary-m;
+                    border-left: v.$border-thickness solid c.$primary-m;
+                }
+            }
+        }
+
     }
-    .about-content{
-        margin: 0 v.$LR-marg-pad-m;
-        @media screen and (min-width: v.$sw-s-m){
-            grid-column: 1/2;
-            grid-row: 1/-1;
-        }  
-    }
-}
-
-/*  UX Design Section */
-.uxDesign{
-    clear: both;
-    margin-top: 0;
-    padding-top:v.$TB-marg-pad-m ;
-
-    h2{
-        background: linear-gradient(to left, transparent 70%, c.$primary-m 30%);
-        padding: calc(2*v.$LR-marg-pad-m) v.$LR-marg-pad-m;
-    }
-    p{
-        margin: 0 v.$LR-marg-pad-m;
-    }
-
-}
-
-/*  Photography Section */
-.photography{
-    h2{
-        // text-align: right;
-        background: linear-gradient(to right, transparent 30%, rgb(255, 178, 69) 30%);
-        padding: v.$LR-marg-pad-m;
-    }
-
 }

@@ -1,33 +1,32 @@
 @use 'sass:math';
 @use 'variables' as v;
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet');
 
 
-$base-size:1.1rem;
+$base-size:1.125rem;
 
 $ratio1:1.200;
 $ratio2:1.414;
 $ratio3:1.618;
 $ratio4:2;
+$ratio5:2.3;
+$ratio6:3;
+
 
 $font-sizes:(
-    h1: $base-size * math.pow($ratio1 , 3),
-    h2: $base-size * math.pow($ratio1 , 2),
-    h3: $base-size * $ratio1,
-    h4: $base-size,
-    h5: calc($base-size / $ratio1),
-    h6: calc($base-size / math.pow($ratio1 , 2)),
+    h1: 44px,
+    h2: 49px,
+    h3: 24px,
+    h4: 22px,
+    h5: 12px,
     p: $base-size,
 );
 
-$font-body: lato, helvetica, sans-serif;
-$font-heading: "playfait display", georgia, serif;
-
-$headerHeight: calc(map-get($font-sizes , h1) * 1.5 + 2rem);
+$font-body: ubuntu, helvetica, sans-serif;
+$font-heading: ubuntu, helvetica, sans-serif;
 
 $fw-bold: 700;
 $fw-regular: 400;
-$fw-light: 200;
-
+$fw-light: 300;
 
 $lh-ratio: 4;

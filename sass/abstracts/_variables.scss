@@ -1,12 +1,23 @@
+@use 'sass:math';
+
 /* MARGIN/PADDING ================================*/
 $TB-marg-pad-s: 1rem;
 $TB-marg-pad-m: 1.8rem;
+$TB-marg-pad-l: 3rem;
 $LR-marg-pad-s:2%;
 $LR-marg-pad-m:5%;
 /* GAP ================================*/
 $deft-gap: 1rem;
 
 /* MEASUREMENT ================================*/
+
+
+/* Border ================================*/
+
+$highCurve-radius:calc(calc(calc(100vw - 3.6rem) / 1440) * 268);
+
+$border-thickness: calc(calc(calc(100vw - 3.6rem) / 1440) * 16);
+
 
 
 /* MEDIA QUERIES ================================*/

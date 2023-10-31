@@ -1,31 +1,12 @@
 $base-l: #fff;
-$base-m: #e9e9e9;
-$base-d: #cfcfcf;
-$contrast-l: #4b4b4b;
-$contrast-m: #282828;
-$contrast-d: #000000;
+$base-m: #ECF0F6;
 
-$hue-chg:160;
-$light-chg:10%;
+$contrast-m: #ABB7C9;
+$contrast-d: #203969    ;
 
-$p-hue: 35;
-$p-sat: 100%;
-$p-lgt: 64%;
-$primary-l: hsl($p-hue, $p-sat, calc($p-lgt + $light-chg));
-$primary-m: hsl($p-hue, $p-sat, $p-lgt);
-$primary-d: hsl($p-hue, $p-sat, calc($p-lgt - $light-chg));
+$primary-l: #FFDBDE;
+$primary-m: #FF8084;
+$primary-d: #EF5D61;
 
-$s-hue: calc($p-hue + $hue-chg);
-$s-sat: $p-sat;
-$s-lgt: $p-lgt;
-$secondary-l: hsl($s-hue, $s-sat, calc($s-lgt + $light-chg));
-$secondary-m: hsl($s-hue, $s-sat, $s-lgt);
-$secondary-d: hsl($s-hue, $s-sat, calc($s-lgt - $light-chg));
 
-$t-hue: calc($p-hue - $hue-chg);
-$t-sat: $p-sat;
-$t-lgt: $p-lgt;
-$tertiary-l: hsl($t-hue, $t-sat, calc($t-lgt + $light-chg));
-$tertiary-m: hsl($t-hue, $t-sat, $t-lgt);
-$tertiary-d: hsl($t-hue, $t-sat, calc($t-lgt - $light-chg));
 

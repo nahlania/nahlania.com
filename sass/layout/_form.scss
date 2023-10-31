@@ -13,7 +13,6 @@
         color: c.$base-m;
         padding: 1rem;
         position: fixed;
-        top: t.$headerHeight;
         left: 0;
         right: 70%;
         z-index: 10;
@@ -48,7 +47,7 @@
     }
     
     input:checked+label span {
-        background-color: c.$secondary-d;
+        background-color: c.$base-m;
     }
     
     input[type="radio"]{

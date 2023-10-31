@@ -12,6 +12,9 @@ body {
 	font-family: t.$font-body;
 	font-weight: t.$fw-regular;
     font-size: map-get(t.$font-sizes , p );
+
+    background-color: c.$contrast-d;
+    color: c.$base-m;
 }
 
 .bold-text {
@@ -27,7 +30,6 @@ h2,
 h3,
 h4 {
 	font-family: t.$font-heading;
-    font-weight: t.$fw-bold;
 	line-height:1;
 	padding: 0;
     margin: 0;
@@ -36,52 +38,90 @@ h4 {
 h1 {
 	font-size: map-get(t.$font-sizes , h1 );
 	margin-bottom: calc(map-get(t.$font-sizes , h1 )/t.$lh-ratio);
+	
 	@media screen and (min-width: v.$sw-s-m){
-		font-size: t.$ratio2*map-get(t.$font-sizes , h1 );
-	}
-	@media screen and (min-width: v.$sw-m){
 		font-size: t.$ratio3*map-get(t.$font-sizes , h1 );
 	}
+	@media screen and (min-width: v.$sw-m){
+		font-size: t.$ratio5*map-get(t.$font-sizes , h1 );
+	}
 	@media screen and (min-width: v.$sw-m-l){
-		font-size: t.$ratio4*map-get(t.$font-sizes , h1 );
+		font-size: t.$ratio6*map-get(t.$font-sizes , h1 );
+	}
+
+
+	& .h1-italic{
+		font-style: italic;
+		font-weight:t.$fw-regular ;
+		color: c.$primary-l;
+	}
+
+	& .h1-bold{
+		font-style: normal;
+		font-weight:t.$fw-bold ;	
+		color: c.$primary-l;	
 	}
 }
+
 h2{
 	font-size: map-get(t.$font-sizes , h2 );
 	margin-bottom: calc(map-get(t.$font-sizes , h2 )/t.$lh-ratio);
-	@media screen and (min-width: v.$sw-s-m){
+
+	@media screen and (min-width: v.$sw-m){
 		font-size: t.$ratio2*map-get(t.$font-sizes , h2 );
 	}
-	@media screen and (min-width: v.$sw-m){
-		font-size: t.$ratio3*map-get(t.$font-sizes , h2 );
-	}
-	@media screen and (min-width: v.$sw-m-l){
+	@media screen and (min-width: v.$sw-l){
 		font-size: t.$ratio4*map-get(t.$font-sizes , h2 );
 	}
+
+	& .h2-italic{
+		font-style: italic;
+		font-weight:t.$fw-regular ;
+		color:c.$primary-m ;
+	}
+
+	& .h2-bold{
+		font-style: normal;
+		font-weight:t.$fw-bold ;
+		color: c.$primary-l;		
+	}
 }
+
 h3{
 	font-size: map-get(t.$font-sizes , h3 );
 	margin-bottom: calc(map-get(t.$font-sizes , h3 )/t.$lh-ratio);
-	@media screen and (min-width: v.$sw-s-m){
+
+	@media screen and (min-width: v.$sw-m){
 		font-size: t.$ratio2*map-get(t.$font-sizes , h3 );
 	}
-	@media screen and (min-width: v.$sw-m){
-		font-size: t.$ratio3*map-get(t.$font-sizes , h3 );
-	}
-	@media screen and (min-width: v.$sw-m-l){
+
+	@media screen and (min-width: v.$sw-l){
 		font-size: t.$ratio4*map-get(t.$font-sizes , h3 );
 	}
+
+	h3.h3-italic{
+		font-style: italic;
+		font-weight:t.$fw-regular ;
+		color:c.$primary-m ;
+	}
+
+	h3.h3-bold{
+		font-style: normal;
+		font-weight:t.$fw-bold ;
+		color: c.$primary-l;		
+	}
+	
 }
+
+
 h4{
 	font-size: map-get(t.$font-sizes , h4 );
 	margin-bottom: calc(map-get(t.$font-sizes , h4 )/t.$lh-ratio);
-	@media screen and (min-width: v.$sw-s-m){
+
+	@media screen and (min-width: v.$sw-m){
 		font-size: t.$ratio2*map-get(t.$font-sizes , h4 );
 	}
-	@media screen and (min-width: v.$sw-m){
-		font-size: t.$ratio3*map-get(t.$font-sizes , h4 );
-	}
-	@media screen and (min-width: v.$sw-m-l){
+	@media screen and (min-width: v.$sw-l){
 		font-size: t.$ratio4*map-get(t.$font-sizes , h4 );
 	}
 }
@@ -92,7 +132,7 @@ a {
 	color: c.$primary-m;
 
 	&:visited {
-		color: c.$contrast-l;
+		color: c.$contrast-m;
 	}
 
 	&:hover {
@@ -102,6 +142,6 @@ a {
 
 .social-media a {
 	text-decoration: none;
-	color: c.$secondary-m;
+	color: c.$primary-l;
 	font-size: 32px;
 }

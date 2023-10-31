@@ -23,7 +23,7 @@ dd {
 ul,
 ol {
   list-style: none;
-  padding: 0 0 0 1rem;
+  padding: 0;
   margin: 0;
 }
 
@@ -37,6 +37,9 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  ::selection {
+    background: var(--accent-color);
+}
 }
 
 /* A elements that don't have a class get default styles */
