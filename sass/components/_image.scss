@@ -1,0 +1,34 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/colors' as c;
+@use '../abstracts/typography' as t;
+@use '../abstracts/variables' as v;
+
+/* Images and frames =================== */
+
+.left-bottom-curved{
+background-color: c.$contrast-m;
+border-bottom-left-radius:v.$highCurve-radius;
+margin: calc(-1 * v.$border-thickness) calc(-1 * v.$border-thickness) v.$border-thickness v.$border-thickness;
+overflow: hidden;
+}
+.right-bottom-curved{
+background-color: c.$contrast-m;
+border-bottom-right-radius:v.$highCurve-radius;
+margin: calc(-1 * v.$border-thickness) v.$border-thickness v.$border-thickness calc(-1 * v.$border-thickness);
+overflow: hidden;
+}
+.left-top-curved{
+background-color: c.$contrast-m;
+border-top-left-radius:v.$highCurve-radius;
+margin: calc(-1 * v.$border-thickness) calc(-1 * v.$border-thickness) v.$border-thickness v.$border-thickness;
+margin: v.$border-thickness  calc(-1 * v.$border-thickness) calc(-1 * v.$border-thickness) v.$border-thickness;
+overflow: hidden;
+}
+.right-top-curved{
+background-color: c.$contrast-m;
+border-top-right-radius:v.$highCurve-radius;
+margin: v.$border-thickness v.$border-thickness calc(-1 * v.$border-thickness) calc(-1 * v.$border-thickness);
+overflow: hidden;
+}
+
+

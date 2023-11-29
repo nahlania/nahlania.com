@@ -25,6 +25,11 @@ body {
 	@include m.gradient-radial;
 }
 
+p{
+	margin-bottom: .75rem;
+	// padding-top: .75;
+}
+
 h1,
 h2,
 h3,
@@ -43,10 +48,10 @@ h1 {
 		font-size: t.$ratio3*map-get(t.$font-sizes , h1 );
 	}
 	@media screen and (min-width: v.$sw-m){
-		font-size: t.$ratio5*map-get(t.$font-sizes , h1 );
+		font-size: t.$ratio4*map-get(t.$font-sizes , h1 );
 	}
 	@media screen and (min-width: v.$sw-m-l){
-		font-size: t.$ratio6*map-get(t.$font-sizes , h1 );
+		font-size: t.$ratio5*map-get(t.$font-sizes , h1 );
 	}
 
 
@@ -88,8 +93,11 @@ h2{
 }
 
 h3{
+	padding-bottom: .75rem;
 	font-size: map-get(t.$font-sizes , h3 );
 	margin-bottom: calc(map-get(t.$font-sizes , h3 )/t.$lh-ratio);
+	font-weight: 400;
+	font-style: italic;
 
 	@media screen and (min-width: v.$sw-m){
 		font-size: t.$ratio2*map-get(t.$font-sizes , h3 );
@@ -97,18 +105,6 @@ h3{
 
 	@media screen and (min-width: v.$sw-l){
 		font-size: t.$ratio4*map-get(t.$font-sizes , h3 );
-	}
-
-	h3.h3-italic{
-		font-style: italic;
-		font-weight:t.$fw-regular ;
-		color:c.$primary-m ;
-	}
-
-	h3.h3-bold{
-		font-style: normal;
-		font-weight:t.$fw-bold ;
-		color: c.$primary-l;		
 	}
 	
 }

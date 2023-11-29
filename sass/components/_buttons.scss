@@ -2,6 +2,22 @@
 @use '../abstracts/colors' as c;
 
 /* BUTTONS=================== */
+a.ext-link{
+	font-weight: bold;
+	justify-self: end;
+	padding: 8px 32px;
+	margin-bottom: 8px;
+	background-color: var(--accent-color);
+	box-shadow: -8px 8px 0 c.$base-l;
+	color: c.$base-l;
+
+	&:hover{
+		background-color: c.$base-l;
+		box-shadow: -8px 8px 0 var(--accent-color);
+		color: var(--accent-color);
+	}
+}
+
 button.round {
 	@include m.rounded();
 }

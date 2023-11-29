@@ -69,13 +69,18 @@
                 grid-template-columns: repeat(5,1fr);
                 grid-template-rows: 1fr  auto;
                 grid-gap: 1rem;
+                align-items: center;
 
                 .proj-img{
                     display: flex;
                     align-items: center;
+                    background-color: c.$primary-m;
                 }
-                .proj-img-bg{
+                .proj-img-bg2{
                     padding: 1rem;
+                    background-color: c.$contrast-m;
+                    border-bottom-right-radius:v.$highCurve-radius;
+                    margin:calc(-1 * v.$border-thickness) v.$border-thickness v.$border-thickness calc(-1 * v.$border-thickness);
                 }
                 .BW-img{
                     filter: grayscale(100%);

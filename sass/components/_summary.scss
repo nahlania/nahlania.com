@@ -1,0 +1,46 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/colors' as c;
+@use '../abstracts/typography' as t;
+@use '../abstracts/variables' as v;
+
+/* Summary-Details=================== */
+
+
+details{
+    margin: 1rem 0;
+    .info{
+        padding-left: 2rem;    
+    }   
+}
+
+summary{
+    display: flex;
+    align-items: center;
+}
+
+details summary::before{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: c.$base-l;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f152";
+}
+
+details[open] summary::before{
+    content: "\f150";
+    color: var(--accent-color);
+}
+
+details[open] summary{
+    color: var(--accent-color);    
+}
+
+summary:hover{
+    cursor: pointer;
+    margin-left: 2rem;
+}
+

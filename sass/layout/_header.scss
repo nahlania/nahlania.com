@@ -4,7 +4,7 @@
 @use '../abstracts/typography' as t;
 
 header {
-    max-width: v.$sw-l;
+    max-width: v.$sw-m-l;
     margin: 0 auto;
 
     .header-container{
