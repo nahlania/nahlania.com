@@ -895,6 +895,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   max-width: 1100px !important;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 2rem 0 2rem;
 }
 .body-project .full-width {
   max-width: 100%;
