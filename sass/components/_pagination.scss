@@ -1,0 +1,26 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/colors' as c;
+@use '../abstracts/typography' as t;
+@use '../abstracts/variables' as v;
+
+/* Pagination =================== */
+
+.pagination{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem unset;
+    margin: unset auto;
+
+
+    a{
+        font-weight: bold;
+        color: var(--accent-color);
+        &:hover{
+            color: c.$contrast-m
+            ;
+        }
+    }
+}
+

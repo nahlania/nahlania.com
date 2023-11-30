@@ -223,23 +223,6 @@
                     grid-column: 6/-1;
                     grid-row: 1/-2;            
                 }
-
-                // display: grid;
-                // grid-template-columns: repeat(9,1fr);
-                // .quote-text{
-                //     grid-column: 2/-1;
-                // }
-
-                // margin-left: -10%;
-                // position: relative;
-
-                // .quote-text{
-                //     position: absolute;
-                //     width: 80%;
-                //     height: auto;
-                //     top: 0;
-                //     right: 5%;  
-                // }
             }
         }
 
@@ -278,6 +261,19 @@
 
     #user-story{
 
+    }
+
+    #market{
+        display: grid;
+        grid-gap: 1rem;
+
+        img{
+            display: block;
+            margin: 0 auto;
+            @media screen and (min-width: v.$sw-m){
+                    max-width: 700px;
+            }
+        }
     }
 
     #features{
@@ -326,11 +322,12 @@
             grid-template-columns: repeat(1,1fr);
             justify-items: center;
             @media screen and (min-width: v.$sw-s-m){
-                grid-template-columns: repeat(2,1fr);
+                grid-template-columns: repeat(2,1fr);            
+                img{
+                max-width: 300px;
+                }
             } 
-            img{
-                max-width: 400px;
-            }
+
         }
         .color , .typography{
             .two-column{
@@ -339,13 +336,6 @@
         }
     }
 
-    #market{
 
-        img{
-            max-width: 800px;
-            display: block;
-            margin: 0 auto;
-        }
-    }
 
 }
