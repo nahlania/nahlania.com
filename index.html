@@ -30,14 +30,13 @@
 
 <body class="body-home">
 
-    <!-- header>.header-container>.logo>a[href="index.html"]>img[src="Assets/Images/NahlaNia-logo-horizontal.svg"]^^button.menu-on>img[src="Assets/Icons/Icon-Menu.svg"]^^.menu-container.visually-hidden>button.menu-off>img[src="Assets/Icons/Icon-Close.svg"]^.menu-navigation>h3.h3-italic{Explore the Site}+nav>ul>li>a.menu-item[href="ux_ui.html"]{UX/UI Projects & Studies}^li>a.menu-item[href="photography.html"]{Photography Work}^li>a.menu-item[href="about_me.html"]{About Me}^^^^.menu-contact>h3.h3-italic{Get in Touch}+ul>li>a.contact-item[href="mailto:nahlania@gmail.com" target="_blank"]{Email}^li>a.contact-item[href="https://www.linkedin.com/in/nahlania" target="_blank"]{LinkedIn}^li>a.contact-item[href="https://www.behance.net/nahlania" target="_blank"]{Behance}^li>a.contact-item[href="https://github.com/nahlania" target="_blank"]{GitHub}^li>a.contact-item[href="https://www.instagram.com/our.endless.journey" target="_blank"]{Instagram} -->
-
-    <header>
-        <div class="header-container">
-            <div class="logo"><a href="index.html"><img src="Assets/Images/NahlaNia-logo-horizontal.svg" alt=""></a></div>
-            <button class="menu-on"><img src="Assets/Icons/Icon-Menu.svg" alt=""></button>
-        </div>
-        <div class="menu-container visually-hidden">
+<header class="max-width">
+    <div class="header-container">
+        <div class="logo"><a href="index.html"><img src="Assets/Images/NahlaNia-logo-horizontal.svg" alt=""></a></div>
+        <button class="menu-on"><img src="Assets/Icons/Icon-Menu.svg" alt=""></button>
+    </div>
+    <div class="menu-container visually-hidden">
+        <div class="max-width">
             <button class="menu-off"><img src="Assets/Icons/Icon-Close.svg" alt=""></button>
             <div class="menu-navigation">
                 <h3 class="h3-italic">Explore the Site</h3>
@@ -61,57 +60,55 @@
                 </ul>
             </div>
         </div>
-    </header>
-
-
-    
-    <!-- main>section.hero>.main-hero-graphics>.main-hero-illust>img[src="Assets/Images/NahlaNia-home-Illustration.svg"]^^.main-hero-text>h1>span.h1-italic{Hello, I'm }+span+br+.h1-bold{Nahla}^^.main-hero-desc>lorem30^^section.feat-projects>h2>span.h2-italic{Featured }+span.h2-bold{Projects}^(section.feat-proj$>.proj-img>.proj-img-bg>img[src="Assets/Images/feat-project$.webp"].BW-img^^.proj-info>h3.proj$-title{Dealicious}+span.proj-subheading{B2B Web App}+p.proj$-excerpt>lorem30^^.see-more>a[href="#"]>img[src="Assets/Icons/Icon-ReadMore.svg" alt="Reed More"])*3+.more-proj>h3{See More}^^section.digital-media>h2>span.h2-italic{Digital Media }+span.h2-bold{Work} -->
-
+    </div>
+</header>
 
 <main>
     <section class="hero">
-        <div class="main-hero-graphics">
-            <div class="main-hero-illust"><img src="Assets/Images/NahlaNia-home-Illustration.svg" alt=""></div>
+        <div class="hero-graphics-wrapper">
+            <div class="main-hero-graphics">
+                <div class="main-hero-illust"><img src="Assets/Images/NahlaNia-home-Illustration.svg" alt=""></div>
+            </div>
+            <div class="main-hero-text">
+                <h1>
+                    <span class="h1-italic">Hi, </span><span></span><br>
+                    <div class="h1-bold">Nahla<span class="h1-italic"> here </span><span></span></div>
+                </h1>
+            </div>
         </div>
-        <div class="main-hero-text">
-            <h1>
-                <span class="h1-italic">Hello, I'm </span><span></span><br>
-                <div class="h1-bold">Nahla</div>
-            </h1>
-        </div>
-        <div class="main-hero-desc">a Vancouver-based UX-UI designer. I’m passionate about developing human-centered solutions that seamlessly blend technical mindset with artistic flair. My engineering background and ten years of experience in digital media back me up in this mission.</div>
+        <div class="main-hero-desc"><p>I'm a UX-UI designer who's passionate about developing human-centered solutions that seamlessly blend technical mindset with artistic flair. My engineering background and ten years of experience in digital media back me up in this mission.</p></div>
     </section>
     <section class="feat-projects">
-        <h2><span class="h2-italic">Featured </span><span class="h2-bold">Projects</span></h2>
+        <h2><span class="h2-italic">UX-UI </span><span class="h2-bold">Projects</span></h2>
         <section class="feat-proj1">
-            <div class="proj-img">
+            <div class="proj-img .img-container">
                 <div class="left-bottom-curved"><img src="Assets/Images/feat-project1.webp" alt="" class="BW-img"></div>
             </div>
             <div class="proj-info">
                 <h3 class="proj1-title">Learnium</h3>
-                <span class="proj-subheading title">Native Mobile Application</span>
+                <span class="proj-subheading title">Academic Project</span>
                 <p class="proj1-excerpt">Coming Soon!<br>Learnium is a smart mobile app that is developed based on Generative AI. Learnium simplifies the learning process by transforming textbooks into interactive content, provides a responsive learning schedule, and keeps learners engaged in practice and tests by rewarding their progress.</p>
             </div>
             <div class="see-more"><a href="#"><img src="Assets/Icons/Icon-ReadMore.svg" alt="Reed More"></a></div>
         </section>
         <section class="feat-proj2">
-            <div class="proj-img">
+            <div class="proj-img .img-container">
                 <div class="right-bottom-curved"><img src="Assets/Images/feat-project2.webp" alt="" class="BW-img"></div>
             </div>
             <div class="proj-info">
                 <h3 class="proj2-title">Dealicious</h3>
-                <span class="proj-subheading title">Responsive SaaS</span>
+                <span class="proj-subheading title">Academic Project</span>
                 <p class="proj2-excerpt">Dealicious is a web platform that provides an effective solution for Food Hospitalities to create referral marketing campaigns and loyalty programs, leveraging data analysis and AI tools. Our goal is to empower these businesses by providing them with a comprehensive set of tools to enhance their marketing efforts and boost sales. By using Dealicious, Food Hospitalities can effortlessly create data-backed and customized referral marketing campaigns to attract new customers, while implementing loyalty programs to retain their existing customers.</p>
             </div>
             <div class="see-more"><a href="UX-UI-Projects/Dealicious.html"><img src="Assets/Icons/Icon-ReadMore.svg" alt="Reed More"></a></div>
         </section>
         <section class="feat-proj3">
-            <div class="proj-img">
-                <div class="right-bottom-curved"><img src="Assets/Images/feat-project3.webp" alt="" class="BW-img"></div>
+            <div class="proj-img .img-container">
+                <div class="left-bottom-curved"><img src="Assets/Images/feat-project3.webp" alt="" class="BW-img"></div>
             </div>
             <div class="proj-info">
                 <h3 class="proj3-title">Stage</h3>
-                <span class="proj-subheading title">Progressive Web App (PWA)</span>
+                <span class="proj-subheading title">Academic Project</span>
                 <p class="proj3-excerpt">Stage is a platform that connects artists to the place owners who wants to rent out their property for creative activities.
 </p>
             </div>
@@ -125,9 +122,6 @@
         <h2><span class="h2-italic">Digital Media </span><span class="h2-bold">Work</span></h2>
     </section> -->
 </main>
-
-
-    <!-- footer.footer-color>.copyright>img.copyright-img[src="Assets/Images/footer-Illustration-Color.svg"]+.copyright-txt>span{Designed and developed by}+span{NahlaNia @ 2024}^^.contact-wrapper>.title>span.h4-italic{Get in}+br+span.h4-bold{touch}^.contact-info>a.email[href="mailto:nahlania@gmail.com" target="_blank"]{NahlaNia@gmail.com}+ul.social-media>li>a[href="https://www.linkedin.com/in/nahlania" target="_blank"]>span.fa-brands.fa-linkedin+span.visually-hidden{connect on LinkedIn}^^li>a[href="https://www.behance.net/nahlania" target="_blank"]>span.fa-brands.fa-square-behance+span.visually-hidden{connect on Behance}^^li>a[href="https://github.com/nahlania" target="_blank"]>span.fa-brands.fa-square-github+span.visually-hidden{connect on GitHub}^^li>a[href="https://www.instagram.com/our.endless.journey" target="_blank"]>span.fa-brands.fa-square-instagram+span.visually-hidden{connect on Instagram} -->
 
 <footer class="footer-color">
     <div class="copyright">

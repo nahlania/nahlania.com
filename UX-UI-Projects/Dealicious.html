@@ -17,21 +17,22 @@
 
 
 <body class="body-project">
-    <header>
-        <div class="header-container">
-            <div class="logo"><a href="../index.html"><img src="../Assets/Images/NahlaNia-logo-horizontal.svg" alt=""></a></div>
-            <button class="menu-on"><img src="../Assets/Icons/Icon-Menu.svg" alt=""></button>
-        </div>
-        <div class="menu-container visually-hidden">
+<header class="max-width">
+    <div class="header-container">
+        <div class="logo"><a href="../index.html"><img src="../Assets/Images/NahlaNia-logo-horizontal.svg" alt=""></a></div>
+        <button class="menu-on"><img src="../Assets/Icons/Icon-Menu.svg" alt=""></button>
+    </div>
+    <div class="menu-container visually-hidden">
+        <div class="max-width">
             <button class="menu-off"><img src="../Assets/Icons/Icon-Close.svg" alt=""></button>
             <div class="menu-navigation">
                 <h3 class="h3-italic">Explore the Site</h3>
                 <nav>
                     <ul>
                         <li><a href="../index.html" class="menu-item">Home</a></li>
-                        <li><a href="../ux_ui.html" class="menu-item">UX/UI Projects & Studies</a></li>
-                        <li><a href="../photography.html" class="menu-item">Photography Work</a></li>
-                        <li><a href="../about_me.html" class="menu-item">About Me</a></li>
+                        <li><a href="ux_ui.html" class="menu-item">UX/UI Projects & Studies</a></li>
+                        <li><a href="photography.html" class="menu-item">Photography Work</a></li>
+                        <li><a href="about_me.html" class="menu-item">About Me</a></li>
                     </ul>
                 </nav>
             </div>
@@ -46,418 +47,464 @@
                 </ul>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <main class="dealicious">
-        <section class="hero max-width">
-            <div class="hero-wrapper">
-                <div class="main-hero-text">
-                    <h1><span class="h1-bold">Dealicious</span><br><span class="h1-italic">Responsive SaaS</span></h1>
+<main class="dealicious">
+    <section class="hero max-width">
+        <div class="hero-wrapper">
+            <div class="main-hero-text">
+                <h1><span class="h1-bold">Dealicious</span><br><span class="h1-italic">Academic Project</span></h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="overview" class="max-width">
+        <div class="overview-img"><img src="../Assets/Images/Dealicious/overview.webp" alt=""></div>
+        <div class="overview-txt">
+            <h2>Overview</h2>
+            <p>Dealicious is a web platform that provides an effective solution for Food Hospitalities to create referral marketing campaigns and loyalty programs, leveraging data analysis and AI tools. Our goal is to empower these businesses by providing them with a comprehensive set of tools to enhance their marketing efforts and boost sales. By using Dealicious, Food Hospitalities can effortlessly create data-backed and customized referral marketing campaigns to attract new customers, while implementing loyalty programs to retain their existing customers.</p>
+            <a href="https://www.dealicious.site/" class="ext-link" target="blank">www.dealicious.site</a>
+        </div>
+    </section>    
+    <section id="proj-details" class="full-width">
+            <ul class="overview-titles max-width">
+                <li>
+                    <div>
+                        <img src="../Assets/Icons/Icon-Mission.svg" alt=""><span class="title">Mission</span>
+                        <p>To conceptualize, design, and develop a responsive B2B2C Web App as part of our academic journey. This MVP provides marketing services and data analysis to small and medium-sized food hospitalities.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../Assets/Icons/Icon-HatsWorn.svg" alt=""><span class="title">Hats Worn</span>
+                        <ul>
+                            <li>Design Lead</li>
+                            <li>UX Research, UX Design, UX Writing, Design System</li>
+                            <li>UI Design, Branding, Style Guide</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../Assets/Icons/Icon-Timeline.svg" alt=""><span class="title">Timeline</span>
+                        <p>12 Weeks, from Ideation to Presentation</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../Assets/Icons/Icon-Team.svg" alt=""><span class="title">Team</span>
+                        <p>3 UX/UI Designers, 4 Full-stack Developers</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../Assets/Icons/Icon-Platform.svg" alt=""><span class="title">Platform</span>
+                        <p>Responsive Web App, SaaS</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="../Assets/Icons/Icon-Tools.svg" alt=""><span class="title">Tools</span>
+                        <p>Figma, Adobe Illustrator, Adobe InDesign, Adobe AfterEffects</p>
+                    </div>
+                </li>
+            </ul>
+    </section>
+    <section id="empathize" class="max-width">
+        <h2>Empathize</h2>
+        <div class="two-column">
+            <p>Over 97,000 restaurants with $85 million annual sales in Canada prove that this is an attractive market, however, 8 out of 10 new restaurants fail within 5 years. These businesses often struggle to utilize marketing tools due to their complexity and cost. We interviewed a focus group to have a better understanding of the needs of food hospitality businesses. Integrating these interview reports with firsthand knowledge of the challenges faced by family-owned restaurants, we summarized the main pain points in the marketing section to be addressed:</p>
+            <ul class="list-style">
+                <li>Marketing is a serious challenge for these businesses, and they need to stand out in a competitive market.</li>
+                <li>During high seasons, although the number of customers sees a peak, it’s not always beneficial for the businesses, since they don’t have any control over the menu items which are mostly ordered.</li>
+                <li> During low seasons, they need to utilize marketing tools to attract new customers. These tools include Facebook ads, subscription-based platforms, and generic review platforms. However, business managers are unable to measure the accurate success of each tool.</li>
+                <li> Another approach for increasing visibility is influencer marketing. In this case, business managers who are busy enough with the workflow must dedicate time to exploring relevant influencers’ pages, dealing and negotiating with them, and finally commissioning an advertisement. This is a challenge for food hospitalities, especially small businesses with limited time and capital. Moreover, in this approach, the actual KPIs are not trackable.</li>
+                <li>Word-of-mouth is another existing alternative. Although it is a powerful marketing tactic, it is barely considered a marketing tool, because it’s not trackable.</li>
+            </ul>
+        </div>
+    </section>
+    <!-- <section id="goals" class="max-width">
+        <h2>High-Level Goals</h2>
+        <div class="goals-wrapper">
+            <details class="problem">
+                <summary><h3 >Problem</h3></summary>
+                <div class="info">
+                    <p>
+                        Small restaurants struggle to gain visibility and attract sale due to limited marketing budgets. While affiliate marketing presents an effective solution, the complexity of creating and managing campaigns poses challenges. Customer relationship management(CRM) also needs a huge investment.
+                    </p>
+                </div>
+            </details>
+            <details class="alternatives">
+                <summary><h3 >Existing Alternatives</h3></summary>
+                <div class="info">
+                    <p>
+                        Small restaurants rely on untraceable word of mouth and Google reviews, which don't have an incentive for happy customers to give a review. Some restaurant may use affiliate networks like ShareASale, collaboration with social media influencers, implementation of in-house referral programs, hiring digital marketing agencies, and do-it-yourself marketing efforts through social media and SEO which are time-consuming and costly
+                    </p>
+                </div>
+            </details>
+            <details class="solution">
+                <summary><h3 >Sollution</h3></summary>
+                <div class="info">
+                    <p>
+                        Empowering restaurants with an open platform to create 
+                    </p>
+                    <ul class="list-style">
+                        <li>Lucrative affiliate deals, enabling existing customers to refer these deals and earn enticing discount.</li>
+                        <li>Loyalty programs to keep happy customer to come back frequently</li>
+                    </ul>
+                </div>
+            </details>
+            <details class="metrics">
+                <summary><h3 >Key Metrics</h3></summary>
+                <div class="info">
+                    <ul class="list-style">
+                        <li>Loyal customer - number of happy customer who sign up on platform to collect point for every purchase and referral they make</li>
+                        <li>New customer attract - number of new customer who redeem the discount code giveaway by loyal customer</li>
+                        <li>Sale generated - whether from new customer who redeem discount code or loyal customer who collecting point.</li>
+                    </ul>
+                </div>
+            </details>
+            <details class="value">
+                <summary><h3 >Unique Value Proposition</h3></summary>
+                <div class="info">
+                    <p>
+                        Increased sales for small restaurants with effective, trackable marketing campaigns and get insights on who your loyal customer is.
+                    </p>
+                </div>
+            </details>
+            <details class="concept">
+                <summary><h3 >High Level Concept</h3></summary>
+                <div class="info">
+                    <ul class="list-style">
+                        <li>Platform to create affiliate program like ones that big corporations have but for small restaurants</li>
+                        <li>Punch card that entice loyal customer to come back but digitize and easily manageable</li>
+                    </ul>
+                </div>
+            </details>
+            <details class="advantage">
+                <summary><h3 >Unfair Advantage</h3></summary>
+                <div class="info">
+                    <p>
+                        Team member who have an insights in small restaurant business and marketing background. We know what kind of deals attracts new customer, what types of campaign works for each type of restaurant. And the more restaurant signup to use our platform, the more insight we get
+                    </p>
+                </div>
+            </details>
+            <details class="channels">
+                <summary><h3 >Channels</h3></summary>
+                <div class="info">
+                    <ul class="list-style">
+                        <li>Direct marketing to present our service to restaurant owner</li>
+                        <li>Affiliated program with related services such as bank loan, food material supplier</li>
+                        <li>Google ads for related keywords</li>
+                    </ul>
+                </div>
+            </details>
+            <details class="segments">
+                <summary><h3 >Customer Segments</h3></summary>
+                <div class="info">
+                    <p>
+                        Small restaurant owners who are looking for cost-effective ways to promote their restaurants or food-related ventures.
+                    </p>
+                </div>
+            </details>
+            <details class="cost">
+                <summary><h3 >Cost Structure</h3></summary>
+                <div class="info">
+                    <p>
+                        Development, hosting, infrastructure investment and maintenance, customer support expenses, marketing and promotion budgets.
+                    </p>
+                </div>
+            </details>
+            <details class="revenue">
+                <summary><h3 >Revenue Streams</h3></summary>
+                <div class="info">
+                    <p>
+                        Pay-as-you-grow concept : the more new customer we bring to your restaurant or loyal customer keep coming back, the more you pay us.
+                    </p>
+                </div>
+            </details>
+            <details class="metrics">
+                <summary><h3 >Key Metrics</h3></summary>
+                <div class="info">
+                    <ul>
+                        <li>Loyal customer - number of happy customer who sign up on platform to collect point for every purchase and referral they make</li>
+                        <li>New customer attract - number of new customer who redeem the discount code giveaway by loyal customer</li>
+                        <li>Sale generated - whether from new customer who redeem discount code or loyal customer who collecting point.</li>
+                    </ul>
+                </div>
+            </details>
+
+
+        </div>
+
+    </section> -->
+    <section id="persona" class="max-width">
+        <h2>Persona Research</h2>
+        <div class="persona">
+            <div class="persona-basicInfo">
+                <div class="persona-img">
+                    <div class="left-bottom-curved"><img src="../Assets/Images/Dealicious/persona1.webp" alt="Photo by Brooke Cagle on Unsplash.com" class="BW-img"></div>
+                </div>
+                <div class="persona-quote">
+                    <!-- <img src="../Assets/Images/MessageBox.svg" alt=""> -->
+                    <span class="quote-mark">&#10077;</span>
+                    <p class="quote-text">
+                        I've got big dreams but a small budget. I wanna find smart moves to make my restaurant shine.
+                    </p>                        
+                </div>
+                <div class="info">
+                    <span class="bold-text">Sophie, The Restaurant Owner</span>
+                    <p>34 Years Old</p>
                 </div>
             </div>
-        </section>
+            <div class="persona-desc two-column">
+                <div class="higlights">
+                    <h3>Highlights</h3>
+                    <ul class="list-style">
+                        <li><span class="bold-text">Education: </span><span>Culinary school graduate</span></li>
+                        <li><span class="bold-text">Occupation: </span><span>As a skilled chef, took the leap into entrepreneurship and established her own small restaurant. Drawing on her culinary expertise, she is determined to grow her business and make it thrive.</span></li>
+                        <li><span class="bold-text">Location: </span><span>Vancouver,BC</span></li>
+                        <li><span class="bold-text">Tech familiarity: </span><span>Sophie is relatively tech-savvy, using smartphones, laptops, and web applications for marketing her business.</span></li>
+                    </ul>
+                </div>
+                <div class="applications">
+                    <h3>Applications</h3>
+                    <ul>
+                        <li><img src="../Assets/ThirdPartyLogos/Logo-UberEat.svg" alt=""><span>Uber Eats</span></li>
+                        <li><img src="../Assets/ThirdPartyLogos/Logo-DoorDash.svg" alt=""><span>DoorDash</span></li>
+                        <li><img src="../Assets/ThirdPartyLogos/Logo-GoogleMaps.svg" alt=""><span>Google Maps</span></li>
+                        <li><img src="../Assets/ThirdPartyLogos/Logo-Yelp.svg" alt=""><span>Yelp</span></li>
+                    </ul>
+                </div>
+                <div class="needs">
+                    <h3>Core Needs</h3>
+                    <ul class="list-style">
+                        <li><span class="bold-text">Business Growth: </span><span>Drive the growth of her restaurant business. To achieve this, she needs efficient data tracking, analysis, and visualization tools that enable her to make informed decisions and optimize her operations.</span></li>
+                        <li><span class="bold-text">Efficient Marketing: </span><span>Effective Targeting to invest in marketing efforts that are tailored to her ideal customer profile, leading to efficient use of resources.</span></li>
+                        <li><span class="bold-text">competitive Advantage: </span><span>Identify and implement unique selling points or strategies that set her restaurant apart from competitors, helping her stand out in a crowded market and attract and retain customers.</span></li>
+                    </ul>
+                </div>
+                <div class="frustrations">
+                    <h3>Frustrations</h3>
+                    <ul class="list-style">
+                        <li><span class="bold-text">Marketing Channels: </span><span>SHer investments on advertisement and Influencer marketing don’t pay off.</span></li>
+                        <li><span class="bold-text">Customer Retention: </span><span>Despite high quality food and service, she can not retain her customers.</span></li>
+                        <li><span class="bold-text">Ongoing Marketing Costs: </span><span>She commissioned a company for designing her website, but keeping it up to date is not affordable to her..</span></li>
+                        <li><span class="bold-text">Attracting New Customers: </span><span>She finds it challenging to attract customers who rely heavily on online reviews and recommendations.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </section>
+    
+    <section id="user-story" class="max-width ">
+        <h2>User Story</h2>
+        <div class="story1">
+            <h3>As a Restaurant Owner</h3>
+            <ul class="list-style">
+                <li>I want to easily create Loyalty Programs so that happy customers keep coming back</li>
+                <li>I want to keep track of performance of marketing campaigns so that I make better marketing decisions</li>
+                <li>I want to easily create effective marketing campaigns so that I attract new customers and retain existing ones</li>
+                <li>I want to have useful data from my customers so that I can create tailored campaigns for them</li>
+                <li>I want to have more customer reviews so that it attracts new customers.</li>
+            </ul>
+        </div>
 
-        <section id="overview" class="max-width">
-            <div class="overview-img"><img src="../Assets/Images/Dealicious/overview.webp" alt=""></div>
-            <div class="overview-txt">
-                <h2>Overview</h2>
-                <p>Dealicious is a web platform that provides an effective solution for Food Hospitalities to create referral marketing campaigns and loyalty programs, leveraging data analysis and AI tools. Our goal is to empower these businesses by providing them with a comprehensive set of tools to enhance their marketing efforts and boost sales. By using Dealicious, Food Hospitalities can effortlessly create data-backed and customized referral marketing campaigns to attract new customers, while implementing loyalty programs to retain their existing customers.</p>
-                <a href="https://www.dealicious.site/" class="ext-link" target="blank">www.dealicious.site</a>
+    </section>
+    <section id="market" class="max-width">
+        <h2>Market Research</h2>
+        <p>Other platforms in the market provide somewhat similar features to Dealicious. The most famous existing alternatives are as follows:</p>
+        <h4>Yelp.ca</h4>
+        <p>Yelp is an online directory for discovering and reviewing local businesses. With Yelp Ads, businesses can set up advertising on the Yelp pages. It also provides businesses with ad performance tracking.</p>
+        <h4>ShowMeLocal.com</h4>
+        <p>Show Me Local is a directory that groups businesses by industry and region. It provides a suite of digital tools including enhanced listings, customer reviews, and promotion of local deals and events.</p>
+        <h4>DoorDash.com</h4>
+        <p>DoorDash facilitates food delivery by independent contractors. It also offers a Store Loyalty Program which enables customers to earn towards rewards with every dollar spent with participating brands.</p>
+        <img src="../Assets/Images/Dealicious/competitors.webp" alt="">
+    </section>
+    <section id="features">
+        <div class="max-width">
+            <h2>Main Features</h2>
+        </div>    
+        <div  class="full-width">
+            <div class="max-width features">
+                <div class="feature feature1">
+                    <img src="../Assets/Images/Dealicious/feature1.svg" alt="">
+                    <h3 class="colored">Referral Marketing</h3>
+                    <p>Dealicious empowers food hospitalities to effortlessly create targeted marketing campaigns. In addition to the user-friendly Interface, the connected Artificial Intelligence Generator helps business owners with developing marketing campaigns, special offers or deals exclusively for attracting new customers as well as encouraging current customers to reconsider their dining. To accurately track the referral activities, the platform specifies a QR code to each food establishment. By scanning the QR code, their happy customers can register on their specific page on Dealicious platform and start referring other people to their favorite restaurant, café, etc.</p>
+                </div>
+                <div class="feature feature2">
+                    <img src="../Assets/Images/Dealicious/feature2.svg" alt="">
+                    <h3 class="colored">Insights and Analysis</h3>
+                    <p>Dealicious offers comprehensive data analysis to business owners, providing valuable insights into the performance of their marketing campaigns. They can track key metrics such as generated revenue, customer engagement, and conversion rates. This data-driven approach enables business owners to make informed decisions, optimize their marketing strategies, and achieve better results. By understanding what works and what doesn’t, they can refine their campaigns and improve overall marketing effectiveness.</p>
+                </div>
+                <div class="feature feature3">
+                    <img src="../Assets/Images/Dealicious/feature3.svg" alt="">
+                    <h3 class="colored">Loyalty Programs</h3>
+                    <p>Dealicious goes beyond acquiring new customers. The platform incorporates a robust loyalty program that allows business owners to reward and incentivize existing customers. Happy customers who register on the platform become Super Customers and share their culinary experiences with others. When a referral successfully works, the super customers collect points which can be redeemed to get discounts.
+                    This helps food businesses foster loyalty and encourage repeat visits for Super Customers. It empowers food hospitalities to build lasting relationships with their customers, creating a loyal customer base that becomes a reliable source of revenue and positive word-of-mouth referrals.
+                </p>
+                </div>
             </div>
-        </section>    
-        <section id="proj-details" class="full-width">
-                <ul class="overview-titles max-width">
-                    <li>
-                        <div>
-                            <img src="../Assets/Icons/Icon-Mission.svg" alt=""><span class="title">Mission</span>
-                            <p>To conceptualize, design, and develop a responsive B2B2C Web App as part of our academic journey. This MVP provides marketing services and data analysis to small and medium-sized food hospitalities.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="../Assets/Icons/Icon-HatsWorn.svg" alt=""><span class="title">Hats Worn</span>
-                            <ul>
-                                <li>Design Lead</li>
-                                <li>UX Research, UX Design, UX Writing, Design System</li>
-                                <li>UI Design, Branding, Style Guide</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="../Assets/Icons/Icon-Timeline.svg" alt=""><span class="title">Timeline</span>
-                            <p>12 Weeks, from Ideation to Presentation</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="../Assets/Icons/Icon-Team.svg" alt=""><span class="title">Team</span>
-                            <p>3 UX/UI Designers, 4 Full-stack Developers</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="../Assets/Icons/Icon-Platform.svg" alt=""><span class="title">Platform</span>
-                            <p>Responsive Web App, SaaS</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="../Assets/Icons/Icon-Tools.svg" alt=""><span class="title">Tools</span>
-                            <p>Figma, Adobe Illustrator, Adobe InDesign, Adobe AfterEffects</p>
-                        </div>
-                    </li>
-                </ul>
-        </section>
-        <section id="empathize" class="max-width">
-            <h2>Empathize</h2>
-            <div class="two-column">
-                <p>Over 97,000 restaurants with $85 million annual sales in Canada prove that this is an attractive market, however, 8 out of 10 new restaurants fail within 5 years. These businesses often struggle to utilize marketing tools due to their complexity and cost. We interviewed a focus group to have a better understanding of the needs of food hospitality businesses. Integrating these interview reports with firsthand knowledge of the challenges faced by family-owned restaurants, we summarized the main pain points in the marketing section to be addressed:</p>
-                <ul class="list-style">
-                    <li>Marketing is a serious challenge for these businesses, and they need to stand out in a competitive market.</li>
-                    <li>During high seasons, although the number of customers sees a peak, it’s not always beneficial for the businesses, since they don’t have any control over the menu items which are mostly ordered.</li>
-                    <li> During low seasons, they need to utilize marketing tools to attract new customers. These tools include Facebook ads, subscription-based platforms, and generic review platforms. However, business managers are unable to measure the accurate success of each tool.</li>
-                    <li> Another approach for increasing visibility is influencer marketing. In this case, business managers who are busy enough with the workflow must dedicate time to exploring relevant influencers’ pages, dealing and negotiating with them, and finally commissioning an advertisement. This is a challenge for food hospitalities, especially small businesses with limited time and capital. Moreover, in this approach, the actual KPIs are not trackable.</li>
-                    <li>Word-of-mouth is another existing alternative. Although it is a powerful marketing tactic, it is barely considered a marketing tool, because it’s not trackable.</li>
-                </ul>
+        </div>
+    </section>
+    <section id="user-flow" class="max-width">
+        <h2>User Flow</h2>
+        <p class="two-column">The user flow consists of three sections, the main section targets the main persona who is the business owner. They can create campaigns, invite customers to become super customers, burn the discount codes, and more importantly, check the insights for all active and past campaigns. The second part is the flow that loyal customers go through to refer new customers and use their discounts or points. The last part of the flow is the new customer's journey to check the referred restaurant's campaigns, activate one of them, and become a super customer if they want.</p>
+        <a href="https://www.figma.com/file/GzBzXx7aY8cmaWN8nE5Zta/Dealicious-User-Flow?type=whiteboard&node-id=0%3A1&t=SEB55qwu7hmXtXhE-1" class="ext-link" target="blank">View on Figma</a><img src="../Assets/Images/Dealicious/user-flow.webp" alt="">
+    </section>
+    <section id="wireframe" class="max-width">
+        <h2>Wireframe</h2>
+        <div class="two-column">
+            <p>After confirming the user flow in the team meetings, we created the wireframe through multiple iterations. In some sections, we noticed that the user flow needed to be changed for a better user experience. These changes led to changes in user flow, as well. In the final version, we added annotations for the developers to prevent confusion and maximize efficiency.</p><p>To create a seamless user experience, we created the mobile view and desktop view screens at the same time. Considering the personas and use cases, the focus for the business owner was on the desktop version, while for the customers we designed a mobile-first.</p>
+        </div>
+        <a href="https://www.figma.com/file/tnrFGtw3cZkz1Du9gyOEHU/Dealicious-Wireframe?type=design&node-id=304%3A5106&mode=design&t=PbQFCY7vevugf6HT-1" class="ext-link" target="blank">View on Figma</a>
+        <div class="wireframe1">
+            <h3>Restaurant Owner Flow - Dashboard</h3>
+            <p>After logging in to the business owner's account, a dashboard contains all necessary tools and insights. The first page in this dashboard is the campaigns page where they can view all the active and upcoming campaigns at a glance. "Create Campaign" is the main action which is shown as a button on the top right side of all pages.</p>
+            <img src="../Assets/Images/Dealicious/wireframe1.webp" alt="">
+            <h4 class="colored">Annotations</h4>
+            <ol class="ordered-list-style two-column">
+                <li class="1">Tab navigates to a heading in the same page</li>
+                <li class="2">Navigation resembles application nav bar and is sticky at the bottom of viewport</li>
+                <li class="3">Searching among the campaigns for specific campaign type.</li>
+                <li class="4">All campaign overviews(active, upcoming and past) are in the same page and these links navigate through the same page</li>
+                <li class="5">A comparison between all active campaigns</li>
+                <li class="6">Dropdown selects campaign. when a campaign is shown on highlighted section, it is removed from bottom section</li>
+                <li class="7">Insight selector- Dropdown selects the insight</li>
+                <li class="8">Compare opens a dropdown with a list of radio buttons to select the second campaign to compare</li>
+                <li class="9">Arrow expands the card to show full-size card including info, insight selector and insight chart</li>
+                <li class="10">Scrollable to the right and left to see all active and upcoming campaigns</li>
+                <li class="11">Button navigates to the form-view of the campaign to edit</li>
+                <li class="12">Sidebar is collapsible and it’s sticky while expanded</li>
+            </ol>            
+            
+        </div>
+
+    </section>
+    <!-- <section id="prototype" class="max-width">
+        <h2>Prototype</h2>
+        <img src="" alt="">
+    </section> -->
+    <section id="style-guide">
+        <div class="max-width">
+            <h2>Style Guide</h2>
+        </div>
+        <div class="logo">
+            <div class="max-width">
+                <h3>Logo</h3>
+                <p>The design approach for this project tends to cover concepts of Deals, Food, and Growth. We created the branding to convey Hospitality, Transparency and Flexibility.</p>
             </div>
-        </section>
-        <!-- <section id="goals" class="max-width">
-            <h2>High-Level Goals</h2>
-            <div class="goals-wrapper">
-                <details class="problem">
-                    <summary><h3 >Problem</h3></summary>
+            <div class="full-width"><img src="../Assets/Images/Dealicious/logo1.svg" alt=""><img src="../Assets/Images/Dealicious/logo2.svg" alt=""></div>
+        </div>
+        <div class="color typography">
+            <div class="max-width">
+                <h3>Color & Typography</h3>
+                <div class="two-column">
+                    <p>The primary color represents the restaurant industry, with orange conveying energy and creativity, aligning with dining experiences’ lively nature. It evokes warmth and appetizing appeal, perfect for a food-related app.The secondary color symbolizes profit and the word “Deal,” using green to signify growth and prosperity. It also connects to organic and healthy elements, relatable to the food industry. As a data visualization platform, we use variations of the primary and secondary colors to effectively represent and differentiate data points.</p>
+                    <p>For typography, we chose Ubuntu Bold from Google Fonts for headings. Ubuntu’s rounded and modern appearance adds an elegant touch, contributing to a contemporary and friendly aesthetic. For body text, we opted for Mukta Light, also from Google Fonts, ensuring clarity and legibility.</p>
+                </div>
+            </div>
+            <div class="full-width">
+                <img src="../Assets/Images/Dealicious/color.svg" alt="">
+                <img src="../Assets/Images/Dealicious/typography.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="design-sys" class="max-width">
+        <h2>Design System</h2>
+        <div class="components">
+            <div class="nav3">
+                <img src="../Assets/Images/Dealicious/component-nav-mobile.png" alt="">
+                <details>
+                    <summary><span class="title">Navigation on Mobile</span></summary>
                     <div class="info">
-                        <p>
-                            Small restaurants struggle to gain visibility and attract sale due to limited marketing budgets. While affiliate marketing presents an effective solution, the complexity of creating and managing campaigns poses challenges. Customer relationship management(CRM) also needs a huge investment.
+                        <p>On the large screen, navigation is a sidebar, placed on the left and occupies 100% of view-port height. On the form pages, the sidebar is shown collapsed. On the mobile screen, navigation is fixed at the bottom. When a nav item is selected, the background circle drops behind the active icon.
                         </p>
                     </div>
                 </details>
-                <details class="alternatives">
-                    <summary><h3 >Existing Alternatives</h3></summary>
+            </div>
+            <div class="nav1">
+                <img src="../Assets/Images/Dealicious/component-nav-desktop1.png" alt="">
+                <details>
+                    <summary><span class="title">Navigation on desktop</span></summary>
+                    <div class="info">
+                        <p>On the large screen, navigation is a sidebar, placed on the left and occupies 100% of view-port height. On the form pages, the sidebar is shown collapsed. On the mobile screen, navigation is fixed at the bottom. When a nav item is selected, the background circle drops behind the active icon.
+                        </p>
+                    </div>
+                </details>
+            </div>
+            <!-- <div class="nav2">
+                <img src="../Assets/Images/Dealicious/component-nav-desktop2.png" alt="">
+                <details>
+                    <summary><span class="title">Navigation on desktop</span></summary>
                     <div class="info">
                         <p>
                             Small restaurants rely on untraceable word of mouth and Google reviews, which don't have an incentive for happy customers to give a review. Some restaurant may use affiliate networks like ShareASale, collaboration with social media influencers, implementation of in-house referral programs, hiring digital marketing agencies, and do-it-yourself marketing efforts through social media and SEO which are time-consuming and costly
                         </p>
                     </div>
                 </details>
-                <details class="solution">
-                    <summary><h3 >Sollution</h3></summary>
+            </div> -->
+
+            <div class="buttons">
+                <img src="../Assets/Images/Dealicious/button.png" alt="">
+                <details>
+                    <summary><span class="title">Buttons</span></summary>
                     <div class="info">
-                        <p>
-                            Empowering restaurants with an open platform to create 
-                        </p>
-                        <ul class="list-style">
-                            <li>Lucrative affiliate deals, enabling existing customers to refer these deals and earn enticing discount.</li>
-                            <li>Loyalty programs to keep happy customer to come back frequently</li>
-                        </ul>
-                    </div>
-                </details>
-                <details class="metrics">
-                    <summary><h3 >Key Metrics</h3></summary>
-                    <div class="info">
-                        <ul class="list-style">
-                            <li>Loyal customer - number of happy customer who sign up on platform to collect point for every purchase and referral they make</li>
-                            <li>New customer attract - number of new customer who redeem the discount code giveaway by loyal customer</li>
-                            <li>Sale generated - whether from new customer who redeem discount code or loyal customer who collecting point.</li>
-                        </ul>
-                    </div>
-                </details>
-                <details class="value">
-                    <summary><h3 >Unique Value Proposition</h3></summary>
-                    <div class="info">
-                        <p>
-                            Increased sales for small restaurants with effective, trackable marketing campaigns and get insights on who your loyal customer is.
+                        <p>Primary buttons are used for the primary actions such as “Save”, “Create”, and “Submit”. Secondary buttons are used for primary actions which are repeated on a page such as “Activate” and “Burn the Code”. Tertiary buttons are the alternative to the primary action, “Cancel” for instance.The “Create a Campaign” and “Recreate the Campaign” buttons have a specific design and top-right placement across the site.
                         </p>
                     </div>
                 </details>
-                <details class="concept">
-                    <summary><h3 >High Level Concept</h3></summary>
+            </div>
+            <div class="dropdown">
+                <img src="../Assets/Images/Dealicious/Dropdown.png" alt="">
+                <details>
+                    <summary><span class="title">Dropdown</span></summary>
                     <div class="info">
-                        <ul class="list-style">
-                            <li>Platform to create affiliate program like ones that big corporations have but for small restaurants</li>
-                            <li>Punch card that entice loyal customer to come back but digitize and easily manageable</li>
-                        </ul>
-                    </div>
-                </details>
-                <details class="advantage">
-                    <summary><h3 >Unfair Advantage</h3></summary>
-                    <div class="info">
-                        <p>
-                            Team member who have an insights in small restaurant business and marketing background. We know what kind of deals attracts new customer, what types of campaign works for each type of restaurant. And the more restaurant signup to use our platform, the more insight we get
+                        <p>Other than the forms, drop-down lists are used for listing and selecting the pinned card, selecting chart type, sorting, and filtering criteria.
                         </p>
                     </div>
                 </details>
-                <details class="channels">
-                    <summary><h3 >Channels</h3></summary>
-                    <div class="info">
-                        <ul class="list-style">
-                            <li>Direct marketing to present our service to restaurant owner</li>
-                            <li>Affiliated program with related services such as bank loan, food material supplier</li>
-                            <li>Google ads for related keywords</li>
-                        </ul>
-                    </div>
-                </details>
-                <details class="segments">
-                    <summary><h3 >Customer Segments</h3></summary>
-                    <div class="info">
-                        <p>
-                            Small restaurant owners who are looking for cost-effective ways to promote their restaurants or food-related ventures.
-                        </p>
-                    </div>
-                </details>
-                <details class="cost">
-                    <summary><h3 >Cost Structure</h3></summary>
-                    <div class="info">
-                        <p>
-                            Development, hosting, infrastructure investment and maintenance, customer support expenses, marketing and promotion budgets.
-                        </p>
-                    </div>
-                </details>
-                <details class="revenue">
-                    <summary><h3 >Revenue Streams</h3></summary>
-                    <div class="info">
-                        <p>
-                            Pay-as-you-grow concept : the more new customer we bring to your restaurant or loyal customer keep coming back, the more you pay us.
-                        </p>
-                    </div>
-                </details>
-                <details class="metrics">
-                    <summary><h3 >Key Metrics</h3></summary>
-                    <div class="info">
-                        <ul>
-                            <li>Loyal customer - number of happy customer who sign up on platform to collect point for every purchase and referral they make</li>
-                            <li>New customer attract - number of new customer who redeem the discount code giveaway by loyal customer</li>
-                            <li>Sale generated - whether from new customer who redeem discount code or loyal customer who collecting point.</li>
-                        </ul>
-                    </div>
-                </details>
-
-
-            </div>
-
-        </section> -->
-        <section id="persona" class="max-width">
-            <h2>Persona Research</h2>
-            <div class="persona">
-                <div class="persona-basicInfo">
-                    <div class="persona-img">
-                        <div class="left-bottom-curved"><img src="../Assets/Images/Dealicious/persona1.webp" alt="Photo by Brooke Cagle on Unsplash.com" class="BW-img"></div>
-                    </div>
-                    <div class="persona-quote">
-                        <!-- <img src="../Assets/Images/MessageBox.svg" alt=""> -->
-                        <span class="quote-mark">&#10077;</span>
-                        <p class="quote-text">
-                            I've got big dreams but a small budget. I wanna find smart moves to make my restaurant shine.
-                        </p>                        
-                    </div>
-                    <div class="info">
-                        <span class="bold-text">Sophie, The Restaurant Owner</span>
-                        <p>34 Years Old</p>
-                    </div>
-                </div>
-                <div class="persona-desc two-column">
-                    <div class="higlights">
-                        <h3>Highlights</h3>
-                        <ul class="list-style">
-                            <li><span class="bold-text">Education: </span><span>Culinary school graduate</span></li>
-                            <li><span class="bold-text">Occupation: </span><span>As a skilled chef, took the leap into entrepreneurship and established her own small restaurant. Drawing on her culinary expertise, she is determined to grow her business and make it thrive.</span></li>
-                            <li><span class="bold-text">Location: </span><span>Vancouver,BC</span></li>
-                            <li><span class="bold-text">Tech familiarity: </span><span>Sophie is relatively tech-savvy, using smartphones, laptops, and web applications for marketing her business.</span></li>
-                        </ul>
-                    </div>
-                    <div class="applications">
-                        <h3>Applications</h3>
-                        <ul>
-                            <li><img src="../Assets/ThirdPartyLogos/Logo-UberEat.svg" alt=""><span>Uber Eats</span></li>
-                            <li><img src="../Assets/ThirdPartyLogos/Logo-DoorDash.svg" alt=""><span>DoorDash</span></li>
-                            <li><img src="../Assets/ThirdPartyLogos/Logo-GoogleMaps.svg" alt=""><span>Google Maps</span></li>
-                            <li><img src="../Assets/ThirdPartyLogos/Logo-Yelp.svg" alt=""><span>Yelp</span></li>
-                        </ul>
-                    </div>
-                    <div class="needs">
-                        <h3>Core Needs</h3>
-                        <ul class="list-style">
-                            <li><span class="bold-text">Business Growth: </span><span>Drive the growth of her restaurant business. To achieve this, she needs efficient data tracking, analysis, and visualization tools that enable her to make informed decisions and optimize her operations.</span></li>
-                            <li><span class="bold-text">Efficient Marketing: </span><span>Effective Targeting to invest in marketing efforts that are tailored to her ideal customer profile, leading to efficient use of resources.</span></li>
-                            <li><span class="bold-text">competitive Advantage: </span><span>Identify and implement unique selling points or strategies that set her restaurant apart from competitors, helping her stand out in a crowded market and attract and retain customers.</span></li>
-                        </ul>
-                    </div>
-                    <div class="frustrations">
-                        <h3>Frustrations</h3>
-                        <ul class="list-style">
-                            <li><span class="bold-text">Marketing Channels: </span><span>SHer investments on advertisement and Influencer marketing don’t pay off.</span></li>
-                            <li><span class="bold-text">Customer Retention: </span><span>Despite high quality food and service, she can not retain her customers.</span></li>
-                            <li><span class="bold-text">Ongoing Marketing Costs: </span><span>She commissioned a company for designing her website, but keeping it up to date is not affordable to her..</span></li>
-                            <li><span class="bold-text">Attracting New Customers: </span><span>She finds it challenging to attract customers who rely heavily on online reviews and recommendations.</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div> 
-        </section>
-        
-        <section id="user-story" class="max-width ">
-            <h2>User Story</h2>
-            <div class="story1">
-                <h3>As a Restaurant Owner</h3>
-                <ul class="list-style">
-                    <li>I want to easily create Loyalty Programs so that happy customers keep coming back</li>
-                    <li>I want to keep track of performance of marketing campaigns so that I make better marketing decisions</li>
-                    <li>I want to easily create effective marketing campaigns so that I attract new customers and retain existing ones</li>
-                    <li>I want to have useful data from my customers so that I can create tailored campaigns for them</li>
-                    <li>I want to have more customer reviews so that it attracts new customers.</li>
-                </ul>
-            </div>
-
-        </section>
-        <section id="market" class="max-width">
-            <h2>Market Research</h2>
-            <p>Other platforms in the market provide somewhat similar features to Dealicious. The most famous existing alternatives are as follows:</p>
-            <h4>Yelp.ca</h4>
-            <p>Yelp is an online directory for discovering and reviewing local businesses. With Yelp Ads, businesses can set up advertising on the Yelp pages. It also provides businesses with ad performance tracking.</p>
-            <h4>ShowMeLocal.com</h4>
-            <p>Show Me Local is a directory that groups businesses by industry and region. It provides a suite of digital tools including enhanced listings, customer reviews, and promotion of local deals and events.</p>
-            <h4>DoorDash.com</h4>
-            <p>DoorDash facilitates food delivery by independent contractors. It also offers a Store Loyalty Program which enables customers to earn towards rewards with every dollar spent with participating brands.</p>
-            <img src="../Assets/Images/Dealicious/competitors.webp" alt="">
-        </section>
-        <section id="features">
-            <div class="max-width">
-                <h2>Main Features</h2>
-            </div>    
-            <div  class="full-width">
-                <div class="max-width features">
-                    <div class="feature feature1">
-                        <img src="../Assets/Images/Dealicious/feature1.svg" alt="">
-                        <h3 class="colored">Referral Marketing</h3>
-                        <p>Dealicious empowers food hospitalities to effortlessly create targeted marketing campaigns. In addition to the user-friendly Interface, the connected Artificial Intelligence Generator helps business owners with developing marketing campaigns, special offers or deals exclusively for attracting new customers as well as encouraging current customers to reconsider their dining. To accurately track the referral activities, the platform specifies a QR code to each food establishment. By scanning the QR code, their happy customers can register on their specific page on Dealicious platform and start referring other people to their favorite restaurant, café, etc.</p>
-                    </div>
-                    <div class="feature feature2">
-                        <img src="../Assets/Images/Dealicious/feature2.svg" alt="">
-                        <h3 class="colored">Insights and Analysis</h3>
-                        <p>Dealicious offers comprehensive data analysis to business owners, providing valuable insights into the performance of their marketing campaigns. They can track key metrics such as generated revenue, customer engagement, and conversion rates. This data-driven approach enables business owners to make informed decisions, optimize their marketing strategies, and achieve better results. By understanding what works and what doesn’t, they can refine their campaigns and improve overall marketing effectiveness.</p>
-                    </div>
-                    <div class="feature feature3">
-                        <img src="../Assets/Images/Dealicious/feature3.svg" alt="">
-                        <h3 class="colored">Loyalty Programs</h3>
-                        <p>Dealicious goes beyond acquiring new customers. The platform incorporates a robust loyalty program that allows business owners to reward and incentivize existing customers. Happy customers who register on the platform become Super Customers and share their culinary experiences with others. When a referral successfully works, the super customers collect points which can be redeemed to get discounts.
-                        This helps food businesses foster loyalty and encourage repeat visits for Super Customers. It empowers food hospitalities to build lasting relationships with their customers, creating a loyal customer base that becomes a reliable source of revenue and positive word-of-mouth referrals.
-                    </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="user-flow" class="max-width">
-            <h2>User Flow</h2>
-            <p class="two-column">The user flow consists of three sections, the main section targets the main persona who is the business owner. They can create campaigns, invite customers to become super customers, burn the discount codes, and more importantly, check the insights for all active and past campaigns. The second part is the flow that loyal customers go through to refer new customers and use their discounts or points. The last part of the flow is the new customer's journey to check the referred restaurant's campaigns, activate one of them, and become a super customer if they want.</p>
-            <a href="https://www.figma.com/file/GzBzXx7aY8cmaWN8nE5Zta/Dealicious-User-Flow?type=whiteboard&node-id=0%3A1&t=SEB55qwu7hmXtXhE-1" class="ext-link" target="blank">View on Figma</a><img src="../Assets/Images/Dealicious/user-flow.webp" alt="">
-        </section>
-        <section id="wireframe" class="max-width">
-            <h2>Wireframe</h2>
-            <div class="two-column">
-                <p>After confirming the user flow in the team meetings, we created the wireframe through multiple iterations. In some sections, we noticed that the user flow needed to be changed for a better user experience. These changes led to changes in user flow, as well. In the final version, we added annotations for the developers to prevent confusion and maximize efficiency.</p><p>To create a seamless user experience, we created the mobile view and desktop view screens at the same time. Considering the personas and use cases, the focus for the business owner was on the desktop version, while for the customers we designed a mobile-first.</p>
-            </div>
-            <a href="https://www.figma.com/file/tnrFGtw3cZkz1Du9gyOEHU/Dealicious-Wireframe?type=design&node-id=304%3A5106&mode=design&t=PbQFCY7vevugf6HT-1" class="ext-link" target="blank">View on Figma</a>
-            <div class="wireframe1">
-                <h3>Restaurant Owner Flow - Dashboard</h3>
-                <p>After logging in to the business owner's account, a dashboard contains all necessary tools and insights. The first page in this dashboard is the campaigns page where they can view all the active and upcoming campaigns at a glance. "Create Campaign" is the main action which is shown as a button on the top right side of all pages.</p>
-                <img src="../Assets/Images/Dealicious/wireframe1.webp" alt="">
-                <h4 class="colored">Annotations</h4>
-                <ol class="ordered-list-style two-column">
-                    <li class="1">Tab navigates to a heading in the same page</li>
-                    <li class="2">Navigation resembles application nav bar and is sticky at the bottom of viewport</li>
-                    <li class="3">Searching among the campaigns for specific campaign type.</li>
-                    <li class="4">All campaign overviews(active, upcoming and past) are in the same page and these links navigate through the same page</li>
-                    <li class="5">A comparison between all active campaigns</li>
-                    <li class="6">Dropdown selects campaign. when a campaign is shown on highlighted section, it is removed from bottom section</li>
-                    <li class="7">Insight selector- Dropdown selects the insight</li>
-                    <li class="8">Compare opens a dropdown with a list of radio buttons to select the second campaign to compare</li>
-                    <li class="9">Arrow expands the card to show full-size card including info, insight selector and insight chart</li>
-                    <li class="10">Scrollable to the right and left to see all active and upcoming campaigns</li>
-                    <li class="11">Button navigates to the form-view of the campaign to edit</li>
-                    <li class="12">Sidebar is collapsible and it’s sticky while expanded</li>
-                </ol>            
-                
-            </div>
-
-        </section>
-        <!-- <section id="prototype" class="max-width">
-            <h2>Prototype</h2>
-            <img src="" alt="">
-        </section> -->
-        <section id="style-guide">
-            <div class="max-width">
-                <h2>Style Guide</h2>
-            </div>
-            <div class="logo">
-                <div class="max-width">
-                    <h3>Logo</h3>
-                    <p>The design approach for this project tends to cover concepts of Deals, Food, and Growth. We created the branding to convey Hospitality, Transparency and Flexibility.</p>
-                </div>
-                <div class="full-width"><img src="../Assets/Images/Dealicious/logo1.svg" alt=""><img src="../Assets/Images/Dealicious/logo2.svg" alt=""></div>
-            </div>
-            <div class="color typography">
-                <div class="max-width">
-                    <h3>Color & Typography</h3>
-                    <div class="two-column">
-                        <p>The primary color represents the restaurant industry, with orange conveying energy and creativity, aligning with dining experiences’ lively nature. It evokes warmth and appetizing appeal, perfect for a food-related app.The secondary color symbolizes profit and the word “Deal,” using green to signify growth and prosperity. It also connects to organic and healthy elements, relatable to the food industry. As a data visualization platform, we use variations of the primary and secondary colors to effectively represent and differentiate data points.</p>
-                        <p>For typography, we chose Ubuntu Bold from Google Fonts for headings. Ubuntu’s rounded and modern appearance adds an elegant touch, contributing to a contemporary and friendly aesthetic. For body text, we opted for Mukta Light, also from Google Fonts, ensuring clarity and legibility.</p>
-                    </div>
-                </div>
-                <div class="full-width">
-                    <img src="../Assets/Images/Dealicious/color.svg" alt="">
-                    <img src="../Assets/Images/Dealicious/typography.svg" alt="">
-                </div>
-            </div>
-        </section>
-        <section id="design-system" class="max-width">
-            <h2>Design System</h2>
-            <div class="component1"><img src="../Assets/Images/Dealicious/component1.webp" alt=""></div>
-            <div class="component2"><img src="../Assets/Images/Dealicious/component2.webp" alt=""></div>
-            <div class="component3"><img src="../Assets/Images/Dealicious/component3.webp" alt=""></div>
-            <div class="component4"><img src="../Assets/Images/Dealicious/component4.webp" alt=""></div>
-            <div class="component5"><img src="../Assets/Images/Dealicious/component5.webp" alt=""></div>
-            <div class="component6"><img src="../Assets/Images/Dealicious/component6.webp" alt=""></div>
-            <div class="component7"><img src="../Assets/Images/Dealicious/component7.webp" alt=""></div>
-            <div class="component8"><img src="../Assets/Images/Dealicious/component8.webp" alt=""></div>
-            <div class="component9"><img src="../Assets/Images/Dealicious/component9.webp" alt=""></div>
-            <div class="component10"><img src="../Assets/Images/Dealicious/component10.webp" alt=""></div>
-        </section>
-        <section id="reflection" class="max-width">
-            <h2>Reflections</h2>
-            <div>
-                <h3>Lesson Learned</h3>
-                <ul class="list-style two-column">
-                    <li><span class="bold-text">Balancing creativity with functionality: </span><span>Maintaining the balance between innovative design and functional utility is crucial for delivering a platform with a broad scope. While advocating my well-thought design decisions, eventually, in some not-critical cases, I had to compromise my ideals to achieve a solid functional solution, due to technical and time constraints. This required a deeper understanding of the persona and coming to realize which features are negligible and which ones are crucial in terms of user experience.</span></li>
-                    <li><span class="bold-text">Documentation is a Lifesaver: </span><span>The importance of meticulous documentation became evident as the project progressed. Clear documentation facilitated smoother collaboration among team members, especially minimized friction among design and development teams. Having annotations on the wireframe and a design system, reduced the interpretations and contributed to a final product that was consistent and aligned with the design to a good extent.</span></li>
-                </ul>
-                <!-- <h3>If We Had More Time</h3>
-                <ul class="list-style">
-                    <li><span class="bold-text">Balancing creativity with functionality: </span><span>Maintaining the balance between innovative design and functional utility is crucial for delivering a platform with a broad scope. While advocating my well-thought design decisions, eventually, in some not-critical cases, I had to compromise my ideals to achieve a solid functional solution, due to technical and time constraints. This required a deeper understanding of the persona and coming to realize which features are negligible and which ones are crucial in terms of user experience.</span></li>
-                    <li><span class="bold-text">Documentation is a Lifesaver: </span><span>The importance of meticulous documentation became evident as the project progressed. Clear documentation facilitated smoother collaboration among team members, especially minimized friction among design and development teams. Having annotations on the wireframe and a design system, reduced the interpretations and contributed to a final product that was consistent and aligned with the design to a good extent.</span></li>
-                </ul> -->
-            </div>
-        </section>
-        <section class="pagination"><a href="#">← Previous Project</a><a href="#">Next Project →</a></section>
-
-    </main>
-    <footer class="footer-color">
-        <div class="copyright">
-            <img src="../Assets/Images/footer-Illustration-BW.svg" alt="" class="copyright-img">
-            <div class="copyright-txt"><span>Designed and developed by</span><span>NahlaNia @ 2024</span></div>
-        </div>
-        <div class="contact-wrapper">
-            <h3><span class="h3-italic">Get in</span><br><span class="h3-bold">touch</span></h3>  
-            <div class="contact-info">
-                <a href="mailto:nahlania@gmail.com" class="email" target="_blank">NahlaNia@gmail.com</a>
-                <ul class="social-media">
-                    <li class="linkedin"><a href="https://www.linkedin.com/in/nahlania" target="_blank"><span class="fa-brands fa-linkedin"></span><span class="visually-hidden">connect on LinkedIn</span></a></li>
-                    <li class="behance"><a href="https://www.behance.net/nahlania" target="_blank"><span class="fa-brands fa-square-behance"></span><span class="visually-hidden">connect on Behance</span></a></li>
-                    <li class="github"><a href="https://github.com/nahlania" target="_blank"><span class="fa-brands fa-square-github"></span><span class="visually-hidden">connect on GitHub</span></a></li>
-                    <li class="instagram"><a href="https://www.instagram.com/our.endless.journey" target="_blank"><span class="fa-brands fa-square-instagram"></span><span class="visually-hidden">connect on Instagram</span></a></li>
-                </ul>
             </div>
         </div>
-    </footer>
+    </section>
+    <section id="reflection" class="max-width">
+        <h2>Reflections</h2>
+        <div>
+            <h3>Lesson Learned</h3>
+            <ul class="list-style two-column">
+                <li><span class="bold-text">Balancing creativity with functionality: </span><span>Maintaining the balance between innovative design and functional utility is crucial for delivering a platform with a broad scope. While advocating my well-thought design decisions, eventually, in some not-critical cases, I had to compromise my ideals to achieve a solid functional solution, due to technical and time constraints. This required a deeper understanding of the persona and coming to realize which features are negligible and which ones are crucial in terms of user experience.</span></li>
+                <li><span class="bold-text">Documentation is a Lifesaver: </span><span>The importance of meticulous documentation became evident as the project progressed. Clear documentation facilitated smoother collaboration among team members, especially minimized friction among design and development teams. Having annotations on the wireframe and a design system, reduced the interpretations and contributed to a final product that was consistent and aligned with the design to a good extent.</span></li>
+            </ul>
+            <!-- <h3>If We Had More Time</h3>
+            <ul class="list-style">
+                <li><span class="bold-text">Balancing creativity with functionality: </span><span>Maintaining the balance between innovative design and functional utility is crucial for delivering a platform with a broad scope. While advocating my well-thought design decisions, eventually, in some not-critical cases, I had to compromise my ideals to achieve a solid functional solution, due to technical and time constraints. This required a deeper understanding of the persona and coming to realize which features are negligible and which ones are crucial in terms of user experience.</span></li>
+                <li><span class="bold-text">Documentation is a Lifesaver: </span><span>The importance of meticulous documentation became evident as the project progressed. Clear documentation facilitated smoother collaboration among team members, especially minimized friction among design and development teams. Having annotations on the wireframe and a design system, reduced the interpretations and contributed to a final product that was consistent and aligned with the design to a good extent.</span></li>
+            </ul> -->
+        </div>
+        <a href="../Assets/Images/Dealicious/NahlaNia.com-Dealicious-Proposal.pdf" class="ext-link" download>Download Proposal</a>
+    </section>
+    <section class="pagination"><a href="#">← Previous Project</a><a href="#">Next Project →</a></section>
+
+</main>
+<footer class="footer-color">
+    <div class="copyright">
+        <img src="../Assets/Images/footer-Illustration-BW.svg" alt="" class="copyright-img">
+        <div class="copyright-txt"><span>Designed and developed by</span><span>NahlaNia @ 2024</span></div>
+    </div>
+    <div class="contact-wrapper">
+        <h3><span class="h3-italic">Get in</span><br><span class="h3-bold">touch</span></h3>  
+        <div class="contact-info">
+            <a href="mailto:nahlania@gmail.com" class="email" target="_blank">NahlaNia@gmail.com</a>
+            <ul class="social-media">
+                <li class="linkedin"><a href="https://www.linkedin.com/in/nahlania" target="_blank"><span class="fa-brands fa-linkedin"></span><span class="visually-hidden">connect on LinkedIn</span></a></li>
+                <li class="behance"><a href="https://www.behance.net/nahlania" target="_blank"><span class="fa-brands fa-square-behance"></span><span class="visually-hidden">connect on Behance</span></a></li>
+                <li class="github"><a href="https://github.com/nahlania" target="_blank"><span class="fa-brands fa-square-github"></span><span class="visually-hidden">connect on GitHub</span></a></li>
+                <li class="instagram"><a href="https://www.instagram.com/our.endless.journey" target="_blank"><span class="fa-brands fa-square-instagram"></span><span class="visually-hidden">connect on Instagram</span></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

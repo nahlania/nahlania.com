@@ -16,31 +16,38 @@ details{
 summary{
     display: flex;
     align-items: center;
-}
 
-details summary::before{
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    color: c.$base-l;
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
-    content: "\f152";
-}
+    &:before{
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        color: c.$base-l;
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: '\f0da';
+        padding-right: 8px;
+    }
 
-details[open] summary::before{
-    content: "\f150";
-    color: var(--accent-color);
+    &:hover{
+    cursor: pointer;
+    }
 }
 
 details[open] summary{
-    color: var(--accent-color);    
+    &:before{
+        content: "\f0d7";
+        padding-right: 8px;
+        color: var(--accent-color);
+
+    }
+    color: var(--accent-color);   
+    &:hover{
+    cursor: pointer;
+    } 
 }
 
-summary:hover{
-    cursor: pointer;
-    margin-left: 2rem;
-}
+
+
 

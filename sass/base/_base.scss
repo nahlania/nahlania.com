@@ -8,7 +8,7 @@
 /* TYPOGRAPHY ==============*/
 
 body {
-    line-height: 1.5;
+    line-height: 1.7;
 	font-family: t.$font-body;
 	font-weight: t.$fw-regular;
     font-size: map-get(t.$font-sizes , p );
@@ -38,6 +38,21 @@ h4 {
 	line-height:1;
 	padding: 0;
     margin: 0;
+}
+
+.title{
+	font-weight: bold;
+	font-size: t.$ratio1*map-get(t.$font-sizes , title );
+	margin-bottom: calc(map-get(t.$font-sizes , title )/t.$lh-ratio);
+
+	@media screen and (min-width: v.$sw-m){
+		font-size: t.$ratio2*map-get(t.$font-sizes , title );
+	}
+
+	.italic{
+		font-weight: normal;
+		font-style: italic;
+	}
 }
 
 h1 {
@@ -94,7 +109,7 @@ h2{
 
 h3{
 	padding-bottom: .75rem;
-	font-size: map-get(t.$font-sizes , h3 );
+	font-size: t.$ratio1*map-get(t.$font-sizes , h3 );
 	margin-bottom: calc(map-get(t.$font-sizes , h3 )/t.$lh-ratio);
 	font-weight: 400;
 	font-style: italic;
@@ -140,4 +155,36 @@ a {
 	text-decoration: none;
 	color: c.$primary-l;
 	font-size: 32px;
+}
+
+.two-column{
+	columns: 300px 2;
+	column-gap: 2.5rem;
+}
+
+.list-style{
+	list-style:disc;
+	padding-left: 2rem;
+	li{
+		margin-bottom: 1rem;          
+	}
+}
+
+.ordered-list-style{
+	list-style: decimal-leading-zero;
+	padding-left: 2rem;
+	li{
+		margin-bottom: 1rem;          
+	}
+}
+
+.colored{
+	color: var(--accent-color);
+}
+
+.max-width{
+	max-width: v.$sw-m-l !important;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 2rem 0 2rem;
 }
