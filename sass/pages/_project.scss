@@ -142,15 +142,30 @@
     }
 
     #user-research{
-        .flex-flow{
+        .stickers{
             margin-bottom: 2rem;
+            display: grid;
+            gap: 2rem;
+            justify-content: center;
+            justify-items: center;
+            @media screen and (min-width: v.$sw-m){
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media screen and (min-width: v.$sw-m-l){
+                grid-template-columns: repeat(3, 1fr);
+            }
             .sticker{
-                display: block;
-                flex: 0 0 auto;
-                background-image: url(../../Assets/Images/Sticker.svg);
+                min-width: 300px;
+                max-width:400px;
+                background-image: url(Assets/Images/Sticker.svg);  
                 background-repeat: no-repeat;
-                color: c.$contrast-d;
-                padding: 1rem 4rem 4rem 1rem;
+                background-position: center;
+                color: c.$contrast-d;   
+                text-align: center;
+                padding: 1rem 1rem 4rem 1rem;
+                p{
+                    text-wrap:nowrap;
+                }       
             }
         }
 
