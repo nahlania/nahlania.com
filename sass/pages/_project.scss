@@ -3,6 +3,9 @@
 @use '../abstracts/mixins' as m;
 @use '../abstracts/typography' as t;
 
+.learnium{
+
+}
 .body-project{
     section{
         margin: 0 auto 4rem auto; 
@@ -38,6 +41,7 @@
         margin-left: auto;
         margin-right: auto;
         padding: v.$TB-marg-pad-m;
+        margin-bottom: 0;
 
         .hero-wrapper{
             display: grid;
@@ -137,6 +141,21 @@
         }
     }
 
+    #user-research{
+        .flex-flow{
+            margin-bottom: 2rem;
+            .sticker{
+                display: block;
+                flex: 0 0 auto;
+                background-image: url(../../Assets/Images/Sticker.svg);
+                background-repeat: no-repeat;
+                color: c.$contrast-d;
+                padding: 1rem 4rem 4rem 1rem;
+            }
+        }
+
+    }
+
     #persona{
         .persona-basicInfo{
             margin-bottom: 3rem;
@@ -231,8 +250,10 @@
     }
 
     #market{
-        display: grid;
-        grid-gap: 1rem;
+
+        h4{
+            margin-bottom: 0;
+        }
 
         img{
             display: block;
@@ -249,11 +270,14 @@
             grid-gap: 2rem;
             
             @media screen and (min-width: v.$sw-m){
-                grid-template-columns: repeat(3,1fr);
+                grid-template-columns: repeat(2,1fr);
             } 
 
             .feature{
-                    display: block;
+                display: block;
+                &:last-of-type{
+                    grid-column: 1/-1;
+                }
                 
                 img{
                     height:80px;
@@ -313,7 +337,7 @@
         .components{
             
             display: column;
-            columns: 3;
+            columns: 300px 3;
             gap: 2rem;
 
         

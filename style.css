@@ -110,6 +110,15 @@ body {
   font-weight: 700;
 }
 
+.inline-link {
+  font-weight: bold;
+  color: var(--accent-color) !important;
+}
+.inline-link:hover {
+  color: #ABB7C9 !important;
+  text-decoration: underline;
+}
+
 .gradient-text {
   background: #FF8084;
   background: radial-gradient(ellipse farthest-corner at bottom center, #FF8084 0%, #1F3051 100%);
@@ -220,17 +229,18 @@ h3 {
 }
 
 h4 {
-  font-size: 12px;
-  margin-bottom: 3px;
+  font-size: 17px;
+  margin-bottom: 4.25px;
+  padding: 1rem 0 0.7 0;
 }
 @media screen and (min-width: 840px) {
   h4 {
-    font-size: 16.968px;
+    font-size: 20.4px;
   }
 }
 @media screen and (min-width: 1440px) {
   h4 {
-    font-size: 24px;
+    font-size: 24.038px;
   }
 }
 
@@ -283,6 +293,15 @@ a:hover {
   padding: 0 2rem 0 2rem;
 }
 
+.flex-flow {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  justify-content: center !important;
+  align-items: stretch;
+  align-content: center;
+}
+
 /* Media =======================*/
 .responsiveIframe {
   width: 100%;
@@ -301,7 +320,7 @@ a:hover {
 
 /* BUTTONS=================== */
 a.ext-link {
-  font-weight: bold;
+  font-weight: normal;
   justify-self: end;
   padding: 8px 32px;
   margin-bottom: 8px;
@@ -998,6 +1017,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   margin-left: auto;
   margin-right: auto;
   padding: 1.8rem;
+  margin-bottom: 0;
 }
 .body-project section.hero .hero-wrapper {
   display: grid;
@@ -1071,6 +1091,17 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-project #goals h3 {
   padding-left: 1rem;
+}
+.body-project #user-research .flex-flow {
+  margin-bottom: 2rem;
+}
+.body-project #user-research .flex-flow .sticker {
+  display: block;
+  flex: 0 0 auto;
+  background-image: url(../../Assets/Images/Sticker.svg);
+  background-repeat: no-repeat;
+  color: #1F3051;
+  padding: 1rem 4rem 4rem 1rem;
 }
 .body-project #persona .persona-basicInfo {
   margin-bottom: 3rem;
@@ -1154,9 +1185,8 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-project #persona .persona-desc .applications ul span {
   font-size: 0.7956152758rem;
 }
-.body-project #market {
-  display: grid;
-  grid-gap: 1rem;
+.body-project #market h4 {
+  margin-bottom: 0;
 }
 .body-project #market img {
   display: block;
@@ -1173,11 +1203,14 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 @media screen and (min-width: 840px) {
   .body-project #features div.features {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .body-project #features div.features .feature {
   display: block;
+}
+.body-project #features div.features .feature:last-of-type {
+  grid-column: 1/-1;
 }
 .body-project #features div.features .feature img {
   height: 80px;
@@ -1219,7 +1252,7 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-project #design-sys .components {
   display: column;
-  columns: 3;
+  columns: 300px 3;
   gap: 2rem;
 }
 .body-project #design-sys .components > * {

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 799.56 799.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ecf0f6;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+        opacity: .27;
+      }
+
+      .cls-3 {
+        fill: #abb7c9;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="702.99" y1="701.48" x2="600.27" y2="608.99" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#203969"/>
+      <stop offset=".12" stop-color="#162748" stop-opacity=".69"/>
+      <stop offset=".24" stop-color="#0e192e" stop-opacity=".44"/>
+      <stop offset=".37" stop-color="#070d19" stop-opacity=".24"/>
+      <stop offset=".52" stop-color="#03060b" stop-opacity=".11"/>
+      <stop offset=".71" stop-color="#000102" stop-opacity=".02"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Logo_color" data-name="Logo &amp;amp; color">
+    <g>
+      <polygon class="cls-1" points="799.55 0 799.55 576.75 576.75 799.55 0 799.55 0 0 799.55 0"/>
+      <path class="cls-2" d="m576.43,799.55s9.05,1.23,38.51-20.85c34.58-25.91,151.09-138.04,170.06-174.15,17.29-32.9,13.97-28.23,13.97-28.23,0,0-17.69,12.39-29.4,17.63-11.27,5.05-39.06,10.76-100.76,10.46-17.54-.08-62.79-1.8-62.79-1.8,0,0,3.29,44.66,4.25,64.9,4.24,89.85-19.88,116.21-25.56,122.33-5.69,6.12-8.27,9.7-8.27,9.7Z"/>
+      <path class="cls-3" d="m576.43,799.55s6.92,2.08,39.49-20.88c35.32-24.89,150.97-138.11,170.06-174.15,20.04-37.83,11.97-27.06,11.97-27.06,0,0-1.66,1.9-8.86,9.8-7.37,8.08-31.17,31.45-94.03,37.56-17.46,1.7-57.91,1.24-71.7,1.57.91,9.95,6.47,96.37-3.78,120.75-9.63,22.91-26.08,35.41-31.77,41.53-5.69,6.12-11.39,10.88-11.39,10.88Z"/>
+    </g>
+  </g>
+</svg>
