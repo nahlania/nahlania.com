@@ -1004,6 +1004,59 @@ footer .contact-wrapper .contact-info ul a:hover {
   border-left: calc((100vw - 20rem) / 2800 * 32) solid #FF8084;
 }
 
+.body-about section {
+  margin: 0 auto 4rem auto;
+}
+.body-about blockquote {
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 600px) {
+  .body-about #introduction {
+    display: flow-root;
+  }
+}
+.body-about #introduction .my-portrait {
+  display: flex;
+  align-items: center;
+  background-color: var(--accent-color);
+}
+@media screen and (min-width: 600px) {
+  .body-about #introduction .my-portrait {
+    float: right;
+    max-width: 30%;
+  }
+}
+.body-about section.hero {
+  max-width: 1100px !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.8rem;
+}
+.body-about section.hero .hero-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(2, 1fr);
+  border: var(--accent-color) solid calc((100vw - 20rem) / 2800 * 32);
+  border-top-right-radius: calc((100vw - 3.6rem) / 1800 * 268);
+}
+.body-about section.hero .hero-wrapper .main-hero-text {
+  margin-bottom: -2rem;
+  grid-column: 1/2;
+  grid-row: 2/-1;
+}
+.body-about section.hero .hero-wrapper .main-hero-text h1 {
+  display: inline-block;
+  background-color: #1F3051;
+  margin-left: calc(-1.5 * (100vw - 20rem) / 2800 * 32);
+  padding-right: 1rem;
+}
+.body-about section.hero .hero-wrapper .main-hero-text .h1-italic {
+  color: var(--accent-color);
+}
+
 .LinkedIn-Learning #overview, .body-about #overview {
   display: flex !important;
   justify-content: center;
