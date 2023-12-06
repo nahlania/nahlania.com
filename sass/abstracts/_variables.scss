@@ -11,16 +11,6 @@ $deft-gap: 1rem;
 
 /* MEASUREMENT ================================*/
 
-
-/* Border ================================*/
-
-$highCurve-radius:calc(calc(calc(100vw - 3.6rem) / 1800) * 268);
-
-$border-thickness: calc(calc(calc(100vw - 20rem) / 1400) * 16);
-// $border-thickness: calc(calc(calc(100vw - 3.6rem) / 1600) * 16);
-
-
-
 /* MEDIA QUERIES ================================*/
 $sw-s: 400px;
 $sw-s-m: 600px;
@@ -29,3 +19,12 @@ $sw-m-l: 1100px;
 $sw-l: 1440px;
 $sw-xl: 1700px;
 $sw-xxl: 1920px;
+/* Border ================================*/
+
+$highCurve-radius:calc(calc(calc(100vw - 3.6rem) / 1800) * 268);
+
+$border-thickness: calc(calc(calc(100vw - 20rem) / 2800) * 32);
+// $border-thickness: calc(calc(calc(100vw - 3.6rem) / 1600) * 16);
+
+
+

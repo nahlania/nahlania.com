@@ -3,39 +3,29 @@
 @use '../abstracts/mixins' as m;
 @use '../abstracts/typography' as t;
 
-.learnium{
-
+// temporary
+.LinkedIn-Learning, .body-about{
+    #overview{
+        h2{
+            display: block;
+        }
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+    }
 }
+// end of temporary
+
 .body-project{
     section{
         margin: 0 auto 4rem auto; 
-    }
-
-    .max-width{
-        max-width: v.$sw-m-l !important;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0 2rem 0 2rem;
-
-    }
-    .full-width{
-        max-width: 100%;
-        margin: 0 auto 4rem auto; 
-        background-color: c.$base-l;
-        color: c.$contrast-d;
-        padding: v.$TB-marg-pad-m 0 v.$TB-marg-pad-m 0;
-        @media screen and (min-width: v.$sw-l){
-            padding-left: calc(calc(calc(100vw - v.$sw-m-l) / 2) + v.$TB-marg-pad-m);
-            padding-right: calc(calc(calc(100vw - v.$sw-m-l) / 2) + v.$TB-marg-pad-m);
-        }
     }
 
     h2{
         color:var(--accent-color);
         margin-bottom: 2rem; 
     }
-
-
     
     section.hero{
         max-width: v.$sw-m-l !important;

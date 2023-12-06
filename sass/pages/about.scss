@@ -1,0 +1,66 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+@use '../abstracts/typography' as t;
+ 
+.body-about{
+    section{
+        margin: 0 auto 4rem auto; 
+    }
+
+blockquote{
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+    #introduction{
+        @media screen and (min-width: v.$sw-s-m){
+            display: flow-root;
+        }
+
+        .my-portrait{
+            
+            display: flex;
+            align-items: center;
+            background-color: var(--accent-color);
+            @media screen and (min-width: v.$sw-s-m){
+                float: right;
+                max-width: 30%;
+            }
+        }    
+    }
+
+   section.hero{
+        max-width: v.$sw-m-l !important;
+        margin-left: auto;
+        margin-right: auto;
+        padding: v.$TB-marg-pad-m;
+
+        .hero-wrapper{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: repeat(2,1fr);
+
+            border: var(--accent-color) solid v.$border-thickness;
+            border-top-right-radius: v.$highCurve-radius;
+
+            .main-hero-text{
+                margin-bottom: -2rem;
+                grid-column: 1/2;
+                grid-row: 2/-1;
+
+                h1{
+                    display: inline-block;
+                    background-color: c.$contrast-d;
+                    margin-left: calc(-1.5 * v.$border-thickness);
+                    padding-right: 1rem;
+                }
+                .h1-italic{
+                    color: var(--accent-color);
+                }
+            }
+        }
+    }     
+}

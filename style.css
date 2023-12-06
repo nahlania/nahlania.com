@@ -2,8 +2,8 @@
 /* MARGIN/PADDING ================================*/
 /* GAP ================================*/
 /* MEASUREMENT ================================*/
-/* Border ================================*/
 /* MEDIA QUERIES ================================*/
+/* Border ================================*/
 /* LAYOUTS ================================*/
 /* DESIGN ================================*/
 /* ANIMATIONS */
@@ -141,9 +141,10 @@ h4 {
 }
 
 .title {
+  display: block;
   font-weight: bold;
   font-size: 18px;
-  margin-bottom: 3.75px;
+  margin: 2.5rem unset 1.5rem unset;
 }
 @media screen and (min-width: 840px) {
   .title {
@@ -293,6 +294,20 @@ a:hover {
   padding: 0 2rem 0 2rem;
 }
 
+.full-width {
+  max-width: 100%;
+  margin: 0 auto 4rem auto;
+  background-color: #fff;
+  color: #1F3051;
+  padding: 1.8rem 0 1.8rem 0;
+}
+@media screen and (min-width: 1440px) {
+  .full-width {
+    padding-left: calc((100vw - 1100px) / 2 + 1.8rem);
+    padding-right: calc((100vw - 1100px) / 2 + 1.8rem);
+  }
+}
+
 .flex-flow {
   display: flex;
   flex-flow: row wrap;
@@ -426,29 +441,29 @@ details[open] summary:hover {
 .left-bottom-curved {
   background-color: #ABB7C9;
   border-bottom-left-radius: calc((100vw - 3.6rem) / 1800 * 268);
-  margin: calc(-1 * (100vw - 20rem) / 1400 * 16) calc(-1 * (100vw - 20rem) / 1400 * 16) calc((100vw - 20rem) / 1400 * 16) calc((100vw - 20rem) / 1400 * 16);
+  margin: calc(-1 * (100vw - 20rem) / 2800 * 32) calc(-1 * (100vw - 20rem) / 2800 * 32) calc((100vw - 20rem) / 2800 * 32) calc((100vw - 20rem) / 2800 * 32);
   overflow: hidden;
 }
 
 .right-bottom-curved {
   background-color: #ABB7C9;
   border-bottom-right-radius: calc((100vw - 3.6rem) / 1800 * 268);
-  margin: calc(-1 * (100vw - 20rem) / 1400 * 16) calc((100vw - 20rem) / 1400 * 16) calc((100vw - 20rem) / 1400 * 16) calc(-1 * (100vw - 20rem) / 1400 * 16);
+  margin: calc(-1 * (100vw - 20rem) / 2800 * 32) calc((100vw - 20rem) / 2800 * 32) calc((100vw - 20rem) / 2800 * 32) calc(-1 * (100vw - 20rem) / 2800 * 32);
   overflow: hidden;
 }
 
 .left-top-curved {
   background-color: #ABB7C9;
   border-top-left-radius: calc((100vw - 3.6rem) / 1800 * 268);
-  margin: calc(-1 * (100vw - 20rem) / 1400 * 16) calc(-1 * (100vw - 20rem) / 1400 * 16) calc((100vw - 20rem) / 1400 * 16) calc((100vw - 20rem) / 1400 * 16);
-  margin: calc((100vw - 20rem) / 1400 * 16) calc(-1 * (100vw - 20rem) / 1400 * 16) calc(-1 * (100vw - 20rem) / 1400 * 16) calc((100vw - 20rem) / 1400 * 16);
+  margin: calc(-1 * (100vw - 20rem) / 2800 * 32) calc(-1 * (100vw - 20rem) / 2800 * 32) calc((100vw - 20rem) / 2800 * 32) calc((100vw - 20rem) / 2800 * 32);
+  margin: calc((100vw - 20rem) / 2800 * 32) calc(-1 * (100vw - 20rem) / 2800 * 32) calc(-1 * (100vw - 20rem) / 2800 * 32) calc((100vw - 20rem) / 2800 * 32);
   overflow: hidden;
 }
 
 .right-top-curved {
   background-color: #ABB7C9;
   border-top-right-radius: calc((100vw - 3.6rem) / 1800 * 268);
-  margin: calc((100vw - 20rem) / 1400 * 16) calc((100vw - 20rem) / 1400 * 16) calc(-1 * (100vw - 20rem) / 1400 * 16) calc(-1 * (100vw - 20rem) / 1400 * 16);
+  margin: calc((100vw - 20rem) / 2800 * 32) calc((100vw - 20rem) / 2800 * 32) calc(-1 * (100vw - 20rem) / 2800 * 32) calc(-1 * (100vw - 20rem) / 2800 * 32);
   overflow: hidden;
 }
 
@@ -523,6 +538,9 @@ header .menu-container h3.h3-italic {
   font-weight: 400;
   color: #FF8084;
   margin-bottom: 0.75rem;
+}
+header .menu-container li.behance {
+  display: none;
 }
 header .menu-container li a {
   color: #1F3051;
@@ -785,9 +803,9 @@ footer .contact-wrapper .contact-info ul a:hover {
   display: grid;
   grid-template-rows: repeat(2, auto);
   justify-items: center;
-  border: calc((100vw - 20rem) / 1400 * 16) solid #FF8084;
+  border: calc((100vw - 20rem) / 2800 * 32) solid #FF8084;
   border-top-right-radius: calc((100vw - 3.6rem) / 1800 * 268);
-  margin-bottom: calc(3 * (100vw - 20rem) / 1400 * 16);
+  margin-bottom: calc(3 * (100vw - 20rem) / 2800 * 32);
 }
 .body-home main .hero .hero-graphics-wrapper .main-hero-graphics {
   width: 75%;
@@ -800,15 +818,15 @@ footer .contact-wrapper .contact-info ul a:hover {
     width: 60%;
     padding-top: 0;
     background-color: #1F3051;
-    margin-left: calc(-1.5 * (100vw - 20rem) / 1400 * 16);
-    margin-top: calc(-1.5 * (100vw - 20rem) / 1400 * 16);
-    padding-right: calc(2 * (100vw - 20rem) / 1400 * 16);
-    padding-bottom: calc(2 * (100vw - 20rem) / 1400 * 16);
+    margin-left: calc(-1.5 * (100vw - 20rem) / 2800 * 32);
+    margin-top: calc(-1.5 * (100vw - 20rem) / 2800 * 32);
+    padding-right: calc(2 * (100vw - 20rem) / 2800 * 32);
+    padding-bottom: calc(2 * (100vw - 20rem) / 2800 * 32);
   }
 }
 .body-home main .hero .main-hero-text {
-  margin-bottom: calc(-4 * (100vw - 20rem) / 1400 * 16);
-  margin-right: calc(-1 * (100vw - 20rem) / 1400 * 16);
+  margin-bottom: calc(-4 * (100vw - 20rem) / 2800 * 32);
+  margin-right: calc(-1 * (100vw - 20rem) / 2800 * 32);
   grid-row: 2;
   justify-self: self-end;
   display: grid;
@@ -817,7 +835,7 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 @media screen and (min-width: 600px) {
   .body-home main .hero .main-hero-text {
-    margin-bottom: calc(-3 * (100vw - 20rem) / 1400 * 16);
+    margin-bottom: calc(-3 * (100vw - 20rem) / 2800 * 32);
   }
 }
 .body-home main .hero .main-hero-text h1 {
@@ -825,8 +843,8 @@ footer .contact-wrapper .contact-info ul a:hover {
   display: inline-block;
   grid-column: 4/-1;
   background-color: #1F3051;
-  padding-top: calc(2 * (100vw - 20rem) / 1400 * 16);
-  padding-left: calc(2 * (100vw - 20rem) / 1400 * 16);
+  padding-top: calc(2 * (100vw - 20rem) / 2800 * 32);
+  padding-left: calc(2 * (100vw - 20rem) / 2800 * 32);
 }
 .body-home main .hero .main-hero-text h1 .h1-italic {
   color: var(--accent-color);
@@ -845,8 +863,8 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-home main .feat-projects {
   position: relative;
-  padding: calc(3 * (100vw - 20rem) / 1400 * 16) 0;
-  margin: 4rem 0 calc(17 * (100vw - 20rem) / 1400 * 16) 0;
+  padding: calc(3 * (100vw - 20rem) / 2800 * 32) 0;
+  margin: 4rem 0 calc(17 * (100vw - 20rem) / 2800 * 32) 0;
 }
 @media screen and (min-width: 840px) {
   .body-home main .feat-projects h2 {
@@ -883,8 +901,8 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-home main .feat-projects .feat-proj1, .body-home main .feat-projects .feat-proj3 {
   padding: 2rem 2rem 2rem 0;
-  border-top: calc((100vw - 20rem) / 1400 * 16) solid #FF8084;
-  border-right: calc((100vw - 20rem) / 1400 * 16) solid #FF8084;
+  border-top: calc((100vw - 20rem) / 2800 * 32) solid #FF8084;
+  border-right: calc((100vw - 20rem) / 2800 * 32) solid #FF8084;
   border-top-right-radius: calc((100vw - 3.6rem) / 1800 * 268);
 }
 @media screen and (min-width: 840px) {
@@ -930,8 +948,8 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-home main .feat-projects .feat-proj2 {
   padding: 2rem 0 2rem 2rem;
-  border-top: calc((100vw - 20rem) / 1400 * 16) solid #FF8084;
-  border-left: calc((100vw - 20rem) / 1400 * 16) solid #FF8084;
+  border-top: calc((100vw - 20rem) / 2800 * 32) solid #FF8084;
+  border-left: calc((100vw - 20rem) / 2800 * 32) solid #FF8084;
   border-top-left-radius: calc((100vw - 3.6rem) / 1800 * 268);
 }
 @media screen and (min-width: 840px) {
@@ -982,31 +1000,22 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-home main .feat-projects .more-proj h3 {
   grid-column: 2/-1;
   padding: 6rem 0 0 1rem;
-  border-top: calc((100vw - 20rem) / 1400 * 16) solid #FF8084;
-  border-left: calc((100vw - 20rem) / 1400 * 16) solid #FF8084;
+  border-top: calc((100vw - 20rem) / 2800 * 32) solid #FF8084;
+  border-left: calc((100vw - 20rem) / 2800 * 32) solid #FF8084;
+}
+
+.LinkedIn-Learning #overview, .body-about #overview {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+.LinkedIn-Learning #overview h2, .body-about #overview h2 {
+  display: block;
 }
 
 .body-project section {
   margin: 0 auto 4rem auto;
-}
-.body-project .max-width {
-  max-width: 1100px !important;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 2rem 0 2rem;
-}
-.body-project .full-width {
-  max-width: 100%;
-  margin: 0 auto 4rem auto;
-  background-color: #fff;
-  color: #1F3051;
-  padding: 1.8rem 0 1.8rem 0;
-}
-@media screen and (min-width: 1440px) {
-  .body-project .full-width {
-    padding-left: calc((100vw - 1100px) / 2 + 1.8rem);
-    padding-right: calc((100vw - 1100px) / 2 + 1.8rem);
-  }
 }
 .body-project h2 {
   color: var(--accent-color);
@@ -1023,7 +1032,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: repeat(2, 1fr);
-  border: var(--accent-color) solid calc((100vw - 20rem) / 1400 * 16);
+  border: var(--accent-color) solid calc((100vw - 20rem) / 2800 * 32);
   border-top-right-radius: calc((100vw - 3.6rem) / 1800 * 268);
 }
 .body-project section.hero .hero-wrapper .main-hero-text {
@@ -1034,7 +1043,7 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-project section.hero .hero-wrapper .main-hero-text h1 {
   display: inline-block;
   background-color: #1F3051;
-  margin-left: calc(-1.5 * (100vw - 20rem) / 1400 * 16);
+  margin-left: calc(-1.5 * (100vw - 20rem) / 2800 * 32);
   padding-right: 1rem;
 }
 .body-project section.hero .hero-wrapper .main-hero-text h1 span {
@@ -1178,7 +1187,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   }
 }
 .body-project #persona .persona-desc {
-  border: calc((100vw - 20rem) / 1400 * 16) var(--accent-color) solid;
+  border: calc((100vw - 20rem) / 2800 * 32) var(--accent-color) solid;
   padding: 2rem;
 }
 .body-project #persona .persona-desc div {
@@ -1303,6 +1312,59 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-project #reflection {
   display: grid;
   row-gap: 2rem;
+}
+
+.body-about section {
+  margin: 0 auto 4rem auto;
+}
+.body-about blockquote {
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 600px) {
+  .body-about #introduction {
+    display: flow-root;
+  }
+}
+.body-about #introduction .my-portrait {
+  display: flex;
+  align-items: center;
+  background-color: var(--accent-color);
+}
+@media screen and (min-width: 600px) {
+  .body-about #introduction .my-portrait {
+    float: right;
+    max-width: 30%;
+  }
+}
+.body-about section.hero {
+  max-width: 1100px !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.8rem;
+}
+.body-about section.hero .hero-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(2, 1fr);
+  border: var(--accent-color) solid calc((100vw - 20rem) / 2800 * 32);
+  border-top-right-radius: calc((100vw - 3.6rem) / 1800 * 268);
+}
+.body-about section.hero .hero-wrapper .main-hero-text {
+  margin-bottom: -2rem;
+  grid-column: 1/2;
+  grid-row: 2/-1;
+}
+.body-about section.hero .hero-wrapper .main-hero-text h1 {
+  display: inline-block;
+  background-color: #1F3051;
+  margin-left: calc(-1.5 * (100vw - 20rem) / 2800 * 32);
+  padding-right: 1rem;
+}
+.body-about section.hero .hero-wrapper .main-hero-text .h1-italic {
+  color: var(--accent-color);
 }
 
 /*# sourceMappingURL=style.css.map */
