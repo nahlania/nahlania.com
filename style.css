@@ -146,7 +146,7 @@ h4 {
   font-size: 18px;
   margin: 2.5rem unset 1.5rem unset;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   .title {
     font-size: 21.21px;
   }
@@ -160,17 +160,17 @@ h1 {
   font-size: 30px;
   margin-bottom: 7.5px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   h1 {
     font-size: 48.54px;
   }
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   h1 {
     font-size: 60px;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 992px) {
   h1 {
     font-size: 69px;
   }
@@ -190,12 +190,12 @@ h2 {
   font-size: 30px;
   margin-bottom: 7.5px;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   h2 {
     font-size: 42.42px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   h2 {
     font-size: 60px;
   }
@@ -218,12 +218,12 @@ h3 {
   font-weight: 400;
   font-style: italic;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   h3 {
     font-size: 22.624px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   h3 {
     font-size: 32px;
   }
@@ -234,12 +234,12 @@ h4 {
   margin-bottom: 4.25px;
   padding: 1rem 0 0.7 0;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   h4 {
     font-size: 20.4px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   h4 {
     font-size: 24.038px;
   }
@@ -288,10 +288,15 @@ a:hover {
 }
 
 .max-width {
-  max-width: 1100px !important;
+  max-width: 992px !important;
   margin-left: auto;
   margin-right: auto;
   padding: 0 2rem 0 2rem;
+}
+@media screen and (min-width: calc(992px + 4rem)) {
+  .max-width {
+    padding: 0;
+  }
 }
 
 .full-width {
@@ -301,20 +306,26 @@ a:hover {
   color: #1F3051;
   padding: 1.8rem 0 1.8rem 0;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .full-width {
-    padding-left: calc((100vw - 1100px) / 2 + 1.8rem);
-    padding-right: calc((100vw - 1100px) / 2 + 1.8rem);
+    padding-left: calc((100vw - 992px) / 2 + 1.8rem);
+    padding-right: calc((100vw - 992px) / 2 + 1.8rem);
   }
 }
 
-.flex-flow {
-  display: flex;
-  flex-flow: row wrap;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
   gap: 2rem;
-  justify-content: center !important;
-  align-items: stretch;
-  align-content: center;
+  margin-bottom: 2rem;
+}
+.grid > * {
+  grid-column: span 12;
+}
+@media screen and (min-width: 768px) {
+  .grid .col-swm-6 {
+    grid-column: span 6;
+  }
 }
 
 /* Media =======================*/
@@ -391,7 +402,7 @@ button {
   clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 85%, 0 100%, 0 50%);
 }
 
-/* Summary-Details=================== */
+/* Accordion =================== */
 details {
   margin: 1rem 0;
 }
@@ -520,7 +531,7 @@ header .menu-container .max-width .menu-off {
   grid-column: 1/-1;
   justify-self: end;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   header .menu-container .max-width {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -555,7 +566,7 @@ header .menu-container .menu-navigation {
   grid-column: 1/-1;
   grid-row: 2;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   header .menu-container .menu-navigation {
     grid-column: 2/-1;
     grid-row: 2;
@@ -565,7 +576,7 @@ header .menu-container .menu-contact {
   grid-column: 1/-1;
   grid-row: 3;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   header .menu-container .menu-contact {
     grid-column: 1/2;
     grid-row: 2;
@@ -574,14 +585,14 @@ header .menu-container .menu-contact {
 
 .body-home main {
   padding: 1.8rem;
-  max-width: 1100px;
+  max-width: 992px;
   margin: 1rem auto;
 }
 
 .grid-auto-fill {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 
 /* showing hidden text on the images */
@@ -623,7 +634,7 @@ header .menu-container .menu-contact {
   flex-flow: row wrap;
   justify-content: center;
   align-items: flex-start;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 .flex-gallery-layout article {
   flex: 0.5 0 300px;
@@ -710,7 +721,7 @@ footer .copyright {
   grid-template-rows: repeat(2, 1fr);
   justify-content: center;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   footer .copyright {
     grid-column: 1/6;
   }
@@ -726,7 +737,7 @@ footer .copyright .copyright-txt {
   justify-self: center;
   align-self: center;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   footer .copyright .copyright-txt {
     font-size: 1rem;
   }
@@ -744,7 +755,7 @@ footer .contact-wrapper {
   display: flex;
   justify-content: space-evenly;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   footer .contact-wrapper {
     grid-column: 6/-1;
     margin-bottom: 0;
@@ -811,7 +822,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   width: 75%;
   padding-top: 1rem;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   .body-home main .hero .hero-graphics-wrapper .main-hero-graphics {
     align-self: self-start;
     justify-self: self-start;
@@ -833,7 +844,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   grid-template-columns: repeat(5, 1fr);
   align-items: end;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   .body-home main .hero .main-hero-text {
     margin-bottom: calc(-3 * (100vw - 20rem) / 2800 * 32);
   }
@@ -856,7 +867,7 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-home main .hero .main-hero-desc p {
   grid-column: 1/-1;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   .body-home main .hero .main-hero-desc p {
     grid-column: 2/-1;
   }
@@ -866,7 +877,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   padding: calc(3 * (100vw - 20rem) / 2800 * 32) 0;
   margin: 4rem 0 calc(17 * (100vw - 20rem) / 2800 * 32) 0;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   .body-home main .feat-projects h2 {
     position: absolute;
     top: 0.5rem;
@@ -905,7 +916,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   border-right: calc((100vw - 20rem) / 2800 * 32) solid #FF8084;
   border-top-right-radius: calc((100vw - 3.6rem) / 1800 * 268);
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   .body-home main .feat-projects .feat-proj1, .body-home main .feat-projects .feat-proj3 {
     padding: 6rem 6rem 6rem 0;
   }
@@ -916,7 +927,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   background-color: var(--accent-color);
   border-top-right-radius: calc((100vw - 3.6rem) / 1800 * 268 - 2rem);
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   .body-home main .feat-projects .feat-proj1 .proj-img, .body-home main .feat-projects .feat-proj3 .proj-img {
     border-top-right-radius: 0;
   }
@@ -930,7 +941,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   grid-row: 3/-1;
   justify-self: end;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   .body-home main .feat-projects .feat-proj1 .proj-img, .body-home main .feat-projects .feat-proj3 .proj-img {
     grid-column: 1/3;
     grid-row: 1/-1;
@@ -952,7 +963,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   border-left: calc((100vw - 20rem) / 2800 * 32) solid #FF8084;
   border-top-left-radius: calc((100vw - 3.6rem) / 1800 * 268);
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   .body-home main .feat-projects .feat-proj2 {
     padding: 6rem 0 6rem 6rem;
   }
@@ -963,7 +974,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   background-color: var(--accent-color);
   border-top-left-radius: calc((100vw - 3.6rem) / 1800 * 268 - 2rem);
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   .body-home main .feat-projects .feat-proj2 .proj-img {
     border-top-left-radius: 0;
   }
@@ -977,7 +988,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   grid-row: 3/-1;
   justify-self: end;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   .body-home main .feat-projects .feat-proj2 .proj-img {
     grid-column: 4/-1;
     grid-row: 1/-1;
@@ -1013,7 +1024,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   font-style: italic;
   margin-bottom: 1.5rem;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   .body-about #introduction {
     display: flow-root;
   }
@@ -1023,14 +1034,14 @@ footer .contact-wrapper .contact-info ul a:hover {
   align-items: center;
   background-color: var(--accent-color);
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   .body-about #introduction .my-portrait {
     float: right;
     max-width: 30%;
   }
 }
 .body-about section.hero {
-  max-width: 1100px !important;
+  max-width: 992px !important;
   margin-left: auto;
   margin-right: auto;
   padding: 1.8rem;
@@ -1057,13 +1068,13 @@ footer .contact-wrapper .contact-info ul a:hover {
   color: var(--accent-color);
 }
 
-.LinkedIn-Learning #overview, .body-about #overview {
+.LinkedIn-Learning #overview {
   display: flex !important;
   justify-content: center;
   align-items: center;
   height: 60vh;
 }
-.LinkedIn-Learning #overview h2, .body-about #overview h2 {
+.LinkedIn-Learning #overview h2 {
   display: block;
 }
 
@@ -1075,7 +1086,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   margin-bottom: 2rem;
 }
 .body-project section.hero {
-  max-width: 1100px !important;
+  max-width: 992px !important;
   margin-left: auto;
   margin-right: auto;
   padding: 1.8rem;
@@ -1102,7 +1113,7 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-project section.hero .hero-wrapper .main-hero-text h1 span {
   color: #fff;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   .body-project #overview {
     display: grid;
     grid-gap: 2rem;
@@ -1143,7 +1154,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   row-gap: 2rem;
   column-gap: 6rem;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   .body-project #proj-details ul.overview-titles {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1161,12 +1172,12 @@ footer .contact-wrapper .contact-info ul a:hover {
   justify-content: center;
   justify-items: center;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   .body-project #user-research .stickers {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 992px) {
   .body-project #user-research .stickers {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1192,7 +1203,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   row-gap: 2rem;
   align-items: end;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   .body-project #persona .persona-basicInfo {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, auto);
@@ -1205,7 +1216,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   align-items: center;
   background-color: var(--accent-color);
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   .body-project #persona .persona-basicInfo .persona-img {
     grid-column: 1/5;
     grid-row: 1/-1;
@@ -1215,7 +1226,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   grid-column: 1/-1;
   grid-row: 2;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   .body-project #persona .persona-basicInfo .info {
     grid-column: 6/-1;
     grid-row: -1/-2;
@@ -1233,7 +1244,7 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-project #persona .persona-basicInfo .persona-quote p {
   margin-top: -2rem;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   .body-project #persona .persona-basicInfo .persona-quote {
     grid-column: 6/-1;
     grid-row: 1/-2;
@@ -1273,7 +1284,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   display: block;
   margin: 1rem auto;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   .body-project #market img {
     max-width: 700px;
   }
@@ -1282,7 +1293,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   display: grid;
   grid-gap: 2rem;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   .body-project #features div.features {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1318,12 +1329,12 @@ footer .contact-wrapper .contact-info ul a:hover {
   justify-content: center;
   justify-items: center;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
   .body-project #user-flow .wireframe-images, .body-project #wireframe .wireframe-images {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 992px) {
   .body-project #user-flow .wireframe-images, .body-project #wireframe .wireframe-images {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1340,7 +1351,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   .body-project #style-guide div.full-width {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1376,7 +1387,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   font-style: italic;
   margin-bottom: 1.5rem;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   .body-about #introduction {
     display: flow-root;
   }
@@ -1386,14 +1397,14 @@ footer .contact-wrapper .contact-info ul a:hover {
   align-items: center;
   background-color: var(--accent-color);
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   .body-about #introduction .my-portrait {
     float: right;
     max-width: 30%;
   }
 }
 .body-about section.hero {
-  max-width: 1100px !important;
+  max-width: 992px !important;
   margin-left: auto;
   margin-right: auto;
   padding: 1.8rem;

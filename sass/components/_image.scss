@@ -36,4 +36,32 @@ margin: v.$border-thickness v.$border-thickness calc(-1 * v.$border-thickness) c
 overflow: hidden;
 }
 
+// section:has(.zoomedIn){
+//     background-color: red;
+
+// }
+
+// .zoomable{
+//     transition: all .5s ease-in-out;
+//     &:hover{
+//         cursor: zoom-in;
+//     }
+
+//     &.zoomedIn{
+//         margin: auto;        
+//         width: 100%;
+//         height: auto;
+
+//         &:hover{
+//             cursor: zoom-out;
+//         }
+//     }
+// }
+
+// body:has(.zoomedIn) > *{
+//     // display: none;
+//     & > .zoomedIn{
+//         display: unset;
+//     }
+// }
 
