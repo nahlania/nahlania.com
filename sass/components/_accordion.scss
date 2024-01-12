@@ -17,7 +17,7 @@ summary{
     display: flex;
     align-items: center;
 
-    &:before{
+    &:after{
         display: inline-block;
         font-style: normal;
         font-variant: normal;
@@ -26,8 +26,8 @@ summary{
         color: c.$base-l;
         font-family: "Font Awesome 5 Free"; 
         font-weight: 900; 
-        content: '\f0da';
-        padding-right: 8px;
+        content: '\f077';
+        margin-left: 2rem;
     }
 
     &:hover{
@@ -36,9 +36,9 @@ summary{
 }
 
 details[open] summary{
-    &:before{
+    &:after{
         content: "\f0d7";
-        padding-right: 8px;
+        margin-left: 2rem;
         color: var(--accent-color);
 
     }

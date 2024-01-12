@@ -414,7 +414,7 @@ summary {
   display: flex;
   align-items: center;
 }
-summary:before {
+summary:after {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -423,8 +423,8 @@ summary:before {
   color: #fff;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f0da";
-  padding-right: 8px;
+  content: "\f077";
+  margin-left: 2rem;
 }
 summary:hover {
   cursor: pointer;
@@ -433,9 +433,9 @@ summary:hover {
 details[open] summary {
   color: var(--accent-color);
 }
-details[open] summary:before {
+details[open] summary:after {
   content: "\f0d7";
-  padding-right: 8px;
+  margin-left: 2rem;
   color: var(--accent-color);
 }
 details[open] summary:hover {
