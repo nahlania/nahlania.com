@@ -4,13 +4,17 @@
 @use '../abstracts/variables' as v;
 
 /* Accordion =================== */
-
-
+.accordion{
+    margin-bottom: 2rem;
+}
 details{
     margin: 1rem 0;
     .info{
         padding-left: 2rem;    
     }   
+    // max-height: 4rem; 
+    // overflow: hidden; 
+
 }
 
 summary{
@@ -23,10 +27,10 @@ summary{
         font-variant: normal;
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
-        color: c.$base-l;
+        color: var(--accent-color);
         font-family: "Font Awesome 5 Free"; 
         font-weight: 900; 
-        content: '\f077';
+        content: '\f078';
         margin-left: 2rem;
     }
 
@@ -37,7 +41,7 @@ summary{
 
 details[open] summary{
     &:after{
-        content: "\f0d7";
+        content: "\f077";
         margin-left: 2rem;
         color: var(--accent-color);
 

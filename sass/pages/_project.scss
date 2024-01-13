@@ -290,9 +290,9 @@
 
     }
 
-    // #user-story{
+    #user-story{
 
-    // }
+    }
 
     #market{
         h4{
@@ -303,7 +303,7 @@
             display: block;
             margin: 1rem auto;
             @media screen and (min-width: v.$sw-m){
-                    max-width: 700px;
+                    // max-width: 700px;
             }
         }
     }
@@ -350,27 +350,6 @@
     #user-flow, #wireframe{
         display: grid;
         grid-gap: 1rem;
-
-        img{
-            margin-bottom: 2rem;
-        }
-
-        .wireframe-images{
-            margin-bottom: 2rem;
-            display: grid;
-            gap: 2rem;
-            justify-content: center;
-            justify-items: center;
-            @media screen and (min-width: v.$sw-m){
-                grid-template-columns: repeat(2, 1fr);
-            }
-            @media screen and (min-width: v.$sw-m-l){
-                grid-template-columns: repeat(3, 1fr);
-            }
-            img{
-                margin-bottom: 0;
-            }
-        }
     }
 
     #style-guide{

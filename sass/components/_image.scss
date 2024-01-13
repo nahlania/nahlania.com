@@ -10,6 +10,21 @@
     background-color: var(--accent-color);
 }
 
+img{
+    &.sw-xs{
+        max-width: v.$sw-xs;
+    }
+    &.sw-s{
+        max-width: v.$sw-s;
+    }
+    &.sw-sm{
+        max-width: v.$sw-s-m;
+    }
+    &.sw-m{
+        max-width: v.$sw-m;
+    }
+}
+
 .left-bottom-curved{
 background-color: c.$contrast-m;
 border-bottom-left-radius:v.$highCurve-radius;
