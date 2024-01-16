@@ -2,6 +2,7 @@
 @use '../abstracts/colors' as c;
 @use '../abstracts/variables' as v;
 @use '../abstracts/typography' as t;
+@use '../base/animation' as a;
 
 
 /* BLENDING MODE PICKER */
@@ -38,7 +39,7 @@
     }
     
     label:hover span {
-        @include m.animationPulse();
+        @include a.animationPulse();
     }
 
    

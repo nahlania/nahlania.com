@@ -29,3 +29,43 @@ zoomIn.addEventListener('click', () => {
     // zoomIn.parentNode.classList.toggle("full-width");
     // zoomIn.parentNode.classList.toggle("max-width");
 });
+
+//Scroll Spy
+const items = document.querySelectorAll(".sidebar a")
+
+const removeActiveClass = () => {
+    items.forEach((item) => {
+        item.classList.remove("active")
+    })
+}
+
+const addActiveClass = (entries, observer) =>{
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            console.log(entry.target)
+            let currentSection = document.querySelector(`.sidebar div a[href='#${entry.target.id}']`);
+            removeActiveClass();
+            currentSection.classList.add("active");
+            currentSection.parentElement.previousElementSibling.classList.add("active")
+        }
+    })
+}
+const addActiveClassOnClick = () =>{
+    items.forEach((item) => {
+        item.addEventListener('click' , directClick , false )
+    })
+
+    function directClick() {
+        addActiveClass
+    }
+}
+
+const options = {
+    treshold: 0.9,
+};
+
+const observer= new IntersectionObserver(addActiveClass, options)
+const sections = document.querySelectorAll("section")
+sections.forEach(section => {
+    observer.observe(section)
+})

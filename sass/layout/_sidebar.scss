@@ -1,0 +1,103 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/colors' as c;
+@use '../abstracts/typography' as t;
+@use '../abstracts/variables' as v;
+
+/* SIDE BAR ==============*/
+.sidebar{
+    display: none;
+}
+@media screen and (min-width: calc(v.$sw-m-l + 12.5rem)){
+    .sidebar{
+        display: unset;
+
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 1rem;
+        padding: 16px 4px;
+        background-color: c.$contrast-m;
+        z-index: 100;
+        transition: all .5s ease-in-out;
+
+        &>*{
+            transition: all .5s ease-in-out;        
+        }
+
+        .sidebar-category{
+            &:not(:last-of-type){
+                margin-bottom: 1rem;    
+            }
+            
+            a.category-name{
+                padding:0 8px;
+                position: relative;
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 4px;
+                align-items: center;
+                color: c.$contrast-d;
+                font-size: 1.2rem;  
+                font-weight: normal; 
+                &:hover{
+                    color: var(--accent-color);
+                    transform: scale(1.1);
+                    font-weight: bold;
+                }
+                &.active:hover{
+                    cursor:default;
+                    color: c.$contrast-d;
+                    transform: scale(1);
+                    font-weight: normal;
+                }
+                &.active::before{
+                    content: "";
+                    position: absolute;
+                    width: 8px;
+                    height: 40px;
+                    background-color: var(--accent-color);
+                    top: 50%;
+                    left: 0;
+                    transform: translate(-50%, -50%);
+                }        
+            }
+        }
+
+        .category-items{
+            margin-left: 4rem;
+            a{
+                font-size: 1rem;
+                color: c.$contrast-d;
+                &:hover{
+                    color: var(--accent-color);
+                    transform: scale(1.1);
+                    font-weight: bold;
+                }
+                &.active{
+                    font-weight: bold;
+                }
+                &.active:hover{
+                    cursor:default;
+                    color: c.$contrast-d;
+                    transform: scale(1);
+                }
+            }
+            
+        }
+        .category-name span,
+        .category-item{
+            display: none !important;
+        }
+
+        &:hover{
+            .category-name span,
+            .category-item{
+                display: flex !important;
+            }
+        }
+
+        img{
+            width: 40px;
+        }
+    }
+} 

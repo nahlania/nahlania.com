@@ -147,6 +147,7 @@ h4{
 }
 
 
+/* DESIGN ==============*/
 a {
 	text-decoration: none;
 	color: c.$primary-m;
@@ -166,6 +167,11 @@ a {
 	font-size: 32px;
 }
 
+.colored{
+	color: var(--accent-color);
+}
+
+/* LAYOUT ==============*/
 .two-column{
 	columns: 300px 2;
 	column-gap: 2.5rem;
@@ -189,10 +195,6 @@ ol.two-column{
 	li{
 		margin-bottom: 1rem;          
 	}
-}
-
-.colored{
-	color: var(--accent-color);
 }
 
 .max-width{
@@ -273,12 +275,3 @@ ol.two-column{
 		}
 	}
 }
-
-
-// $sw-s: 400px;
-// $sw-s-m: 600px;
-// $sw-m: 840px;
-// $sw-m-l: 1100px;
-// $sw-l: 1440px;
-// $sw-xl: 1700px;
-// $sw-xxl: 1920px;
