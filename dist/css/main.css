@@ -46,13 +46,17 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
+body ::-moz-selection {
+  background: var(--accent-color);
+}
 body ::selection {
   background: var(--accent-color);
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -87,7 +91,8 @@ select {
 /* Accessibility ================================= */
 .visually-hidden {
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -268,12 +273,15 @@ a:hover {
 
 /* LAYOUT ==============*/
 .two-column {
-  columns: 300px 2;
-  column-gap: 2.5rem;
+  -moz-columns: 300px 2;
+       columns: 300px 2;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
 }
 
 ol.two-column {
-  column-gap: 3.5rem;
+  -moz-column-gap: 3.5rem;
+       column-gap: 3.5rem;
 }
 
 .list-style {
@@ -326,6 +334,12 @@ ol.two-column {
   justify-content: center;
   justify-items: center;
 }
+.grid.gap6 {
+  grid-gap: 6rem !important;
+}
+.grid.align-items-center {
+  align-items: center;
+}
 .grid > * {
   grid-column: span 12;
 }
@@ -349,6 +363,16 @@ ol.two-column {
     grid-column: span 6;
   }
 }
+@media screen and (min-width: 768px) {
+  .grid .col-m-8 {
+    grid-column: span 8;
+  }
+}
+@media screen and (min-width: 768px) {
+  .grid .col-m-9 {
+    grid-column: span 9;
+  }
+}
 @media screen and (min-width: 992px) {
   .grid .col-ml-2 {
     grid-column: span 2;
@@ -367,6 +391,16 @@ ol.two-column {
 @media screen and (min-width: 992px) {
   .grid .col-ml-6 {
     grid-column: span 6;
+  }
+}
+@media screen and (min-width: 992px) {
+  .grid .col-ml-8 {
+    grid-column: span 8;
+  }
+}
+@media screen and (min-width: 992px) {
+  .grid .col-ml-9 {
+    grid-column: span 9;
   }
 }
 
@@ -438,7 +472,8 @@ button {
   align-items: center;
   justify-content: center;
   grid-gap: 0;
-  clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 85%, 0 100%, 0 50%);
+  -webkit-clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 85%, 0 100%, 0 50%);
+          clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 85%, 0 100%, 0 50%);
 }
 .polygon-banner .banner-heading-wrapper .banner-heading {
   color: #1F3051;
@@ -446,7 +481,8 @@ button {
   text-align: center;
 }
 .polygon-banner img {
-  clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 85%, 0 100%, 0 50%);
+  -webkit-clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 85%, 0 100%, 0 50%);
+          clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 85%, 0 100%, 0 50%);
 }
 
 /* Accordion =================== */
@@ -527,6 +563,34 @@ details[open] summary:hover {
   border-top-right-radius: calc((100vw - 3.6rem) / 1800 * 268);
   margin: calc((100vw - 20rem) / 2800 * 32) calc((100vw - 20rem) / 2800 * 32) calc(-1 * (100vw - 20rem) / 2800 * 32) calc(-1 * (100vw - 20rem) / 2800 * 32);
   overflow: hidden;
+}
+
+.framed {
+  padding: 1rem;
+  border: 4px #fff solid;
+  border-radius: 2rem;
+}
+.framed > * {
+  border-radius: 1rem;
+}
+.framed .v-scrollable {
+  max-height: 55vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.framed.tall .v-scrollable {
+  max-height: 75vh;
+}
+.framed ::-webkit-scrollbar {
+  width: 8px;
+}
+.framed ::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 16px;
+}
+.framed ::-webkit-scrollbar-track {
+  background-color: #ABB7C9;
+  border-radius: 16px;
 }
 
 /* Pagination =================== */
@@ -736,7 +800,8 @@ header .menu-container .menu-contact {
 }
 .blend-mode input[type=radio] {
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -1206,6 +1271,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   color: var(--accent-color);
 }
 
+/* PROJECTS ==============*/
 .LinkedIn-Learning #overview {
   display: flex !important;
   justify-content: center;
@@ -1291,7 +1357,8 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-project #proj-details ul.overview-titles {
   display: grid;
   row-gap: 2rem;
-  column-gap: 6rem;
+  -moz-column-gap: 6rem;
+       column-gap: 6rem;
 }
 @media screen and (min-width: 768px) {
   .body-project #proj-details ul.overview-titles {
@@ -1453,6 +1520,9 @@ footer .contact-wrapper .contact-info ul a:hover {
   display: grid;
   grid-gap: 1rem;
 }
+.body-project #user-flow .wireframe2, .body-project #user-flow .wireframe3, .body-project #user-flow .wireframe4, .body-project #wireframe .wireframe2, .body-project #wireframe .wireframe3, .body-project #wireframe .wireframe4 {
+  margin-top: 3rem;
+}
 .body-project #style-guide {
   max-width: 100%;
   margin: 0 auto 6rem auto;
@@ -1475,13 +1545,15 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-project #design-sys .components {
   display: column;
-  columns: 300px 3;
+  -moz-columns: 300px 3;
+       columns: 300px 3;
   gap: 2rem;
 }
 .body-project #design-sys .components > * {
   border: solid var(--accent-color) 1px;
   padding: 0.5rem;
-  break-inside: avoid;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
   margin-bottom: 2rem;
 }
 .body-project #reflection {
@@ -1489,7 +1561,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   row-gap: 2rem;
 }
 .body-project .pagination {
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .body-about section {
@@ -1543,6 +1615,4 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-about section.hero .hero-wrapper .main-hero-text .h1-italic {
   color: var(--accent-color);
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

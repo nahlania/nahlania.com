@@ -20,15 +20,7 @@ document.addEventListener("keydown", function (event) {
     }
 });
 
-//Zoom in and out
-const zoomIn = document.querySelector('.zoomable')
-const zoomOut = document.querySelector('.zoomedIn')
 
-zoomIn.addEventListener('click', () => {
-    zoomIn.classList.toggle('zoomedIn');
-    // zoomIn.parentNode.classList.toggle("full-width");
-    // zoomIn.parentNode.classList.toggle("max-width");
-});
 
 //Scroll Spy
 const items = document.querySelectorAll(".sidebar a")

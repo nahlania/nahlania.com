@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dealicious-SaaS Web App</title>
     <link rel="icon" href="../Assets/Images/NahlaNia-logo-sign.svg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
+
+    <link rel="stylesheet" href="../dist/css/main.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css' integrity='sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==' crossorigin='anonymous' referrerpolicy='no-referrer'/>
     <script src="../main.js" defer></script>
     <style>
@@ -59,6 +59,7 @@
             </div>
         </div>
     </div>
+
     <nav class="sidebar">
         <div class="sidebar-category sidebar-overview">
             <a href="#intro" class="category-name">
@@ -116,6 +117,7 @@
             </a>
         </div>
     </nav>
+
     <section id="intro">
         <section id="overview" class="max-width">
             <div class="overview-img"><img src="../Assets/Images/Dealicious/overview.webp" alt=""></div>
@@ -137,7 +139,7 @@
                         <div>
                             <img src="../Assets/Icons/Icon-HatsWorn.svg" alt=""><span class="title">Hats Worn</span>
                             <ul>
-                                <li>Performed user research & market analysis & clustered data, crafted persona & user journey, created user flow & wireframes, moderated usability testing & UX writing, designed style guide, UI kit and high-fedility mockups, performed photography.</li>
+                                <li>Performed user research & market analysis & clustered data, crafted persona & user journey, created user flow & wireframes, moderated usability testing & UX writing, designed illustrations, style guide, UI kit and high-fedility mockups, performed photography.</li>
                             </ul>
                         </div>
                     </li>
@@ -180,7 +182,7 @@
                     <li> Another approach for increasing visibility is influencer marketing. In this case, business managers who are busy enough with the workflow must dedicate time to exploring relevant influencers’ pages, dealing and negotiating with them, and finally commissioning an advertisement. This is a challenge for food hospitalities, especially small businesses with limited time and capital. Moreover, in this approach, the actual KPIs are not trackable.</li>
                     <li>Word-of-mouth is another existing alternative. Although it is a powerful marketing tactic, it is barely considered a marketing tool, because it’s not trackable.</li>
                 </ul>
-            </div>
+            </div>            
         </section>
         <section id="persona" class="max-width">
             <h2>Persona Research</h2>
@@ -239,7 +241,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
         <section id="user-story" class="max-width ">
             <h2>User Story</h2>
             <div class="story1">
@@ -249,7 +251,17 @@
                     <li>I want to keep track of performance of marketing campaigns so that I make better marketing decisions</li>
                     <li>I want to easily create effective marketing campaigns so that I attract new customers and retain existing ones</li>
                     <li>I want to have useful data from my customers so that I can create tailored campaigns for them</li>
-                    <li>I want to have more customer reviews so that it attracts new customers.</li>
+                    <li>I want to have more customer reviews so that it attracts new customers</li>
+                </ul>
+            </div>
+            <div class="story2">
+                <h3>As a Food Lover</h3>
+                <ul class="list-style">
+                    <li>I want to try new places and food with a discount</li>
+                    <li>I rely on my friends suggestions to discover new restaurants around the city</li>
+                    <li>I want to sign up as a super customer so that I can get points every time I spend money, at a restaurant</li>
+                    <li>I want to share the joy of discovering new foods with my close friends and convince them to try something new</li>
+                    <li>I want to earn points and discounts, every time I refer this restaurant to my friend</li>
                 </ul>
             </div>
         </section>
@@ -262,10 +274,11 @@
                 <h4>ShowMeLocal.com</h4>
                 <p>Show Me Local is a directory that groups businesses by industry and region. It provides a suite of digital tools including enhanced listings, customer reviews, and promotion of local deals and events.</p>
                 <h4>DoorDash.com</h4>
-                <p>DoorDash facilitates food delivery by independent contractors. It also offers a Store Loyalty Program which enables customers to earn towards rewards with every dollar spent with participating brands.</p>
+                <p>DoorDash facilitates food delivery by independent contractors. It also offers a Store Loyalty Program which enables customers to earn towards rewards with every dollar spent with participating brands.</p><br>
+                <p>Looking at them, no one has a referral program. Also, the loyalty program is missing in two of the competitor platforms. Dealicious also leverages the power of accurate insights and AI to stand out.</p>
             </div>
             <img src="../Assets/Images/Dealicious/competitors.webp" alt="">
-        </section>
+        </section>               
     </section>
     <section id="ux-design">
         <section id="features">
@@ -301,37 +314,128 @@
         </section>
         <section id="wireframe" class="max-width">
             <h2>Wireframe</h2>
-            <div class="two-column">
-                <p>After confirming the user flow in the team meetings, we created the wireframe through multiple iterations. In some sections, we noticed that the user flow needed to be changed for a better user experience. These changes led to changes in user flow, as well. In the final version, we added annotations for the developers to prevent confusion and maximize efficiency.</p><p>To create a seamless user experience, we created the mobile view and desktop view screens at the same time. Considering the personas and use cases, the focus for the business owner was on the desktop version, while for the customers we designed a mobile-first.</p>
+            <div>
+                <p>After confirming the user flow in the team meetings, we created the wireframe through multiple iterations. In some sections, we noticed that the user flow needed to be changed for a better user experience. These changes led to changes in user flow, as well. In the final version, we added annotations for the developers to prevent confusion and maximize efficiency.</p><p>To create a seamless user experience, we created the mobile view and desktop view screens at the same time. Considering the personas and use cases, the focus for the business owner was on the desktop version, while for the customers we went for a mobile-first design.</p><br><p>Based on the user flow and modified features, the wireframes are categorized as follows:</p>
+                <ul class="list-style">
+                    <li>Restaurant Owner Dashboard; including <span class="bold-text">Campaigns</span>, <span class="bold-text">Insight</span>, <span class="bold-text">Burn a Code</span>, and <span class="bold-text">Profile</span></li>
+                    <li>Super Customer Dashboard; including <span class="bold-text">My Restaurants</span>, <span class="bold-text">Restaurant Single-View</span>, and <span class="bold-text">Profile</span></li>
+                    <li>New Customer Dashboard; including <span class="bold-text">Restaurant Single-View</span></li>
+                </ul>
             </div>
             <a href="https://www.figma.com/file/tnrFGtw3cZkz1Du9gyOEHU/Dealicious-Wireframe?type=design&node-id=304%3A5106&mode=design&t=PbQFCY7vevugf6HT-1" class="ext-link" target="blank">View on Figma</a>
             <div class="wireframe1">
-                <h3>Restaurant Owner Flow - Dashboard</h3>
-                <p>After logging in to the business owner's account, a dashboard contains all necessary tools and insights. The first page in this dashboard is the campaigns page where they can view all the active and upcoming campaigns at a glance. "Create Campaign" is the main action which is shown as a button on the top right side of all pages.</p>
-                <img src="../Assets/Images/Dealicious/wireframe1.webp" alt="">
-                <h4 class="colored">Annotations</h4>
-                <ol class="ordered-list-style two-column">
-                    <li class="1">Tab navigates to a heading in the same page</li>
-                    <li class="2">Navigation resembles application nav bar and is sticky at the bottom of viewport</li>
-                    <li class="3">Searching among the campaigns for specific campaign type.</li>
-                    <li class="4">All campaign overviews(active, upcoming and past) are in the same page and these links navigate through the same page</li>
-                    <li class="5">A comparison between all active campaigns</li>
-                    <li class="6">Dropdown selects campaign. when a campaign is shown on highlighted section, it is removed from bottom section</li>
-                    <li class="7">Insight selector- Dropdown selects the insight</li>
-                    <li class="8">Compare opens a dropdown with a list of radio buttons to select the second campaign to compare</li>
-                    <li class="9">Arrow expands the card to show full-size card including info, insight selector and insight chart</li>
-                    <li class="10">Scrollable to the right and left to see all active and upcoming campaigns</li>
-                    <li class="11">Button navigates to the form-view of the campaign to edit</li>
-                    <li class="12">Sidebar is collapsible and it’s sticky while expanded</li>
-                </ol>
-        
+                <h3>Campaigns Flow Iterations</h3>
+                <p>Campaigns is designed as the home screen of the Restaurant Owner Dashboard. The functionality of this page is to enable users to keep track of their marketing campaigns. It was primarily divided into three sections: Ongoing, Upcoming, and Past Campaigns. However, in the later iterations, we transferred Past Campaigns into Insights to keep the home page focused on what is going on from now on to help the business owner make marketing decisions, accordingly.</p>
+                <p>In the first iteration, we designed cards for each campaign to segregate them. Also, we wanted to illustrate charts for different data that is driven from the campaign, as well as the basic information of the campaign including name, date, etc.</p>
+                <div class="grid align-items-center">
+                    <div class="framed desktop col-m-9">
+                        <div class="v-scrollable">
+                            <img src="../Assets/Images/Dealicious/Wireframe-Campaign1-v1d.webp" alt="wireframe">
+                        </div>
+                    </div>
+                    <div class="framed mobile col-m-3">
+                        <div >
+                            <img src="../Assets/Images/Dealicious/Wireframe-Campaign1-v1m.webp" alt="wireframe">
+                        </div>
+                    </div>
+                </div>
+                <p>Since we wanted to visualize numerous data, this approach of dividing cards' info into tabs wasn't scaleable, especially on mobile phones where we needed to consider a fat-finger-friendly design. Therefore, in the second iteration, we changed tabs into a dropdown menu. Also, to create a simpler and cleaner home page, we designed expandable cards, which show the charts only in the expanded mode. With the featured campaign and comparative chart on top, we made sure that users can view the most important data at first glance and without extra clicks.</p>
+                <br><p>Ongoing campaigns with cards in their default state:</p>
+                <div class="grid align-items-center">
+                    <div class="framed desktop col-m-9">
+                        <div class="v-scrollable">
+                            <img src="../Assets/Images/Dealicious/Wireframe-Campaign1-v2d.webp" alt="wireframe">
+                        </div>
+                    </div>
+                    <div class="framed mobile col-m-3">
+                        <div class="v-scrollable" >
+                            <img src="../Assets/Images/Dealicious/Wireframe-Campaign1-v2m.webp" alt="wireframe">
+                        </div>
+                    </div>
+                </div>
+                <br><p>Ongoing campaigns with cards in their expanded state:</p>
+                <div class="grid align-items-center">
+                    <div class="framed desktop col-m-9">
+                        <div class="v-scrollable">
+                            <img src="../Assets/Images/Dealicious/Wireframe-Campaign2-v2d.webp" alt="wireframe">
+                        </div>
+                    </div>
+                    <div class="framed mobile col-m-3">
+                        <div class="v-scrollable" >
+                            <img src="../Assets/Images/Dealicious/Wireframe-Campaign2-v2m.webp" alt="wireframe">
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <details>
+                        <summary><h4 class="colored">Wireframe Annotations</h4></summary>
+                        <ol  start="1" class="ordered-list-style two-column">
+                            <li>Tab navigates to a heading in the same page</li>
+                            <li>Navigation resembles application nav bar and is sticky at the bottom of viewport</li>
+                            <li>Searching among the campaigns for specific campaign type</li>
+                            <li>All campaign overviews(active, upcoming and past) are in the same page and these links navigate through the same page</li>
+                            <li>A comparison between all active campaigns</li>
+                            <li>Dropdown selects campaign. when a campaign is shown on highlighted section, it is removed from bottom section</li>
+                            <li>Insight selector- Dropdown selects the insight</li>
+                            <li>Compare opens a dropdown with a list of radio buttons to select the second campaign to compare</li>
+                            <li>Arrow expands the card to show full-size card including info, insight selector and insight chart</li>
+                            <li>Scrollable to the right and left to see all active and upcoming campaigns</li>
+                            <li>Button navigates to the form-view of the campaign to edit</li>
+                            <li>Sidebar is collapsible and it’s sticky while expanded</li>
+                        </ol>
+                    </details>
+                </div>
+                <br><p>In the last iteration of the high-fidelity wireframe, we added pins to the campaign cards. This reduced a dropdown selector on the featured/pinned campaign and made it visually identifiable. Users are able to compare ongoing campaign metrics side by side. To gain a better understanding of how their marketing efforts are doing, they also can compare the metrics of two selected campaigns on a single chart on top right:</p>
+                <div class="grid align-items-center">
+                    <div class="framed desktop col-m-9">
+                        <div class="v-scrollable">
+                            <img src="../Assets/Images/Dealicious/Wireframe-Campaign1-v3d.webp" alt="wireframe">
+                        </div>
+                    </div>
+                    <div class="framed mobile col-m-3">
+                        <div class="v-scrollable" >
+                            <img src="../Assets/Images/Dealicious/Wireframe-Campaign1-v3m.webp" alt="wireframe">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </section>
-    <!-- <section id="prototype" class="max-width">
-        <h2>Prototype</h2>
-        <img src="" alt="">
-    </section> -->
+    <section id="ui-design">
+        <section id="logo" >
+            <div class="max-width">
+                <h2>Logo</h2>
+                <p>Dealicious is a fusion of 'Deal' and 'Delicious,' conveying the core attributes of our platform, symbolizing both promotional potential and the delightful culinary experiences offered. Since the name alone establishes an emotional connection and a memorable presence, we designed a simple logo with a soft-edge typeface and a symbol of special offers to retain the nature of our platform.</p>
+            </div>
+            <div class="grid full-width">
+                <img src="../Assets/Images/Dealicious/logo1.svg" alt="" class="col-m-6">
+                <img src="../Assets/Images/Dealicious/logo2.svg" alt="" class="col-m-6">
+            </div>
+        </section>
+        <section id="color-typo" >
+            <div class="max-width">
+                <h2>Color & Typography</h2>
+                <p>The primary color represents the restaurant industry, with orange conveying energy and creativity, aligning with dining experiences’ lively nature. It evokes warmth and appetizing appeal, perfect for a food-related app. The secondary color symbolizes profit and the word “Deal,” using green to signify growth and prosperity. It also connects to organic and healthy elements, relatable to the food industry. As a data visualization platform, we use variations of the primary and secondary colors to effectively represent and differentiate data points.</p>
+                <p>For typography, we chose Ubuntu Bold from Google Fonts for headings. Ubuntu’s rounded and modern appearance adds an elegant touch, contributing to a contemporary and friendly aesthetic. For body text, we opted for Mukta Light, also from Google Fonts, ensuring clarity and legibility.</p>
+            </div>
+            <div class="grid full-width">
+                <img src="../Assets/Images/Dealicious/color.svg" alt="" class="col-m-6">
+                <img src="../Assets/Images/Dealicious/typography.svg" alt="" class="col-m-6">
+            </div>
+        </section>
+        <section id="iconography" >
+            <div class="max-width">
+                <h2>Iconography</h2>
+                <p>Icons represent the web app’s main features, as well as other functions. They are used in two sizes across the website: 24px and 40px. Except on the marketing materials, icons are shown in black on the platform in all cases, but for two conditions:</p>
+                <p>First, on navigation menus, where the active navigation menu has a background circle in the primary color. Second, the pin icon on the pinned cards which changes to the primary color.</p> 
+                <p>Also, on two main buttons including “Create a Campaign” and “Recreate the Campaign” icons display continious micro animations.</p>
+            </div>
+            <div class="grid full-width">
+                <img src="../Assets/Images/Dealicious/icons1.webp" alt="" class="col-m-6">
+                <img src="../Assets/Images/Dealicious/icons2.webp" alt="" class="col-m-6">
+            </div>
+        </section>
+    </section>
     <section id="reflection" class="max-width">
         <h2>Reflections</h2>
         <div>

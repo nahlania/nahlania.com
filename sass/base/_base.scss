@@ -219,6 +219,8 @@ ol.two-column{
 	}
 }
 
+
+
 .grid{
 	margin-bottom: 2rem;
 	display: grid;
@@ -227,6 +229,13 @@ ol.two-column{
 	justify-content: center;
 	justify-items: center;
 
+	&.gap6{
+		grid-gap: 6rem !important;
+	}
+
+	&.align-items-center{
+		align-items: center;
+	}
 	& > *{
 		grid-column: span 12;
 	}
@@ -253,6 +262,16 @@ ol.two-column{
 			grid-column: span 6;
 		}
 	}
+	& .col-m-8{
+		@media screen and (min-width: v.$sw-m){
+			grid-column: span 8;
+		}
+	}
+	& .col-m-9{
+		@media screen and (min-width: v.$sw-m){
+			grid-column: span 9;
+		}
+	}
 
 	& .col-ml-2{
 		@media screen and (min-width: v.$sw-m-l){
@@ -272,6 +291,16 @@ ol.two-column{
 	& .col-ml-6{
 		@media screen and (min-width: v.$sw-m-l){
 			grid-column: span 6;
+		}
+	}
+	& .col-ml-8{
+		@media screen and (min-width: v.$sw-m-l){
+			grid-column: span 8;
+		}
+	}
+	& .col-ml-9{
+		@media screen and (min-width: v.$sw-m-l){
+			grid-column: span 9;
 		}
 	}
 }
