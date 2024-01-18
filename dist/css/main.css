@@ -340,8 +340,16 @@ ol.two-column {
 .grid.align-items-center {
   align-items: center;
 }
+.grid.justify-items-start {
+  justify-items: start;
+}
 .grid > * {
   grid-column: span 12;
+}
+@media screen and (min-width: 768px) {
+  .grid .col-m-1 {
+    grid-column: span 1;
+  }
 }
 @media screen and (min-width: 768px) {
   .grid .col-m-2 {
@@ -356,6 +364,11 @@ ol.two-column {
 @media screen and (min-width: 768px) {
   .grid .col-m-4 {
     grid-column: span 4;
+  }
+}
+@media screen and (min-width: 768px) {
+  .grid .col-m-5 {
+    grid-column: span 5;
   }
 }
 @media screen and (min-width: 768px) {
@@ -374,6 +387,11 @@ ol.two-column {
   }
 }
 @media screen and (min-width: 992px) {
+  .grid .col-ml-1 {
+    grid-column: span 1;
+  }
+}
+@media screen and (min-width: 992px) {
   .grid .col-ml-2 {
     grid-column: span 2;
   }
@@ -386,6 +404,11 @@ ol.two-column {
 @media screen and (min-width: 992px) {
   .grid .col-ml-4 {
     grid-column: span 4;
+  }
+}
+@media screen and (min-width: 992px) {
+  .grid .col-ml-5 {
+    grid-column: span 5;
   }
 }
 @media screen and (min-width: 992px) {
@@ -574,7 +597,7 @@ details[open] summary:hover {
   border-radius: 1rem;
 }
 .framed .v-scrollable {
-  max-height: 55vh;
+  max-height: 50vh;
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -1368,9 +1391,6 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-project #proj-details img {
   width: 120px;
 }
-.body-project #goals h3 {
-  padding-left: 1rem;
-}
 .body-project #user-research .stickers {
   margin-bottom: 2rem;
   display: grid;
@@ -1554,10 +1574,6 @@ footer .contact-wrapper .contact-info ul a:hover {
   -moz-column-break-inside: avoid;
        break-inside: avoid;
   margin-bottom: 2rem;
-}
-.body-project #reflection {
-  display: grid;
-  row-gap: 2rem;
 }
 .body-project .pagination {
   margin-bottom: 6rem;
