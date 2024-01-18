@@ -377,6 +377,11 @@ ol.two-column {
   }
 }
 @media screen and (min-width: 768px) {
+  .grid .col-m-7 {
+    grid-column: span 7;
+  }
+}
+@media screen and (min-width: 768px) {
   .grid .col-m-8 {
     grid-column: span 8;
   }
@@ -1103,6 +1108,12 @@ footer .contact-wrapper .contact-info ul a:hover {
   padding: calc(3 * (100vw - 20rem) / 2800 * 32) 0;
   margin: 4rem 0 calc(17 * (100vw - 20rem) / 2800 * 32) 0;
 }
+.body-home main .feat-projects h3 {
+  color: #fff !important;
+}
+.body-home main .feat-projects h3:hover {
+  color: #ABB7C9 !important;
+}
 @media screen and (min-width: 768px) {
   .body-home main .feat-projects h2 {
     position: absolute;
@@ -1295,13 +1306,13 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 
 /* PROJECTS ==============*/
-.LinkedIn-Learning #overview {
+.LinkedIn-Learning #overview, .SAM-Med #overview {
   display: flex !important;
   justify-content: center;
   align-items: center;
   height: 60vh;
 }
-.LinkedIn-Learning #overview h2 {
+.LinkedIn-Learning #overview h2, .SAM-Med #overview h2 {
   display: block;
 }
 

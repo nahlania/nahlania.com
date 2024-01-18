@@ -1,3 +1,4 @@
+
 @use '../abstracts/colors' as c;
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
@@ -71,6 +72,12 @@
         } 
 
         .feat-projects{
+            h3{
+                color: c.$base-l !important;
+                &:hover{
+                    color: c.$contrast-m !important;
+                }
+            }
             position: relative;
             padding: calc(3*v.$border-thickness) 0;
             margin: 4rem 0 calc(17*v.$border-thickness) 0;

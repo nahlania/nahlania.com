@@ -275,6 +275,11 @@ ol.two-column{
 			grid-column: span 6;
 		}
 	}
+	& .col-m-7{
+		@media screen and (min-width: v.$sw-m){
+			grid-column: span 7;
+		}
+	}
 	& .col-m-8{
 		@media screen and (min-width: v.$sw-m){
 			grid-column: span 8;
