@@ -566,31 +566,92 @@ details[open] summary:hover {
 
 .left-bottom-curved {
   background-color: #ABB7C9;
-  border-bottom-left-radius: calc((100vw - 3.6rem) / 1800 * 268);
-  margin: calc(-1 * (100vw - 20rem) / 2800 * 32) calc(-1 * (100vw - 20rem) / 2800 * 32) calc((100vw - 20rem) / 2800 * 32) calc((100vw - 20rem) / 2800 * 32);
+  border-bottom-left-radius: 4rem;
+  margin: calc(-1 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px)) calc(-1 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px)) clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) clamp(6px, (100vw - 20rem) / 2800 * 32, 14px);
   overflow: hidden;
+}
+@media screen and (min-width: 576px) {
+  .left-bottom-curved {
+    border-bottom-left-radius: 8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .left-bottom-curved {
+    border-bottom-left-radius: 11rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .left-bottom-curved {
+    border-bottom-left-radius: 14rem;
+    border-top-right-radius: 0;
+  }
 }
 
 .right-bottom-curved {
   background-color: #ABB7C9;
-  border-bottom-right-radius: calc((100vw - 3.6rem) / 1800 * 268);
-  margin: calc(-1 * (100vw - 20rem) / 2800 * 32) calc((100vw - 20rem) / 2800 * 32) calc((100vw - 20rem) / 2800 * 32) calc(-1 * (100vw - 20rem) / 2800 * 32);
+  border-bottom-right-radius: 4rem;
+  margin: calc(-1 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px)) clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) calc(-1 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
   overflow: hidden;
+}
+@media screen and (min-width: 576px) {
+  .right-bottom-curved {
+    border-bottom-right-radius: 8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .right-bottom-curved {
+    border-bottom-right-radius: 11rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .right-bottom-curved {
+    border-bottom-right-radius: 14rem;
+  }
 }
 
 .left-top-curved {
   background-color: #ABB7C9;
-  border-top-left-radius: calc((100vw - 3.6rem) / 1800 * 268);
-  margin: calc(-1 * (100vw - 20rem) / 2800 * 32) calc(-1 * (100vw - 20rem) / 2800 * 32) calc((100vw - 20rem) / 2800 * 32) calc((100vw - 20rem) / 2800 * 32);
-  margin: calc((100vw - 20rem) / 2800 * 32) calc(-1 * (100vw - 20rem) / 2800 * 32) calc(-1 * (100vw - 20rem) / 2800 * 32) calc((100vw - 20rem) / 2800 * 32);
+  border-top-left-radius: 4rem;
+  margin: calc(-1 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px)) calc(-1 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px)) clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) clamp(6px, (100vw - 20rem) / 2800 * 32, 14px);
+  margin: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) calc(-1 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px)) calc(-1 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px)) clamp(6px, (100vw - 20rem) / 2800 * 32, 14px);
   overflow: hidden;
+}
+@media screen and (min-width: 576px) {
+  .left-top-curved {
+    border-top-left-radius: 8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .left-top-curved {
+    border-top-left-radius: 11rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .left-top-curved {
+    border-top-left-radius: 14rem;
+  }
 }
 
 .right-top-curved {
   background-color: #ABB7C9;
-  border-top-right-radius: calc((100vw - 3.6rem) / 1800 * 268);
-  margin: calc((100vw - 20rem) / 2800 * 32) calc((100vw - 20rem) / 2800 * 32) calc(-1 * (100vw - 20rem) / 2800 * 32) calc(-1 * (100vw - 20rem) / 2800 * 32);
+  border-top-right-radius: 4rem;
+  margin: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) calc(-1 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px)) calc(-1 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
   overflow: hidden;
+}
+@media screen and (min-width: 576px) {
+  .right-top-curved {
+    border-top-right-radius: 8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .right-top-curved {
+    border-top-right-radius: 11rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .right-top-curved {
+    border-top-right-radius: 14rem;
+  }
 }
 
 .framed {
@@ -1045,9 +1106,24 @@ footer .contact-wrapper .contact-info ul a:hover {
   display: grid;
   grid-template-rows: repeat(2, auto);
   justify-items: center;
-  border: calc((100vw - 20rem) / 2800 * 32) solid #FF8084;
-  border-top-right-radius: calc((100vw - 3.6rem) / 1800 * 268);
-  margin-bottom: calc(3 * (100vw - 20rem) / 2800 * 32);
+  border: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) solid #FF8084;
+  border-top-right-radius: 4rem;
+  margin-bottom: calc(3 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
+}
+@media screen and (min-width: 576px) {
+  .body-home main .hero .hero-graphics-wrapper {
+    border-top-right-radius: 8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .body-home main .hero .hero-graphics-wrapper {
+    border-top-right-radius: 11rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .body-home main .hero .hero-graphics-wrapper {
+    border-top-right-radius: 14rem;
+  }
 }
 .body-home main .hero .hero-graphics-wrapper .main-hero-graphics {
   width: 75%;
@@ -1060,15 +1136,15 @@ footer .contact-wrapper .contact-info ul a:hover {
     width: 60%;
     padding-top: 0;
     background-color: #1F3051;
-    margin-left: calc(-1.5 * (100vw - 20rem) / 2800 * 32);
-    margin-top: calc(-1.5 * (100vw - 20rem) / 2800 * 32);
-    padding-right: calc(2 * (100vw - 20rem) / 2800 * 32);
-    padding-bottom: calc(2 * (100vw - 20rem) / 2800 * 32);
+    margin-left: calc(-1.5 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
+    margin-top: calc(-1.5 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
+    padding-right: calc(2 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
+    padding-bottom: calc(2 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
   }
 }
 .body-home main .hero .main-hero-text {
-  margin-bottom: calc(-4 * (100vw - 20rem) / 2800 * 32);
-  margin-right: calc(-1 * (100vw - 20rem) / 2800 * 32);
+  margin-bottom: calc(-4 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
+  margin-right: calc(-1 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
   grid-row: 2;
   justify-self: self-end;
   display: grid;
@@ -1077,7 +1153,7 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 @media screen and (min-width: 576px) {
   .body-home main .hero .main-hero-text {
-    margin-bottom: calc(-3 * (100vw - 20rem) / 2800 * 32);
+    margin-bottom: calc(-3 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
   }
 }
 .body-home main .hero .main-hero-text h1 {
@@ -1085,8 +1161,8 @@ footer .contact-wrapper .contact-info ul a:hover {
   display: inline-block;
   grid-column: 4/-1;
   background-color: #1F3051;
-  padding-top: calc(2 * (100vw - 20rem) / 2800 * 32);
-  padding-left: calc(2 * (100vw - 20rem) / 2800 * 32);
+  padding-top: calc(2 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
+  padding-left: calc(2 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
 }
 .body-home main .hero .main-hero-text h1 .h1-italic {
   color: var(--accent-color);
@@ -1105,8 +1181,8 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-home main .feat-projects {
   position: relative;
-  padding: calc(3 * (100vw - 20rem) / 2800 * 32) 0;
-  margin: 4rem 0 calc(17 * (100vw - 20rem) / 2800 * 32) 0;
+  padding: calc(3 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px)) 0;
+  margin: 4rem 0 calc(17 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px)) 0;
 }
 .body-home main .feat-projects h3 {
   color: #fff !important;
@@ -1149,24 +1225,39 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-home main .feat-projects .feat-proj1, .body-home main .feat-projects .feat-proj3 {
   padding: 2rem 2rem 2rem 0;
-  border-top: calc((100vw - 20rem) / 2800 * 32) solid #FF8084;
-  border-right: calc((100vw - 20rem) / 2800 * 32) solid #FF8084;
-  border-top-right-radius: calc((100vw - 3.6rem) / 1800 * 268);
+  border-top: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) solid var(--accent-color);
+  border-right: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) solid var(--accent-color);
+  border-top-right-radius: 4rem;
 }
 @media screen and (min-width: 768px) {
   .body-home main .feat-projects .feat-proj1, .body-home main .feat-projects .feat-proj3 {
     padding: 6rem 6rem 6rem 0;
   }
 }
+@media screen and (min-width: 576px) {
+  .body-home main .feat-projects .feat-proj1, .body-home main .feat-projects .feat-proj3 {
+    border-top-right-radius: 8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .body-home main .feat-projects .feat-proj1, .body-home main .feat-projects .feat-proj3 {
+    border-top-right-radius: 11rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .body-home main .feat-projects .feat-proj1, .body-home main .feat-projects .feat-proj3 {
+    border-top-right-radius: 14rem;
+  }
+}
 .body-home main .feat-projects .feat-proj1 .proj-img, .body-home main .feat-projects .feat-proj3 .proj-img {
   grid-column: 1/-1;
   grid-row: 1/2;
-  background-color: var(--accent-color);
-  border-top-right-radius: calc((100vw - 3.6rem) / 1800 * 268 - 2rem);
+  background-color: #fff;
 }
 @media screen and (min-width: 768px) {
   .body-home main .feat-projects .feat-proj1 .proj-img, .body-home main .feat-projects .feat-proj3 .proj-img {
     border-top-right-radius: 0;
+    border-top-right-radius: 6rem;
   }
 }
 .body-home main .feat-projects .feat-proj1 .proj-info, .body-home main .feat-projects .feat-proj3 .proj-info {
@@ -1196,20 +1287,34 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-home main .feat-projects .feat-proj2 {
   padding: 2rem 0 2rem 2rem;
-  border-top: calc((100vw - 20rem) / 2800 * 32) solid #FF8084;
-  border-left: calc((100vw - 20rem) / 2800 * 32) solid #FF8084;
-  border-top-left-radius: calc((100vw - 3.6rem) / 1800 * 268);
+  border-top: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) solid var(--accent-color);
+  border-left: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) solid var(--accent-color);
+  border-top-left-radius: 4rem;
 }
 @media screen and (min-width: 768px) {
   .body-home main .feat-projects .feat-proj2 {
     padding: 6rem 0 6rem 6rem;
   }
 }
+@media screen and (min-width: 576px) {
+  .body-home main .feat-projects .feat-proj2 {
+    border-top-left-radius: 8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .body-home main .feat-projects .feat-proj2 {
+    border-top-left-radius: 11rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .body-home main .feat-projects .feat-proj2 {
+    border-top-left-radius: 14rem;
+  }
+}
 .body-home main .feat-projects .feat-proj2 .proj-img {
   grid-column: 1/-1;
   grid-row: 1/2;
   background-color: var(--accent-color);
-  border-top-left-radius: calc((100vw - 3.6rem) / 1800 * 268 - 2rem);
 }
 @media screen and (min-width: 768px) {
   .body-home main .feat-projects .feat-proj2 .proj-img {
@@ -1248,8 +1353,8 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-home main .feat-projects .more-proj h3 {
   grid-column: 2/-1;
   padding: 6rem 0 0 1rem;
-  border-top: calc((100vw - 20rem) / 2800 * 32) solid #FF8084;
-  border-left: calc((100vw - 20rem) / 2800 * 32) solid #FF8084;
+  border-top: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) solid #FF8084;
+  border-left: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) solid #FF8084;
 }
 
 .body-about section {
@@ -1287,8 +1392,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: repeat(2, 1fr);
-  border: var(--accent-color) solid calc((100vw - 20rem) / 2800 * 32);
-  border-top-right-radius: calc((100vw - 3.6rem) / 1800 * 268);
+  border: var(--accent-color) solid clamp(6px, (100vw - 20rem) / 2800 * 32, 14px);
 }
 .body-about section.hero .hero-wrapper .main-hero-text {
   margin-bottom: -2rem;
@@ -1298,7 +1402,7 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-about section.hero .hero-wrapper .main-hero-text h1 {
   display: inline-block;
   background-color: #1F3051;
-  margin-left: calc(-1.5 * (100vw - 20rem) / 2800 * 32);
+  margin-left: calc(-1.5 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
   padding-right: 1rem;
 }
 .body-about section.hero .hero-wrapper .main-hero-text .h1-italic {
@@ -1335,8 +1439,23 @@ footer .contact-wrapper .contact-info ul a:hover {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: repeat(2, 1fr);
-  border: var(--accent-color) solid calc((100vw - 20rem) / 2800 * 32);
-  border-top-right-radius: calc((100vw - 3.6rem) / 1800 * 268);
+  border: var(--accent-color) solid clamp(6px, (100vw - 20rem) / 2800 * 32, 14px);
+  border-top-right-radius: 4rem;
+}
+@media screen and (min-width: 576px) {
+  .body-project .hero .hero-wrapper {
+    border-top-right-radius: 8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .body-project .hero .hero-wrapper {
+    border-top-right-radius: 11rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .body-project .hero .hero-wrapper {
+    border-top-right-radius: 14rem;
+  }
 }
 .body-project .hero .hero-wrapper .main-hero-text {
   margin-bottom: -2rem;
@@ -1346,7 +1465,7 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-project .hero .hero-wrapper .main-hero-text h1 {
   display: inline-block;
   background-color: #1F3051;
-  margin-left: calc(-1.5 * (100vw - 20rem) / 2800 * 32);
+  margin-left: calc(-1.5 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
   padding-right: 1rem;
 }
 .body-project .hero .hero-wrapper .main-hero-text h1 span {
@@ -1487,7 +1606,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   }
 }
 .body-project #persona .persona-desc {
-  border: calc((100vw - 20rem) / 2800 * 32) var(--accent-color) solid;
+  border: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) var(--accent-color) solid;
   padding: 2rem;
 }
 .body-project #persona .persona-desc div {
@@ -1625,8 +1744,18 @@ footer .contact-wrapper .contact-info ul a:hover {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: repeat(2, 1fr);
-  border: var(--accent-color) solid calc((100vw - 20rem) / 2800 * 32);
-  border-top-right-radius: calc((100vw - 3.6rem) / 1800 * 268);
+  border: var(--accent-color) solid clamp(6px, (100vw - 20rem) / 2800 * 32, 14px);
+  border-top-right-radius: 4rem;
+}
+@media screen and (min-width: 992px) {
+  .body-about section.hero .hero-wrapper {
+    border-top-right-radius: 11rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .body-about section.hero .hero-wrapper {
+    border-top-right-radius: 14rem;
+  }
 }
 .body-about section.hero .hero-wrapper .main-hero-text {
   margin-bottom: -2rem;
@@ -1636,7 +1765,7 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-about section.hero .hero-wrapper .main-hero-text h1 {
   display: inline-block;
   background-color: #1F3051;
-  margin-left: calc(-1.5 * (100vw - 20rem) / 2800 * 32);
+  margin-left: calc(-1.5 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
   padding-right: 1rem;
 }
 .body-about section.hero .hero-wrapper .main-hero-text .h1-italic {

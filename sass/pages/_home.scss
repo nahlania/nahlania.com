@@ -13,7 +13,18 @@
                 grid-template-rows: repeat(2,auto);
                 justify-items: center;
                 border: v.$border-thickness solid c.$primary-m;
-                border-top-right-radius: v.$highCurve-radius;
+
+                border-top-right-radius:map-get(v.$curve-radius , xs );
+                @media screen and (min-width: v.$sw-s-m){
+                    border-top-right-radius:map-get(v.$curve-radius , s-m );
+                }
+                @media screen and (min-width: v.$sw-m-l){
+                    border-top-right-radius:map-get(v.$curve-radius , m-l );
+                }
+                @media screen and (min-width: v.$sw-xl){
+                    border-top-right-radius:map-get(v.$curve-radius , xl );
+                }
+
                 margin-bottom: calc(3 * v.$border-thickness);
 
                 .main-hero-graphics{
@@ -130,18 +141,31 @@
                 @media screen and (min-width: v.$sw-m){
                     padding:6rem 6rem 6rem 0;
                 }
-                border-top: v.$border-thickness solid c.$primary-m;
-                border-right: v.$border-thickness solid c.$primary-m;
-                border-top-right-radius: v.$highCurve-radius;
+                border-top: v.$border-thickness solid var(--accent-color);
+                border-right: v.$border-thickness solid var(--accent-color);
+                // border-top: v.$border-thickness solid c.$contrast-m;
+                // border-right: v.$border-thickness solid c.$contrast-m;
+
+                border-top-right-radius:map-get(v.$curve-radius , xs );
+                @media screen and (min-width: v.$sw-s-m){
+                    border-top-right-radius:map-get(v.$curve-radius , s-m );
+                }
+                @media screen and (min-width: v.$sw-m-l){
+                    border-top-right-radius:map-get(v.$curve-radius , m-l );
+                }
+                @media screen and (min-width: v.$sw-xl){
+                    border-top-right-radius:map-get(v.$curve-radius , xl );
+                }
              
                 .proj-img{
                     grid-column: 1/-1;
                     grid-row: 1/2;
-                    background-color: var(--accent-color);
+                    background-color: c.$base-l;
+                        
 
-                    border-top-right-radius: calc(v.$highCurve-radius - 2rem);
                     @media screen and (min-width: v.$sw-m){
                         border-top-right-radius: 0;
+                        border-top-right-radius:calc(map-get(v.$curve-radius , s-m ) - 2rem);
                     }  
 
                 }
@@ -179,16 +203,25 @@
                 @media screen and (min-width: v.$sw-m){
                     padding:6rem 0 6rem 6rem;
                 }
-                border-top: v.$border-thickness solid c.$primary-m;
-                border-left: v.$border-thickness solid c.$primary-m;
-                border-top-left-radius: v.$highCurve-radius;
-             
+                border-top: v.$border-thickness solid var(--accent-color);
+                border-left: v.$border-thickness solid var(--accent-color);
+                // border-top: v.$border-thickness solid c.$base-l;
+                // border-left: v.$border-thickness solid c.$base-l;
+
+                border-top-left-radius:map-get(v.$curve-radius , xs );
+                @media screen and (min-width: v.$sw-s-m){
+                    border-top-left-radius:map-get(v.$curve-radius , s-m );
+                }
+                @media screen and (min-width: v.$sw-m-l){
+                    border-top-left-radius:map-get(v.$curve-radius , m-l );
+                }
+                @media screen and (min-width: v.$sw-xl){
+                    border-top-left-radius:map-get(v.$curve-radius , xl );
+                }             
                 .proj-img{
                     grid-column: 1/-1;
                     grid-row: 1/2;
                     background-color: var(--accent-color);
-
-                    border-top-left-radius: calc(v.$highCurve-radius - 2rem);
                     @media screen and (min-width: v.$sw-m){
                         border-top-left-radius: 0;
                     }  
@@ -282,7 +315,6 @@
                 grid-template-rows: repeat(2,1fr);
 
                 border: var(--accent-color) solid v.$border-thickness;
-                border-top-right-radius: v.$highCurve-radius;
 
                 .main-hero-text{
                     margin-bottom: -2rem;

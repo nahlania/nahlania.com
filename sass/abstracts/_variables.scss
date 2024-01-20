@@ -30,10 +30,12 @@ $sw-xl: 1400px;
 $sw-xxl: 1700px;
 /* Border ================================*/
 
-$highCurve-radius:calc(calc(calc(100vw - 3.6rem) / 1800) * 268);
+$curve-radius:(
+    xs:4rem,
+    s-m:8rem,
+    m-l:11rem,
+    xl:14rem,
+);
 
-$border-thickness: calc(calc(calc(100vw - 20rem) / 2800) * 32);
-// $border-thickness: calc(calc(calc(100vw - 3.6rem) / 1600) * 16);
-
-
+$border-thickness: clamp(6px, calc(calc(calc(100vw - 20rem) / 2800) * 32), 14px);
 

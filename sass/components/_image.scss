@@ -8,50 +8,73 @@
     display: flex;
     align-items: center;
     background-color: var(--accent-color);
-}
-
-// img{
-//     &.sw-xs{
-//         max-width: v.$sw-xs;
-//     }
-//     &.sw-s{
-//         max-width: v.$sw-s;
-//     }
-//     &.sw-sm{
-//         max-width: v.$sw-s-m;
-//     }
-//     &.sw-m{
-//         max-width: v.$sw-m;
-//         max-width: 100%;
-//     }
-
     
-// }
+}
 
 .left-bottom-curved{
-background-color: c.$contrast-m;
-border-bottom-left-radius:v.$highCurve-radius;
-margin: calc(-1 * v.$border-thickness) calc(-1 * v.$border-thickness) v.$border-thickness v.$border-thickness;
-overflow: hidden;
+    background-color: c.$contrast-m;
+    border-bottom-left-radius:map-get(v.$curve-radius , xs );
+    // border-top-right-radius:calc(map-get(v.$curve-radius , xs ) - 2.2rem);
+    @media screen and (min-width: v.$sw-s-m){
+        border-bottom-left-radius:map-get(v.$curve-radius , s-m );
+        // border-top-right-radius:calc(map-get(v.$curve-radius , s-m ) - 2.2rem);
+    }
+    @media screen and (min-width: v.$sw-m-l){
+        border-bottom-left-radius:map-get(v.$curve-radius , m-l );
+        // border-top-right-radius:0;
+    }
+    @media screen and (min-width: v.$sw-xl){
+        border-bottom-left-radius:map-get(v.$curve-radius , xl );
+        border-top-right-radius:0
+    }
+    margin: calc(-1 * v.$border-thickness) calc(-1 * v.$border-thickness) v.$border-thickness v.$border-thickness;
+    overflow: hidden;
 }
 .right-bottom-curved{
-background-color: c.$contrast-m;
-border-bottom-right-radius:v.$highCurve-radius;
-margin: calc(-1 * v.$border-thickness) v.$border-thickness v.$border-thickness calc(-1 * v.$border-thickness);
-overflow: hidden;
+    background-color: c.$contrast-m;
+    border-bottom-right-radius:map-get(v.$curve-radius , xs );
+    @media screen and (min-width: v.$sw-s-m){
+        border-bottom-right-radius:map-get(v.$curve-radius , s-m );
+    }
+    @media screen and (min-width: v.$sw-m-l){
+        border-bottom-right-radius:map-get(v.$curve-radius , m-l );
+    }
+    @media screen and (min-width: v.$sw-xl){
+        border-bottom-right-radius:map-get(v.$curve-radius , xl );
+    }
+    margin: calc(-1 * v.$border-thickness) v.$border-thickness v.$border-thickness calc(-1 * v.$border-thickness);
+    overflow: hidden;
 }
 .left-top-curved{
-background-color: c.$contrast-m;
-border-top-left-radius:v.$highCurve-radius;
-margin: calc(-1 * v.$border-thickness) calc(-1 * v.$border-thickness) v.$border-thickness v.$border-thickness;
-margin: v.$border-thickness  calc(-1 * v.$border-thickness) calc(-1 * v.$border-thickness) v.$border-thickness;
-overflow: hidden;
+    background-color: c.$contrast-m;
+    border-top-left-radius:map-get(v.$curve-radius , xs );
+    @media screen and (min-width: v.$sw-s-m){
+        border-top-left-radius:map-get(v.$curve-radius , s-m );
+    }
+    @media screen and (min-width: v.$sw-m-l){
+        border-top-left-radius:map-get(v.$curve-radius , m-l );
+    }
+    @media screen and (min-width: v.$sw-xl){
+        border-top-left-radius:map-get(v.$curve-radius , xl );
+    }
+    margin: calc(-1 * v.$border-thickness) calc(-1 * v.$border-thickness) v.$border-thickness v.$border-thickness;
+    margin: v.$border-thickness  calc(-1 * v.$border-thickness) calc(-1 * v.$border-thickness) v.$border-thickness;
+    overflow: hidden;
 }
 .right-top-curved{
-background-color: c.$contrast-m;
-border-top-right-radius:v.$highCurve-radius;
-margin: v.$border-thickness v.$border-thickness calc(-1 * v.$border-thickness) calc(-1 * v.$border-thickness);
-overflow: hidden;
+    background-color: c.$contrast-m;
+    border-top-right-radius:map-get(v.$curve-radius , xs );
+    @media screen and (min-width: v.$sw-s-m){
+        border-top-right-radius:map-get(v.$curve-radius , s-m );
+    }
+    @media screen and (min-width: v.$sw-m-l){
+        border-top-right-radius:map-get(v.$curve-radius , m-l );
+    }
+    @media screen and (min-width: v.$sw-xl){
+        border-top-right-radius:map-get(v.$curve-radius , xl );
+    }
+    margin: v.$border-thickness v.$border-thickness calc(-1 * v.$border-thickness) calc(-1 * v.$border-thickness);
+    overflow: hidden;
 }
 
 .framed{

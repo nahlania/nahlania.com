@@ -43,7 +43,17 @@
             grid-template-rows: repeat(2,1fr);
 
             border: var(--accent-color) solid v.$border-thickness;
-            border-top-right-radius: v.$highCurve-radius;
+
+            border-top-right-radius:map-get(v.$curve-radius , xs );
+            @media screen and (min-width: v.$sw-s-m){
+                border-top-right-radius:map-get(v.$curve-radius , s-m );
+            }
+            @media screen and (min-width: v.$sw-m-l){
+                border-top-right-radius:map-get(v.$curve-radius , m-l );
+            }
+            @media screen and (min-width: v.$sw-xl){
+                border-top-right-radius:map-get(v.$curve-radius , xl );
+            }
 
             .main-hero-text{
                 margin-bottom: -2rem;
