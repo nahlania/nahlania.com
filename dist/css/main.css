@@ -1357,58 +1357,6 @@ footer .contact-wrapper .contact-info ul a:hover {
   border-left: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) solid #FF8084;
 }
 
-.body-about section {
-  margin: 0 auto 4rem auto;
-}
-.body-about blockquote {
-  text-align: center;
-  font-size: 20px;
-  font-style: italic;
-  margin-bottom: 1.5rem;
-}
-@media screen and (min-width: 576px) {
-  .body-about #introduction {
-    display: flow-root;
-  }
-}
-.body-about #introduction .my-portrait {
-  display: flex;
-  align-items: center;
-  background-color: var(--accent-color);
-}
-@media screen and (min-width: 576px) {
-  .body-about #introduction .my-portrait {
-    float: right;
-    max-width: 30%;
-  }
-}
-.body-about section.hero {
-  max-width: 992px !important;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.8rem;
-}
-.body-about section.hero .hero-wrapper {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: repeat(2, 1fr);
-  border: var(--accent-color) solid clamp(6px, (100vw - 20rem) / 2800 * 32, 14px);
-}
-.body-about section.hero .hero-wrapper .main-hero-text {
-  margin-bottom: -2rem;
-  grid-column: 1/2;
-  grid-row: 2/-1;
-}
-.body-about section.hero .hero-wrapper .main-hero-text h1 {
-  display: inline-block;
-  background-color: #1F3051;
-  margin-left: calc(-1.5 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
-  padding-right: 1rem;
-}
-.body-about section.hero .hero-wrapper .main-hero-text .h1-italic {
-  color: var(--accent-color);
-}
-
 /* PROJECTS ==============*/
 .LinkedIn-Learning #overview, .SAM-Med #overview {
   display: flex !important;
@@ -1709,38 +1657,26 @@ footer .contact-wrapper .contact-info ul a:hover {
   margin-bottom: 6rem;
 }
 
-.body-about section {
+.photography #overview {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+.photography #overview h2 {
+  display: block;
+}
+
+.body-template section {
   margin: 0 auto 4rem auto;
 }
-.body-about blockquote {
-  text-align: center;
-  font-size: 20px;
-  font-style: italic;
-  margin-bottom: 1.5rem;
-}
-@media screen and (min-width: 576px) {
-  .body-about #introduction {
-    display: flow-root;
-  }
-}
-.body-about #introduction .my-portrait {
-  display: flex;
-  align-items: center;
-  background-color: var(--accent-color);
-}
-@media screen and (min-width: 576px) {
-  .body-about #introduction .my-portrait {
-    float: right;
-    max-width: 30%;
-  }
-}
-.body-about section.hero {
-  max-width: 992px !important;
+.body-template section.hero {
   margin-left: auto;
   margin-right: auto;
-  padding: 1.8rem;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
 }
-.body-about section.hero .hero-wrapper {
+.body-template section.hero .hero-wrapper {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: repeat(2, 1fr);
@@ -1748,26 +1684,50 @@ footer .contact-wrapper .contact-info ul a:hover {
   border-top-right-radius: 4rem;
 }
 @media screen and (min-width: 992px) {
-  .body-about section.hero .hero-wrapper {
+  .body-template section.hero .hero-wrapper {
     border-top-right-radius: 11rem;
   }
 }
 @media screen and (min-width: 1400px) {
-  .body-about section.hero .hero-wrapper {
+  .body-template section.hero .hero-wrapper {
     border-top-right-radius: 14rem;
   }
 }
-.body-about section.hero .hero-wrapper .main-hero-text {
+.body-template section.hero .hero-wrapper .main-hero-text {
   margin-bottom: -2rem;
   grid-column: 1/2;
   grid-row: 2/-1;
 }
-.body-about section.hero .hero-wrapper .main-hero-text h1 {
+.body-template section.hero .hero-wrapper .main-hero-text h1 {
   display: inline-block;
   background-color: #1F3051;
   margin-left: calc(-1.5 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
   padding-right: 1rem;
 }
-.body-about section.hero .hero-wrapper .main-hero-text .h1-italic {
+.body-template section.hero .hero-wrapper .main-hero-text .h1-italic {
   color: var(--accent-color);
+}
+@media screen and (min-width: 576px) {
+  .body-template.about #introduction {
+    display: flow-root;
+  }
+}
+.body-template.about #introduction .my-portrait {
+  display: flex;
+  align-items: center;
+  background-color: var(--accent-color);
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 576px) {
+  .body-template.about #introduction .my-portrait {
+    float: right;
+    max-width: 30%;
+    margin-left: 2rem;
+  }
+}
+.body-template.about blockquote {
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 1.5rem;
 }/*# sourceMappingURL=main.css.map */
