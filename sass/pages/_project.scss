@@ -6,7 +6,7 @@
 /* PROJECTS ==============*/
 
 // temporary
-.LinkedIn-Learning, .SAM-Med, .capa{
+.LinkedIn-Learning, .SAM-Med{
     #overview{
         h2{
             display: block;
@@ -16,6 +16,20 @@
         align-items: center;
         height: 60vh;
     }
+}
+
+.in-progress{
+
+    text-align: center;
+    line-height: 1.5;
+    max-width: v.$sw-m-l !important;
+	margin-left: auto;
+	margin-right: auto;
+    margin-bottom: 4rem;
+	padding: 0 2rem 0 2rem;
+	@media screen and (min-width: calc(v.$sw-m-l + 4rem)){
+		padding: 0;
+	}
 }
 // end of temporary
 

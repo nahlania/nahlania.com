@@ -130,6 +130,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.space-after {
+  padding-bottom: 1.5rem;
+}
+
 p {
   margin-bottom: 0.75rem;
 }
@@ -1358,14 +1362,29 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 
 /* PROJECTS ==============*/
-.LinkedIn-Learning #overview, .SAM-Med #overview, .capa #overview {
+.LinkedIn-Learning #overview, .SAM-Med #overview {
   display: flex !important;
   justify-content: center;
   align-items: center;
   height: 60vh;
 }
-.LinkedIn-Learning #overview h2, .SAM-Med #overview h2, .capa #overview h2 {
+.LinkedIn-Learning #overview h2, .SAM-Med #overview h2 {
   display: block;
+}
+
+.in-progress {
+  text-align: center;
+  line-height: 1.5;
+  max-width: 992px !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  padding: 0 2rem 0 2rem;
+}
+@media screen and (min-width: calc(992px + 4rem)) {
+  .in-progress {
+    padding: 0;
+  }
 }
 
 .body-project section {

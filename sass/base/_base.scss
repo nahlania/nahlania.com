@@ -32,6 +32,10 @@ body {
 	@include m.gradient-radial;
 }
 
+.space-after{
+	padding-bottom: 1.5rem;
+}
+
 p{
 	margin-bottom: .75rem;
 	// padding-top: .75;
