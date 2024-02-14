@@ -40,7 +40,7 @@
                 font-size: 1.2rem;  
                 font-weight: normal; 
                 &:hover{
-                    color: var(--accent-color);
+                    color: var(--accent-color-m);
                     transform: scale(1.1);
                     font-weight: bold;
                 }
@@ -55,7 +55,7 @@
                     position: absolute;
                     width: 8px;
                     height: 40px;
-                    background-color: var(--accent-color);
+                    background-color: var(--accent-color-m);
                     top: 50%;
                     left: 0;
                     transform: translate(-50%, -50%);
@@ -69,7 +69,7 @@
                 font-size: 1rem;
                 color: c.$contrast-d;
                 &:hover{
-                    color: var(--accent-color);
+                    color: var(--accent-color-m);
                     transform: scale(1.1);
                     font-weight: bold;
                 }

@@ -20,14 +20,37 @@ body {
 .bold-text {
     font-weight: t.$fw-bold;
 }
-.inline-link{
-	font-weight: bold;
-	color: var(--accent-color) !important;
-	&:hover{
-		color: c.$contrast-m !important;
-		text-decoration: underline;
+
+a{
+	text-decoration: none;
+	color: c.$primary-m;
+	&:visited {
+		color: c.$contrast-m;
+	}
+
+	&:hover {
+		color: c.$primary-l;
 	}
 }
+
+a.inline-link{
+	text-decoration: underline;		
+	color: var(--accent-color-m) !important;
+	&:visited {
+		color: var(--accent-color-m);
+	}
+
+	&:hover {
+		color: c.$contrast-m;
+	}
+}
+
+.social-media a {
+	text-decoration: none;
+	color: c.$primary-l;
+	font-size: 32px;
+}
+
 .gradient-text{
 	@include m.gradient-radial;
 }
@@ -152,27 +175,13 @@ h4{
 
 
 /* DESIGN ==============*/
-a {
-	text-decoration: none;
-	color: c.$primary-m;
 
-	&:visited {
-		color: c.$contrast-m;
-	}
-
-	&:hover {
-		color: c.$primary-l;
-	}
-}
-
-.social-media a {
-	text-decoration: none;
-	color: c.$primary-l;
-	font-size: 32px;
-}
 
 .colored{
-	color: var(--accent-color);
+	color: var(--accent-color-m);
+}
+.colored-d{
+	color: var(--accent-color-d);
 }
 
 

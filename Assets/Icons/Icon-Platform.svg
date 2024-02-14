@@ -1,48 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
-  <defs>
-    <style>
-      .cls-1, .cls-2 {
-        stroke-width: 0px;
-      }
-
-      .cls-1, .cls-3 {
-        fill: #abb7c9;
-      }
-
-      .cls-4 {
-        fill: #ecf0f6;
-      }
-
-      .cls-4, .cls-5, .cls-3 {
-        stroke: #1f3051;
-        stroke-miterlimit: 10;
-        stroke-width: 2px;
-      }
-
-      .cls-5 {
-        fill: none;
-        stroke-linecap: round;
-      }
-
-      .cls-2 {
-        fill: #1f3051;
-      }
-    </style>
-  </defs>
   <g id="Icon-Platform">
     <g>
-      <rect class="cls-3" x="66.92" y="91.1" width="33.93" height="58.4"/>
-      <polygon class="cls-3" points="104.74 159.43 61.26 159.43 48.6 159.43 50.3 149.5 59.55 149.5 106.45 149.5 115.7 149.5 117.4 159.43 104.74 159.43"/>
-      <rect class="cls-3" x="9.42" y="31.24" width="153.58" height="103.76" rx="2" ry="2"/>
-      <rect class="cls-2" x="13.89" y="35.71" width="144.65" height="94.81" rx="2" ry="2"/>
+      <g>
+        <rect x="67.92" y="94.1" width="31.93" height="56.4" fill="#abb7c9" stroke-width="0"/>
+        <path d="M98.85,95.1v54.4h-29.93v-54.4h29.93M100.85,93.1h-33.93v58.4h33.93v-58.4h0Z" fill="#1f3051" stroke-width="0"/>
+      </g>
+      <g>
+        <polygon points="49.78 158.43 51.15 150.5 114.85 150.5 116.22 158.43 49.78 158.43" fill="#abb7c9" stroke-width="0"/>
+        <path d="M114.01,151.5l1.02,5.93H50.97l1.02-5.93h62.02M115.7,149.5H50.3l-1.71,9.93h68.81l-1.71-9.93h0Z" fill="#1f3051" stroke-width="0"/>
+      </g>
+      <g>
+        <rect x="10.42" y="32.24" width="151.58" height="101.76" rx="1" ry="1" fill="#abb7c9" stroke-width="0"/>
+        <path d="M161,33.24v99.76H11.42V33.24h149.58M161,31.24H11.42c-1.1,0-2,.9-2,2v99.76c0,1.1.9,2,2,2h149.58c1.1,0,2-.9,2-2V33.24c0-1.1-.9-2-2-2h0Z" fill="#1f3051" stroke-width="0"/>
+      </g>
+      <rect x="16.94" y="37.71" width="138.55" height="90.81" rx="2" ry="2" fill="#1f3051" stroke-width="0"/>
     </g>
     <g>
-      <rect class="cls-4" x="141" y="68" width="42.11" height="91.15" rx="2" ry="2"/>
-      <rect class="cls-2" x="143.22" y="75.92" width="37.67" height="70.14" rx="2" ry="2"/>
-      <circle class="cls-2" cx="162.05" cy="152.86" r="4.24"/>
-      <circle class="cls-1" cx="162.05" cy="152.86" r="1.72"/>
-      <line class="cls-5" x1="154.48" y1="72.28" x2="169.63" y2="72.28"/>
+      <g>
+        <rect x="142" y="69" width="40.11" height="89.15" rx="1" ry="1" fill="#ecf0f6" stroke-width="0"/>
+        <path d="M181.11,70v87.15h-38.11v-87.15h38.11M181.11,68h-38.11c-1.1,0-2,.9-2,2v87.15c0,1.1.9,2,2,2h38.11c1.1,0,2-.9,2-2v-87.15c0-1.1-.9-2-2-2h0Z" fill="#1f3051" stroke-width="0"/>
+      </g>
+      <rect x="144.59" y="75.92" width="34.93" height="68.09" rx="2" ry="2" fill="#1f3051" stroke-width="0"/>
+      <g>
+        <path d="M162.05,153.74c-1.78,0-3.24-1.45-3.24-3.24s1.45-3.24,3.24-3.24,3.24,1.45,3.24,3.24-1.45,3.24-3.24,3.24Z" fill="#abb7c9" stroke-width="0"/>
+        <path d="M162.05,148.26c1.23,0,2.24,1,2.24,2.24s-1,2.24-2.24,2.24-2.24-1-2.24-2.24,1-2.24,2.24-2.24M162.05,146.26c-2.34,0-4.24,1.9-4.24,4.24s1.9,4.24,4.24,4.24,4.24-1.9,4.24-4.24-1.9-4.24-4.24-4.24h0Z" fill="#1f3051" stroke-width="0"/>
+      </g>
+      <line x1="154.48" y1="72.28" x2="169.63" y2="72.28" fill="none" stroke="#2a2a2a" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
     </g>
   </g>
 </svg>

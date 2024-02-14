@@ -66,6 +66,12 @@
         }
     }     
 
+    &.all-projects{
+        .proj-img div{
+            overflow: visible;
+        }
+    }            
+
     &.about{
         #introduction{
             @media screen and (min-width: v.$sw-s-m){

@@ -1,8 +1,12 @@
-<svg width="743" height="288" viewBox="0 0 743 288" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="134.748" height="134.748" fill="#FFDBDE"/>
-<rect x="305.429" width="248.835" height="134.748" fill="#FFDBDE"/>
-<rect x="572.229" width="17.9664" height="134.748" fill="#FF8084"/>
-<rect x="608.162" width="134.748" height="134.748" fill="#FFDBDE"/>
-<rect x="144" y="156" width="130" height="132" fill="#FF8084"/>
-<path d="M160 140H292V272C219.098 272 160 212.902 160 140Z" fill="#FFDBDE"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Dark_BG" data-name="Dark BG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 742.91 288">
+  <rect id="Dark_BG-2" data-name="Dark BG" x="-350.93" y="-420.84" width="3532.6" height="1526.69" fill="#1f3051" stroke-width="0"/>
+  <g id="footer-colored">
+    <rect x="0" y="0" width="134.75" height="134.75" fill="#ffdbde" stroke-width="0"/>
+    <rect x="305.43" y="0" width="248.83" height="134.75" fill="#ffdbde" stroke-width="0"/>
+    <rect x="572.23" y="0" width="17.97" height="134.75" fill="#ff8084" stroke-width="0"/>
+    <rect x="608.16" y="0" width="134.75" height="134.75" fill="#ffdbde" stroke-width="0"/>
+    <rect x="144" y="156" width="130" height="132" fill="#ff8084" stroke-width="0"/>
+    <path d="M160,140h132v132c-72.9,0-132-59.1-132-132Z" fill="#ffdbde" stroke-width="0"/>
+  </g>
 </svg>

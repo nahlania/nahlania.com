@@ -114,13 +114,32 @@ body {
   font-weight: 700;
 }
 
-.inline-link {
-  font-weight: bold;
-  color: var(--accent-color) !important;
+a {
+  text-decoration: none;
+  color: #FF8084;
 }
-.inline-link:hover {
-  color: #ABB7C9 !important;
+a:visited {
+  color: #ABB7C9;
+}
+a:hover {
+  color: #FFDBDE;
+}
+
+a.inline-link {
   text-decoration: underline;
+  color: var(--accent-color-m) !important;
+}
+a.inline-link:visited {
+  color: var(--accent-color-m);
+}
+a.inline-link:hover {
+  color: #ABB7C9;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #FFDBDE;
+  font-size: 32px;
 }
 
 .gradient-text {
@@ -254,25 +273,12 @@ h4 {
 }
 
 /* DESIGN ==============*/
-a {
-  text-decoration: none;
-  color: #FF8084;
-}
-a:visited {
-  color: #ABB7C9;
-}
-a:hover {
-  color: #FFDBDE;
-}
-
-.social-media a {
-  text-decoration: none;
-  color: #FFDBDE;
-  font-size: 32px;
-}
-
 .colored {
-  color: var(--accent-color);
+  color: var(--accent-color-m);
+}
+
+.colored-d {
+  color: var(--accent-color-d);
 }
 
 /* LAYOUT ==============*/
@@ -463,14 +469,14 @@ a.ext-link {
   justify-self: end;
   padding: 8px 32px;
   margin-bottom: 8px;
-  background-color: var(--accent-color);
+  background-color: var(--accent-color-m);
   box-shadow: -8px 8px 0 #fff;
   color: #fff;
 }
 a.ext-link:hover {
   background-color: #fff;
-  box-shadow: -8px 8px 0 var(--accent-color);
-  color: var(--accent-color);
+  box-shadow: -8px 8px 0 var(--accent-color-m);
+  color: var(--accent-color-m);
 }
 
 button.round {
@@ -539,7 +545,7 @@ summary:after {
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  color: var(--accent-color);
+  color: var(--accent-color-m);
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f078";
@@ -550,12 +556,12 @@ summary:hover {
 }
 
 details[open] summary {
-  color: var(--accent-color);
+  color: var(--accent-color-m);
 }
 details[open] summary:after {
   content: "\f077";
   margin-left: 2rem;
-  color: var(--accent-color);
+  color: var(--accent-color-m);
 }
 details[open] summary:hover {
   cursor: pointer;
@@ -565,7 +571,7 @@ details[open] summary:hover {
 .img-container {
   display: flex;
   align-items: center;
-  background-color: var(--accent-color);
+  background-color: var(--accent-color-m) !important;
 }
 
 .left-bottom-curved {
@@ -678,7 +684,7 @@ details[open] summary:hover {
   width: 8px;
 }
 .framed ::-webkit-scrollbar-thumb {
-  background-color: var(--accent-color);
+  background-color: var(--accent-color-m);
   border-radius: 16px;
 }
 .framed ::-webkit-scrollbar-track {
@@ -697,7 +703,7 @@ details[open] summary:hover {
 }
 .pagination a {
   font-weight: bold;
-  color: var(--accent-color);
+  color: var(--accent-color-m);
 }
 .pagination a:hover {
   color: #fff;
@@ -996,7 +1002,7 @@ footer .contact-wrapper .contact-info ul {
   justify-content: center;
   gap: 1rem;
 }
-footer .contact-wrapper .contact-info ul li.behance {
+footer .contact-wrapper .contact-info ul li.behance, footer .contact-wrapper .contact-info ul li.instagram {
   display: none;
 }
 footer .contact-wrapper .contact-info ul a {
@@ -1054,7 +1060,7 @@ footer .contact-wrapper .contact-info ul a:hover {
     font-weight: normal;
   }
   .sidebar .sidebar-category a.category-name:hover {
-    color: var(--accent-color);
+    color: var(--accent-color-m);
     transform: scale(1.1);
     font-weight: bold;
   }
@@ -1069,7 +1075,7 @@ footer .contact-wrapper .contact-info ul a:hover {
     position: absolute;
     width: 8px;
     height: 40px;
-    background-color: var(--accent-color);
+    background-color: var(--accent-color-m);
     top: 50%;
     left: 0;
     transform: translate(-50%, -50%);
@@ -1082,7 +1088,7 @@ footer .contact-wrapper .contact-info ul a:hover {
     color: #1F3051;
   }
   .sidebar .category-items a:hover {
-    color: var(--accent-color);
+    color: var(--accent-color-m);
     transform: scale(1.1);
     font-weight: bold;
   }
@@ -1391,7 +1397,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   margin: 0 auto 4rem auto;
 }
 .body-project h2 {
-  color: var(--accent-color);
+  color: var(--accent-color-m);
   margin-bottom: 2rem;
   font-weight: bold;
 }
@@ -1406,7 +1412,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: repeat(2, 1fr);
-  border: var(--accent-color) solid clamp(6px, (100vw - 20rem) / 2800 * 32, 14px);
+  border: var(--accent-color-m) solid clamp(6px, (100vw - 20rem) / 2800 * 32, 14px);
   border-top-right-radius: 4rem;
 }
 @media screen and (min-width: 576px) {
@@ -1457,14 +1463,14 @@ footer .contact-wrapper .contact-info ul a:hover {
   justify-self: end;
   padding: 8px 32px;
   margin-bottom: 8px;
-  background-color: var(--accent-color);
+  background-color: var(--accent-color-m);
   box-shadow: -8px 8px 0 #fff;
   color: #fff;
 }
 .body-project #overview .overview-txt a:hover {
   background-color: #fff;
-  box-shadow: -8px 8px 0 var(--accent-color);
-  color: var(--accent-color);
+  box-shadow: -8px 8px 0 var(--accent-color-m);
+  color: var(--accent-color-m);
 }
 .body-project #overview .overview-img {
   grid-column: 2/-1;
@@ -1536,7 +1542,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   grid-row: 1;
   display: flex;
   align-items: center;
-  background-color: var(--accent-color);
+  background-color: var(--accent-color-m);
 }
 @media screen and (min-width: 768px) {
   .body-project #persona .persona-basicInfo .persona-img {
@@ -1560,7 +1566,7 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-project #persona .persona-basicInfo .persona-quote .quote-mark {
   font-size: 180px;
-  color: var(--accent-color);
+  color: var(--accent-color-m);
   line-height: 0.3 !important;
 }
 .body-project #persona .persona-basicInfo .persona-quote p {
@@ -1573,7 +1579,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   }
 }
 .body-project #persona .persona-desc {
-  border: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) var(--accent-color) solid;
+  border: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) var(--accent-color-m) solid;
   padding: 2rem;
 }
 .body-project #persona .persona-desc div {
@@ -1666,7 +1672,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   gap: 2rem;
 }
 .body-project #design-sys .components > * {
-  border: solid var(--accent-color) 1px;
+  border: solid var(--accent-color-m) 1px;
   padding: 0.5rem;
   -moz-column-break-inside: avoid;
        break-inside: avoid;
@@ -1725,6 +1731,9 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-template section.hero .hero-wrapper .main-hero-text .h1-italic {
   color: var(--accent-color);
+}
+.body-template.all-projects .proj-img div {
+  overflow: visible;
 }
 @media screen and (min-width: 576px) {
   .body-template.about #introduction {

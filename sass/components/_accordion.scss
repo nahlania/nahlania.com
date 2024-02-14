@@ -27,7 +27,7 @@ summary{
         font-variant: normal;
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
-        color: var(--accent-color);
+        color: var(--accent-color-m);
         font-family: "Font Awesome 5 Free"; 
         font-weight: 900; 
         content: '\f078';
@@ -43,10 +43,10 @@ details[open] summary{
     &:after{
         content: "\f077";
         margin-left: 2rem;
-        color: var(--accent-color);
+        color: var(--accent-color-m);
 
     }
-    color: var(--accent-color);   
+    color: var(--accent-color-m);   
     &:hover{
     cursor: pointer;
     } 
