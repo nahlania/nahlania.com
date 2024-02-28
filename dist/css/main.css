@@ -1368,13 +1368,13 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 
 /* PROJECTS ==============*/
-.LinkedIn-Learning #overview, .SAM-Med #overview {
+.LinkedIn-Learning #overview {
   display: flex !important;
   justify-content: center;
   align-items: center;
   height: 60vh;
 }
-.LinkedIn-Learning #overview h2, .SAM-Med #overview h2 {
+.LinkedIn-Learning #overview h2 {
   display: block;
 }
 
