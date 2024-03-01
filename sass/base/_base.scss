@@ -77,14 +77,11 @@ h4 {
 .title{
 	display: block;
 	font-weight: bold;
-	font-size: t.$ratio1*map-get(t.$font-sizes , title );
+	font-size: map-get(t.$font-sizes , title );
 	margin: 2.5rem unset 1.5rem unset;
 
-	@media screen and (min-width: v.$sw-m){
-		font-size: t.$ratio2*map-get(t.$font-sizes , title );
-	}
-
-	.italic{
+	&.italic{
+		font-size: calc(map-get(t.$font-sizes , title ) + 6px);
 		font-weight: normal;
 		font-style: italic;
 	}
@@ -92,18 +89,31 @@ h4 {
 
 h1 {
 	font-size: map-get(t.$font-sizes , h1 );
-	margin-bottom: calc(map-get(t.$font-sizes , h1 )/t.$lh-ratio);
-	
+	margin-bottom: 1.125rem;
+	& .h1-subheading{
+		font-size: calc(map-get(t.$font-sizes , h1 ) / t.$ratio3);		
+	}	
+
 	@media screen and (min-width: v.$sw-s-m){
 		font-size: t.$ratio3*map-get(t.$font-sizes , h1 );
+		margin-bottom: 0.75rem;
+		& .h1-subheading{
+			font-size: calc(t.$ratio3 * map-get(t.$font-sizes , h1 ) / t.$ratio3);		
+		}
 	}
 	@media screen and (min-width: v.$sw-m){
 		font-size: t.$ratio4*map-get(t.$font-sizes , h1 );
+		& .h1-subheading{
+			font-size: calc(t.$ratio4 * map-get(t.$font-sizes , h1 ) / t.$ratio3);		
+		}
 	}
 	@media screen and (min-width: v.$sw-m-l){
 		font-size: t.$ratio5*map-get(t.$font-sizes , h1 );
+		// margin-bottom: 1rem;
+		& .h1-subheading{
+			font-size: calc(t.$ratio5 * map-get(t.$font-sizes , h1 ) / t.$ratio3);		
+		}
 	}
-
 
 	& .h1-italic{
 		font-style: italic;
@@ -115,6 +125,11 @@ h1 {
 		font-style: normal;
 		font-weight:t.$fw-bold ;	
 		color: c.$primary-l;	
+	}
+
+	& .h1-subheading{
+		font-style: italic;
+		font-weight:t.$fw-regular ;		
 	}
 }
 
@@ -144,19 +159,18 @@ h2{
 
 h3{
 	padding-bottom: .75rem;
-	font-size: t.$ratio1*map-get(t.$font-sizes , h3 );
+	font-size: map-get(t.$font-sizes , h3 );
 	margin-bottom: calc(map-get(t.$font-sizes , h3 )/t.$lh-ratio);
 	font-weight: 400;
 	font-style: italic;
 
 	@media screen and (min-width: v.$sw-m){
-		font-size: t.$ratio2*map-get(t.$font-sizes , h3 );
+		font-size: t.$ratio1*map-get(t.$font-sizes , h3 );
 	}
 
 	@media screen and (min-width: v.$sw-l){
-		font-size: t.$ratio4*map-get(t.$font-sizes , h3 );
-	}
-	
+		font-size: t.$ratio3*map-get(t.$font-sizes , h3 );
+	}	
 }
 
 
@@ -168,7 +182,7 @@ h4{
 		font-size: t.$ratio1*map-get(t.$font-sizes , h4 );
 	}
 	@media screen and (min-width: v.$sw-l){
-		font-size: t.$ratio2*map-get(t.$font-sizes , h4 );
+		font-size: t.$ratio3*map-get(t.$font-sizes , h4 );
 	}
 	padding: 1rem 0 .7 0;
 }

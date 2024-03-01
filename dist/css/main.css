@@ -170,36 +170,45 @@ h4 {
 .title {
   display: block;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   margin: 2.5rem unset 1.5rem unset;
 }
-@media screen and (min-width: 768px) {
-  .title {
-    font-size: 21.21px;
-  }
-}
-.title .italic {
+.title.italic {
+  font-size: 26px;
   font-weight: normal;
   font-style: italic;
 }
 
 h1 {
   font-size: 30px;
-  margin-bottom: 7.5px;
+  margin-bottom: 1.125rem;
+}
+h1 .h1-subheading {
+  font-size: 18.5414091471px;
 }
 @media screen and (min-width: 576px) {
   h1 {
     font-size: 48.54px;
+    margin-bottom: 0.75rem;
+  }
+  h1 .h1-subheading {
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 60px;
   }
+  h1 .h1-subheading {
+    font-size: 37.0828182942px;
+  }
 }
 @media screen and (min-width: 992px) {
   h1 {
     font-size: 69px;
+  }
+  h1 .h1-subheading {
+    font-size: 42.6452410383px;
   }
 }
 h1 .h1-italic {
@@ -212,19 +221,23 @@ h1 .h1-bold {
   font-weight: 700;
   color: #FFDBDE;
 }
+h1 .h1-subheading {
+  font-style: italic;
+  font-weight: 400;
+}
 
 h2 {
-  font-size: 30px;
-  margin-bottom: 7.5px;
+  font-size: 28px;
+  margin-bottom: 28px;
 }
 @media screen and (min-width: 768px) {
   h2 {
-    font-size: 42.42px;
+    font-size: 39.592px;
   }
 }
 @media screen and (min-width: 1200px) {
   h2 {
-    font-size: 60px;
+    font-size: 56px;
   }
 }
 h2 .h2-italic {
@@ -240,35 +253,35 @@ h2 .h2-bold {
 
 h3 {
   padding-bottom: 0.75rem;
-  font-size: 19.2px;
-  margin-bottom: 4px;
+  font-size: 22px;
+  margin-bottom: 22px;
   font-weight: 400;
   font-style: italic;
 }
 @media screen and (min-width: 768px) {
   h3 {
-    font-size: 22.624px;
+    font-size: 26.4px;
   }
 }
 @media screen and (min-width: 1200px) {
   h3 {
-    font-size: 32px;
+    font-size: 35.596px;
   }
 }
 
 h4 {
-  font-size: 17px;
-  margin-bottom: 4.25px;
+  font-size: 18px;
+  margin-bottom: 18px;
   padding: 1rem 0 0.7 0;
 }
 @media screen and (min-width: 768px) {
   h4 {
-    font-size: 20.4px;
+    font-size: 21.6px;
   }
 }
 @media screen and (min-width: 1200px) {
   h4 {
-    font-size: 24.038px;
+    font-size: 29.124px;
   }
 }
 
@@ -798,7 +811,7 @@ header .menu-container .menu-contact {
 }
 
 .body-home main {
-  padding: 1.8rem;
+  padding: 1rem;
   max-width: 992px;
   margin: 1rem auto;
 }

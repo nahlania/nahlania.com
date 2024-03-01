@@ -11,14 +11,15 @@ $ratio3:1.618;
 $ratio4:2;
 $ratio5:2.3;
 $ratio6:3;
+$ratio7:5;
 
 
 $font-sizes:(
     h1: 30px,
-    h2: 30px,
-    h3: 16px,
-    h4: 17px,
-    title: 15px,
+    h2: 28px,
+    h3: 22px,
+    h4: 18px,
+    title: 20px,
     p: $base-size,
 );
 
@@ -29,4 +30,4 @@ $fw-bold: 700;
 $fw-regular: 400;
 $fw-light: 300;
 
-$lh-ratio: 4;
+$lh-ratio: 1;

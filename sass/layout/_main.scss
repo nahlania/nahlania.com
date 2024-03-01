@@ -2,7 +2,7 @@
 @use '../abstracts/variables' as v;
 
 .body-home main{  
-    padding: v.$TB-marg-pad-m;
+    padding: v.$TB-marg-pad-s;
     max-width: v.$sw-m-l;
     margin: 1rem auto;
 }
