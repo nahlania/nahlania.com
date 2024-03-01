@@ -150,11 +150,11 @@ a.inline-link:hover {
 }
 
 .space-after {
-  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 p {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
 }
 
 h1,
@@ -254,7 +254,6 @@ h2 .h2-bold {
 h3 {
   padding-bottom: 0.75rem;
   font-size: 22px;
-  margin-bottom: 22px;
   font-weight: 400;
   font-style: italic;
 }
@@ -270,6 +269,7 @@ h3 {
 }
 
 h4 {
+  padding-bottom: 0.75rem;
   font-size: 18px;
   margin-bottom: 18px;
   padding: 1rem 0 0.7 0;
@@ -312,7 +312,7 @@ ol.two-column {
   padding-left: 2rem;
 }
 .list-style li {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .ordered-list-style {
@@ -550,7 +550,7 @@ details .info {
 
 summary {
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 summary:after {
   display: inline-block;
