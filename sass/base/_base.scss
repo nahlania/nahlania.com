@@ -229,7 +229,7 @@ ol.two-column{
 	max-width: v.$sw-m-l !important;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0 2rem 0 2rem;
+	padding: 0 1rem 0 1rem;
 	@media screen and (min-width: calc(v.$sw-m-l + 4rem)){
 		padding: 0;
 	}

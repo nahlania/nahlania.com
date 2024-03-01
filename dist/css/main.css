@@ -327,7 +327,7 @@ ol.two-column {
   max-width: 992px !important;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 2rem 0 2rem;
+  padding: 0 1rem 0 1rem;
 }
 @media screen and (min-width: calc(992px + 4rem)) {
   .max-width {
@@ -1128,7 +1128,7 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-home main .hero .hero-graphics-wrapper {
   display: grid;
   grid-template-rows: repeat(2, auto);
-  justify-items: center;
+  justify-items: end;
   border: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) solid #FF8084;
   border-top-right-radius: 4rem;
   margin-bottom: calc(3 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
@@ -1149,30 +1149,24 @@ footer .contact-wrapper .contact-info ul a:hover {
   }
 }
 .body-home main .hero .hero-graphics-wrapper .main-hero-graphics {
-  width: 75%;
-  padding-top: 1rem;
+  width: 60%;
+  overflow: hidden;
 }
 @media screen and (min-width: 576px) {
   .body-home main .hero .hero-graphics-wrapper .main-hero-graphics {
     align-self: self-start;
-    justify-self: self-start;
-    width: 60%;
-    padding-top: 0;
-    background-color: #1F3051;
-    margin-left: calc(-1.5 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
-    margin-top: calc(-1.5 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
-    padding-right: calc(2 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
-    padding-bottom: calc(2 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
+    justify-self: self-end;
+    width: 67%;
   }
 }
 .body-home main .hero .main-hero-text {
   margin-bottom: calc(-4 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
-  margin-right: calc(-1 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
+  margin-left: calc(-1 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
   grid-row: 2;
-  justify-self: self-end;
+  justify-self: self-start;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  align-items: end;
+  align-items: start;
 }
 @media screen and (min-width: 576px) {
   .body-home main .hero .main-hero-text {
@@ -1180,26 +1174,26 @@ footer .contact-wrapper .contact-info ul a:hover {
   }
 }
 .body-home main .hero .main-hero-text h1 {
-  text-align: right;
+  text-align: left;
   display: inline-block;
-  grid-column: 4/-1;
+  grid-column: 1/-1;
   background-color: #1F3051;
-  padding-top: calc(2 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
-  padding-left: calc(2 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
+  padding-right: calc(2 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
 }
 .body-home main .hero .main-hero-text h1 .h1-italic {
   color: var(--accent-color);
 }
 .body-home main .hero .main-hero-desc {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 1fr;
 }
 .body-home main .hero .main-hero-desc p {
   grid-column: 1/-1;
+  text-align: justify;
 }
 @media screen and (min-width: 576px) {
   .body-home main .hero .main-hero-desc p {
-    grid-column: 2/-1;
+    grid-column: 1/2;
   }
 }
 .body-home main .feat-projects {
@@ -1212,6 +1206,9 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-home main .feat-projects h3:hover {
   color: #ABB7C9 !important;
+}
+.body-home main .feat-projects .proj-subheading.title {
+  color: #FF8084;
 }
 @media screen and (min-width: 768px) {
   .body-home main .feat-projects h2 {
@@ -1239,6 +1236,9 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-home main .feat-projects section:hover .BW-img {
   filter: grayscale(0%);
+}
+.body-home main .feat-projects section:hover .proj-subheading.title {
+  color: #fff;
 }
 .body-home main .feat-projects section .see-more img {
   width: 5rem;
@@ -1378,6 +1378,12 @@ footer .contact-wrapper .contact-info ul a:hover {
   padding: 6rem 0 0 1rem;
   border-top: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) solid #FF8084;
   border-left: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) solid #FF8084;
+}
+.body-home main .feat-projects .more-proj h3 a {
+  color: #FFDBDE !important;
+}
+.body-home main .feat-projects .more-proj h3 a:hover {
+  color: #ABB7C9 !important;
 }
 
 /* PROJECTS ==============*/
