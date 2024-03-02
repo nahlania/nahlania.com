@@ -7,6 +7,7 @@
 
 .body-home{
     main{
+      
         .hero{
             .hero-graphics-wrapper{
                 display: grid;
@@ -91,7 +92,10 @@
             padding: calc(3*v.$border-thickness) 0;
             margin: 4rem 0 calc(17*v.$border-thickness) 0;
 
-            @media screen and (min-width: v.$sw-m){
+            @media screen and (min-width: v.$sw-s-m){
+                max-width: 450px;
+                overflow: hidden;
+                margin: 0 auto !important;
                 h2{
                     position: absolute;
                     top: .5rem;
@@ -101,6 +105,9 @@
                     padding-right: 1rem;
                     padding-bottom: 1rem;
                 }                
+            }
+            @media screen and (min-width: v.$sw-m){
+                max-width: unset;
             }
 
             section{
@@ -140,12 +147,13 @@
             .feat-proj1, .feat-proj3{
                 padding:2rem 2rem 2rem 0;
                 @media screen and (min-width: v.$sw-m){
+                    padding:4rem 2rem 4rem 0;
+                }
+                @media screen and (min-width: v.$sw-m-l){
                     padding:6rem 6rem 6rem 0;
                 }
                 border-top: v.$border-thickness solid var(--accent-color);
                 border-right: v.$border-thickness solid var(--accent-color);
-                // border-top: v.$border-thickness solid c.$contrast-m;
-                // border-right: v.$border-thickness solid c.$contrast-m;
 
                 border-top-right-radius:map-get(v.$curve-radius , xs );
                 @media screen and (min-width: v.$sw-s-m){
@@ -202,6 +210,9 @@
             .feat-proj2{
                 padding:2rem 0 2rem 2rem;
                 @media screen and (min-width: v.$sw-m){
+                    padding:4rem 0 4rem 2rem;
+                }
+                @media screen and (min-width: v.$sw-m-l){
                     padding:6rem 0 6rem 6rem;
                 }
                 border-top: v.$border-thickness solid var(--accent-color);
@@ -275,6 +286,10 @@
                 }
             }
         }
-
+        @media screen and (min-width: v.$sw-s-m){
+            .hero, .feat-projects{
+                margin-bottom: 4rem !important;
+            }
+        }  
     }
 }

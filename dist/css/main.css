@@ -150,7 +150,7 @@ a.inline-link:hover {
 }
 
 .space-after {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 p {
@@ -309,7 +309,7 @@ ol.two-column {
 
 .list-style {
   list-style: disc;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 .list-style li {
   margin-bottom: 0.5rem;
@@ -1210,7 +1210,12 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-home main .feat-projects .proj-subheading.title {
   color: #FF8084;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
+  .body-home main .feat-projects {
+    max-width: 450px;
+    overflow: hidden;
+    margin: 0 auto !important;
+  }
   .body-home main .feat-projects h2 {
     position: absolute;
     top: 0.5rem;
@@ -1219,6 +1224,11 @@ footer .contact-wrapper .contact-info ul a:hover {
     background-color: #1F3051;
     padding-right: 1rem;
     padding-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .body-home main .feat-projects {
+    max-width: unset;
   }
 }
 .body-home main .feat-projects section {
@@ -1253,6 +1263,11 @@ footer .contact-wrapper .contact-info ul a:hover {
   border-top-right-radius: 4rem;
 }
 @media screen and (min-width: 768px) {
+  .body-home main .feat-projects .feat-proj1, .body-home main .feat-projects .feat-proj3 {
+    padding: 4rem 2rem 4rem 0;
+  }
+}
+@media screen and (min-width: 992px) {
   .body-home main .feat-projects .feat-proj1, .body-home main .feat-projects .feat-proj3 {
     padding: 6rem 6rem 6rem 0;
   }
@@ -1315,6 +1330,11 @@ footer .contact-wrapper .contact-info ul a:hover {
   border-top-left-radius: 4rem;
 }
 @media screen and (min-width: 768px) {
+  .body-home main .feat-projects .feat-proj2 {
+    padding: 4rem 0 4rem 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
   .body-home main .feat-projects .feat-proj2 {
     padding: 6rem 0 6rem 6rem;
   }
@@ -1384,6 +1404,11 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-home main .feat-projects .more-proj h3 a:hover {
   color: #ABB7C9 !important;
+}
+@media screen and (min-width: 576px) {
+  .body-home main .hero, .body-home main .feat-projects {
+    margin-bottom: 4rem !important;
+  }
 }
 
 /* PROJECTS ==============*/
@@ -1599,10 +1624,7 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-project #persona .persona-desc {
   border: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) var(--accent-color-m) solid;
-  padding: 2rem;
-}
-.body-project #persona .persona-desc div {
-  margin-bottom: 3rem;
+  padding: 1rem;
 }
 .body-project #persona .persona-desc .applications ul {
   display: flex;
