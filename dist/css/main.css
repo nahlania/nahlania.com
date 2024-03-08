@@ -128,6 +128,9 @@ a:hover {
 a.inline-link {
   text-decoration: underline;
   color: var(--accent-color-m) !important;
+  box-shadow: none !important;
+  background-color: unset !important;
+  padding: unset !important;
 }
 a.inline-link:visited {
   color: var(--accent-color-m);
@@ -315,11 +318,19 @@ ol.two-column {
   margin-bottom: 0.5rem;
 }
 
-.ordered-list-style {
+.ordered-list-style-2-digits {
   list-style: decimal-leading-zero;
   padding-left: 2rem;
 }
-.ordered-list-style li {
+.ordered-list-style-2-digits li {
+  margin-bottom: 1rem;
+}
+
+.ordered-list-style-1-digit {
+  list-style: decimal;
+  padding-left: 2rem;
+}
+.ordered-list-style-1-digit li {
   margin-bottom: 1rem;
 }
 

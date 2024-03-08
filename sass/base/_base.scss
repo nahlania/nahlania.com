@@ -36,6 +36,9 @@ a{
 a.inline-link{
 	text-decoration: underline;		
 	color: var(--accent-color-m) !important;
+	box-shadow: none !important;
+	background-color: unset !important;
+	padding: unset !important;
 	&:visited {
 		color: var(--accent-color-m);
 	}
@@ -217,8 +220,16 @@ ol.two-column{
 	}
 }
 
-.ordered-list-style{
+.ordered-list-style-2-digits{
 	list-style: decimal-leading-zero;
+	padding-left: 2rem;
+	li{
+		margin-bottom: 1rem;          
+	}
+}
+
+.ordered-list-style-1-digit{
+	list-style:decimal;
 	padding-left: 2rem;
 	li{
 		margin-bottom: 1rem;          
