@@ -114,6 +114,10 @@ body {
   font-weight: 700;
 }
 
+.caption {
+  font-size: calc(1.125rem - 3px);
+}
+
 a {
   text-decoration: none;
   color: #FF8084;
@@ -156,8 +160,16 @@ a.inline-link:hover {
   margin-bottom: 2.5rem;
 }
 
+.two-space-after {
+  margin-bottom: 4rem;
+}
+
 p {
   margin-bottom: 1.5rem;
+}
+
+p.remove-space-after {
+  margin-bottom: 0;
 }
 
 h1,
@@ -688,6 +700,13 @@ details[open] summary:hover {
   }
 }
 
+.figure {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .framed {
   padding: 1rem;
   border: 4px #fff solid;
@@ -697,9 +716,29 @@ details[open] summary:hover {
   border-radius: 1rem;
 }
 .framed .v-scrollable {
-  max-height: 50vh;
   overflow: hidden;
   overflow-y: scroll;
+}
+@media (orientation: portrait) {
+  .framed.desktop .v-scrollable {
+    max-height: 35vh;
+  }
+}
+@media (orientation: landscape) {
+  .framed.desktop .v-scrollable {
+    max-height: 50vh;
+  }
+}
+@media (orientation: portrait) {
+  .framed.mobile .v-scrollable {
+    max-height: 85vh;
+    min-height: 70vh;
+  }
+}
+@media (orientation: landscape) {
+  .framed.mobile .v-scrollable {
+    max-height: 50vh;
+  }
 }
 .framed.tall .v-scrollable {
   max-height: 75vh;

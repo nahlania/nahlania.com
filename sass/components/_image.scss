@@ -77,6 +77,14 @@
     overflow: hidden;
 }
 
+
+.figure{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: .5rem;
+}
+
 .framed{
     padding: 1rem;
     border: 4px #fff solid;
@@ -86,14 +94,32 @@
         border-radius: 1rem;        
     }
     .v-scrollable{     
-        max-height: 50vh;
         overflow: hidden;
         overflow-y: scroll;
     }
+    &.desktop .v-scrollable{
+        @media (orientation: portrait){
+            max-height: 35vh;
+        }        
+        @media (orientation: landscape){
+            max-height: 50vh;
+        }        
+    }
+    &.mobile .v-scrollable{
+        @media (orientation: portrait){
+            max-height: 85vh;
+            min-height: 70vh;
+        }        
+        @media (orientation: landscape){
+            max-height: 50vh;
+        }        
+    }
+
     &.tall .v-scrollable{
         max-height: 75vh;
     } 
 
+    
     ::-webkit-scrollbar{
         width: 8px;
     }

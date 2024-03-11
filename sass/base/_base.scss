@@ -21,6 +21,10 @@ body {
     font-weight: t.$fw-bold;
 }
 
+.caption{
+	font-size: calc(map-get(t.$font-sizes , p ) - 3px);
+}
+
 a{
 	text-decoration: none;
 	color: c.$primary-m;
@@ -61,9 +65,16 @@ a.inline-link{
 .space-after{
 	margin-bottom: 2.5rem;
 }
+.two-space-after{
+	margin-bottom: 4rem;
+}
 
 p{
 	margin-bottom: 1.5rem;
+}
+
+p.remove-space-after{
+	margin-bottom: 0;
 }
 
 h1,
