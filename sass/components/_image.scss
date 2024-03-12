@@ -133,6 +133,13 @@
     }
 }
 
+li img{
+    margin: .5rem auto 0 auto;
+    @media screen and (min-width: v.$sw-m){
+        max-width: 50%;
+    }
+    
+}
 // section:has(.zoomedIn){
 //     background-color: red;
 

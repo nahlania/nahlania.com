@@ -325,11 +325,11 @@
         }     
     }
 
-    #user-flow, #wireframe{
+    #user-flow, #wireframe, #mockup{
         display: grid;
         grid-gap: 1rem;
 
-        .wireframe2, .wireframe3, .wireframe4{
+        .wireframe2, .wireframe3, .wireframe4, .mockup2, .mockup3, .mockup4{
             margin-top: 3rem;
         }
     }

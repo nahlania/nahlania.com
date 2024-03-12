@@ -755,6 +755,15 @@ details[open] summary:hover {
   border-radius: 16px;
 }
 
+li img {
+  margin: 0.5rem auto 0 auto;
+}
+@media screen and (min-width: 768px) {
+  li img {
+    max-width: 50%;
+  }
+}
+
 /* Pagination =================== */
 .pagination {
   display: flex;
@@ -1729,11 +1738,11 @@ footer .contact-wrapper .contact-info ul a:hover {
   font-weight: bold;
   font-style: normal;
 }
-.body-project #user-flow, .body-project #wireframe {
+.body-project #user-flow, .body-project #wireframe, .body-project #mockup {
   display: grid;
   grid-gap: 1rem;
 }
-.body-project #user-flow .wireframe2, .body-project #user-flow .wireframe3, .body-project #user-flow .wireframe4, .body-project #wireframe .wireframe2, .body-project #wireframe .wireframe3, .body-project #wireframe .wireframe4 {
+.body-project #user-flow .wireframe2, .body-project #user-flow .wireframe3, .body-project #user-flow .wireframe4, .body-project #user-flow .mockup2, .body-project #user-flow .mockup3, .body-project #user-flow .mockup4, .body-project #wireframe .wireframe2, .body-project #wireframe .wireframe3, .body-project #wireframe .wireframe4, .body-project #wireframe .mockup2, .body-project #wireframe .mockup3, .body-project #wireframe .mockup4, .body-project #mockup .wireframe2, .body-project #mockup .wireframe3, .body-project #mockup .wireframe4, .body-project #mockup .mockup2, .body-project #mockup .mockup3, .body-project #mockup .mockup4 {
   margin-top: 3rem;
 }
 .body-project #style-guide {
