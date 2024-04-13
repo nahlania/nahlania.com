@@ -499,6 +499,18 @@ html {
   scroll-behavior: smooth;
 }
 
+.feat-projects .projects section:hover a, .all-projects .projects section:hover a {
+  color: #FFDBDE !important;
+  text-decoration: underline !important;
+}
+.feat-projects .projects section:hover a div img, .all-projects .projects section:hover a div img {
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+}
+.feat-projects .projects section:not(hover) a div img, .all-projects .projects section:not(hover) a div img {
+  transition: all 0.5s ease-in-out;
+}
+
 /* BUTTONS=================== */
 a.ext-link {
   font-weight: normal;
@@ -604,10 +616,14 @@ details[open] summary:hover {
 }
 
 /* Images and frames =================== */
+.BW-img {
+  filter: grayscale(100%);
+}
+
 .img-container {
   display: flex;
   align-items: center;
-  background-color: var(--accent-color-m) !important;
+  background-color: #fff !important;
 }
 
 .left-bottom-curved {
@@ -1245,6 +1261,7 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-home main .hero .main-hero-desc {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  align-items: center;
 }
 .body-home main .hero .main-hero-desc p {
   grid-column: 1/-1;
@@ -1260,14 +1277,8 @@ footer .contact-wrapper .contact-info ul a:hover {
   padding: calc(3 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px)) 0;
   margin: 4rem 0 calc(17 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px)) 0;
 }
-.body-home main .feat-projects h3 {
-  color: #fff !important;
-}
-.body-home main .feat-projects h3:hover {
-  color: #ABB7C9 !important;
-}
 .body-home main .feat-projects .proj-subheading.title {
-  color: #FF8084;
+  color: #fff;
 }
 @media screen and (min-width: 576px) {
   .body-home main .feat-projects {
@@ -1296,21 +1307,6 @@ footer .contact-wrapper .contact-info ul a:hover {
   grid-template-rows: 1fr auto;
   grid-gap: 2rem;
   align-items: center;
-}
-.body-home main .feat-projects section .BW-img {
-  filter: grayscale(100%);
-}
-.body-home main .feat-projects section:hover .proj-img {
-  background-color: #fff;
-}
-.body-home main .feat-projects section:hover .BW-img {
-  filter: grayscale(0%);
-}
-.body-home main .feat-projects section:hover .proj-subheading.title {
-  color: #fff;
-}
-.body-home main .feat-projects section .see-more img {
-  width: 5rem;
 }
 .body-home main .feat-projects section .proj-img div {
   overflow: visible;
@@ -1411,16 +1407,6 @@ footer .contact-wrapper .contact-info ul a:hover {
 @media screen and (min-width: 1400px) {
   .body-home main .feat-projects .feat-proj2 {
     border-top-left-radius: 14rem;
-  }
-}
-.body-home main .feat-projects .feat-proj2 .proj-img {
-  grid-column: 1/-1;
-  grid-row: 1/2;
-  background-color: var(--accent-color);
-}
-@media screen and (min-width: 768px) {
-  .body-home main .feat-projects .feat-proj2 .proj-img {
-    border-top-left-radius: 0;
   }
 }
 .body-home main .feat-projects .feat-proj2 .proj-info {

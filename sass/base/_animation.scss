@@ -11,6 +11,31 @@ html{
 	scroll-behavior: smooth;
 }
 
+.feat-projects, .all-projects{
+    .projects section:hover{
+        & a {
+            color: c.$primary-l !important;
+			text-decoration: underline !important;
+        }
+        & a div img{
+            transform: scale(1.05);
+            transition:all .5s ease-in-out;
+        }
+	}
+    .projects section:not(hover){
+        & a div img{
+            transition:all .5s ease-in-out;
+        }
+	}
+}
+
+
+
+
+
+
+
+
 @mixin animationPulse($tm:1s , $sc:1.2){
 	animation: pulse $tm ease-in-out infinite;
     @keyframes pulse {

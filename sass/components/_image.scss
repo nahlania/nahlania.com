@@ -4,11 +4,14 @@
 @use '../abstracts/variables' as v;
 
 /* Images and frames =================== */
+.BW-img{
+    filter: grayscale(100%);
+}
+
 .img-container{
     display: flex;
     align-items: center;
-    background-color: var(--accent-color-m) !important;
-    
+    background-color: c.$base-l !important;  
 }
 
 .left-bottom-curved{
