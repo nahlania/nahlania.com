@@ -11,8 +11,8 @@ html{
 	scroll-behavior: smooth;
 }
 
-.feat-projects, .all-projects{
-    .projects section:hover{
+.body-home, .all-projects{
+    .feat-projects section:hover, .projects section:hover{
         & a {
             color: c.$primary-l !important;
 			text-decoration: underline !important;
@@ -22,7 +22,7 @@ html{
             transition:all .5s ease-in-out;
         }
 	}
-    .projects section:not(hover){
+    .feat-projects section:not(hover), .projects section:not(hover){
         & a div img{
             transition:all .5s ease-in-out;
         }
