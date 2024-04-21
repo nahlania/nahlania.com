@@ -214,6 +214,15 @@ h4{
 
 
 /* LAYOUT ==============*/
+.free-space{
+	@media (orientation: landscape) {
+		height: 7rem;
+	}
+	@media (orientation: portrait) {
+		height: 3.5rem;
+	}
+}
+
 .two-column{
 	columns: 300px 2;
 	column-gap: 2.5rem;

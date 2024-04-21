@@ -310,6 +310,17 @@ h4 {
 }
 
 /* LAYOUT ==============*/
+@media (orientation: landscape) {
+  .free-space {
+    height: 7rem;
+  }
+}
+@media (orientation: portrait) {
+  .free-space {
+    height: 3.5rem;
+  }
+}
+
 .two-column {
   -moz-columns: 300px 2;
        columns: 300px 2;
@@ -505,15 +516,15 @@ html {
   scroll-behavior: smooth;
 }
 
-.body-home .feat-projects section:hover a, .body-home .projects section:hover a, .all-projects .feat-projects section:hover a, .all-projects .projects section:hover a {
+.body-home .feat-projects section:hover a, .body-home .projects section:hover a, .body-home .digital-media-projects div:hover a, .all-projects .feat-projects section:hover a, .all-projects .projects section:hover a, .all-projects .digital-media-projects div:hover a {
   color: #FFDBDE !important;
   text-decoration: underline !important;
 }
-.body-home .feat-projects section:hover a div img, .body-home .projects section:hover a div img, .all-projects .feat-projects section:hover a div img, .all-projects .projects section:hover a div img {
+.body-home .feat-projects section:hover a div img, .body-home .projects section:hover a div img, .body-home .digital-media-projects div:hover a div img, .all-projects .feat-projects section:hover a div img, .all-projects .projects section:hover a div img, .all-projects .digital-media-projects div:hover a div img {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
-.body-home .feat-projects section:not(hover) a div img, .body-home .projects section:not(hover) a div img, .all-projects .feat-projects section:not(hover) a div img, .all-projects .projects section:not(hover) a div img {
+.body-home .feat-projects section:not(hover) a div img, .body-home .projects section:not(hover) a div img, .body-home .digital-media-projects div:not(hover) a div img, .all-projects .feat-projects section:not(hover) a div img, .all-projects .projects section:not(hover) a div img, .all-projects .digital-media-projects div:not(hover) a div img {
   transition: all 0.3s ease-in-out;
 }
 
@@ -1270,6 +1281,11 @@ footer .contact-wrapper .contact-info ul a:hover {
   background: #fff;
 }
 
+@media screen and (min-width: 576px) {
+  .body-home main .hero, .body-home main .feat-projects {
+    margin-bottom: 4rem !important;
+  }
+}
 .body-home main .hero .hero-graphics-wrapper {
   display: grid;
   grid-template-rows: repeat(2, auto);
@@ -1520,10 +1536,70 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-home main .feat-projects .more-proj h3 a:hover {
   color: #ABB7C9 !important;
 }
-@media screen and (min-width: 576px) {
-  .body-home main .hero, .body-home main .feat-projects {
-    margin-bottom: 4rem !important;
+.body-home main .digital-media {
+  border-top: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) solid var(--accent-color);
+  padding: 2rem 0rem 2rem 0;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .body-home main .digital-media {
+    padding: 2.5rem 0rem 2.5rem 0;
   }
+}
+@media screen and (min-width: 992px) {
+  .body-home main .digital-media {
+    padding: 3.5rem 0rem 3.5rem 0;
+  }
+}
+.body-home main .digital-media h2 {
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  display: inline-block;
+  background-color: #1F3051;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  z-index: 10;
+}
+.body-home main .digital-media .digital-media-projects {
+  margin-top: 3.5rem;
+  width: 992px;
+}
+.body-home main .digital-media .digital-media-projects {
+  display: grid;
+  grid-gap: calc(4 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+.body-home main .digital-media .digital-media-projects .img-container {
+  background-color: #ABB7C9 !important;
+}
+.body-home main .digital-media .digital-media-projects div {
+  background-color: #fff;
+}
+.body-home main .digital-media .digital-media-projects a {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.body-home main .digital-media .digital-media-projects a div, .body-home main .digital-media .digital-media-projects a span {
+  text-align: center;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+.body-home main .digital-media .digital-media-projects a .digital-media-project-title {
+  display: none;
+}
+.body-home main .digital-media .digital-media-projects div:has(h3) {
+  background-color: transparent;
+  align-self: center;
+}
+.body-home main .digital-media .digital-media-projects div:has(h3) a {
+  color: #FFDBDE !important;
+  text-decoration: none !important;
+}
+.body-home main .digital-media .digital-media-projects div:has(h3) a:hover {
+  color: #ABB7C9 !important;
 }
 
 /* PROJECTS ==============*/
@@ -1879,31 +1955,20 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-template section.hero .hero-wrapper .main-hero-text .h1-italic {
   color: var(--accent-color);
 }
-@media (orientation: landscape) {
-  .body-template.digital-media .projects {
-    margin: 5rem 0 15rem 0;
-  }
-}
-@media (orientation: portrait) {
-  .body-template.digital-media .projects {
-    margin: 3rem 0 10rem 0;
-  }
-}
 .body-template.digital-media .projects .mediaProject {
   display: flex;
+  padding-top: 1.5rem;
 }
 @media (orientation: landscape) {
   .body-template.digital-media .projects .mediaProject {
     flex-flow: column;
     justify-content: end;
-    padding-top: 8rem;
   }
 }
 @media (orientation: portrait) {
   .body-template.digital-media .projects .mediaProject {
     flex-flow: column-reverse;
     justify-content: center;
-    margin-bottom: 3rem;
   }
 }
 .body-template.digital-media .projects .mediaProject div {

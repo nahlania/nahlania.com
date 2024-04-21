@@ -12,7 +12,7 @@ html{
 }
 
 .body-home, .all-projects{
-    .feat-projects section:hover, .projects section:hover{
+    .feat-projects section:hover, .projects section:hover, .digital-media-projects div:hover{
         & a {
             color: c.$primary-l !important;
 			text-decoration: underline !important;
@@ -22,7 +22,7 @@ html{
             transition:all .3s ease-in-out;
         }
 	}
-    .feat-projects section:not(hover), .projects section:not(hover){
+    .feat-projects section:not(hover), .projects section:not(hover), .digital-media-projects div:not(hover){
         & a div img{
             transition:all .3s ease-in-out;
         }

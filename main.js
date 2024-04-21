@@ -67,36 +67,36 @@ sections.forEach(section => {
 
 
 //scroll break
-document.addEventListener('DOMContentLoaded', function () {
-    const mediaProjects = document.querySelectorAll('.mediaProject');
+// document.addEventListener('DOMContentLoaded', function () {
+//     const mediaProjects = document.querySelectorAll('.mediaProject');
 
-    function scrollToElement(element) {
-        element.scrollIntoView({
-            behavior: 'auto'
-        });
-    }
+//     function scrollToElement(element) {
+//         element.scrollIntoView({
+//             behavior: 'auto'
+//         });
+//     }
 
-    mediaProjects.forEach(project => {
-        project.addEventListener('click', function () {
-            scrollToElement(project);
-        });
-    });
+//     mediaProjects.forEach(project => {
+//         project.addEventListener('click', function () {
+//             scrollToElement(project);
+//         });
+//     });
 
-    function findCurrentProject() {
-        let currentProject = null;
-        mediaProjects.forEach(project => {
-            const rect = project.getBoundingClientRect();
-            if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-                currentProject = project;
-            }
-        });
-        return currentProject;
-    }
+//     function findCurrentProject() {
+//         let currentProject = null;
+//         mediaProjects.forEach(project => {
+//             const rect = project.getBoundingClientRect();
+//             if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+//                 currentProject = project;
+//             }
+//         });
+//         return currentProject;
+//     }
 
-    window.addEventListener('scroll', function () {
-        const currentProject = findCurrentProject();
-        if (currentProject) {
-            scrollToElement(currentProject);
-        }
-    });
-});
+//     window.addEventListener('scroll', function () {
+//         const currentProject = findCurrentProject();
+//         if (currentProject) {
+//             scrollToElement(currentProject);
+//         }
+//     });
+// });

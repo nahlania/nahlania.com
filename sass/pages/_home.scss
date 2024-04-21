@@ -7,7 +7,11 @@
 
 .body-home{
     main{
-      
+        @media screen and (min-width: v.$sw-s-m){
+            .hero, .feat-projects{
+                margin-bottom: 4rem !important;
+            }
+        }       
         .hero{
             .hero-graphics-wrapper{
                 display: grid;
@@ -259,11 +263,73 @@
                 }
             }
         }
-        @media screen and (min-width: v.$sw-s-m){
-            .hero, .feat-projects{
-                margin-bottom: 4rem !important;
+
+        .digital-media{
+            border-top: v.$border-thickness solid var(--accent-color);
+            padding:2rem 0rem 2rem 0;
+
+            @media screen and (min-width: v.$sw-m){
+                padding:2.5rem 0rem 2.5rem 0;
             }
-        }  
+            @media screen and (min-width: v.$sw-m-l){
+                padding:3.5rem 0rem 3.5rem 0;
+            }
+            position: relative;
+            h2{
+                position: absolute;
+                top: -3rem;
+                left: 0;
+                display: inline-block;
+                background-color: c.$contrast-d;
+                padding-right: 1rem;
+                padding-bottom: 1rem;
+                z-index: 10;
+            }  
+            .digital-media-projects{
+                margin-top: 3.5rem;
+                width: v.$sw-m-l;
+                // overflow-x: scroll;
+            }
+            .digital-media-projects{
+                display: grid;
+                grid-gap: calc(4 * v.$border-thickness);
+                grid-template-columns: repeat(3 , 1fr);
+                grid-template-rows: 1fr 1fr;
+                .img-container{
+                    background-color: c.$contrast-m!important;
+                }
+                div{
+                    background-color: c.$base-l;                   
+                }
+                a{
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    div, span{
+                        text-align: center;
+                        grid-column: 1/-1;
+                        grid-row: 1/-1;
+                    }
+                    .digital-media-project-title{
+                        display: none;
+                    }
+
+                }
+                div:has(h3){
+                    background-color: transparent;
+                    align-self: center;
+                    a{
+                        color: c.$primary-l !important;
+                        text-decoration: none !important;
+                        &:hover{
+                            color: c.$contrast-m !important;
+                            
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

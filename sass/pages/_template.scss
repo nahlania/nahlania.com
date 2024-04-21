@@ -53,26 +53,27 @@
 
     &.digital-media{
         .projects{
-            @media (orientation: landscape) {
-                margin: 5rem 0 15rem 0;
-            }
-            @media (orientation: portrait) {
-                margin: 3rem 0 10rem 0;
-            }
+            // @media (orientation: landscape) {
+            //     margin: 5rem 0 15rem 0;
+            // }
+            // @media (orientation: portrait) {
+            //     margin: 3rem 0 10rem 0;
+            // }
 
             .mediaProject{
                 // height: 100vh;
                 display: flex;
+                padding-top: 1.5rem;
                 @media (orientation: landscape) {
                     flex-flow: column;
                     justify-content: end;
-                    padding-top: 8rem;
+                    // padding-top: 8rem;
                 }
                 @media (orientation: portrait) {
                     // height: unset;
                     flex-flow: column-reverse;
                     justify-content: center;
-                    margin-bottom: 3rem;
+                    // margin-bottom: 3rem;
                 }
                 div{
                     margin-bottom: 0 !important;
