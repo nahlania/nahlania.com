@@ -1538,17 +1538,13 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-home main .digital-media {
   border-top: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) solid var(--accent-color);
-  padding: 2rem 0rem 2rem 0;
+  border-bottom: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) solid var(--accent-color);
+  padding: 1.5rem 0rem 1.5rem 0;
   position: relative;
 }
 @media screen and (min-width: 768px) {
   .body-home main .digital-media {
-    padding: 2.5rem 0rem 2.5rem 0;
-  }
-}
-@media screen and (min-width: 992px) {
-  .body-home main .digital-media {
-    padding: 3.5rem 0rem 3.5rem 0;
+    padding: 2rem 0rem 2rem 0;
   }
 }
 .body-home main .digital-media h2 {
@@ -1566,10 +1562,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   width: 992px;
 }
 .body-home main .digital-media .digital-media-projects {
-  display: grid;
   grid-gap: calc(4 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr;
 }
 .body-home main .digital-media .digital-media-projects .img-container {
   background-color: #ABB7C9 !important;
@@ -1590,15 +1583,22 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-home main .digital-media .digital-media-projects a .digital-media-project-title {
   display: none;
 }
-.body-home main .digital-media .digital-media-projects div:has(h3) {
-  background-color: transparent;
-  align-self: center;
+.body-home main .digital-media .more-proj h3 {
+  text-align: right;
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
+  display: inline-block;
+  background-color: #1F3051;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  z-index: 10;
 }
-.body-home main .digital-media .digital-media-projects div:has(h3) a {
+.body-home main .digital-media .more-proj a {
   color: #FFDBDE !important;
   text-decoration: none !important;
 }
-.body-home main .digital-media .digital-media-projects div:has(h3) a:hover {
+.body-home main .digital-media .more-proj a:hover {
   color: #ABB7C9 !important;
 }
 
