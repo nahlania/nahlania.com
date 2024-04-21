@@ -1,0 +1,74 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/colors' as c;
+@use '../abstracts/typography' as t;
+
+.carousel{
+    position: relative;
+    // height: 65vh;
+    margin-bottom: 6rem;
+}
+
+.carousel-trackContainer{
+    position: relative;
+}
+
+.carousel-track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+.carousel-slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+
+    div{
+        height: 25vh;
+    }
+    img{
+        height: 75vh;
+    }
+
+
+}
+
+.carousel-button{
+    position: absolute;
+    top: 10%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+
+
+}
+
+.carousel-buttonLeft{
+    left: -40px;
+}
+
+.carousel-buttonRight{
+    right: -40px;
+}
+
+.carousel-nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel-indicator{
+    bottom: 0;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: c.$contrast-m;
+    margin: 0 12px;
+}
+
+.carousel-indicator.current-slide{
+    background: c.$base-l;
+}

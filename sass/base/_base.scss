@@ -269,13 +269,19 @@ ol.two-column{
 	}
 }
 
+.full-width-image{
+	max-width: 100%;
+	margin: 0 auto 4rem auto; 
+	color: c.$contrast-d;
+}
+
 
 
 .grid{
 	margin-bottom: 2rem;
 	display: grid;
 	grid-template-columns: repeat(12,1fr);
-	gap: v.$deft-gap;
+	grid-gap: v.$deft-gap;	
 	justify-content: center;
 	justify-items: center;
 

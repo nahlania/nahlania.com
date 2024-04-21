@@ -4,21 +4,6 @@
 @use '../abstracts/typography' as t;
 
 
-// temporary
-.photography{
-    #overview{
-        h2{
-            display: block;
-        }
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-        height: 60vh;
-    }
-}
-// end of temporary
-
-
 .body-template{
     section{
         margin: 0 auto 4rem auto; 
@@ -61,6 +46,48 @@
                 }
                 .h1-italic{
                     color: var(--accent-color);
+                }
+            }
+        }
+    }
+
+    &.digital-media{
+        .projects{
+            @media (orientation: landscape) {
+                margin: 5rem 0 15rem 0;
+            }
+            @media (orientation: portrait) {
+                margin: 3rem 0 10rem 0;
+            }
+
+            .mediaProject{
+                // height: 100vh;
+                display: flex;
+                @media (orientation: landscape) {
+                    flex-flow: column;
+                    justify-content: end;
+                    padding-top: 8rem;
+                }
+                @media (orientation: portrait) {
+                    // height: unset;
+                    flex-flow: column-reverse;
+                    justify-content: center;
+                    margin-bottom: 3rem;
+                }
+                div{
+                    margin-bottom: 0 !important;
+                    gap: 1rem;
+                    div.heading{
+                        align-self: center;
+                    }
+                    h3, p{
+                        padding-bottom: 0 !important;
+                        margin-bottom: 0 !important;
+                    }
+                }
+                img{
+                    margin: 1rem 0;
+
                 }
             }
         }

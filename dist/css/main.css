@@ -372,11 +372,17 @@ ol.two-column {
   }
 }
 
+.full-width-image {
+  max-width: 100%;
+  margin: 0 auto 4rem auto;
+  color: #1F3051;
+}
+
 .grid {
   margin-bottom: 2rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 2rem;
+  grid-gap: 2rem;
   justify-content: center;
   justify-items: center;
 }
@@ -499,16 +505,16 @@ html {
   scroll-behavior: smooth;
 }
 
-.feat-projects .projects section:hover a, .all-projects .projects section:hover a {
+.body-home .feat-projects section:hover a, .body-home .projects section:hover a, .all-projects .feat-projects section:hover a, .all-projects .projects section:hover a {
   color: #FFDBDE !important;
   text-decoration: underline !important;
 }
-.feat-projects .projects section:hover a div img, .all-projects .projects section:hover a div img {
+.body-home .feat-projects section:hover a div img, .body-home .projects section:hover a div img, .all-projects .feat-projects section:hover a div img, .all-projects .projects section:hover a div img {
   transform: scale(1.05);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.feat-projects .projects section:not(hover) a div img, .all-projects .projects section:not(hover) a div img {
-  transition: all 0.5s ease-in-out;
+.body-home .feat-projects section:not(hover) a div img, .body-home .projects section:not(hover) a div img, .all-projects .feat-projects section:not(hover) a div img, .all-projects .projects section:not(hover) a div img {
+  transition: all 0.3s ease-in-out;
 }
 
 /* BUTTONS=================== */
@@ -1200,6 +1206,70 @@ footer .contact-wrapper .contact-info ul a:hover {
     width: 40px;
   }
 }
+.carousel {
+  position: relative;
+  margin-bottom: 6rem;
+}
+
+.carousel-trackContainer {
+  position: relative;
+}
+
+.carousel-track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.carousel-slide div {
+  height: 25vh;
+}
+.carousel-slide img {
+  height: 75vh;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 10%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel-buttonLeft {
+  left: -40px;
+}
+
+.carousel-buttonRight {
+  right: -40px;
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel-indicator {
+  bottom: 0;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: #ABB7C9;
+  margin: 0 12px;
+}
+
+.carousel-indicator.current-slide {
+  background: #fff;
+}
+
 .body-home main .hero .hero-graphics-wrapper {
   display: grid;
   grid-template-rows: repeat(2, auto);
@@ -1769,16 +1839,6 @@ footer .contact-wrapper .contact-info ul a:hover {
   margin-bottom: 6rem;
 }
 
-.photography #overview {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
-}
-.photography #overview h2 {
-  display: block;
-}
-
 .body-template section {
   margin: 0 auto 4rem auto;
 }
@@ -1818,6 +1878,47 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-template section.hero .hero-wrapper .main-hero-text .h1-italic {
   color: var(--accent-color);
+}
+@media (orientation: landscape) {
+  .body-template.digital-media .projects {
+    margin: 5rem 0 15rem 0;
+  }
+}
+@media (orientation: portrait) {
+  .body-template.digital-media .projects {
+    margin: 3rem 0 10rem 0;
+  }
+}
+.body-template.digital-media .projects .mediaProject {
+  display: flex;
+}
+@media (orientation: landscape) {
+  .body-template.digital-media .projects .mediaProject {
+    flex-flow: column;
+    justify-content: end;
+    padding-top: 8rem;
+  }
+}
+@media (orientation: portrait) {
+  .body-template.digital-media .projects .mediaProject {
+    flex-flow: column-reverse;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+}
+.body-template.digital-media .projects .mediaProject div {
+  margin-bottom: 0 !important;
+  gap: 1rem;
+}
+.body-template.digital-media .projects .mediaProject div div.heading {
+  align-self: center;
+}
+.body-template.digital-media .projects .mediaProject div h3, .body-template.digital-media .projects .mediaProject div p {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+.body-template.digital-media .projects .mediaProject img {
+  margin: 1rem 0;
 }
 .body-template.all-projects .proj-img div {
   overflow: visible;
