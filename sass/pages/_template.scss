@@ -101,6 +101,14 @@
         .proj-img div{
             overflow: visible;
         }
+        .proj2, .proj4{
+            @media screen and (min-width: v.$sw-m){
+                .proj-img{
+                    grid-row: 1/2;
+                    grid-column: 8/-1;
+                }
+            }
+        }
     }            
 
     &.about{
