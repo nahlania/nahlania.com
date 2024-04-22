@@ -276,7 +276,7 @@
             position: relative;
             h2{
                 position: absolute;
-                top: -3rem;
+                top: -3.2rem;
                 left: 0;
                 display: inline-block;
                 background-color: c.$contrast-d;
@@ -285,10 +285,7 @@
                 z-index: 10;
             }  
             .digital-media-projects{
-                margin-top: 3.5rem;
-                width: v.$sw-m-l;
-            }
-            .digital-media-projects{
+                margin-top: 3.5rem;                
                 grid-gap: calc(4 * v.$border-thickness);
                 .img-container{
                     background-color: c.$contrast-m!important;

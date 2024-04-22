@@ -1549,7 +1549,7 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-home main .digital-media h2 {
   position: absolute;
-  top: -3rem;
+  top: -3.2rem;
   left: 0;
   display: inline-block;
   background-color: #1F3051;
@@ -1559,9 +1559,6 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-home main .digital-media .digital-media-projects {
   margin-top: 3.5rem;
-  width: 992px;
-}
-.body-home main .digital-media .digital-media-projects {
   grid-gap: calc(4 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
 }
 .body-home main .digital-media .digital-media-projects .img-container {
