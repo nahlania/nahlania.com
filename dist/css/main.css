@@ -640,7 +640,7 @@ details[open] summary:hover {
 .img-container {
   display: flex;
   align-items: center;
-  background-color: #fff !important;
+  background-color: #fff;
 }
 
 .left-bottom-curved {
@@ -1347,16 +1347,35 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-home main .hero .main-hero-desc {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  grid-template-columns: 1fr;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .body-home main .hero .main-hero-desc {
+    grid-template-columns: 2fr 1fr;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
 }
 .body-home main .hero .main-hero-desc p {
   grid-column: 1/-1;
   text-align: justify;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .body-home main .hero .main-hero-desc p {
     grid-column: 1/2;
+  }
+}
+.body-home main .hero .main-hero-desc a {
+  grid-column: 1/-1;
+  justify-self: end;
+}
+@media screen and (min-width: 576px) {
+  .body-home main .hero .main-hero-desc a {
+    grid-row: 2/-1;
+    grid-column: 2/-1;
   }
 }
 .body-home main .feat-projects {
@@ -1432,7 +1451,6 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-home main .feat-projects .feat-proj1 .proj-img, .body-home main .feat-projects .feat-proj3 .proj-img {
   grid-column: 1/-1;
   grid-row: 1/2;
-  background-color: #fff;
 }
 @media screen and (min-width: 768px) {
   .body-home main .feat-projects .feat-proj1 .proj-img, .body-home main .feat-projects .feat-proj3 .proj-img {
@@ -1494,6 +1512,15 @@ footer .contact-wrapper .contact-info ul a:hover {
 @media screen and (min-width: 1400px) {
   .body-home main .feat-projects .feat-proj2 {
     border-top-left-radius: 14rem;
+  }
+}
+.body-home main .feat-projects .feat-proj2 .proj-img {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+@media screen and (min-width: 768px) {
+  .body-home main .feat-projects .feat-proj2 .proj-img {
+    border-top-left-radius: 0;
   }
 }
 .body-home main .feat-projects .feat-proj2 .proj-info {
@@ -1956,6 +1983,9 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-template.digital-media .projects .mediaProject {
   display: flex;
   padding-top: 1.5rem;
+}
+.body-template.digital-media .projects .mediaProject .proj-excerpt {
+  text-align: justify;
 }
 @media (orientation: landscape) {
   .body-template.digital-media .projects .mediaProject {

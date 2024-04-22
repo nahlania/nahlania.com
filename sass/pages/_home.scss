@@ -71,13 +71,26 @@
             }
             .main-hero-desc{
                 display: grid;
-                grid-template-columns: 2fr 1fr;
+                column-gap: 2rem;
+                grid-template-columns: 1fr;
+                @media screen and (min-width: v.$sw-m){
+                    grid-template-columns: 2fr 1fr;   
+                    column-gap: 0; 
+                }
                 align-items: center;
                 p{
                     grid-column: 1/-1;
                     text-align: justify;
-                    @media screen and (min-width: v.$sw-s-m){
+                    @media screen and (min-width: v.$sw-m){
                         grid-column: 1/2;
+                    }
+                }
+                a{
+                    grid-column: 1/-1;
+                    justify-self: end;
+                    @media screen and (min-width: v.$sw-s-m){
+                        grid-row: 2/-1;
+                        grid-column: 2/-1;
                     }
                 }
             }
@@ -145,15 +158,12 @@
              
                 .proj-img{
                     grid-column: 1/-1;
-                    grid-row: 1/2;
-                    background-color: c.$base-l;
-                        
+                    grid-row: 1/2;                      
 
                     @media screen and (min-width: v.$sw-m){
                         border-top-right-radius: 0;
                         border-top-right-radius:calc(map-get(v.$curve-radius , s-m ) - 2rem);
                     }  
-
                 }
                 .proj-info{
                     grid-column: 1/-1;
@@ -207,15 +217,13 @@
                 @media screen and (min-width: v.$sw-xl){
                     border-top-left-radius:map-get(v.$curve-radius , xl );
                 }             
-                // .proj-img{
-                //     grid-column: 1/-1;
-                //     grid-row: 1/2;
-                //     background-color: var(--accent-color);
-                //     @media screen and (min-width: v.$sw-m){
-                //         border-top-left-radius: 0;
-                //     }  
-
-                // }
+                .proj-img{
+                    grid-column: 1/-1;
+                    grid-row: 1/2;
+                    @media screen and (min-width: v.$sw-m){
+                        border-top-left-radius: 0;
+                    }  
+                }
                 .proj-info{
                     grid-column: 1/-1;
                     grid-row: 2/3;         

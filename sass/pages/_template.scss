@@ -64,6 +64,9 @@
                 // height: 100vh;
                 display: flex;
                 padding-top: 1.5rem;
+                .proj-excerpt{
+                    text-align: justify;
+                }
                 @media (orientation: landscape) {
                     flex-flow: column;
                     justify-content: end;
