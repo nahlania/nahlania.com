@@ -55,7 +55,8 @@ footer{
         }
 
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap:v.$deft-gap ;
 
         span.h3-italic{
         font-style: italic;

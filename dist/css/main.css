@@ -1073,7 +1073,8 @@ footer .contact-wrapper {
   grid-column: 1/-1;
   margin-bottom: 2rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2rem;
 }
 @media screen and (min-width: 576px) {
   footer .contact-wrapper {
