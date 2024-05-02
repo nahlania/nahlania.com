@@ -117,6 +117,15 @@
             max-height: 50vh;
         }        
     }
+    &.mobile-long .v-scrollable{
+        @media (orientation: portrait){
+            max-height: 85vh;
+            min-height: 70vh;
+        }        
+        @media (orientation: landscape){
+            height: 63vh;
+        }        
+    }
 
     &.tall .v-scrollable{
         max-height: 75vh;

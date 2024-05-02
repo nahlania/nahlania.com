@@ -53,7 +53,7 @@ const addActiveClassOnClick = () =>{
 }
 
 const options = {
-    treshold: 0.9,
+    treshold: .9,
 };
 
 const observer= new IntersectionObserver(addActiveClass, options)
@@ -66,7 +66,7 @@ sections.forEach(section => {
 
 
 
-//scroll break
+// scroll break
 // document.addEventListener('DOMContentLoaded', function () {
 //     const mediaProjects = document.querySelectorAll('.mediaProject');
 
@@ -76,10 +76,16 @@ sections.forEach(section => {
 //         });
 //     }
 
+
+
+
 //     mediaProjects.forEach(project => {
 //         project.addEventListener('click', function () {
 //             scrollToElement(project);
 //         });
+
+
+
 //     });
 
 //     function findCurrentProject() {
@@ -87,13 +93,16 @@ sections.forEach(section => {
 //         mediaProjects.forEach(project => {
 //             const rect = project.getBoundingClientRect();
 //             if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+//                 console.log(project)
 //                 currentProject = project;
 //             }
 //         });
+
 //         return currentProject;
 //     }
 
 //     window.addEventListener('scroll', function () {
+//         console.log('window scroll')
 //         const currentProject = findCurrentProject();
 //         if (currentProject) {
 //             scrollToElement(currentProject);

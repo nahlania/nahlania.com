@@ -321,6 +321,17 @@ h4 {
   }
 }
 
+@media (orientation: landscape) {
+  .half-free-space {
+    height: 3.5rem;
+  }
+}
+@media (orientation: portrait) {
+  .half-free-space {
+    height: 1.75rem;
+  }
+}
+
 .two-column {
   -moz-columns: 300px 2;
        columns: 300px 2;
@@ -492,6 +503,26 @@ ol.two-column {
 @media screen and (min-width: 992px) {
   .grid .col-ml-9 {
     grid-column: span 9;
+  }
+}
+@media screen and (min-width: 768px) {
+  .grid .start-3 {
+    grid-column-start: 3 !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .grid .start-7 {
+    grid-column-start: 7 !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .grid .end-7 {
+    grid-column-end: 7 !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .grid .end-11 {
+    grid-column-end: 11 !important;
   }
 }
 
@@ -773,6 +804,17 @@ details[open] summary:hover {
     max-height: 50vh;
   }
 }
+@media (orientation: portrait) {
+  .framed.mobile-long .v-scrollable {
+    max-height: 85vh;
+    min-height: 70vh;
+  }
+}
+@media (orientation: landscape) {
+  .framed.mobile-long .v-scrollable {
+    height: 63vh;
+  }
+}
 .framed.tall .v-scrollable {
   max-height: 75vh;
 }
@@ -835,7 +877,7 @@ header .menu-container {
   right: 0;
   left: 0;
   bottom: 0;
-  z-index: 10;
+  z-index: 101;
   padding: 1rem 0;
   animation: ease-in-out;
 }
@@ -1628,16 +1670,6 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 
 /* PROJECTS ==============*/
-.LinkedIn-Learning #overview {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
-}
-.LinkedIn-Learning #overview h2 {
-  display: block;
-}
-
 .in-progress {
   text-align: center;
   line-height: 1.5;
