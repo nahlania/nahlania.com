@@ -15,14 +15,10 @@
         top: 50%;
         transform: translateY(-50%);
         left: 1rem;
-        padding: 16px 4px;
+        padding: 16px 8px;
         background-color: c.$contrast-m;
         z-index: 100;
         transition: all .5s ease-in-out;
-
-        &>*{
-            transition: all .5s ease-in-out;        
-        }
 
         .sidebar-category{
             &:not(:last-of-type){
@@ -40,9 +36,11 @@
                 font-size: 1.2rem;  
                 font-weight: normal; 
                 &:hover{
-                    color: var(--accent-color-m);
                     transform: scale(1.1);
                     font-weight: bold;
+                }
+                &:hover, &:not(:hover){
+                    transition: all .5s ease-in-out;
                 }
                 &.active:hover{
                     cursor:default;
@@ -69,7 +67,6 @@
                 font-size: 1rem;
                 color: c.$contrast-d;
                 &:hover{
-                    color: var(--accent-color-m);
                     transform: scale(1.1);
                     font-weight: bold;
                 }
@@ -80,6 +77,9 @@
                     cursor:default;
                     color: c.$contrast-d;
                     transform: scale(1);
+                }
+                &:hover, &:not(:hover), &.active:hover, &.active:not(:hover){
+                    transition: all .5s ease-in-out;
                 }
             }
             
@@ -92,8 +92,9 @@
         &:hover{
             .category-name span,
             .category-item{
-                display: flex !important;
+                display: flex !important;;
             }
+            transition: all .5s ease-in-out;
         }
 
         img{

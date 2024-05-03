@@ -1185,12 +1185,9 @@ footer .contact-wrapper .contact-info ul a:hover {
     top: 50%;
     transform: translateY(-50%);
     left: 1rem;
-    padding: 16px 4px;
+    padding: 16px 8px;
     background-color: #ABB7C9;
     z-index: 100;
-    transition: all 0.5s ease-in-out;
-  }
-  .sidebar > * {
     transition: all 0.5s ease-in-out;
   }
   .sidebar .sidebar-category:not(:last-of-type) {
@@ -1208,9 +1205,11 @@ footer .contact-wrapper .contact-info ul a:hover {
     font-weight: normal;
   }
   .sidebar .sidebar-category a.category-name:hover {
-    color: var(--accent-color-m);
     transform: scale(1.1);
     font-weight: bold;
+  }
+  .sidebar .sidebar-category a.category-name:hover, .sidebar .sidebar-category a.category-name:not(:hover) {
+    transition: all 0.5s ease-in-out;
   }
   .sidebar .sidebar-category a.category-name.active:hover {
     cursor: default;
@@ -1236,7 +1235,6 @@ footer .contact-wrapper .contact-info ul a:hover {
     color: #1F3051;
   }
   .sidebar .category-items a:hover {
-    color: var(--accent-color-m);
     transform: scale(1.1);
     font-weight: bold;
   }
@@ -1248,9 +1246,15 @@ footer .contact-wrapper .contact-info ul a:hover {
     color: #1F3051;
     transform: scale(1);
   }
+  .sidebar .category-items a:hover, .sidebar .category-items a:not(:hover), .sidebar .category-items a.active:hover, .sidebar .category-items a.active:not(:hover) {
+    transition: all 0.5s ease-in-out;
+  }
   .sidebar .category-name span,
   .sidebar .category-item {
     display: none !important;
+  }
+  .sidebar:hover {
+    transition: all 0.5s ease-in-out;
   }
   .sidebar:hover .category-name span,
   .sidebar:hover .category-item {
