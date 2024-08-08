@@ -1071,17 +1071,15 @@ header .menu-container .menu-contact {
 }
 
 footer {
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  row-gap: 2rem;
-}
-footer .copyright {
-  grid-column: 1/-3;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  justify-content: center;
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  flex-flow: column-reverse wrap;
+  row-gap: 3rem;
+  border-top: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) solid #FFDBDE;
+  border-right: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) solid #FFDBDE;
+  border-left: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) solid #FFDBDE;
+  border-top-right-radius: 4rem;
+  border-top-left-radius: 4rem;
 }
 @media screen and (min-width: 576px) {
   footer .copyright {
@@ -1089,40 +1087,33 @@ footer .copyright {
   }
 }
 footer .copyright .copyright-img {
-  grid-column: 1/-1;
-  grid-row: 1/-1;
+  display: none;
 }
 footer .copyright .copyright-txt {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 0.5rem;
   font-size: 0.75rem;
-  grid-column: 3/-1;
-  grid-row: 2/-1;
-  justify-self: center;
-  align-self: center;
 }
 @media screen and (min-width: 576px) {
   footer .copyright .copyright-txt {
     font-size: 1rem;
+    margin-bottom: 2rem;
   }
-}
-footer .copyright .copyright-txt span {
-  display: block;
-  text-align: center;
-}
-footer .copyright .body-project .copyright img rect {
-  fill: #fff;
 }
 footer .contact-wrapper {
-  grid-column: 1/-1;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 5rem;
 }
-@media screen and (min-width: 576px) {
-  footer .contact-wrapper {
-    grid-column: 6/-1;
-    margin-bottom: 0;
-  }
+footer .contact-wrapper h3 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
 }
 footer .contact-wrapper span.h3-italic {
   font-style: italic;
@@ -1159,7 +1150,61 @@ footer .contact-wrapper .contact-info ul a {
 footer .contact-wrapper .contact-info ul a:hover {
   color: #FF8084;
 }
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 4rem 2rem 4rem 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer {
+    padding: 6rem 6rem 6rem 0;
+  }
+}
+@media screen and (min-width: 576px) {
+  footer {
+    border-top-right-radius: 8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer {
+    border-top-right-radius: 11rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  footer {
+    border-top-right-radius: 14rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 4rem 0 4rem 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer {
+    padding: 6rem 0 6rem 6rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  footer {
+    border-top-left-radius: 8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer {
+    border-top-left-radius: 11rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  footer {
+    border-top-left-radius: 14rem;
+  }
+}
 
+.body-project footer {
+  border: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) solid #ABB7C9;
+  border-bottom: 0 solid #ABB7C9;
+}
 .body-project footer span.h3-italic {
   color: #fff;
 }

@@ -3,60 +3,78 @@
 @use '../abstracts/typography' as t;
 
 footer{
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    row-gap: 2rem;
+    // background-color: #fff;
+    padding: 1rem 0 1rem 0;
+    // display: grid;
+    // grid-template-columns: repeat(12,1fr);
+    display: flex;
+    flex-flow:column-reverse wrap;
+    row-gap: 3rem;
 
     .copyright{
-        grid-column: 1/-3;
+        // grid-column: 1/-1;
         @media screen and (min-width: v.$sw-s-m){
             grid-column: 1/6;
         }
         
-        display:grid;
-        grid-template-columns: repeat(5,1fr);
-        grid-template-rows: repeat(2,1fr);
-        justify-content: center;
+        // display:grid;
+        // grid-template-columns: repeat(1,1fr);
+        // grid-template-rows: repeat(1,1fr);
+        // justify-content: center;
 
         .copyright-img{
-            grid-column: 1/-1;
-            grid-row: 1/-1;
+            display: none;
+            // grid-column: 1/-1;
+            // grid-row: 1/-1;
         }
 
         .copyright-txt{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            gap: .5rem;
             font-size: .75rem;
             @media screen and (min-width: v.$sw-s-m){
             font-size: 1rem;
+            margin-bottom: 2rem;
             }
-            grid-column: 3/-1;
-            grid-row: 2/-1;
-            justify-self: center;
-            align-self: center;
+            // grid-column: 3/-1;
+            // grid-row: 2/-1;
+            // justify-self: center;
+            // align-self: center;
 
-            span{
-                display: block;
-                text-align:center;
+            // span{
+            //     display: block;
+            //     text-align:center;
                 
-            }
+            // }
         }
 
-        .body-project .copyright img rect{
-            fill: c.$base-l;
-        }
+        // .body-project .copyright img rect{
+        //     fill: c.$base-l;
+        // }
     }
 
     .contact-wrapper{
-        grid-column: 1/-1;
-        margin-bottom: 2rem;
-        @media screen and (min-width: v.$sw-s-m){
-            grid-column: 6/-1;
-            margin-bottom: 0;
-        }
+        // grid-column: 1/-1;
+        // margin-bottom: 2rem;
+        // @media screen and (min-width: v.$sw-s-m){
+        //     grid-column: 6/-1;
+        //     margin-bottom: 0;
+        // }
 
+        margin-top: 2rem;
         display: flex;
         justify-content: center;
-        gap:v.$deft-gap ;
+        gap:5rem ;
+
+        h3{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            gap: .5rem ;
+            padding: 0;
+        }
 
         span.h3-italic{
         font-style: italic;
@@ -98,9 +116,53 @@ footer{
             }
         }        
     }
+
+    // padding:2rem 2rem 2rem 0;
+    @media screen and (min-width: v.$sw-m){
+        padding:4rem 2rem 4rem 0;
+    }
+    @media screen and (min-width: v.$sw-m-l){
+        padding:6rem 6rem 6rem 0;
+    }
+    border-top: v.$border-thickness solid c.$primary-l;
+    border-right: v.$border-thickness solid c.$primary-l;
+    border-left: v.$border-thickness solid c.$primary-l;
+    
+    border-top-right-radius:map-get(v.$curve-radius , xs );
+    @media screen and (min-width: v.$sw-s-m){
+        border-top-right-radius:map-get(v.$curve-radius , s-m );
+    }
+    @media screen and (min-width: v.$sw-m-l){
+        border-top-right-radius:map-get(v.$curve-radius , m-l );
+    }
+    @media screen and (min-width: v.$sw-xl){
+        border-top-right-radius:map-get(v.$curve-radius , xl );
+    }
+    // padding:2rem 0 2rem 2rem;
+    @media screen and (min-width: v.$sw-m){
+        padding:4rem 0 4rem 2rem;
+    }
+    @media screen and (min-width: v.$sw-m-l){
+        padding:6rem 0 6rem 6rem;
+    }
+
+    border-top-left-radius:map-get(v.$curve-radius , xs );
+    @media screen and (min-width: v.$sw-s-m){
+        border-top-left-radius:map-get(v.$curve-radius , s-m );
+    }
+    @media screen and (min-width: v.$sw-m-l){
+        border-top-left-radius:map-get(v.$curve-radius , m-l );
+    }
+    @media screen and (min-width: v.$sw-xl){
+        border-top-left-radius:map-get(v.$curve-radius , xl );
+    }    
 }
 
+
+
 .body-project footer {
+    border: v.$border-thickness solid c.$contrast-m;
+    border-bottom: 0 solid c.$contrast-m;
     span.h3-italic{
         color: c.$base-l;
     }
