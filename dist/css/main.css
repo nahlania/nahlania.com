@@ -944,12 +944,6 @@ header .menu-container .menu-contact {
   }
 }
 
-.body-home main {
-  padding: 1rem;
-  max-width: 992px;
-  margin: 1rem auto;
-}
-
 .grid-auto-fill {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -1373,6 +1367,11 @@ footer .contact-wrapper .contact-info ul a:hover {
   background: #fff;
 }
 
+.body-home main {
+  padding: 1rem;
+  max-width: 992px;
+  margin: 1rem auto;
+}
 @media screen and (min-width: 576px) {
   .body-home main .hero, .body-home main .feat-projects {
     margin-bottom: 4rem !important;

@@ -7,6 +7,9 @@
 
 .body-home{
     main{
+        padding: v.$TB-marg-pad-s;
+        max-width: v.$sw-m-l;
+        margin: 1rem auto; 
         @media screen and (min-width: v.$sw-s-m){
             .hero, .feat-projects{
                 margin-bottom: 4rem !important;
