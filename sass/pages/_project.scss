@@ -25,7 +25,7 @@
     max-width: v.$sw-m-l !important;
 	margin-left: auto;
 	margin-right: auto;
-    margin-top: 8rem;
+    // margin-top: 8rem;
     margin-bottom: 8rem;
 	padding: 0 2rem 0 2rem;
 	@media screen and (min-width: calc(v.$sw-m-l + 4rem)){
@@ -34,6 +34,20 @@
 }
 // end of temporary
 
+.statement{
+
+    text-align: center;
+    line-height: 1.5;
+    max-width: v.$sw-m-l !important;
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+	padding: 0 2rem 0 2rem;
+	@media screen and (min-width: calc(v.$sw-m-l + 4rem)){
+		padding: 0;
+	}
+}
 .body-project{
     section{
         margin: 0 auto 4rem auto; 
