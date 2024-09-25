@@ -25,7 +25,8 @@
     max-width: v.$sw-m-l !important;
 	margin-left: auto;
 	margin-right: auto;
-    // margin-top: 8rem;
+    // margin-top: 0 !important;
+    margin-top: 8rem;
     margin-bottom: 8rem;
 	padding: 0 2rem 0 2rem;
 	@media screen and (min-width: calc(v.$sw-m-l + 4rem)){
@@ -41,7 +42,6 @@
     max-width: v.$sw-m-l !important;
 	margin-left: auto;
 	margin-right: auto;
-    margin-top: 8rem;
     margin-bottom: 8rem;
 	padding: 0 2rem 0 2rem;
 	@media screen and (min-width: calc(v.$sw-m-l + 4rem)){
