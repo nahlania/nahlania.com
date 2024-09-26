@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farayand-SaaS Product Design & Development</title>
+    <link rel="icon" href="../Assets/Images/NahlaNia-logo-sign.svg">
+
+    <link rel="stylesheet" href="../dist/css/main.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css' integrity='sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==' crossorigin='anonymous' referrerpolicy='no-referrer'/>
+    <script src="../main.js" defer></script>
+    <style>
+        :root{
+          --accent-color-m: #FF7257;            
+          --accent-color-d: #FF4824;            
+        }
+    </style>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E8TXN7NDT0"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-E8TXN7NDT0");
+</script>
+
+<body class="body-project">
+<header class="max-width">
+    <div class="header-container">
+        <div class="logo"><a href="../index.html"><img src="../Assets/Images/NahlaNia-logo-horizontal.svg" alt=""></a></div>
+        <button class="menu-on"><img src="../Assets/Icons/Icon-Menu.svg" alt=""></button>
+    </div>
+    <div class="menu-container visually-hidden">
+        <div class="max-width">
+            <button class="menu-off"><img src="../Assets/Icons/Icon-Close.svg" alt=""></button>
+            <div class="menu-navigation">
+                <h3 class="h3-italic">Explore the Site</h3>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html" class="menu-item">Home</a></li>
+                        <li><a href="../ux_ui.html" class="menu-item">UX/UI Projects & Studies</a></li>
+                        <li><a href="../digital_media.html" class="menu-item">Digital Media Projects</a></li>
+                        <li><a href="../about_me.html" class="menu-item">About Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-contact">
+                <h3 class="h3-italic">Get in Touch</h3>
+                <ul>
+                    <li><a href="mailto:nahlania@gmail.com" class="contact-item" target="_blank">Email</a></li>
+                    <li class="linkedin"><a href="https://www.linkedin.com/in/nahlania" class="contact-item" target="_blank">LinkedIn</a></li>
+                    <li class="behance"><a href="https://www.behance.net/nahlania" class="contact-item" target="_blank">Behance</a></li>
+                    <li class="github"><a href="https://github.com/nahlania" class="contact-item" target="_blank">GitHub</a></li>
+                    <li class="instagram"><a href="https://www.instagram.com/our.endless.journey" class="contact-item" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="dealicious">
+    <div class="hero max-width">
+        <div class="hero-wrapper">
+            <div class="main-hero-text">
+                <h1><span class="h1-bold">Farayand</span><br><span class="h1-subheading">Product Design & Dev</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <nav class="sidebar">
+        <div class="sidebar-category sidebar-overview">
+            <a href="#intro" class="category-name">
+                <img src="../Assets/Icons/Icon-Overview.svg" alt="">
+                <span>Overview</span>
+            </a>
+            <div class="category-items">
+                <a href="#overview" class="category-item">Overview</a>
+                <a href="#proj-details" class="category-item">Details</a>
+            </div>
+        </div>
+        <div class="sidebar-category sidebar-research">
+            <a href="#research" class="category-name">
+                <img src="../Assets/Icons/Icon-Research.svg" alt="">
+                <span>Research</span>
+            </a>
+            <div class="category-items">
+                <a href="#empathize" class="category-item">Empathize</a>
+                <!-- <a href="#user-research" class="category-item">User Research</a> -->
+                <a href="#persona" class="category-item">Persona</a>
+                <a href="#user-story" class="category-item">User Story</a>
+                <!-- <a href="#journey-map" class="category-item">Journey Map</a> -->
+                <a href="#market" class="category-item">Market Research</a>
+            </div>
+        </div>
+        <div class="sidebar-category sidebar-uxi">
+            <a href="#uxi-design" class="category-name">
+                <img src="../Assets/Icons/Icon-UXI.svg" alt="">
+                <span>UX-UI Design</span>
+            </a>
+            <div class="category-items">
+                <a href="#features" class="category-item">Main Features</a>
+                <a href="#principles" class="category-item">Defining Principles</a>                
+                <a href="#user-flow" class="category-item">User Flow</a>
+                <a href="#wireframe" class="category-item">Wireframe</a>
+                <a href="#logo" class="category-item">Logo</a>
+                <a href="#color-typo" class="category-item">Color & Typography</a>
+                <a href="#ui-kit" class="category-item">UI Kit</a>
+                <!-- <a href="#prototype" class="category-item">Prototype</a> -->
+            </div>
+        </div>
+        <div class="sidebar-category sidebar-reflection">
+            <a href="#reflection" class="category-name">
+                <img src="../Assets/Icons/Icon-Reflection.svg" alt="">
+                <span>Reflection</span>
+            </a>
+        </div>
+    </nav>
+
+    <section id="intro">
+        <section id="overview" class="max-width">
+            <div class="overview-img"><img src="../Assets/Images/Dealicious/overview.webp" alt=""></div>
+            <div class="overview-txt">
+                <h2>Overview</h2>
+                <p>Farayand Workflow Management System is a tailored software solution built to streamline the complex processes involved in the medical device repair industry. It efficiently tracks devices and accessories through every stage of the repair journey, from intake to inspection, repair, and quality control. The system is designed to be flexible and scalable, providing real-time data on repairs, technician assignments, and device histories, ensuring smooth operations. Tailored for a rapidly growing startup, Farayand simplifies data management and workflow, making it adaptable to the company's evolving needs.</p>
+                <!-- <a href="https://www.dealicious.site/" class="ext-link" target="blank">www.dealicious.site</a> -->
+            </div>
+        </section>
+        <section id="proj-details" class="full-width">
+                <ul class="overview-titles max-width">
+                    <li>
+                        <div>
+                            <img src="../Assets/Icons/Icon-Mission.svg" alt=""><span class="title">Mission</span>
+                            <p>To collaborate closely with cross-functional teams to design and develop a customized, intuitive, and scalable workflow management solution tailored to the needs of the medical device industry. The essential requirement was to focus on efficiently managing complex workflows and organizing customer data, device information, and service histories into a seamless service blueprint.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../Assets/Icons/Icon-HatsWorn.svg" alt=""><span class="title">Hats Worn</span>
+                            <ul>
+                                <li>I led the end-to-end design process, performed user research & market analysis & clustered data, mapped service blueprint, created user flow & wireframes, communicated design rationales, moderated usability testing and monitored user behavior while using the working prototype, designed style guide, UI kit, and high-fidelity mockups, and onboard users.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../Assets/Icons/Icon-Tools.svg" alt=""><span class="title">Tools</span>
+                            <p>Adobe Illustrator, Photoshop & Figma for Design - Jira for communication and PM - VBA & Excel for testing prototype</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../Assets/Icons/Icon-Timeline.svg" alt=""><span class="title">Timeline</span>
+                            <p>22 months, from Ideation to Onboardign<br>Sep 2020-Jul 2022</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../Assets/Icons/Icon-Team.svg" alt=""><span class="title">Team</span>
+                            <p>1 Product Designers<br>1 Full-stack Developers<br>1 Developr/Product Manager</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../Assets/Icons/Icon-Platform.svg" alt=""><span class="title">Platform</span>
+                            <p>Responsive Web Application</p>
+                        </div>
+                    </li>
+                </ul>
+        </section>
+    </section>
+    <section id="research">
+        <section id="empathize" class="max-width">
+            <h2>Empathize</h2>
+            <div class="two-column space-after">
+                <p>In the Empathize stage of the Design Thinking process, I focused on gaining a deep understanding of the users and their workflow needs.The typical repair workflow involves multiple stages, all of which must be streamlined for efficiency:</p>
+                <ul class="list-style space-after">
+                    <li>Receiving: Devices are received, accessories logged, and the system checks for any repair history.</li>
+                    <li>Inspection: The technologist inspects the device and enters a diagnostic report.</li>
+                    <li>Quoting: Based on the diagnosis, a repair quote is generated and sent to the customer.</li>
+                    <li>Service: Repairs are completed, often involving spare parts ordering.</li>
+                    <li>Quality Control: The repaired device is tested to ensure it meets safety and quality standards.</li>
+                    <li>Dispatch: The device is prepared for return to the customer, with all steps logged for future reference.</li>
+                </ul>
+                <p>Our common goal in this stage was to design a solution to handle all these steps with minimal friction, ensuring that each device and accessory is linked correctly, and that all data is organized and accessible in Persian, catering specifically to the needs of this niche market.</p>
+                <p>An essential requirement of the system was its integration with the inventory department for seamless spare parts acquisition. Once the parts are ordered, the technologist is notified when they are available, expediting the repair process. Additionally, after completing the repair, the system communicates with the financial department to issue a bill for the service, ensuring no manual handoff is needed and minimizing administrative overhead.</p>
+            </div>        
+                <p>The core users of the Farayand Workflow Management System include biomedical technologists, administrator, and technical manager. These users work in a Persian-speaking environment and require a system tailored to the specific challenges of the medical device repair industry, which distinguishes them from other sectors.</p>
+                <div class="space-after">
+                    <h3>Biomedical Technologist</h3>
+                    <p>The technologists are the main power users of the system. Their responsibilities span the entire repair lifecycle, includign receiving, inspection, quoting, service, QC, and dispatch. In the interviews I identified these pain points:</p>
+                    <ul class="list-style space-after">
+                        <li>Difficulty accessing repair history quickly when a device arrives for service.</li>
+                        <li>Managing accessories separately from the main device, such as ultrasound probes, and ensuring they are correctly linked in the system.</li>
+                        <li>Local software solutions often come with extra features that are irrelevant to this niche industry, making the tools unnecessarily complex and reducing usability.</li>
+                        <li>Need for a system in Persian to support their workflow without language barriers, as English-based tools are less intuitive.</li>
+                    </ul>
+                </div>
+                <div class="space-after">
+                    <h3>Technical Manager</h3>
+                    <p>The technical manager is responsible for overseeing the repair process from end to end. They plan services, assign technologists, and rely on data visualization and insights to monitor repair progress and team efficiency. The technical manager frustrations were as follows:</p>
+                    <ul class="list-style space-after">
+                        <li>Lack of real-time data visualization on device status, repair stages, and resource allocation.</li>
+                        <li>Existing platforms provide too many irrelevant features, making it difficult to focus on critical tasks.</li>
+                        <li>Difficulty forecasting workload and identifying bottlenecks due to incomplete data and reporting tools.</li>
+                    </ul>
+                </div>              
+                <div class="space-after">
+                    <h3>Administrator</h3>
+                    <p>Administrators act as the communication hub between technologists, customers, and management. Their duties include maintaining accurate data in the system, logging device intake and dispatch, and ensuring smooth workflow transitions. The interviews highlighted that these are the main needs of the administrator:</p>
+                    <ul class="list-style">
+                        <li>Keeping track of all devices, their repair status, and spare parts.</li>
+                        <li>Needing a simplified, intuitive interface that reduces data entry errors, especially since existing SaaS platforms are over-complicated and not customized for the medical repair industry.</li>
+                    </ul>
+                </div>       
+        </section>
+
+        <section id="user-story" class="max-width ">
+            <h2>User Story</h2>
+            <p>To empathize with the real users and look at our solution through their motivation lens, we created user stories for our main personas:</p>
+            <div class="story1 space-after">
+                <h3>As a Restaurant Owner</h3>
+                <ul class="list-style">
+                    <li>I want to easily create Loyalty Programs so that happy customers keep coming back</li>
+                    <li>I want to keep track of performance of marketing campaigns so that I make better marketing decisions</li>
+                    <li>I want to easily create effective marketing campaigns so that I attract new customers and retain existing ones</li>
+                    <li>I want to have useful data from my customers so that I can create tailored campaigns for them</li>
+                    <li>I want to have more customer reviews so that it attracts new customers</li>
+                </ul>
+            </div>
+            <div class="story2 space-after">
+                <h3>As a Food Lover</h3>
+                <ul class="list-style">
+                    <li>I want to try new places and food with a discount</li>
+                    <li>I rely on my friends suggestions to discover new restaurants around the city</li>
+                    <li>I want to sign up as a super customer so that I can get points every time I spend money, at a restaurant</li>
+                    <li>I want to share the joy of discovering new foods with my close friends and convince them to try something new</li>
+                    <li>I want to earn points and discounts, every time I refer this restaurant to my friend</li>
+                </ul>
+            </div>
+        </section>
+        <section id="market" class="max-width">
+            <h2>Market Research</h2>
+            <div class="two-column">
+                <p>Other platforms in the market provide somewhat similar features to Dealicious. The most famous existing alternatives are as follows:</p><br>
+                <h4>Yelp.ca</h4>
+                <p>Yelp is an online directory for discovering and reviewing local businesses. With Yelp Ads, businesses can set up advertising on the Yelp pages. It also provides businesses with ad performance tracking.</p>
+                <h4>ShowMeLocal.com</h4>
+                <p>Show Me Local is a directory that groups businesses by industry and region. It provides a suite of digital tools including enhanced listings, customer reviews, and promotion of local deals and events.</p>
+                <h4>DoorDash.com</h4>
+                <p>DoorDash facilitates food delivery by independent contractors. It also offers a Store Loyalty Program which enables customers to earn towards rewards with every dollar spent with participating brands.</p><br>
+                <p>Looking at them, no one has a referral program. Also, the loyalty program is missing in two of the competitor platforms. Dealicious also leverages the power of accurate insights and AI to stand out.</p>
+            </div>
+            <img src="../Assets/Images/Dealicious/competitors.webp" alt="">
+        </section>               
+    </section>
+    <section id="uxi-design">
+        <section id="features">
+            <div class="max-width">
+                <h2>Main Features</h2>
+            </div>
+            <div  class="full-width">
+                <div class="max-width features">
+                    <div class="feature feature1">
+                        <img src="../Assets/Images/Dealicious/feature1.svg" alt="">
+                        <h3 class="colored-d">Referral Marketing</h3>
+                        <p>Dealicious empowers food hospitalities to effortlessly create targeted marketing campaigns. In addition, the connected AI Generator helps business owners with developing marketing campaigns, special offers or deals exclusively for attracting new customers as well as encouraging current customers to reconsider their dining. To accurately track the referral activities, the platform specifies a QR code to each food establishment. By scanning the QR code, their happy customers can register on their specific page on Dealicious platform and start referring other people to their favorite restaurant, café, etc.</p>
+                    </div>
+                    <div class="feature feature2">
+                        <img src="../Assets/Images/Dealicious/feature2.svg" alt="">
+                        <h3 class="colored-d">Insights and Analysis</h3>
+                        <p>Dealicious offers comprehensive data analysis to business owners, providing valuable insights into the performance of their marketing campaigns. They can track key metrics such as generated revenue, customer engagement, and conversion rates. This data-driven approach enables business owners to make informed decisions, optimize their marketing strategies, and achieve better results. They can easily copare performance of ongoing or past campaigns in terms of generated revenue and other metrics. By understanding what works and what doesn’t, they can refine their campaigns and improve overall marketing effectiveness.</p>
+                    </div>
+                    <div class="feature feature3">
+                        <img src="../Assets/Images/Dealicious/feature3.svg" alt="">
+                        <h3 class="colored-d">Loyalty Programs</h3>
+                        <p>Dealicious goes beyond acquiring new customers. The platform incorporates a robust loyalty program that allows business owners to reward and incentivize existing customers. Happy customers who register on the platform become Super Customers and share their culinary experiences with others. When a referral successfully works, the super customers collect points which can be redeemed to get discounts.
+                        This helps food businesses foster loyalty and encourage repeat visits for Super Customers. It empowers food hospitalities to build lasting relationships with their customers, creating a loyal customer base that becomes a reliable source of revenue and positive word-of-mouth referrals.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        <section id="principles" class="max-width">
+            <h2>Defining Principles</h2>
+            <p>To form a shared understanding among the team, during several meetings among all stakeholders, we discussed the principles of the application including:</p>
+            <ul class="list-style">
+                <li>How referral system works?</li>
+                <li>How new customers are converted to super customers?</li>
+                <li>How the pointing system works?</li>
+                <li>How new and super customers can use an ongoing campaign's offer?</li>
+                <li>How restaurants can accept an "Activate Campaign" request?</li>
+                <li>How the metrics can be accessed and calculated?</li>
+                <li>How to show the metrics for better engagement and understanding?</li>
+                <li>Which demographic data are needed to help business owners create better campaigns, without violating customers' privacy?</li>
+            </ul>
+            <img src="../Assets/Images/Dealicious/principles1.webp" alt="">
+        </section>
+        <section id="user-flow" class="max-width">
+            <h2>User Flow</h2>
+            <p class="">The user flow consists of three sections, the main section targets the main persona who is the business owner. They can create campaigns, invite customers to become super customers, burn the discount codes, and more importantly, check the insights for all active and past campaigns. The second part is the flow that loyal customers go through to refer new customers and use their discounts or points. The last part of the flow is the new customer's journey to check the referred restaurant's campaigns, activate one of them, and become a super customer if they want.</p>
+            <a href="https://www.figma.com/file/GzBzXx7aY8cmaWN8nE5Zta/Dealicious-User-Flow?type=whiteboard&node-id=0%3A1&t=SEB55qwu7hmXtXhE-1" class="ext-link" target="blank">View on Figma</a><img src="../Assets/Images/Dealicious/user-flow.webp" alt="">
+        </section>
+        <section id="wireframe" class="max-width">
+            <h2>Wireframe</h2>
+            <div>
+                <p>After confirming the user flow in the team meetings, we created the wireframe through multiple iterations. In some sections, we noticed that the user flow needed to be changed for a better user experience. These changes led to changes in user flow, as well. In the final version, we added annotations for the developers to prevent confusion and maximize efficiency.</p><p>To create a seamless user experience, we created the mobile view and desktop view screens at the same time. Considering the personas and use cases, the focus for the business owner was on the desktop version, while for the customers we went for a mobile-first design.</p><br><p>Based on the user flow and modified features, the wireframes are categorized as follows:</p>
+                <ul class="list-style">
+                    <li>Restaurant Owner Dashboard; including <span class="bold-text">Campaigns</span>, <span class="bold-text">Insight</span>, <span class="bold-text">Burn a Code</span>, and <span class="bold-text">Profile</span></li>
+                    <li>Super Customer Dashboard; including <span class="bold-text">My Restaurants</span>, <span class="bold-text">Restaurant Single-View</span>, and <span class="bold-text">Profile</span></li>
+                    <li>New Customer Dashboard; including <span class="bold-text">Restaurant Single-View</span></li>
+                </ul>
+            </div>
+            <a href="https://www.figma.com/file/tnrFGtw3cZkz1Du9gyOEHU/Dealicious-Wireframe?type=design&node-id=304%3A5106&mode=design&t=PbQFCY7vevugf6HT-1" class="ext-link" target="blank">View on Figma</a>
+            <div class="wireframe1">
+                <h3>Campaigns Flow Iterations</h3>
+                <p>Campaigns is designed as the home screen of the Restaurant Owner Dashboard. The functionality of this page is to enable users to keep track of their marketing campaigns. It was primarily divided into three sections: Ongoing, Upcoming, and Past Campaigns. However, in the later iterations, we transferred Past Campaigns into Insights to keep the home page focused on what is going on from now on to help the business owner make marketing decisions, accordingly.</p>
+                <p>In the first iteration, we designed cards for each campaign to segregate them. Also, we wanted to illustrate charts for different data that is driven from the campaign, as well as the basic information of the campaign including name, date, etc.</p>
+                <div class="grid align-items-center">
+                    <div class="figure col-m-9">
+                        <div class="framed desktop">
+                            <div class="v-scrollable">
+                                <img src="../Assets/Images/Dealicious/Wireframe-Campaign1-v1d.webp" alt="wireframe">
+                            </div>
+                        </div>
+                        <span class="caption">Desktop View</span>
+                    </div>
+                    <div class="figure col-m-3">
+                        <div class="framed mobile">
+                            <div >
+                                <img src="../Assets/Images/Dealicious/Wireframe-Campaign1-v1m.webp" alt="wireframe">
+                            </div>
+                        </div>
+                        <span class="caption">Mobile View</span>
+                    </div>
+                </div>
+                <p>Since we wanted to visualize numerous data, this approach of dividing cards' info into tabs wasn't scaleable, especially on mobile phones where we needed to consider a fat-finger-friendly design. Therefore, in the second iteration, we changed tabs into a dropdown menu. Also, to create a simpler and cleaner home page, we designed expandable cards, which show the charts only in the expanded mode. With the featured campaign and comparative chart on top, we made sure that users can view the most important data at first glance and without extra clicks.</p>
+                <br><p>Ongoing campaigns with cards in their default state:</p>
+                <div class="grid align-items-center">
+                    <div class="figure col-m-9">
+                        <div class="framed desktop">
+                            <div class="v-scrollable">
+                                <img src="../Assets/Images/Dealicious/Wireframe-Campaign1-v2d.webp" alt="wireframe">
+                            </div>
+                        </div>
+                        <span class="caption">Desktop View</span>
+                    </div>
+                    <div class="figure col-m-3">
+                        <div class="framed mobile">
+                            <div class="v-scrollable" >
+                                <img src="../Assets/Images/Dealicious/Wireframe-Campaign1-v2m.webp" alt="wireframe">
+                            </div>
+                        </div>
+                        <span class="caption">Mobile View</span>
+                    </div>
+                </div>
+                <br><p>Ongoing campaigns with cards in their expanded state:</p>
+                <div class="grid align-items-center">
+                    <div class="figure col-m-9">
+                        <div class="framed desktop">
+                            <div class="v-scrollable">
+                                <img src="../Assets/Images/Dealicious/Wireframe-Campaign2-v2d.webp" alt="wireframe">
+                            </div>
+                        </div>
+                        <span class="caption">Desktop View</span>
+                    </div>
+                    <div class="figure col-m-3">
+                        <div class="framed mobile">
+                            <div class="v-scrollable" >
+                                <img src="../Assets/Images/Dealicious/Wireframe-Campaign2-v2m.webp" alt="wireframe">
+                            </div>
+                        </div>
+                        <span class="caption">Mobile View</span>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <details>
+                        <summary><h4 class="colored">Wireframe Annotations</h4></summary>
+                        <ol  start="1" class="ordered-list-style-2-digits two-column">
+                            <li>Tab navigates to a heading in the same page</li>
+                            <li>Navigation resembles application nav bar and is sticky at the bottom of viewport</li>
+                            <li>Searching among the campaigns for specific campaign type</li>
+                            <li>All campaign overviews(active, upcoming and past) are in the same page and these links navigate through the same page</li>
+                            <li>A comparison between all active campaigns</li>
+                            <li>Dropdown selects campaign. when a campaign is shown on highlighted section, it is removed from bottom section</li>
+                            <li>Insight selector- Dropdown selects the insight</li>
+                            <li>Compare opens a dropdown with a list of radio buttons to select the second campaign to compare</li>
+                            <li>Arrow expands the card to show full-size card including info, insight selector and insight chart</li>
+                            <li>Scrollable to the right and left to see all active and upcoming campaigns</li>
+                            <li>Button navigates to the form-view of the campaign to edit</li>
+                            <li>Sidebar is collapsible and it’s sticky while expanded</li>
+                        </ol>
+                    </details>
+                </div>
+                <br><p>In the last iteration of the high-fidelity wireframe, we added pins to the campaign cards. This reduced a dropdown selector on the featured/pinned campaign and made it visually identifiable. Users are able to compare ongoing campaign metrics side by side. To gain a better understanding of how their marketing efforts are doing, they also can compare the metrics of two selected campaigns on a single chart on top right:</p>
+                <div class="grid align-items-center">
+                    <div class="figure col-m-9">
+                        <div class="framed desktop">
+                            <div class="v-scrollable">
+                                <img src="../Assets/Images/Dealicious/Wireframe-Campaign1-v3d.webp" alt="wireframe">
+                            </div>
+                        </div>
+                        <span class="caption">Desktop View</span>
+                    </div>
+                    <div class="figure col-m-3">
+                        <div class="framed mobile">
+                            <div class="v-scrollable" >
+                                <img src="../Assets/Images/Dealicious/Wireframe-Campaign1-v3m.webp" alt="wireframe">
+                            </div>
+                        </div>
+                        <span class="caption">Mobile View</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wireframe2">
+                <h3>Insights Flow</h3>
+                <p>We designed the Insights section to help business owners make data-backed marketing decisions. In this flow, they can view insightful data that is categorized as campaign insight and customer insight. It enables them to compare previous campaigns in terms of revenue, customer retention, and other metrics and recreate successful marketing campaigns. </p>
+                <div class="grid align-items-center">
+                    <div class="figure col-m-9">
+                        <div class="framed desktop">
+                            <div class="v-scrollable">
+                                <img src="../Assets/Images/Dealicious/Wireframe-Insights1-d.webp" alt="wireframe">
+                            </div>
+                        </div>
+                        <span class="caption">Desktop View</span>
+                    </div>
+                    <div class="figure col-m-3">
+                        <div class="framed mobile">
+                            <div class="v-scrollable">
+                                <img src="../Assets/Images/Dealicious/Wireframe-Insights1-m.webp" alt="wireframe">
+                            </div>
+                        </div>
+                        <span class="caption">Mobile View</span>
+                    </div>
+                </div>
+                <p>On the other hand, they can create special offers for their special customers, based on Customer Insignts. Moreover, they can compare each two previous and/or ongoing campaigns, in this section. Comparing metrics are shown side by side on desktop view, and top bottom with horizontal navigation on mobile view.</p>
+                <div class="grid align-items-center">
+                    <div class="figure col-m-9">
+                        <div class="framed desktop">
+                            <div class="v-scrollable">
+                                <img src="../Assets/Images/Dealicious/Wireframe-Insights2-d.webp" alt="wireframe">
+                            </div>
+                        </div>
+                        <span class="caption">Desktop View</span>
+                    </div>
+                    <div class="figure col-m-3">
+                        <div class="framed mobile">
+                            <div class="v-scrollable" >
+                                <img src="../Assets/Images/Dealicious/Wireframe-Insights2-m.webp" alt="wireframe">
+                            </div>
+                        </div>
+                        <span class="caption">Mobile View</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wireframe3">
+                <h3>Super Customer Flow</h3>
+                <p>Super customers are the ones who have registered on Dealicious through a restaurant's QR Code. On this page, they can view all their information in relation to that specific restaurant. They can apply to redeem their points, activate an ongoing campaign, or refer a friend.</p>
+                <div class="grid align-items-center">
+                    <div class="figure col-m-9">
+                        <div class="framed desktop">
+                            <div class="v-scrollable">
+                                <img src="../Assets/Images/Dealicious/Wireframe-SC-d.webp" alt="wireframe">
+                            </div>
+                        </div>
+                        <span class="caption">Desktop View</span>
+                    </div>
+                    <div class="figure col-m-3">
+                        <div class="framed mobile">
+                            <div class="v-scrollable">
+                                <img src="../Assets/Images/Dealicious/Wireframe-SC-m.webp" alt="wireframe">
+                            </div>
+                        </div>
+                        <span class="caption">Mobile View</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="logo" >
+            <div class="max-width">
+                <h2>Logo</h2>
+                <p>Dealicious is a fusion of 'Deal' and 'Delicious,' conveying the core attributes of our platform, symbolizing both promotional potential and the delightful culinary experiences offered. Since the name alone establishes an emotional connection and a memorable presence, we designed a simple logo with a soft-edge typeface and a symbol of special offers to retain the nature of our platform.</p>
+            </div>
+            <div class="grid full-width">
+                <img src="../Assets/Images/Dealicious/logo1.svg" alt="" class="col-m-6">
+                <img src="../Assets/Images/Dealicious/logo2.svg" alt="" class="col-m-6">
+            </div>
+        </section>
+        <section id="color-typo" >
+            <div class="max-width">
+                <h2>Color & Typography</h2>
+                <p>The primary color represents the restaurant industry, with orange conveying energy and creativity, aligning with dining experiences’ lively nature. It evokes warmth and appetizing appeal, perfect for a food-related app. The secondary color symbolizes profit and the word “Deal,” using green to signify growth and prosperity. It also connects to organic and healthy elements, relatable to the food industry. As a data visualization platform, we use variations of the primary and secondary colors to effectively represent and differentiate data points.</p>
+                <p>For typography, we chose Ubuntu Bold from Google Fonts for headings. Ubuntu’s rounded and modern appearance adds an elegant touch, contributing to a contemporary and friendly aesthetic. For body text, we opted for Mukta Light, also from Google Fonts, ensuring clarity and legibility.</p>
+            </div>
+            <div class="grid full-width">
+                <img src="../Assets/Images/Dealicious/color.svg" alt="" class="col-m-6">
+                <img src="../Assets/Images/Dealicious/typography.svg" alt="" class="col-m-6">
+            </div>
+        </section>
+        <section id="ui-kit" class="max-width ">
+            <h2>UI Kit</h2>
+            <div class="grid">
+                <div class="uk-kit-item space-after">
+                    <h3>Icons</h3>
+                    <div class="two-column">
+                        <p>Icons represent the web app’s main features, as well as other functions. They are used in two sizes across the website: 24px and 40px. Except on the marketing materials, icons are shown in black on the platform in all cases, but for two conditions:</p>
+                        <p>First, on navigation menus, where the active navigation menu has a background circle in the primary color. Second, the pin icon on the pinned cards which changes to the primary color.</p>
+                        <img src="../Assets/Images/Dealicious/UIkit-icons.webp" alt="ui-kit-component">
+                    </div>
+                </div>
+                <div class="uk-kit-item space-after">
+                    <h3>Navigation</h3>
+                    <div class="two-column">
+                        <p>On the large screen in Restaurant Owner Dashboard, navigation is a fixed sidebar, placed on the left, and occupies 100% of the viewport height. On the form pages such as Create Campaign and Profile, the sidebar is shown collapsed to minimize distractions. On the mobile screen, navigation is fixed at the bottom. </p>
+                        <img src="../Assets/Images/Dealicious/UIkit-navbar2.webp" alt="ui-kit-component" >
+                        <p>When a nav item is selected, the background circle drops behind the active icon, in all screen sizes.</p>
+                        <img src="../Assets/Images/Dealicious/UIkit-navbar1.webp" alt="ui-kit-component" >
+                    </div>
+                </div>
+                <div class="uk-kit-item space-after">
+                    <h3>Cards</h3>
+                    <div class="two-column">
+                        <p>In this project, we designed a modular web platform using cards. Leveraging the modular design, we structured the platform's content and functionalities into distinct, self-contained units represented by these cards. The modular design approach offered several advantages, including flexibility, scalability, and ease of maintenance. It allowed for a consistent and cohesive design while facilitating the addition or removal of content modules as needed. We could also individually style the cards to create a visually appealing and user-friendly interface.</p>
+                        <img src="../Assets/Images/Dealicious/UIkit-cards1.webp" alt="ui-kit-component" >
+                        <br><p>Chart cards are designed in three sizes including 1-column, 2-column, and 1.5-column for regular insight cards, pinned insight cards, and side-by-side comparison insight cards, respectively. Based on data type, charts vary from line charts, pie charts, bar charts, radial bar chart and figures.</p>
+                        <img src="../Assets/Images/Dealicious/UIkit-cards2.webp" alt="ui-kit-component" >
+                    </div>
+                </div>
+                <div class="uk-kit-item space-after">
+                    <h3>Buttons</h3>
+                    <div class="two-column">
+                        <p>Primary buttons are used for the primary actions such as “Save”, “Create”, and “Submit”. Secondary buttons are used for primary actions which are repeated on a page such as “Activate” and “Burn the Code”. Tertiary buttons are the alternative to the primary action, “Cancel” for instance.</p>
+                        <img src="../Assets/Images/Dealicious/UIkit-button2.webp" alt="ui-kit-component" >
+                        <br><p>The “Create a Campaign” and “Recreate the Campaign” buttons have a specific design and top-right placement across the site. Also, the icons on these two buttons display continious micro animations.</p>
+                        <img src="../Assets/Images/Dealicious/UIkit-button1.webp" alt="ui-kit-component" >
+                    </div>
+                </div>
+                
+            </div>
+        </section>        
+    </section>
+    <section id="reflection" class="max-width">
+        <h2>Reflections</h2>
+        <div class="grid">
+            <div class="col-m-12">
+                <h3>Lesson Learned</h3>
+                <ul class="list-style two-column">
+                    <li><span class="bold-text">Balancing creativity with functionality: </span><br><span>Maintaining the balance between innovative design and functional utility is crucial for delivering a platform with a broad scope. While advocating my well-thought design decisions, eventually, in some not-critical cases, I had to compromise my ideals to achieve a solid functional solution, due to technical and time constraints. This required a deeper understanding of the persona and coming to realize which features are negligible and which ones are crucial in terms of user experience.</span></li>
+                    <li><span class="bold-text">Documentation is a lifesaver: </span><br><span>The importance of meticulous documentation became evident as the project progressed. Clear documentation facilitated smoother collaboration among team members, especially minimized friction among design and development teams. Having annotations on the wireframe and a design system, reduced the interpretations and contributed to a final product that was consistent and aligned with the design to a good extent.</span></li>
+                </ul>
+            </div>
+            <div class="col-m-12">
+                <h3>If We Had More Time</h3>
+                <ul class="list-style two-column">
+                    <li><span class="bold-text">Design and development of POS Integration: </span><br><span>For a data-driven marketing application like Dealicious, more raw data results in more accurate insights and eventually better marketing decisions. With this MVP, data is only retrieved from user input and is only related to the campaigns that are run through the app. In this way, insight can be affected by human errors. To provide a more accurate data visualization and also to create a better experience for the users, we could integrate Dealicious into the current POS systems in the restaurants. Adding this extra feature not only could have taken a couple of weeks to design and develop but also we needed real users who agreed with this integration.</span></li>
+                </ul>
+            </div>
+            <a href="../Assets/Images/Dealicious/NahlaNia.com-Dealicious-Proposal.pdf" class="ext-link" download>Download Proposal</a>
+        </div>
+    </section>
+    <div class="pagination"><a href="LinkedIn-Learning.html">← Previous Project</a><a href="Learnium.html">Next Project →</a></div>
+
+</main>
+<footer class="footer-color max-width">
+    <div class="copyright">
+        <img src="../Assets/Images/footer-Illustration-BW.svg" alt="" class="copyright-img">
+        <div class="copyright-txt"><span>Designed and developed with love by </span><span>NahlaNia @ 2024</span></div>
+    </div>
+    <div class="contact-wrapper">
+        <h3><span class="h3-italic">Get in</span><br><span class="h3-bold">touch</span></h3>  
+        <div class="contact-info">
+            <!-- <a href="mailto:nahlania@gmail.com" class="email" target="_blank">NahlaNia@gmail.com</a> -->
+            <ul class="social-media">
+                <li class="email"><a href="mailto:nahlania@gmail.com" target="_blank"><span class="fa-solid fa-envelope"></span><span class="visually-hidden">Email Me</span></a></li>
+                <li class="linkedin"><a href="https://www.linkedin.com/in/nahlania" target="_blank"><span class="fa-brands fa-linkedin"></span><span class="visually-hidden">connect on LinkedIn</span></a></li>
+                <li class="behance"><a href="https://www.behance.net/nahlania" target="_blank"><span class="fa-brands fa-square-behance"></span><span class="visually-hidden">connect on Behance</span></a></li>
+                <li class="github"><a href="https://github.com/nahlania" target="_blank"><span class="fa-brands fa-square-github"></span><span class="visually-hidden">connect on GitHub</span></a></li>
+                <li class="instagram"><a href="https://www.instagram.com/our.endless.journey" target="_blank"><span class="fa-brands fa-square-instagram"></span><span class="visually-hidden">connect on Instagram</span></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
