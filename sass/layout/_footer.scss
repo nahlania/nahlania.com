@@ -104,9 +104,12 @@ footer{
                 justify-content: center;
                 gap: 1rem;
                 
-                li.behance, li.instagram{
+                li.behance{
                     display: none;
                 }
+                // li.instagram{
+                //     display: none;
+                // }
                 a{
                     color:c.$primary-l ;
                     &:hover{
