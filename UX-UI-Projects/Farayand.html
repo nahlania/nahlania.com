@@ -127,6 +127,7 @@
             <div class="overview-txt">
                 <h2>Overview</h2>
                 <p>Farayand Workflow Management System is a tailored software solution built to streamline the complex processes involved in the medical device repair industry. It efficiently tracks devices and accessories through every stage of the repair journey, from intake to inspection, repair, and quality control. The system is designed to be flexible and scalable, providing real-time data on repairs, technician assignments, and device histories, ensuring smooth operations. Tailored for a rapidly growing startup, Farayand simplifies data management and workflow, making it adaptable to the company's evolving needs.</p>
+                <p>Originally developed in Persian, this project is now being redesigned and documented in English for clarity and accessibility to the audience of my portfolio.</p>
                 <!-- <a href="https://www.dealicious.site/" class="ext-link" target="blank">www.dealicious.site</a> -->
             </div>
         </section>
@@ -142,7 +143,7 @@
                         <div>
                             <img src="../Assets/Icons/Icon-HatsWorn.svg" alt=""><span class="title">Hats Worn</span>
                             <ul>
-                                <li>I led the end-to-end design process, performed user research & market analysis & clustered data, mapped service blueprint, created user flow & wireframes, communicated design rationales, moderated usability testing and monitored user behavior while using the working prototype, designed style guide, UI kit, and high-fidelity mockups, and onboard users.</li>
+                                <li>I led the end-to-end product/service design process, performed user research & market analysis & clustered data, mapped service blueprint, created user flow & wireframes, communicated design rationales, moderated usability testing and monitored user behavior while using the working prototype, designed style guide, UI kit, and high-fidelity mockups, and onboard users.</li>
                             </ul>
                         </div>
                     </li>
@@ -161,7 +162,7 @@
                     <li>
                         <div>
                             <img src="../Assets/Icons/Icon-Team.svg" alt=""><span class="title">Team</span>
-                            <p>1 Product Designers<br>1 Full-stack Developers<br>1 Developr/Product Manager</p>
+                            <p>1 Product/Service Designers<br>1 Full-stack Developers<br>1 Developr/Product Manager</p>
                         </div>
                     </li>
                     <li>
@@ -177,7 +178,7 @@
         <section id="empathize" class="max-width">
             <h2>Empathize</h2>
             <div class="two-column space-after">
-                <p>In the Empathize stage of the Design Thinking process, I focused on gaining a deep understanding of the users and their workflow needs.The typical repair workflow involves multiple stages, all of which must be streamlined for efficiency:</p>
+                <p>In the Empathize stage of the Design Thinking process, I focused on gaining a deep understanding of the users and their workflow needs. The typical repair workflow involves multiple stages, all of which must be streamlined for efficiency:</p>
                 <ul class="list-style space-after">
                     <li>Receiving: Devices are received, accessories logged, and the system checks for any repair history.</li>
                     <li>Inspection: The technologist inspects the device and enters a diagnostic report.</li>
@@ -189,7 +190,27 @@
                 <p>Our common goal in this stage was to design a solution to handle all these steps with minimal friction, ensuring that each device and accessory is linked correctly, and that all data is organized and accessible in Persian, catering specifically to the needs of this niche market.</p>
                 <p>An essential requirement of the system was its integration with the inventory department for seamless spare parts acquisition. Once the parts are ordered, the technologist is notified when they are available, expediting the repair process. Additionally, after completing the repair, the system communicates with the financial department to issue a bill for the service, ensuring no manual handoff is needed and minimizing administrative overhead.</p>
             </div>        
-                <p>The core users of the Farayand Workflow Management System include biomedical technologists, administrator, and technical manager. These users work in a Persian-speaking environment and require a system tailored to the specific challenges of the medical device repair industry, which distinguishes them from other sectors.</p>
+        </section>
+        <section id="persona" class="max-width">
+            <h2>Persona Research</h2>
+            <div class="persona">
+                <p>In this project, instead of relying on fictional personas, I had the advantage of engaging directly with real users to understand their needs, ideate, and iterate based on their feedback. To create a product that resonates with its users, I categorized them into three primary groups: biomedical technologists, administrators, and the technical manager. These users work in a Persian-speaking environment and require a system tailored to the specific challenges of the medical device repair industry, which distinguishes them from other sectors.</p>
+                <!-- <div class="persona-basicInfo">
+                    <div class="persona-img">
+                        <div class="left-bottom-curved"><img src="../Assets/Images/Dealicious/persona1.webp" alt="Photo by Brooke Cagle on Unsplash.com"></div>
+                    </div>
+                    <div class="persona-quote">
+                        <span class="quote-mark">&#10077;</span>
+                        <p class="quote-text">
+                            I've got big dreams but a small budget. I wanna find smart moves to make my restaurant shine.
+                        </p>
+                    </div>
+                    <div class="info">
+                        <span class="bold-text">Sophie, The Restaurant Owner</span>
+                        <p>34 Years Old</p>
+                    </div>
+                </div> -->
+                <div class="persona-desc">
                 <div class="space-after">
                     <h3>Biomedical Technologist</h3>
                     <p>The technologists are the main power users of the system. Their responsibilities span the entire repair lifecycle, includign receiving, inspection, quoting, service, QC, and dispatch. In the interviews I identified these pain points:</p>
@@ -205,7 +226,8 @@
                     <p>The technical manager is responsible for overseeing the repair process from end to end. They plan services, assign technologists, and rely on data visualization and insights to monitor repair progress and team efficiency. The technical manager frustrations were as follows:</p>
                     <ul class="list-style space-after">
                         <li>Lack of real-time data visualization on device status, repair stages, and resource allocation.</li>
-                        <li>Existing platforms provide too many irrelevant features, making it difficult to focus on critical tasks.</li>
+                        <li>Lack of live reports on department profitability due to insufficient integration between service workflow software and financial systems.</li>
+                        <li>Need for a reliable tool to remind about order points and to prevent delayed services caused by low inventory.</li>
                         <li>Difficulty forecasting workload and identifying bottlenecks due to incomplete data and reporting tools.</li>
                     </ul>
                 </div>              
@@ -217,29 +239,37 @@
                         <li>Needing a simplified, intuitive interface that reduces data entry errors, especially since existing SaaS platforms are over-complicated and not customized for the medical repair industry.</li>
                     </ul>
                 </div>       
-        </section>
-
+                </div>
+            </div>
+        </section> 
         <section id="user-story" class="max-width ">
             <h2>User Story</h2>
-            <p>To empathize with the real users and look at our solution through their motivation lens, we created user stories for our main personas:</p>
+            <p>To empathize with the users and look at our solution through their motivation lens, I created user stories for the main personas:</p>
             <div class="story1 space-after">
-                <h3>As a Restaurant Owner</h3>
+                <h3>As a biomedical technologist</h3>
                 <ul class="list-style">
-                    <li>I want to easily create Loyalty Programs so that happy customers keep coming back</li>
-                    <li>I want to keep track of performance of marketing campaigns so that I make better marketing decisions</li>
-                    <li>I want to easily create effective marketing campaigns so that I attract new customers and retain existing ones</li>
-                    <li>I want to have useful data from my customers so that I can create tailored campaigns for them</li>
-                    <li>I want to have more customer reviews so that it attracts new customers</li>
+                    <li>I want to receive a device and check its repair history so that I can quickly assess the previous repairs and provide an accurate diagnosis of the current issue.</li>
+                    <li>I need to connect each accessory to the relevant device in the system so that I can avoid confusion when accessories are received without the main device.</li>
+
+                    <li>I need to order spare parts from the inventory department when necessary.</li>                    
+                    <li>I need the system to be in Persian so that I can easily navigate and input data accurately without language barriers.</li>
                 </ul>
             </div>
             <div class="story2 space-after">
-                <h3>As a Food Lover</h3>
+                <h3>As a tech manager</h3>
                 <ul class="list-style">
-                    <li>I want to try new places and food with a discount</li>
-                    <li>I rely on my friends suggestions to discover new restaurants around the city</li>
-                    <li>I want to sign up as a super customer so that I can get points every time I spend money, at a restaurant</li>
-                    <li>I want to share the joy of discovering new foods with my close friends and convince them to try something new</li>
-                    <li>I want to earn points and discounts, every time I refer this restaurant to my friend</li>
+                    <li>I need to monitor the progress of all ongoing repairs and services so that I can ensure timely delivery and avoid delays.</li>
+                    <li>I want to assign repair tasks to technologists based on their skill sets and availability, optimizing team efficiency.</li>
+                    <li>I want to review data visualizations on performance metrics, such as average repair time and common services, so that I can make informed decisions about business development, inventory support and staff allocation.</li>
+                    <li>I need to connect with the financial department to ensure accurate billing and track payment status for completed services.</li>               
+                </ul>
+            </div>
+            <div class="story2 space-after">
+                <h3>As an administrator</h3>
+                <ul class="list-style">
+                    <li>I need to input customer and device information efficiently.</li>
+                    <li>I want to issue service quotes and create invoices based on completed services.</li>
+                    <li>I want to track the repair process from inspection to service completion so that I can provide accurate updates to customers regarding their device's repair status.</li>                   
                 </ul>
             </div>
         </section>
