@@ -310,6 +310,11 @@ h4 {
   color: var(--accent-color-d);
 }
 
+.inline-space {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 /* LAYOUT ==============*/
 @media (orientation: landscape) {
   .free-space {
@@ -1136,7 +1141,7 @@ footer .contact-wrapper .contact-info ul {
   justify-content: center;
   gap: 1rem;
 }
-footer .contact-wrapper .contact-info ul li.behance, footer .contact-wrapper .contact-info ul li.instagram {
+footer .contact-wrapper .contact-info ul li.behance {
   display: none;
 }
 footer .contact-wrapper .contact-info ul a {
@@ -1735,21 +1740,6 @@ footer .contact-wrapper .contact-info ul a:hover {
   }
 }
 
-.statement {
-  text-align: center;
-  line-height: 1.5;
-  max-width: 992px !important;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 8rem;
-  padding: 0 2rem 0 2rem;
-}
-@media screen and (min-width: calc(992px + 4rem)) {
-  .statement {
-    padding: 0;
-  }
-}
-
 .body-project section {
   margin: 0 auto 4rem auto;
 }
@@ -1850,6 +1840,20 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-project #proj-details img {
   width: 120px;
+}
+.body-project .statement {
+  text-align: center;
+  line-height: 1.5;
+  max-width: 992px !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8rem;
+  padding: 0 2rem 0 2rem;
+}
+@media screen and (min-width: calc(992px + 4rem)) {
+  .body-project .statement {
+    padding: 0;
+  }
 }
 .body-project #user-research .stickers {
   margin-bottom: 2rem;
