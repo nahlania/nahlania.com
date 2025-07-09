@@ -1106,7 +1106,7 @@ footer .contact-wrapper {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 3rem;
 }
 footer .contact-wrapper h3 {
   display: flex;
@@ -1446,7 +1446,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
   grid-template-columns: 1fr;
-  align-items: center;
+  align-items: end;
 }
 @media screen and (min-width: 768px) {
   .body-home main .hero .main-hero-desc {
