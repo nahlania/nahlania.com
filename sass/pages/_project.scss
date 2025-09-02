@@ -37,7 +37,9 @@
 
 
 .body-project{
-
+    ::selection {
+    background: var(--accent-color-d);
+	}
     section{
         margin: 0 auto 4rem auto; 
     }
@@ -135,6 +137,9 @@
     }
 
     #proj-details{
+        ::selection {
+            background: var(--accent-color-m);
+	    }
         grid-column: 1/-1;
         grid-row: 2/-1;
 
@@ -171,33 +176,6 @@
     }  
 
     #user-research{
-        .stickers{
-            margin-bottom: 2rem;
-            display: grid;
-            gap: 2rem;
-            justify-content: center;
-            justify-items: center;
-            @media screen and (min-width: v.$sw-m){
-                grid-template-columns: repeat(2, 1fr);
-            }
-            @media screen and (min-width: v.$sw-m-l){
-                grid-template-columns: repeat(3, 1fr);
-            }
-            .sticker{
-                min-width: 300px;
-                max-width:400px;
-                // background-image: in html code
-                background-repeat: no-repeat;
-                background-position: center;
-                color: c.$contrast-d;   
-                text-align: center;
-                padding: 1rem 1rem 4rem 1rem;
-                p{
-                    text-wrap:nowrap;
-                }       
-            }
-        }
-
     }
 
     #persona{
@@ -241,7 +219,7 @@
                 grid-row: 3;
                 
                 .quote-mark{
-                    font-size:calc(map-get(t.$font-sizes , h1 ) * 6);
+                    font-size:calc(map-get(t.$font-sizes , h1 ) * 4);
                     color: var(--accent-color-m);
                     line-height: .3 !important;
                 }

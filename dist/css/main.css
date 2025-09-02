@@ -47,12 +47,6 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
-body ::-moz-selection {
-  background: var(--accent-color);
-}
-body ::selection {
-  background: var(--accent-color);
-}
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
@@ -92,8 +86,7 @@ select {
 /* Accessibility ================================= */
 .visually-hidden {
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -104,11 +97,17 @@ select {
 /* TYPOGRAPHY ==============*/
 body {
   line-height: 1.7;
-  font-family: ubuntu, helvetica, sans-serif;
+  font-family: "Open Sans", helvetica, sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
   background-color: #1F3051;
   color: #ECF0F6;
+}
+body ::-moz-selection {
+  background: var(--accent-color);
+}
+body ::selection {
+  background: var(--accent-color);
 }
 
 .bold-text {
@@ -358,6 +357,14 @@ ol.two-column {
   margin-bottom: 0.5rem;
 }
 
+.no-bullet-list-style {
+  list-style: none;
+  padding-left: 1rem;
+}
+.no-bullet-list-style li {
+  margin-bottom: 0.5rem;
+}
+
 .ordered-list-style-2-digits {
   list-style: decimal-leading-zero;
   padding-left: 2rem;
@@ -392,6 +399,12 @@ ol.two-column {
   background-color: #fff;
   color: #1F3051;
   padding: 1.8rem 0 1.8rem 0;
+}
+.full-width ::-moz-selection {
+  background: var(--accent-color-l) !important;
+}
+.full-width ::selection {
+  background: var(--accent-color-l) !important;
 }
 @media screen and (min-width: 1200px) {
   .full-width {
@@ -612,8 +625,7 @@ button {
   align-items: center;
   justify-content: center;
   grid-gap: 0;
-  -webkit-clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 85%, 0 100%, 0 50%);
-          clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 85%, 0 100%, 0 50%);
+  clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 85%, 0 100%, 0 50%);
 }
 .polygon-banner .banner-heading-wrapper .banner-heading {
   color: #1F3051;
@@ -621,8 +633,7 @@ button {
   text-align: center;
 }
 .polygon-banner img {
-  -webkit-clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 85%, 0 100%, 0 50%);
-          clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 85%, 0 100%, 0 50%);
+  clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 85%, 0 100%, 0 50%);
 }
 
 /* Accordion =================== */
@@ -862,6 +873,57 @@ li img {
   color: #fff;
 }
 
+/* Sticker =================== */
+.stickers {
+  margin-bottom: 2rem;
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  justify-items: center;
+}
+@media screen and (min-width: 768px) {
+  .stickers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  .stickers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.stickers .sticker {
+  min-width: 300px;
+  max-width: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #1F3051;
+  text-align: center;
+  padding: 2rem 1rem 4rem 1rem;
+}
+.stickers .sticker .title {
+  margin-bottom: 0.75rem;
+}
+.stickers .sticker li {
+  padding-left: 0 !important;
+  margin-bottom: 0.25rem !important;
+}
+.stickers .sticker p {
+  text-wrap: nowrap;
+}
+
+/* Sticker html Code
+
+<div class="stickers">
+    <div class="sticker" style="background-image: url(../Assets/Images/Sticker.svg);">
+        <span class="title">Tite</span>
+        <ul class="no-bullet-list-style">
+            <li>text</li>
+        </ul>
+    </div>
+</div>
+
+
+*/
 header .header-container {
   display: flex;
   flex-flow: row, nowrap;
@@ -1046,8 +1108,7 @@ header .menu-container .menu-contact {
 }
 .blend-mode input[type=radio] {
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -1740,6 +1801,13 @@ footer .contact-wrapper .contact-info ul a:hover {
   }
 }
 
+.body-project ::-moz-selection {
+  background: var(--accent-color-d);
+}
+
+.body-project ::selection {
+  background: var(--accent-color-d);
+}
 .body-project section {
   margin: 0 auto 4rem auto;
 }
@@ -1827,6 +1895,12 @@ footer .contact-wrapper .contact-info ul a:hover {
   grid-column: 1/-1;
   grid-row: 2/-1;
 }
+.body-project #proj-details ::-moz-selection {
+  background: var(--accent-color-m);
+}
+.body-project #proj-details ::selection {
+  background: var(--accent-color-m);
+}
 .body-project #proj-details ul.overview-titles {
   display: grid;
   row-gap: 2rem;
@@ -1854,35 +1928,6 @@ footer .contact-wrapper .contact-info ul a:hover {
   .body-project .statement {
     padding: 0;
   }
-}
-.body-project #user-research .stickers {
-  margin-bottom: 2rem;
-  display: grid;
-  gap: 2rem;
-  justify-content: center;
-  justify-items: center;
-}
-@media screen and (min-width: 768px) {
-  .body-project #user-research .stickers {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (min-width: 992px) {
-  .body-project #user-research .stickers {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-.body-project #user-research .stickers .sticker {
-  min-width: 300px;
-  max-width: 400px;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #1F3051;
-  text-align: center;
-  padding: 1rem 1rem 4rem 1rem;
-}
-.body-project #user-research .stickers .sticker p {
-  text-wrap: nowrap;
 }
 .body-project #persona .persona-basicInfo {
   margin-bottom: 3rem;
@@ -1926,7 +1971,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   grid-row: 3;
 }
 .body-project #persona .persona-basicInfo .persona-quote .quote-mark {
-  font-size: 180px;
+  font-size: 120px;
   color: var(--accent-color-m);
   line-height: 0.3 !important;
 }

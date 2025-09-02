@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farayand-SaaS Product Design & Development</title>
+    <title>NahlaNia Design-Service/Product Design-Farayand</title>
     <link rel="icon" href="../Assets/Images/NahlaNia-logo-sign.svg">
 
     <link rel="stylesheet" href="../dist/css/main.css">
@@ -11,6 +11,7 @@
     <script src="../main.js" defer></script>
     <style>
         :root{
+          --accent-color-l: #ffab9a;
           --accent-color-m: #FF7257;            
           --accent-color-d: #FF4824;            
         }
@@ -67,7 +68,7 @@
     <div class="hero max-width">
         <div class="hero-wrapper">
             <div class="main-hero-text">
-                <h1><span class="h1-bold">Farayand</span><br><span class="h1-subheading">Product Design & Dev</span></h1>
+                <h1><span class="h1-bold">Farayand</span><br><span class="h1-subheading">Product & Service Design</span></h1>
             </div>
         </div>
     </div>
@@ -123,11 +124,10 @@
 
     <section id="intro">
         <section id="overview" class="max-width">
-            <div class="overview-img"><img src="../Assets/Images/Dealicious/overview.webp" alt=""></div>
+            <div class="overview-img"><img src="../Assets/Images/Farayand/overview.webp" alt=""></div>
             <div class="overview-txt">
                 <h2>Overview</h2>
-                <p>Farayand Workflow Management System is a tailored software solution built to streamline the complex processes involved in the medical device repair industry. It efficiently tracks devices and accessories through every stage of the repair journey, from intake to inspection, repair, and quality control. The system is designed to be flexible and scalable, providing real-time data on repairs, technician assignments, and device histories, ensuring smooth operations. Tailored for a rapidly growing startup, Farayand simplifies data management and workflow, making it adaptable to the company's evolving needs.</p>
-                <p>Originally developed in Persian, this project is now being redesigned and documented in English for clarity and accessibility to the audience of my portfolio.</p>
+                <p>This project involved designing the <span class="bold-text">end-to-end service</span> workflow for a medical device repair company, connecting technical operations, inventory, and accounting while optimizing customer touchpoints such as communications, quoting, and service updates. As part of this service design, the Farayand Workflow Management System was implemented to streamline device tracking from intake through inspection, repair, quality control, and dispatch. By providing real-time insight into technician assignments, repair progress, and device histories, the SaaS supports scalable workflows and enhances the overall experience for staff and customers.</p>
                 <!-- <a href="https://www.dealicious.site/" class="ext-link" target="blank">www.dealicious.site</a> -->
             </div>
         </section>
@@ -135,34 +135,34 @@
                 <ul class="overview-titles max-width">
                     <li>
                         <div>
-                            <img src="../Assets/Icons/Icon-Mission.svg" alt=""><span class="title">Mission</span>
-                            <p>To collaborate closely with cross-functional teams to design and develop a customized, intuitive, and scalable workflow management solution tailored to the needs of the medical device industry. The essential requirement was to focus on efficiently managing complex workflows and organizing customer data, device information, and service histories into a seamless service blueprint.</p>
+                            <img src="../Assets/Icons/Icon-Impact.svg" alt=""><span class="title">Impact</span>
+                            <p>The service design, supported by the Farayand Workflow Management System, streamlined both internal operations and customer-facing touchpoints, including communications, quoting, and service updates. The SaaS improved data entry speed by 70% and reduced critical errors by 25%, providing clear visibility into device progress, technician assignments, and inventory.</p>
                         </div>
                     </li>
                     <li>
                         <div>
                             <img src="../Assets/Icons/Icon-HatsWorn.svg" alt=""><span class="title">Hats Worn</span>
                             <ul>
-                                <li>I led the end-to-end product/service design process, performed user research & market analysis & clustered data, mapped service blueprint, created user flow & wireframes, communicated design rationales, moderated usability testing and monitored user behavior while using the working prototype, designed style guide, UI kit, and high-fidelity mockups, and onboard users.</li>
+                                <li>I led the end-to-end product/service design process, performed user research & market analysis & clustered data, mapped service blueprint, created user flow & wireframes, communicated design rationales, moderated usability testing and monitored user behavior while using the working prototype, designed style guide, UI kit, and high-fidelity mockups, and onboarded users.</li>
                             </ul>
                         </div>
                     </li>
                     <li>
                         <div>
                             <img src="../Assets/Icons/Icon-Tools.svg" alt=""><span class="title">Tools</span>
-                            <p>Adobe Illustrator, Photoshop & Figma for Design - Jira for communication and PM - VBA & Excel for testing prototype</p>
+                            <p>Adobe Tools(Ai, Ps) & Figma for Design - Jira PM - VBA & Excel for Testing Prototype</p>
                         </div>
                     </li>
                     <li>
                         <div>
                             <img src="../Assets/Icons/Icon-Timeline.svg" alt=""><span class="title">Timeline</span>
-                            <p>22 months, from Ideation to Onboardign<br>Sep 2020-Jul 2022</p>
+                            <p>22 months, from Ideation to User Onboardign</p>
                         </div>
                     </li>
                     <li>
                         <div>
                             <img src="../Assets/Icons/Icon-Team.svg" alt=""><span class="title">Team</span>
-                            <p>1 Product/Service Designers<br>1 Full-stack Developers<br>1 Developr/Product Manager</p>
+                            <p>1 Product/Service Designer<br>1 Full-stack Developer<br>1 Developr/Product Manager</p>
                         </div>
                     </li>
                     <li>
@@ -177,19 +177,87 @@
     <section id="research">
         <section id="empathize" class="max-width">
             <h2>Empathize</h2>
-            <div class="two-column space-after">
-                <p>In the Empathize stage of the Design Thinking process, I focused on gaining a deep understanding of the users and their workflow needs. The typical repair workflow involves multiple stages, all of which must be streamlined for efficiency:</p>
-                <ul class="list-style space-after">
+            <div">
+                <p>In the Empathize stage of the Design Thinking process, I focused on gaining a deep understanding of the users and their workflow needs. The typical repair workflow involves multiple stages, all of which must be streamlined for efficiency.</p>
+                <!-- <ul class="list-style space-after">
                     <li>Receiving: Devices are received, accessories logged, and the system checks for any repair history.</li>
                     <li>Inspection: The technologist inspects the device and enters a diagnostic report.</li>
                     <li>Quoting: Based on the diagnosis, a repair quote is generated and sent to the customer.</li>
                     <li>Service: Repairs are completed, often involving spare parts ordering.</li>
                     <li>Quality Control: The repaired device is tested to ensure it meets safety and quality standards.</li>
                     <li>Dispatch: The device is prepared for return to the customer, with all steps logged for future reference.</li>
-                </ul>
+                </ul> -->
+
                 <p>Our common goal in this stage was to design a solution to handle all these steps with minimal friction, ensuring that each device and accessory is linked correctly, and that all data is organized and accessible in Persian, catering specifically to the needs of this niche market.</p>
-                <p>An essential requirement of the system was its integration with the inventory department for seamless spare parts acquisition. Once the parts are ordered, the technologist is notified when they are available, expediting the repair process. Additionally, after completing the repair, the system communicates with the financial department to issue a bill for the service, ensuring no manual handoff is needed and minimizing administrative overhead.</p>
-            </div>        
+                <!-- <p>An essential requirement of the system was its integration with the inventory department for seamless spare parts acquisition. Once the parts are ordered, the technologist is notified when they are available, expediting the repair process. Additionally, after completing the repair, the system communicates with the financial department to issue a bill for the service, ensuring no manual handoff is needed and minimizing administrative overhead.</p> -->
+                </div>
+                <div class="stickers">
+                    <div class="sticker" style="background-image: url(../Assets/Images/Sticker.svg);">
+                        <span class="title">Receiving</span>
+                        <ul class="no-bullet-list-style">
+                            <li>Record customer complaint</li>
+                            <li>Update customer info</li>
+                            <li>Assign customer/device ID</li>
+                            <li>Log devices & accessories</li>
+                            <li>Print service worksheets</li>
+                            <li>Send receipt to customer</li>
+                        </ul>
+                    </div>
+
+                    <div class="sticker" style="background-image: url(../Assets/Images/Sticker.svg);">
+                        <span class="title">Inspection</span>
+                        <ul class="no-bullet-list-style">
+                            <li>Inspect device condition</li>
+                            <li>Save photos of received device</li>
+                            <li>Label all parts & accessories</li>
+                            <li>Enter diagnostic report</li>
+                            <li>Suggest preventative repairs</li>
+                        </ul>
+                    </div>
+
+                    <div class="sticker" style="background-image: url(../Assets/Images/Sticker.svg);">
+                        <span class="title">Service Supervision</span>
+                        <ul class="no-bullet-list-style">
+                            <li>Assign technologist</li>
+                            <li>Evaluate service cost</li>
+                            <li>Create & confirm quotes</li>
+                            <li>Order spare parts</li>
+                            <li>Monitor service process</li>
+                            <li>Monitor analytics</li>
+                        </ul>
+                    </div>
+
+                    <div class="sticker" style="background-image: url(../Assets/Images/Sticker.svg);">
+                        <span class="title">Service</span>
+                        <ul class="no-bullet-list-style">
+                            <li>Complete repairs</li>
+                            <li>Update service & device info</li>
+                            <li>Update repair status</li>
+                            <li>Record service notes</li>
+                        </ul>
+                    </div>
+
+                    <div class="sticker" style="background-image: url(../Assets/Images/Sticker.svg);">
+                        <span class="title">Quality Control</span>
+                        <ul class="no-bullet-list-style">
+                            <li>Test repaired device</li>
+                            <li>Validate functionality</li>
+                            <li>Ensure safety & quality</li>
+                            <li>Approve for dispatch</li>
+                        </ul>
+                    </div>
+
+                    <div class="sticker" style="background-image: url(../Assets/Images/Sticker.svg);">
+                        <span class="title">Dispatch</span>
+                        <ul class="no-bullet-list-style">
+                            <li>Prepare device for return</li>
+                            <li>Log all steps</li>
+                            <li>Issue invoice</li>
+                            <li>Schedule delivery</li>
+                            <li>Confirm customer receipt</li>
+                        </ul>
+                    </div>
+                </div>        
         </section>
         <section id="persona" class="max-width">
             <h2>Persona Research</h2>
