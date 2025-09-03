@@ -11,9 +11,9 @@
     <script src="../main.js" defer></script>
     <style>
         :root{
-          --accent-color-l: #ffab9a;
-          --accent-color-m: #FF7257;            
-          --accent-color-d: #FF4824;            
+          --accent-color-l: #fc9e76;
+          --accent-color-m: #F8763D;            
+          --accent-color-d: #f95d1a;            
         }
     </style>
 </head>
@@ -31,7 +31,7 @@
 </script>
 
 <body class="body-project">
-<header class="max-width">
+<header id="top" class="max-width">
     <div class="header-container">
         <div class="logo"><a href="../index.html"><img src="../Assets/Images/NahlaNia-logo-horizontal.svg" alt=""></a></div>
         <button class="menu-on"><img src="../Assets/Icons/Icon-Menu.svg" alt=""></button>
@@ -74,6 +74,11 @@
     </div>
 
     <nav class="sidebar">
+        <div class="sidebar-category sidebar-top">
+            <a href="#top" class="category-name">
+                <span>Back to Top</span>
+            </a>
+        </div>
         <div class="sidebar-category sidebar-overview">
             <a href="#intro" class="category-name">
                 <img src="../Assets/Icons/Icon-Overview.svg" alt="">
@@ -92,10 +97,11 @@
             <div class="category-items">
                 <a href="#empathize" class="category-item">Empathize</a>
                 <!-- <a href="#user-research" class="category-item">User Research</a> -->
-                <a href="#persona" class="category-item">Persona</a>
-                <a href="#user-story" class="category-item">User Story</a>
+                <a href="#persona" class="category-item">User Research</a>
+                <a href="#blueprint" class="category-item">Service Blueprint</a>
+                <!-- <a href="#user-story" class="category-item">User Story</a> -->
                 <!-- <a href="#journey-map" class="category-item">Journey Map</a> -->
-                <a href="#market" class="category-item">Market Research</a>
+                <!-- <a href="#market" class="category-item">Market Research</a> -->
             </div>
         </div>
         <div class="sidebar-category sidebar-uxi">
@@ -118,6 +124,11 @@
             <a href="#reflection" class="category-name">
                 <img src="../Assets/Icons/Icon-Reflection.svg" alt="">
                 <span>Reflection</span>
+            </a>
+        </div>
+        <div class="sidebar-category sidebar-bottom">
+            <a href="#bottom" class="category-name">
+                <span>Jump to End</span>
             </a>
         </div>
     </nav>
@@ -178,18 +189,7 @@
         <section id="empathize" class="max-width">
             <h2>Empathize</h2>
             <div">
-                <p>In the Empathize stage of the Design Thinking process, I focused on gaining a deep understanding of the users and their workflow needs. The typical repair workflow involves multiple stages, all of which must be streamlined for efficiency.</p>
-                <!-- <ul class="list-style space-after">
-                    <li>Receiving: Devices are received, accessories logged, and the system checks for any repair history.</li>
-                    <li>Inspection: The technologist inspects the device and enters a diagnostic report.</li>
-                    <li>Quoting: Based on the diagnosis, a repair quote is generated and sent to the customer.</li>
-                    <li>Service: Repairs are completed, often involving spare parts ordering.</li>
-                    <li>Quality Control: The repaired device is tested to ensure it meets safety and quality standards.</li>
-                    <li>Dispatch: The device is prepared for return to the customer, with all steps logged for future reference.</li>
-                </ul> -->
-
-                <p>Our common goal in this stage was to design a solution to handle all these steps with minimal friction, ensuring that each device and accessory is linked correctly, and that all data is organized and accessible in Persian, catering specifically to the needs of this niche market.</p>
-                <!-- <p>An essential requirement of the system was its integration with the inventory department for seamless spare parts acquisition. Once the parts are ordered, the technologist is notified when they are available, expediting the repair process. Additionally, after completing the repair, the system communicates with the financial department to issue a bill for the service, ensuring no manual handoff is needed and minimizing administrative overhead.</p> -->
+                <p>In this phase, I focused on gaining a deep understanding of the users and their workflow needs. The typical repair workflow involves multiple stages. Our common goal in this stage was to design a solution to handle all these steps with minimal friction, ensuring that data is organized and accessible in Persian, catering specifically to the needs of this niche market.</p>
                 </div>
                 <div class="stickers">
                     <div class="sticker" style="background-image: url(../Assets/Images/Sticker.svg);">
@@ -259,87 +259,65 @@
                     </div>
                 </div>        
         </section>
-        <section id="persona" class="max-width">
-            <h2>Persona Research</h2>
-            <div class="persona">
-                <p>In this project, instead of relying on fictional personas, I had the advantage of engaging directly with real users to understand their needs, ideate, and iterate based on their feedback. To create a product that resonates with its users, I categorized them into three primary groups: biomedical technologists, administrators, and the technical manager. These users work in a Persian-speaking environment and require a system tailored to the specific challenges of the medical device repair industry, which distinguishes them from other sectors.</p>
-                <!-- <div class="persona-basicInfo">
-                    <div class="persona-img">
-                        <div class="left-bottom-curved"><img src="../Assets/Images/Dealicious/persona1.webp" alt="Photo by Brooke Cagle on Unsplash.com"></div>
+        <section id="persona" class="full-width">
+            <div class="max-width">
+                <h2>User Research</h2>
+                <div class="persona">
+                    <p>In this project, instead of relying on fictional personas, I had the advantage of engaging directly with real users to understand their needs, ideate, and iterate based on their feedback. These users work in a Persian-speaking environment and require a system tailored to the specific challenges of the medical device repair industry, which distinguishes them from other sectors.</p>
+                    <!-- <div class="persona-basicInfo">
+                        <div class="persona-img">
+                            <div class="left-bottom-curved"><img src="../Assets/Images/Dealicious/persona1.webp" alt="Photo by Brooke Cagle on Unsplash.com"></div>
+                        </div>
+                        <div class="persona-quote">
+                            <span class="quote-mark">&#10077;</span>
+                            <p class="quote-text">
+                                I've got big dreams but a small budget. I wanna find smart moves to make my restaurant shine.
+                            </p>
+                        </div>
+                        <div class="info">
+                            <span class="bold-text">Sophie, The Restaurant Owner</span>
+                            <p>34 Years Old</p>
+                        </div>
+                    </div> -->
+                    <div class="persona-desc">
+                    <div class="space-after">
+                        <h3>Biomedical Technologist</h3>
+                        <p>The technologists are the main power users of the system. Their responsibilities span the entire repair lifecycle, includign receiving, inspection, quoting, service, QC, and dispatch. In the interviews I identified these pain points:</p>
+                        <ul class="list-style space-after">
+                            <li>Difficulty accessing repair history quickly when a device arrives for service.</li>
+                            <li>Managing accessories separately from the main device, such as ultrasound probes, and ensuring they are correctly linked in the system.</li>
+                            <li>Local software solutions often come with extra features that are irrelevant to this niche industry, making the tools unnecessarily complex and reducing usability.</li>
+                            <li>Need for a system in Persian to support their workflow without language barriers</li>
+                        </ul>
                     </div>
-                    <div class="persona-quote">
-                        <span class="quote-mark">&#10077;</span>
-                        <p class="quote-text">
-                            I've got big dreams but a small budget. I wanna find smart moves to make my restaurant shine.
-                        </p>
+                    <div class="space-after">
+                        <h3>Technical Manager</h3>
+                        <p>The technical manager is responsible for overseeing the repair process from end to end. They plan services, assign technologists, and rely on data visualization and insights to monitor repair progress and team efficiency. The technical manager frustrations were as follows:</p>
+                        <ul class="list-style space-after">
+                            <li>Lack of real-time data visualization on device status, repair stages, and resource allocation.</li>
+                            <li>Difficulty in forecasting workload and identifying bottlenecks due to a lack of insight into performance metrics, such as average repair time and most common services.</li>
+                            <li>Lack of live reports on department profitability due to insufficient integration between service workflow software and financial systems.</li>
+                            <li>Need for a reliable reminder tool for order points to prevent low inventory and delayed services.</li>
+                            <li>The need to assign repair tasks to technologists based on their skill sets and availability, optimizing team efficiency.</li>
+                        </ul>
                     </div>
-                    <div class="info">
-                        <span class="bold-text">Sophie, The Restaurant Owner</span>
-                        <p>34 Years Old</p>
+                    <div class="space-after">
+                        <h3>Administrator</h3>
+                        <p>The administrator acts as the communication hub between technologists, customers, and management. Their duties include maintaining accurate data in the system, logging device intake and dispatch, and ensuring smooth workflow transitions:</p>
+                        <ul class="list-style">
+                            <li>Keeping track of all devices, their repair status, and spare parts.</li>
+                            <li>Needing a simplified, intuitive interface that reduces data entry errors.</li>
+                            <li>Need for an automated document processing for receipts, labels, service worksheets, etc.</li>
+                        </ul>
                     </div>
-                </div> -->
-                <div class="persona-desc">
-                <div class="space-after">
-                    <h3>Biomedical Technologist</h3>
-                    <p>The technologists are the main power users of the system. Their responsibilities span the entire repair lifecycle, includign receiving, inspection, quoting, service, QC, and dispatch. In the interviews I identified these pain points:</p>
-                    <ul class="list-style space-after">
-                        <li>Difficulty accessing repair history quickly when a device arrives for service.</li>
-                        <li>Managing accessories separately from the main device, such as ultrasound probes, and ensuring they are correctly linked in the system.</li>
-                        <li>Local software solutions often come with extra features that are irrelevant to this niche industry, making the tools unnecessarily complex and reducing usability.</li>
-                        <li>Need for a system in Persian to support their workflow without language barriers, as English-based tools are less intuitive.</li>
-                    </ul>
-                </div>
-                <div class="space-after">
-                    <h3>Technical Manager</h3>
-                    <p>The technical manager is responsible for overseeing the repair process from end to end. They plan services, assign technologists, and rely on data visualization and insights to monitor repair progress and team efficiency. The technical manager frustrations were as follows:</p>
-                    <ul class="list-style space-after">
-                        <li>Lack of real-time data visualization on device status, repair stages, and resource allocation.</li>
-                        <li>Lack of live reports on department profitability due to insufficient integration between service workflow software and financial systems.</li>
-                        <li>Need for a reliable tool to remind about order points and to prevent delayed services caused by low inventory.</li>
-                        <li>Difficulty forecasting workload and identifying bottlenecks due to incomplete data and reporting tools.</li>
-                    </ul>
-                </div>              
-                <div class="space-after">
-                    <h3>Administrator</h3>
-                    <p>Administrators act as the communication hub between technologists, customers, and management. Their duties include maintaining accurate data in the system, logging device intake and dispatch, and ensuring smooth workflow transitions. The interviews highlighted that these are the main needs of the administrator:</p>
-                    <ul class="list-style">
-                        <li>Keeping track of all devices, their repair status, and spare parts.</li>
-                        <li>Needing a simplified, intuitive interface that reduces data entry errors, especially since existing SaaS platforms are over-complicated and not customized for the medical repair industry.</li>
-                    </ul>
-                </div>       
+                    </div>
                 </div>
             </div>
         </section> 
-        <section id="user-story" class="max-width ">
-            <h2>User Story</h2>
-            <p>To empathize with the users and look at our solution through their motivation lens, I created user stories for the main personas:</p>
-            <div class="story1 space-after">
-                <h3>As a biomedical technologist</h3>
-                <ul class="list-style">
-                    <li>I want to receive a device and check its repair history so that I can quickly assess the previous repairs and provide an accurate diagnosis of the current issue.</li>
-                    <li>I need to connect each accessory to the relevant device in the system so that I can avoid confusion when accessories are received without the main device.</li>
-
-                    <li>I need to order spare parts from the inventory department when necessary.</li>                    
-                    <li>I need the system to be in Persian so that I can easily navigate and input data accurately without language barriers.</li>
-                </ul>
-            </div>
-            <div class="story2 space-after">
-                <h3>As a tech manager</h3>
-                <ul class="list-style">
-                    <li>I need to monitor the progress of all ongoing repairs and services so that I can ensure timely delivery and avoid delays.</li>
-                    <li>I want to assign repair tasks to technologists based on their skill sets and availability, optimizing team efficiency.</li>
-                    <li>I want to review data visualizations on performance metrics, such as average repair time and common services, so that I can make informed decisions about business development, inventory support and staff allocation.</li>
-                    <li>I need to connect with the financial department to ensure accurate billing and track payment status for completed services.</li>               
-                </ul>
-            </div>
-            <div class="story2 space-after">
-                <h3>As an administrator</h3>
-                <ul class="list-style">
-                    <li>I need to input customer and device information efficiently.</li>
-                    <li>I want to issue service quotes and create invoices based on completed services.</li>
-                    <li>I want to track the repair process from inspection to service completion so that I can provide accurate updates to customers regarding their device's repair status.</li>                   
-                </ul>
-            </div>
+        <section id="blueprint" class="max-width ">
+            <h2>Service Blueprint</h2>
+            <p>Here, I simplified the service blueprint, focusing on the end-to-end repair process without overwhelming detail on peripheral systems like accounting or inventory. This blueprint served as the foundation for developing the Farayand Workflow Management System, clarifying user roles, touchpoints, and data flows to support a streamlined and error-free service.</p>
+            <img src="../Assets/Images/Farayand/service blueprint.webp" alt="service blueprint">
         </section>
         <div class="max-width">
             <h3 class="colored in-progress">Thanks for checking out my portfolio, I'm still working on documentation of this project...</h3>
@@ -664,7 +642,7 @@
             <a href="../Assets/Images/Dealicious/NahlaNia.com-Dealicious-Proposal.pdf" class="ext-link" download>Download Proposal</a>
         </div> -->
     </section>
-    <div class="pagination"><a href="LinkedIn-Learning.html">← Previous Project</a><a href="Learnium.html">Next Project →</a></div>
+    <div id="bottom" class="pagination"><a href="LinkedIn-Learning.html">← Previous Project</a><a href="Learnium.html">Next Project →</a></div>
 
 </main>
 <footer class="footer-color max-width">
