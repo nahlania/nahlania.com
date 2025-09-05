@@ -398,7 +398,7 @@ ol.two-column {
   margin: 0 auto 4rem auto;
   background-color: #fff;
   color: #1F3051;
-  padding: 1.8rem 0 1.8rem 0;
+  padding: 3rem 0 1.8rem 0;
 }
 .full-width ::-moz-selection {
   background: var(--accent-color-l) !important;
@@ -1811,6 +1811,9 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-project section {
   margin: 0 auto 4rem auto;
 }
+.body-project section .margin-top {
+  margin-top: 4rem;
+}
 .body-project h2 {
   color: var(--accent-color-m);
   margin-bottom: 2rem;
@@ -1929,6 +1932,18 @@ footer .contact-wrapper .contact-info ul a:hover {
     padding: 0;
   }
 }
+.body-project .statement-styled {
+  text-align: center;
+  line-height: 1.5;
+  max-width: 768px !important;
+  margin: 4rem auto 1rem auto;
+  padding: 0 2rem 0 2rem;
+}
+@media screen and (min-width: calc(992px + 4rem)) {
+  .body-project .statement-styled {
+    padding: 0;
+  }
+}
 .body-project #persona .persona-basicInfo {
   margin-bottom: 3rem;
   display: grid;
@@ -2014,6 +2029,15 @@ footer .contact-wrapper .contact-info ul a:hover {
 .body-project #market img {
   display: block;
   margin: 1rem auto;
+}
+.body-project #features {
+  padding-top: 4rem;
+}
+.body-project #features h2 {
+  margin-bottom: 1rem !important;
+}
+.body-project #features .full-width {
+  padding-top: 1rem !important;
 }
 .body-project #features div.features {
   display: grid;
