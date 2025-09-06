@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet');
 /* MARGIN/PADDING ================================*/
@@ -115,7 +116,8 @@ body ::selection {
 }
 
 .caption {
-  font-size: calc(1.125rem - 3px);
+  font-size: calc(1.125rem - 4px);
+  padding-top: 0.5rem;
 }
 
 a {
@@ -873,6 +875,13 @@ li img {
   color: #fff;
 }
 
+/*  html Code
+
+
+    <div class="pagination"><a href="LinkedIn-Learning.html">← Previous Project</a><a href="Dealicious.html">Next Project →</a></div> 
+
+
+*/
 /* Sticker =================== */
 .stickers {
   margin-bottom: 2rem;
@@ -1145,6 +1154,11 @@ footer {
 @media screen and (min-width: 576px) {
   footer .copyright {
     grid-column: 1/6;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer .copyright {
+    padding-bottom: 1.5rem;
   }
 }
 footer .copyright .copyright-img {
@@ -1434,6 +1448,126 @@ footer .contact-wrapper .contact-info ul a:hover {
   background: #fff;
 }
 
+.project-browser {
+  border-top: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) solid #ECF0F6;
+  padding-top: 2.5rem;
+  position: relative;
+}
+.project-browser h3 {
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+  display: inline-block;
+  background-color: #1F3051;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  z-index: 10;
+}
+.project-browser .projects {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.project-browser .projects .project1 {
+  grid-row: 1;
+  grid-column: 1/2;
+}
+.project-browser .projects .project2 {
+  grid-row: 1;
+  grid-column: 2/3;
+}
+.project-browser .projects .project3 {
+  grid-row: 1;
+  grid-column: 3/4;
+}
+.project-browser .projects .project4 {
+  grid-row: 2;
+  grid-column: 1/2;
+}
+.project-browser .projects .project5 {
+  grid-row: 2;
+  grid-column: 2/3;
+}
+@media screen and (min-width: 768px) {
+  .project-browser .projects {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .project-browser .projects .projects:nth-of-type(1) {
+    grid-row: 1;
+    grid-column: 1/5;
+  }
+  .project-browser .projects .project:nth-of-type(2) {
+    grid-row: 1;
+    grid-column: 2/3;
+  }
+  .project-browser .projects .project:nth-of-type(3) {
+    grid-row: 1;
+    grid-column: 3/4;
+  }
+  .project-browser .projects .project:nth-of-type(4) {
+    grid-row: 1;
+    grid-column: 4/5;
+  }
+  .project-browser .projects .project:nth-of-type(5) {
+    grid-row: 1;
+    grid-column: 5/6;
+  }
+}
+.project-browser .projects a {
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.project-browser .projects p {
+  text-align: center;
+}
+
+/* html Code
+
+
+
+    <section  class="project-browser max-width">
+        <h3 class="max-width">See More of My Work</h3>
+        <div class="projects">
+            <div class="project">
+                <a href="/UX-UI-Projects/Farayand.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-Farayand.webp" alt="" >
+                </a>
+                <p class="caption">Enterprise Service Design</p>
+            </div>
+            <div class="project">
+                <a href="/UX-UI-Projects/Dealicious.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-Dealicious.webp" alt="" >
+                </a>
+                <p class="caption">Analytics Web-App Design</p>
+            </div>
+            <div class="project">
+                <a href="/UX-UI-Projects/Learnium.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-Learnium.webp" alt="" >
+                </a>
+                <p class="caption">Mobile App Design</p>
+            </div>
+            <div class="project">
+                <a href="/UX-UI-Projects/SAM-Med.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-SAM.webp" alt="" >
+                </a>
+                <p class="caption">Ecommerce Design/Dev</p>
+            </div>
+            <div class="project">
+                <a href="/UX-UI-Projects/CAPA.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-CAPA.webp" alt="" >
+                </a>
+                <p class="caption">UX/UI Case Study</p>
+            </div>
+            <div class="project">
+                <a href="/UX-UI-Projects/LinkedIn-Learning.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-LinkedIn.webp" alt="" >
+                </a>
+                <p class="caption">UX Case Study</p>
+            </div>
+        </div>  
+
+    </section>
+
+
+
+*/
 .body-home main {
   padding: 1rem;
   max-width: 992px;

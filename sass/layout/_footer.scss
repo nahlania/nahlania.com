@@ -16,6 +16,9 @@ footer{
         @media screen and (min-width: v.$sw-s-m){
             grid-column: 1/6;
         }
+        @media screen and (max-width: v.$sw-s-m){
+            padding-bottom: 1.5rem;
+        }
         
         // display:grid;
         // grid-template-columns: repeat(1,1fr);

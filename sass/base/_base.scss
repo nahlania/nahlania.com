@@ -26,7 +26,8 @@ body {
 }
 
 .caption{
-	font-size: calc(map-get(t.$font-sizes , p ) - 3px);
+	font-size: calc(map-get(t.$font-sizes , p ) - 4px);
+	padding-top: .5rem;
 }
 
 a{

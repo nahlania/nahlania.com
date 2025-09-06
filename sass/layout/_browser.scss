@@ -1,0 +1,135 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/colors' as c;
+@use '../abstracts/typography' as t;
+
+
+.project-browser{
+    border-top: v.$border-thickness solid c.$base-m;
+    // margin-top: 2rem;
+    padding-top: 2.5rem;
+
+
+    position: relative;
+    h3{
+        position: absolute;
+        top: -1.5rem;
+        left: 0;
+        display: inline-block;
+        background-color: c.$contrast-d;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        z-index: 10;
+    }  
+
+    .projects{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+
+        .project1{
+            grid-row:1;
+            grid-column: 1/2;
+        }
+        .project2{
+            grid-row:1;
+            grid-column: 2/3;
+        }
+        .project3{
+            grid-row:1;
+            grid-column: 3/4;
+        }
+        .project4{
+            grid-row: 2;
+            grid-column: 1/2;
+        }
+        .project5{
+            grid-row:2;
+            grid-column: 2/3;
+        }
+
+    @media screen and (min-width: v.$sw-m){
+        grid-template-columns: repeat(5, 1fr);
+
+        .projects:nth-of-type(1){
+            grid-row: 1;
+            grid-column: 1/5;
+        }
+        .project:nth-of-type(2){
+            grid-row: 1;
+            grid-column: 2/3;
+        }
+        .project:nth-of-type(3){
+            grid-row: 1;
+            grid-column: 3/4;
+        }
+        .project:nth-of-type(4){
+            grid-row: 1;
+            grid-column: 4/5;
+        }
+        .project:nth-of-type(5){grid-row: 1;
+            grid-column: 5/6;
+        }
+    }
+
+
+        a{
+            background-repeat: no-repeat;
+            background-position: center;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        p{
+            text-align: center;
+        }
+
+    }
+         
+}
+
+
+/* html Code
+
+
+
+    <section  class="project-browser max-width">
+        <h3 class="max-width">See More of My Work</h3>
+        <div class="projects">
+            <div class="project">
+                <a href="/UX-UI-Projects/Farayand.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-Farayand.webp" alt="" >
+                </a>
+                <p class="caption">Enterprise Service Design</p>
+            </div>
+            <div class="project">
+                <a href="/UX-UI-Projects/Dealicious.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-Dealicious.webp" alt="" >
+                </a>
+                <p class="caption">Analytics Web-App Design</p>
+            </div>
+            <div class="project">
+                <a href="/UX-UI-Projects/Learnium.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-Learnium.webp" alt="" >
+                </a>
+                <p class="caption">Mobile App Design</p>
+            </div>
+            <div class="project">
+                <a href="/UX-UI-Projects/SAM-Med.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-SAM.webp" alt="" >
+                </a>
+                <p class="caption">Ecommerce Design/Dev</p>
+            </div>
+            <div class="project">
+                <a href="/UX-UI-Projects/CAPA.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-CAPA.webp" alt="" >
+                </a>
+                <p class="caption">UX/UI Case Study</p>
+            </div>
+            <div class="project">
+                <a href="/UX-UI-Projects/LinkedIn-Learning.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-LinkedIn.webp" alt="" >
+                </a>
+                <p class="caption">UX Case Study</p>
+            </div>
+        </div>  
+
+    </section>
+
+
+
+*/
