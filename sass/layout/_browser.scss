@@ -5,14 +5,14 @@
 
 .project-browser{
     border-top: v.$border-thickness solid c.$base-m;
-    // margin-top: 2rem;
     padding-top: 2.5rem;
+
 
 
     position: relative;
     h3{
         position: absolute;
-        top: -1.5rem;
+        top: -2rem;
         left: 0;
         display: inline-block;
         background-color: c.$contrast-d;
@@ -93,14 +93,15 @@
 
 
 
+    <div class="spacer-1rem"></div>
     <section  class="project-browser max-width">
         <h3 class="max-width">See More of My Work</h3>
         <div class="projects">
-            <div class="project">
+            <!-- <div class="project">
                 <a href="/UX-UI-Projects/Farayand.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-Farayand.webp" alt="" >
                 </a>
                 <p class="caption">Enterprise Service Design</p>
-            </div>
+            </div> -->
             <div class="project">
                 <a href="/UX-UI-Projects/Dealicious.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-Dealicious.webp" alt="" >
                 </a>
@@ -127,9 +128,8 @@
                 <p class="caption">UX Case Study</p>
             </div>
         </div>  
-
     </section>
-
+    <div class="spacer-2rem"></div>
 
 
 */

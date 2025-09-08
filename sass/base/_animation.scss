@@ -29,10 +29,15 @@ html{
 	}
 }
 
+.project-browser{
+    .project:hover{
+            & a img{
+            transform: scale(1.05);
+            transition:all .3s ease-in-out;
+        }
+    }
 
-
-
-
+}
 
 
 

@@ -5,19 +5,7 @@
 
 /* PROJECTS ==============*/
 
-// temporary
-// .LinkedIn-Learning{
-//     #overview{
-//         h2{
-//             display: block;
-//         }
-//         display: flex !important;
-//         justify-content: center;
-//         align-items: center;
-//         height: 60vh;
-//     }
-// }
-
+//temporary
 .in-progress{
 
     text-align: center;
@@ -38,13 +26,13 @@
 
 .body-project{
     ::selection {
+    background: var(--accent-color);
     background: var(--accent-color-d);
 	}
     section{
-        margin: 0 auto 4rem auto; 
-        .margin-top{
-            margin-top: 4rem;
-        }
+        margin: 4rem auto 4rem auto; 
+        // padding-top: 4rem;
+        // padding-bottom: 4rem;
     }
 
     h2{
@@ -98,6 +86,7 @@
     } 
 
     #overview{
+        p{margin-bottom: 0 !important;}
         @media screen and (min-width: v.$sw-m){
             display: grid;
             grid-gap: 2rem;
@@ -177,17 +166,6 @@
             padding: 0;
 	    }
     } 
-
-    .statement-styled{
-        text-align: center;
-        line-height: 1.5;
-        max-width: v.$sw-m !important;
-        margin: 4rem auto 1rem auto;
-        padding: 0 2rem 0 2rem;
-        @media screen and (min-width: calc(v.$sw-m-l + 4rem)){
-            padding: 0;
-	    }
-    }  
 
     #user-research{
     }
@@ -399,9 +377,8 @@
         }
     }
 
-    .pagination{
-        margin-bottom: 6rem;
+    #reflection{
+        padding-bottom: 4rem;
     }
-
 
 }

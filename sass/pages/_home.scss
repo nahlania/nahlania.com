@@ -84,6 +84,7 @@
                 p{
                     grid-column: 1/-1;
                     text-align: justify;
+                    margin-bottom: 0;
                     @media screen and (min-width: v.$sw-m){
                         grid-column: 1/2;
                     }
@@ -137,7 +138,7 @@
                 }
             }
 
-            .feat-proj1, .feat-proj3{
+            .feat-proj:nth-of-type(1), .feat-proj:nth-of-type(3){
                 padding:2rem 2rem 2rem 0;
                 @media screen and (min-width: v.$sw-m){
                     padding:4rem 2rem 4rem 0;
@@ -197,7 +198,7 @@
 
             }
 
-            .feat-proj2{
+            .feat-proj:nth-of-type(2){
                 padding:2rem 0 2rem 2rem;
                 @media screen and (min-width: v.$sw-m){
                     padding:4rem 0 4rem 2rem;

@@ -102,7 +102,7 @@
         .proj-img div{
             overflow: visible;
         }
-        .proj2, .proj4{
+        .proj:nth-of-type(2), .proj:nth-of-type(4), .proj:nth-of-type(6), .proj:nth-of-type(7){
             @media screen and (min-width: v.$sw-m){
                 .proj-img{
                     grid-row: 1/2;
