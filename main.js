@@ -64,6 +64,31 @@ sections.forEach(section => {
 
 
 
+// Zoomable image
+document.addEventListener('DOMContentLoaded', () => {
+  const zoomableImages = document.querySelectorAll('.zoomable');
+  const overlay = document.getElementById("fullscreen-overlay");
+  const fullscreenImage = document.getElementById("fullscreen-image");
+  
+  zoomableImages.forEach(image => {
+    image.addEventListener('click', () => {
+      fullscreenImage.src = image.src;
+      overlay.style.display = "grid"; // Use grid from the previous fix
+    });
+  });
+});
+
+function closeFullscreen(event) {
+  // Check if the event target is the overlay itself or the close button
+  if (event.target.id === 'fullscreen-overlay' || event.target.className === 'close-btn') {
+    event.stopPropagation(); // Stop the event from propagating
+    const overlay = document.getElementById("fullscreen-overlay");
+    overlay.style.display = "none";
+  }
+}
+
+
+
 
 
 // scroll break

@@ -82,6 +82,7 @@ header {
 
 
         .menu-navigation{
+            cursor: pointer;
             grid-column: 1/-1;
             grid-row: 2;
             @media screen and (min-width: v.$sw-m){

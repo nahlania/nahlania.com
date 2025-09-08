@@ -16,6 +16,22 @@ a.ext-link{
 		box-shadow: -8px 8px 0 var(--accent-color-m);
 		color: var(--accent-color-m);
 	}
+} 
+
+a.ext-link-onLight{
+	font-weight: normal;
+	justify-self: end;
+	padding: 8px 32px;
+	margin-bottom: 8px;
+	background-color: var(--accent-color-m);
+	box-shadow: -8px 8px 0 c.$base-m;
+	color: c.$base-l;
+
+	&:hover{
+		background-color: c.$base-m;
+		box-shadow: -8px 8px 0 var(--accent-color-m);
+		color: var(--accent-color-m);
+	}
 }
 
 button.round {
