@@ -180,6 +180,35 @@ h1 {
 		font-style: italic;
 		font-weight:t.$fw-regular ;		
 	}
+
+	& .h1-tagline{
+		font-size: map-get(t.$font-sizes , h4 );
+		margin-bottom: 1.125rem;
+		& .h1-subheading{
+			font-size: calc(map-get(t.$font-sizes , h4 ) / t.$ratio3);		
+		}	
+
+		@media screen and (min-width: v.$sw-s-m){
+			font-size: t.$ratio3*map-get(t.$font-sizes , h4 );
+			margin-bottom: 0.75rem;
+			& .h1-subheading{
+				font-size: calc(t.$ratio3 * map-get(t.$font-sizes , h4 ) / t.$ratio3);		
+			}
+		}
+		@media screen and (min-width: v.$sw-m){
+			font-size: t.$ratio4*map-get(t.$font-sizes , h4 );
+			& .h1-subheading{
+				font-size: calc(t.$ratio4 * map-get(t.$font-sizes , h4 ) / t.$ratio3);		
+			}
+		}
+		@media screen and (min-width: v.$sw-m-l){
+			font-size: t.$ratio5*map-get(t.$font-sizes , h4 );
+			// margin-bottom: 1rem;
+			& .h1-subheading{
+				font-size: calc(t.$ratio5 * map-get(t.$font-sizes , h4 ) / t.$ratio3);		
+			}
+		}		
+	}
 }
 
 h2{

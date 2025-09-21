@@ -101,7 +101,7 @@ body {
   font-family: "Open Sans", helvetica, sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
-  background-color: #1F3051;
+  background-color: #222939;
   color: #ECF0F6;
 }
 body ::-moz-selection {
@@ -153,7 +153,7 @@ a.inline-link:hover {
 
 .gradient-text {
   background: #FF8084;
-  background: radial-gradient(ellipse farthest-corner at bottom center, #FF8084 0%, #1F3051 100%);
+  background: radial-gradient(ellipse farthest-corner at bottom center, #FF8084 0%, #222939 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -274,6 +274,38 @@ h1 .h1-subheading {
   font-style: italic;
   font-weight: 400;
 }
+h1 .h1-tagline {
+  font-size: 15px;
+  margin-bottom: 1.125rem;
+}
+h1 .h1-tagline .h1-subheading {
+  font-size: 9.2707045735px;
+}
+@media screen and (min-width: 576px) {
+  h1 .h1-tagline {
+    font-size: 24.27px;
+    margin-bottom: 0.75rem;
+  }
+  h1 .h1-tagline .h1-subheading {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  h1 .h1-tagline {
+    font-size: 30px;
+  }
+  h1 .h1-tagline .h1-subheading {
+    font-size: 18.5414091471px;
+  }
+}
+@media screen and (min-width: 992px) {
+  h1 .h1-tagline {
+    font-size: 34.5px;
+  }
+  h1 .h1-tagline .h1-subheading {
+    font-size: 21.3226205192px;
+  }
+}
 
 h2 {
   font-size: 28px;
@@ -319,18 +351,18 @@ h3 {
 
 h4 {
   padding-bottom: 0.75rem;
-  font-size: 18px;
-  margin-bottom: 18px;
+  font-size: 15px;
+  margin-bottom: 15px;
   padding: 1rem 0 0.7 0;
 }
 @media screen and (min-width: 768px) {
   h4 {
-    font-size: 21.6px;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 1200px) {
   h4 {
-    font-size: 29.124px;
+    font-size: 24.27px;
   }
 }
 
@@ -447,7 +479,7 @@ ol.two-column {
   max-width: 100%;
   margin: 0 auto 4rem auto;
   background-color: #fff;
-  color: #1F3051;
+  color: #222939;
   padding: 3rem 0 1.8rem 0;
 }
 .full-width ::-moz-selection {
@@ -466,7 +498,7 @@ ol.two-column {
 .full-width-image {
   max-width: 100%;
   margin: 0 auto 4rem auto;
-  color: #1F3051;
+  color: #222939;
 }
 
 .grid {
@@ -698,7 +730,7 @@ button {
   clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 85%, 0 100%, 0 50%);
 }
 .polygon-banner .banner-heading-wrapper .banner-heading {
-  color: #1F3051;
+  color: #222939;
   padding: 1rem;
   text-align: center;
 }
@@ -962,7 +994,7 @@ li img {
   top: 20px;
   right: 45px;
   padding: 0.5rem !important;
-  color: #1F3051;
+  color: #222939;
   font-size: 50px;
   font-weight: bold;
   cursor: pointer;
@@ -1016,7 +1048,7 @@ li img {
   max-width: 400px;
   background-repeat: no-repeat;
   background-position: center;
-  color: #1F3051;
+  color: #222939;
   text-align: center;
   padding: 2rem 1rem 4rem 1rem;
 }
@@ -1108,7 +1140,7 @@ header .menu-container li.behance {
   display: none;
 }
 header .menu-container li a {
-  color: #1F3051;
+  color: #222939;
   line-height: 2;
   padding-left: 0.5rem;
   font-weight: bold;
@@ -1437,7 +1469,7 @@ footer .contact-wrapper .contact-info ul a:hover {
     flex-flow: row nowrap;
     gap: 4px;
     align-items: center;
-    color: #1F3051;
+    color: #222939;
     font-size: 1.2rem;
     font-weight: normal;
   }
@@ -1450,7 +1482,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   }
   .sidebar .sidebar-category a.category-name.active:hover {
     cursor: default;
-    color: #1F3051;
+    color: #222939;
     transform: scale(1);
     font-weight: normal;
   }
@@ -1469,7 +1501,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   }
   .sidebar .category-items a {
     font-size: 1rem;
-    color: #1F3051;
+    color: #222939;
   }
   .sidebar .category-items a:hover {
     transform: scale(1.1);
@@ -1480,7 +1512,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   }
   .sidebar .category-items a.active:hover {
     cursor: default;
-    color: #1F3051;
+    color: #222939;
     transform: scale(1);
   }
   .sidebar .category-items a:hover, .sidebar .category-items a:not(:hover), .sidebar .category-items a.active:hover, .sidebar .category-items a.active:not(:hover) {
@@ -1575,7 +1607,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   top: -2rem;
   left: 0;
   display: inline-block;
-  background-color: #1F3051;
+  background-color: #222939;
   padding-right: 1rem;
   padding-bottom: 1rem;
   z-index: 10;
@@ -1730,7 +1762,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   }
 }
 .body-home main .hero .main-hero-text {
-  margin-bottom: calc(-4 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
+  margin-bottom: calc(-1 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
   margin-left: calc(-1 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
   grid-row: 2;
   justify-self: self-start;
@@ -1747,7 +1779,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   text-align: left;
   display: inline-block;
   grid-column: 1/-1;
-  background-color: #1F3051;
+  background-color: #222939;
   padding-right: calc(2 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
 }
 .body-home main .hero .main-hero-text h1 .h1-italic {
@@ -1806,7 +1838,7 @@ footer .contact-wrapper .contact-info ul a:hover {
     top: 0.5rem;
     left: 0;
     display: inline-block;
-    background-color: #1F3051;
+    background-color: #222939;
     padding-right: 1rem;
     padding-bottom: 1rem;
   }
@@ -1989,7 +2021,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   top: -3.2rem;
   left: 0;
   display: inline-block;
-  background-color: #1F3051;
+  background-color: #222939;
   padding-right: 1rem;
   padding-bottom: 1rem;
   z-index: 10;
@@ -2023,7 +2055,7 @@ footer .contact-wrapper .contact-info ul a:hover {
   bottom: -2rem;
   right: 0;
   display: inline-block;
-  background-color: #1F3051;
+  background-color: #222939;
   padding-left: 1rem;
   padding-top: 1rem;
   z-index: 10;
@@ -2106,7 +2138,7 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-project .hero .hero-wrapper .main-hero-text h1 {
   display: inline-block;
-  background-color: #1F3051;
+  background-color: #222939;
   margin-left: calc(-1.5 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
   padding-right: 1rem;
 }
@@ -2384,7 +2416,7 @@ footer .contact-wrapper .contact-info ul a:hover {
 }
 .body-template section.hero .hero-wrapper .main-hero-text h1 {
   display: inline-block;
-  background-color: #1F3051;
+  background-color: #222939;
   margin-left: calc(-1.5 * clamp(6px, (100vw - 20rem) / 2800 * 32, 14px));
   padding-right: 1rem;
 }
