@@ -25,6 +25,14 @@ body {
     font-weight: t.$fw-bold;
 }
 
+.aligned-right{
+	text-align: right;
+}
+
+.line-height-2{
+	line-height: 1.8;
+}
+
 .caption{
 	font-size: calc(map-get(t.$font-sizes , p ) - 4px);
 	padding-top: .5rem;

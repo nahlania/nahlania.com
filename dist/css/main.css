@@ -115,6 +115,14 @@ body ::selection {
   font-weight: 700;
 }
 
+.aligned-right {
+  text-align: right;
+}
+
+.line-height-2 {
+  line-height: 1.8;
+}
+
 .caption {
   font-size: calc(1.125rem - 4px);
   padding-top: 0.5rem;
