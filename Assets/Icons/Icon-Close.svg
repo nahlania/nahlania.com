@@ -1,4 +1,12 @@
-<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="33.9922" y="1.00024" width="2" height="46.0716" transform="rotate(45 33.9922 1.00024)" fill="#203969"/>
-<rect x="34.9922" y="33.5776" width="2" height="46.0716" transform="rotate(135 34.9922 33.5776)" fill="#203969"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #27303d;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="15" y="-5.04" width="4" height="44.09" transform="translate(-7.04 17) rotate(-45)"/>
+  <rect class="cls-1" x="-5.04" y="15" width="44.09" height="4" transform="translate(-7.04 17) rotate(-45)"/>
 </svg>

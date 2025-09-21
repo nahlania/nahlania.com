@@ -3,7 +3,7 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #abb7c9;
+        fill: #b5bcc6;
       }
 
       .cls-2 {
@@ -12,5 +12,5 @@
     </style>
   </defs>
   <rect class="cls-2" x="16" y="18" width="536" height="534"/>
-  <path class="cls-1" d="M0,536V0s536,0,536,0v268c0,148.01-119.99,268-268,268H0Z"/>
+  <path class="cls-1" d="M0,536V0h536v268c0,148.01-119.99,268-268,268H0Z"/>
 </svg>
