@@ -19,6 +19,11 @@ body {
 	::selection {
     background: var(--accent-color);
 	}
+
+	user-select: none;
+	-webkit-user-select: none; /* For Safari */
+	-ms-user-select: none;     /* For older IE/Edge */
+
 }
 
 .bold-text {
