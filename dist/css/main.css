@@ -103,10 +103,6 @@ body {
   font-size: 1.125rem;
   background-color: #27303d;
   color: #ECF0F6;
-  -moz-user-select: none;
-       user-select: none;
-  -webkit-user-select: none; /* For Safari */
-  -ms-user-select: none; /* For older IE/Edge */
 }
 body ::-moz-selection {
   background: var(--accent-color);

@@ -8,7 +8,11 @@
 /* TYPOGRAPHY ==============*/
 
 body {
-    line-height: 1.7;
+	// user-select: none;
+	// -webkit-user-select: none; /* For Safari */
+	// -ms-user-select: none;     /* For older IE/Edge */    
+	
+	line-height: 1.7;
 	font-family: t.$font-body;
 	font-weight: t.$fw-regular;
     font-size: map-get(t.$font-sizes , p );
@@ -19,11 +23,6 @@ body {
 	::selection {
     background: var(--accent-color);
 	}
-
-	user-select: none;
-	-webkit-user-select: none; /* For Safari */
-	-ms-user-select: none;     /* For older IE/Edge */
-
 }
 
 .bold-text {
