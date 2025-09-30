@@ -97,6 +97,10 @@ select {
 
 /* TYPOGRAPHY ==============*/
 body {
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none; /* For Safari */
+  -ms-user-select: none; /* For older IE/Edge */
   line-height: 1.7;
   font-family: "Open Sans", helvetica, sans-serif;
   font-weight: 400;

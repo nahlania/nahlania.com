@@ -8,9 +8,9 @@
 /* TYPOGRAPHY ==============*/
 
 body {
-	// user-select: none;
-	// -webkit-user-select: none; /* For Safari */
-	// -ms-user-select: none;     /* For older IE/Edge */    
+	user-select: none;
+	-webkit-user-select: none; /* For Safari */
+	-ms-user-select: none;     /* For older IE/Edge */    
 	
 	line-height: 1.7;
 	font-family: t.$font-body;
