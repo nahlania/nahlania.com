@@ -111,7 +111,7 @@
             </a>
             <div class="category-items">
                 <a href="#features" class="category-item">Product Features</a>
-                <a href="#iterations" class="category-item">Service Improvements</a>                
+                <a href="#iterations" class="category-item">Test & Iterate</a>                
                 <!-- <a href="#user-flow" class="category-item">User Flow</a>
                 <a href="#wireframe" class="category-item">Wireframe</a>
                 <a href="#logo" class="category-item">Logo</a>
@@ -149,7 +149,7 @@
                     <li>
                         <div>
                             <img src="../Assets/Icons/Icon-Impact.svg" alt=""><span class="title">Impact</span>
-                            <p>The service design, supported by the Farayand Workflow Management System, streamlined both internal operations and customer-facing touchpoints, including communications, quoting, and service updates. The SaaS improved data entry speed by 70% and reduced critical errors by 25%, providing clear visibility into device progress, technician assignments, and inventory.</p>
+                            <p>The service design, supported by the Farayand Workflow Management System, streamlined both internal operations and customer-facing touchpoints, including communications, quoting, and service updates. The SaaS improved data entry speed by 70% and reduced service failures by 25%, providing clear visibility into device progress, technician assignments, and inventory.</p>
                         </div>
                     </li>
                     <li>
@@ -271,7 +271,7 @@
                 <h2>User Research</h2>
                 <div class="persona">
                     <p>For this project, I worked directly with real users, gathering insights through observation and feedback rather than fictional personas. To ground the design, I mapped all stakeholders involved in the service ecosystem, from hospital staff and regulators to service company roles and logistics partners. </p>
-                    <img class="zoomable" class="space-after" src="../Assets/Images/Farayand/stakeholders map.webp" alt="">
+                    <img class="zoomable" class="space-after" src="../Assets/Images/Farayand/Farayand-StakeholdersMap.webp" alt="">
                     <p>For the purpose of this case study, I focus on three main players who shape the day-to-day workflow:</p>
                     <div class="persona-desc">                       
                         <div class="space-after">
@@ -354,17 +354,41 @@
             <div class="spacer-2rem"></div>
         </section>        
         <section id="iterations" class="max-width">
-            <h2>Service Improvements</h2>
+            <h2>Test & Iterate</h2>
             <p>As the prototype was tested in real workflows, several service improvements emerged as critical. These were not simply added functions, but thoughtful responses to real operational challenges users faced in their day-to-day work:</p>
+            <div class="spacer-1rem"></div>
             <div class="feature">
-                <div class="highlight"><p>Automated Label Generation addressed the components mix-up, reducing errors by 25%</p></div>
-                <p>During early testing, it became clear that accessories and spare parts from different devices were occasionally misidentified or misplaced, particularly when multiple repairs were happening in parallel. To address this, I introduced automated label generation at the receiving stage. Each device and every detachable component was assigned a unique ID, with labels printed immediately upon intake.</p> <p>In parallel, we redesigned the physical storage process, so that shelves and bins were also labeled with the corresponding device ID. These changes created end-to-end traceability from intake to dispatch. The outcome was a significant reduction in human error and smoother workflow efficiency, while giving technologists greater confidence in managing a high volume of devices simultaneously.</p>
+                <h3>Automated Label Generation</h3>
+                <div class="grid">
+                    <p class="col-m-8">When I mapped the entire repair journey, I realized one of the biggest bottlenecks happened right at the start, during device intake. Each piece of equipment, like an ultrasound unit, needed to be connected to its digital record in the system. As a response, I designed a label that was automatically generated and printed right after a new service was registered. The label was attached to the cabinet where the device was stored during its service cycle and included key information such as service number, component list, model, and serial numbers.</p>
+                    <img class="col-m-4 zoomable" src="../Assets/Images/Farayand/Label1.webp" alt="">
+                </div>
+                <div class="spacer-2rem"></div>
+                <div class="grid">
+                    <img class="col-m-4 zoomable" src="../Assets/Images/Farayand/Label2.webp" alt="">
+                    <p class="col-m-8">After a few weeks of observation, I noticed another issue: when a component, say a probe, was separated from its main unit for repair, technologists often had trouble locating the main device record in the system. To fix this, I updated the process 
+                    so a set of labels was printed for every individual component. Adding the customer name to the label reduced the cognitive load and made tracing items faster.</p>
+                </div>
+                <div class="spacer-2rem"></div>
+                <div class="grid">
+                    <p class="col-m-8">during early testing of the label system, it became clear that  internal parts like mainboards from different equipment could be mixed-up, especially when a few similar models were being repaired at the same time. Without a clear way to trace each component back to its main unit mistakes were quite likely. I introduced a new set of smaller, hanging, and sticky labels made in different sizes for internal parts. Then, I updated the inspection and repair workflow, so that as soon as a device was opened, every detachable component was labelled right away.</p>
+                    <img class="col-m-4 zoomable" src="../Assets/Images/Farayand/Label3.webp" alt="">
+                </div>
+                <div class="spacer-2rem"></div>
+                <div class="grid">
+                    <img class="col-m-6 zoomable" src="../Assets/Images/Farayand/Label4.webp" alt="">
+                    <p class="col-m-6">At this point, I realized we needed a quick way for anyone in the team to know the full context of a device at a glance. So, I designed a service summary sheet that was attached to each cabinet during equipment service cycle. 
+                    It included key details like service number, intake date, customer name, main unit and accessories details and also the current service stage.
+                    It brought order to the workspace and made communication between technologists and the admin much smoother. </p>
+                </div>
+                <div class="highlight"><p>Label Generation addressed the components mix-up, reducing service failures by 25%</p></div>
             </div>
+            <div class="spacer-4rem"></div>
             <div class="feature">
-                <div class="highlight"><p>Preventative Repair Suggestions improved customer trust, and revenue opportunities</p></div>
-                <p>Through close observation of the inspection process, we realized that technologists often noticed early signs of potential failures that weren’t urgent enough to address immediately. Without a structured way to record and communicate these insights, customers would return with the same devices, suffering more severe issues later.</p>
-
+                <h3>Preventative Repair Suggestions</h3>
+                <p>Through close observation of the inspection process, we realized that technologists often noticed early signs of potential failures that weren’t urgent enough to address immediately. Without a structured way to record and communicate these insights, customers would return with the same devices, suffering more severe issues later.</p>              
                 <p>To address this, we integrated a <span class="bold-text">Preventative Repair Suggestions</span> section within the inspection workflow. Technologists could now log components that did not yet require replacement but might cause problems in the near future. This helps customers stay on top of device health while creating new service opportunities.</p>
+                <div class="highlight"><p>Preventative Repair Suggestions improved customer trust, and revenue opportunities</p></div>
             </div>
             <div class="spacer-1rem"></div>
         </section>     
