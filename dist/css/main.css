@@ -2285,10 +2285,6 @@ footer .contact-wrapper .contact-info ul a:hover {
     grid-row: 1/-2;
   }
 }
-.body-project #persona .persona-desc {
-  border: clamp(6px, (100vw - 20rem) / 2800 * 32, 14px) var(--accent-color-m) solid;
-  padding: 1rem;
-}
 .body-project #persona .persona-desc .applications ul {
   display: flex;
   flex-flow: row nowrap;
