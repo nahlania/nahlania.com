@@ -44,7 +44,9 @@ body {
 
 a{
 	text-decoration: none;
-	color: c.$primary-m;
+	color: c.$contrast-d;
+	//dark mode
+	// color: c.$primary-m;
 	&:visited {
 		color: c.$contrast-d;
 	}
