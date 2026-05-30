@@ -31,14 +31,48 @@
 </script>
 
 <body class="body-project">
-<header id="top" class="max-width">
+<!-- light mode -->
+<header id="top-dark" class="max-width dark">
     <div class="header-container">
-        <div class="logo"><a href="../index.html"><img src="../Assets/Images/NahlaNia-logo-horizontal.svg" alt=""></a></div>
-        <button class="menu-on"><img src="../Assets/Icons/Icon-Menu.svg" alt=""></button>
+        <div class="logo"><a href="../index.html"><img src="../Assets/Images/NahlaNia-logo-horizontal-dark.svg" alt=""></a></div>
+        <button class="dark-menu-on"><img src="../Assets/Icons/Icon-Menu-Dark.svg" alt=""></button>
     </div>
     <div class="menu-container visually-hidden">
         <div class="max-width">
-            <button class="menu-off"><img src="../Assets/Icons/Icon-Close.svg" alt=""></button>
+            <button class="light-menu-off"><img src="../Assets/Icons/Icon-Close-Light.svg" alt=""></button>
+            <div class="menu-navigation">
+                <h3 class="h3-italic">Explore the Site</h3>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html" class="menu-item">Home</a></li>
+                        <li><a href="../ux_ui.html" class="menu-item">UX/UI Projects & Studies</a></li>
+                        <li><a href="../digital_media.html" class="menu-item">Digital Media Projects</a></li>
+                        <li><a href="../about_me.html" class="menu-item">About Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-contact">
+                <h3 class="h3-italic">Get in Touch</h3>
+                <ul>
+                    <li><a href="mailto:nahlania@gmail.com" class="contact-item" target="_blank">Email</a></li>
+                    <li class="linkedin"><a href="https://www.linkedin.com/in/nahlania" class="contact-item" target="_blank">LinkedIn</a></li>
+                    <li class="behance"><a href="https://www.behance.net/nahlania" class="contact-item" target="_blank">Behance</a></li>
+                    <li class="github"><a href="https://github.com/nahlania" class="contact-item" target="_blank">GitHub</a></li>
+                    <li class="instagram"><a href="https://www.instagram.com/nahlania_design" class="contact-item" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- dark mode -->
+<header id="top-light" class="max-width light">
+    <div class="header-container">
+        <div class="logo"><a href="../index.html"><img src="../Assets/Images/NahlaNia-logo-horizontal-light.svg" alt=""></a></div>
+        <button class="light-menu-on"><img src="../Assets/Icons/Icon-Menu-Light.svg" alt=""></button>
+    </div>
+    <div class="menu-container visually-hidden">
+        <div class="max-width">
+            <button class="dark-menu-off"><img src="../Assets/Icons/Icon-Close-Dark.svg" alt=""></button>
             <div class="menu-navigation">
                 <h3 class="h3-italic">Explore the Site</h3>
                 <nav>
@@ -135,7 +169,7 @@
 
     <section id="intro">
         <section id="overview" class="max-width">
-            <div class="overview-img"><img src="../Assets/Images/Farayand/overview.webp" alt=""></div>
+            <div class="overview-img"><img src="../Assets/Images/Farayand/overview-dark.webp" alt=""></div>
             <div class="overview-txt">
                 <h2>Overview</h2>
                 <p>This project involved designing the end-to-end service workflow for a medical device repair company, connecting technical operations, inventory, and accounting while optimizing touchpoints with customers and regulatory bodies, including communications, quoting, and service updates. As part of this service design, a SaaS streamlined device tracking from intake to dispatch, providing real-time insight into technician assignments, repair progress, and device histories to enhance workflow efficiency and staff and customer experience.</p>
@@ -195,7 +229,7 @@
                 <p>In this phase, I focused on gaining a deep understanding of the users and their workflow needs. The typical repair workflow involves multiple stages. Our common goal in this stage was to design a solution to handle all these steps with minimal friction, ensuring that data is organized and accessible in Persian, catering specifically to the needs of this niche market.</p>
             </div>
             <div class="stickers">
-                <div class="sticker" style="background-image: url(../Assets/Images/Sticker.svg);">
+                <div class="sticker" style="background-image: url(../Assets/Images/Sticker-Light.svg);">
                     <span class="title">Receiving</span>
                     <ul class="no-bullet-list-style">
                         <li>Record customer complaint</li>
@@ -207,7 +241,7 @@
                     </ul>
                 </div>
 
-                <div class="sticker" style="background-image: url(../Assets/Images/Sticker.svg);">
+                <div class="sticker" style="background-image: url(../Assets/Images/Sticker-Light.svg);">
                     <span class="title">Inspection</span>
                     <ul class="no-bullet-list-style">
                         <li>Inspect device condition</li>
@@ -218,7 +252,7 @@
                     </ul>
                 </div>
 
-                <div class="sticker" style="background-image: url(../Assets/Images/Sticker.svg);">
+                <div class="sticker" style="background-image: url(../Assets/Images/Sticker-Light.svg);">
                     <span class="title">Service Supervision</span>
                     <ul class="no-bullet-list-style">
                         <li>Assign technologist</li>
@@ -230,7 +264,7 @@
                     </ul>
                 </div>
 
-                <div class="sticker" style="background-image: url(../Assets/Images/Sticker.svg);">
+                <div class="sticker" style="background-image: url(../Assets/Images/Sticker-Light.svg);">
                     <span class="title">Repair
                         
                     </span>
@@ -242,7 +276,7 @@
                     </ul>
                 </div>
 
-                <div class="sticker" style="background-image: url(../Assets/Images/Sticker.svg);">
+                <div class="sticker" style="background-image: url(../Assets/Images/Sticker-Light.svg);">
                     <span class="title">Quality Control</span>
                     <ul class="no-bullet-list-style">
                         <li>Test repaired device</li>
@@ -252,7 +286,7 @@
                     </ul>
                 </div>
 
-                <div class="sticker" style="background-image: url(../Assets/Images/Sticker.svg);">
+                <div class="sticker" style="background-image: url(../Assets/Images/Sticker-Light.svg);">
                     <span class="title">Dispatch</span>
                     <ul class="no-bullet-list-style">
                         <li>Prepare device for return</li>
@@ -388,7 +422,7 @@
                 <h3>Preventative Repair Suggestions</h3>
                 <p>Through close observation of the inspection process, we realized that technologists often noticed early signs of potential failures that weren’t urgent enough to address immediately. Without a structured way to record and communicate these insights, customers would return with the same devices, suffering more severe issues later.</p>              
                 <p>To address this, we integrated a <span class="bold-text">Preventative Repair Suggestions</span> section within the inspection workflow. Technologists could now log components that did not yet require replacement but might cause problems in the near future. This helps customers stay on top of device health while creating new service opportunities.</p>
-                <div class="highlight"><p>Preventative Repair Suggestions improved customer trust, and revenue opportunities</p></div>
+                <div class="highlight"><p>Preventative Repair Suggestions built customer trust and revenue opportunities</p></div>
             </div>
             <div class="spacer-1rem"></div>
         </section>     

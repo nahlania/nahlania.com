@@ -31,11 +31,16 @@ $sw-xxl: 1700px;
 /* Border ================================*/
 
 $curve-radius:(
-    xs:4rem,
+    xs:5rem,
     s-m:8rem,
-    m-l:11rem,
-    xl:14rem,
+    m-l:9rem,
+    xl:11rem,
 );
-
+// $curve-radius:(
+//     xs:4rem,
+//     s-m:8rem,
+//     m-l:11rem,
+//     xl:14rem,
+// );
 $border-thickness: clamp(6px, calc(calc(calc(100vw - 20rem) / 2800) * 32), 14px);
 

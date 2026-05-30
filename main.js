@@ -1,6 +1,9 @@
 //Open menu
-const menuOn = document.querySelector('.menu-on')
-const menuOff = document.querySelector('.menu-off')
+const menuOn = document.querySelector('.dark-menu-on')
+const menuOff = document.querySelector('.light-menu-off')
+//dark mode
+// const menuOn = document.querySelector('.light-menu-on')
+// const menuOff = document.querySelector('.dark-menu-off')
 
 const menuExpand = document.querySelector('.menu-container')
 

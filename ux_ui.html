@@ -10,8 +10,8 @@
     <script src="main.js" defer></script>
     <style>
         :root{
-        --accent-color: #FF8084;            
-        --accent-color-m: #FF8084;            
+        --accent-color: #b5bcc6;            
+        --accent-color-m: #27303d; 
         }
     </style>
 </head>
@@ -31,22 +31,56 @@
 
 <body class="body-template all-projects">
 
-<header class="max-width">
+<!-- light mode -->
+<header id="top-dark" class="max-width dark">
     <div class="header-container">
-        <div class="logo"><a href="index.html"><img src="Assets/Images/NahlaNia-logo-horizontal.svg" alt=""></a></div>
-        <button class="menu-on"><img src="Assets/Icons/Icon-Menu.svg" alt=""></button>
+        <div class="logo"><a href="../index.html"><img src="../Assets/Images/NahlaNia-logo-horizontal-dark.svg" alt=""></a></div>
+        <button class="dark-menu-on"><img src="../Assets/Icons/Icon-Menu-Dark.svg" alt=""></button>
     </div>
     <div class="menu-container visually-hidden">
         <div class="max-width">
-            <button class="menu-off"><img src="Assets/Icons/Icon-Close.svg" alt=""></button>
+            <button class="light-menu-off"><img src="../Assets/Icons/Icon-Close-Light.svg" alt=""></button>
             <div class="menu-navigation">
                 <h3 class="h3-italic">Explore the Site</h3>
                 <nav>
                     <ul>
-                        <li><a href="index.html" class="menu-item">Home</a></li>
-                        <li><a href="ux_ui.html" class="menu-item">UX/UI Projects & Studies</a></li>
-                        <li><a href="digital_media.html" class="menu-item">Digital Media Projects</a></li>
-                        <li><a href="about_me.html" class="menu-item">About Me</a></li>
+                        <li><a href="../index.html" class="menu-item">Home</a></li>
+                        <li><a href="../ux_ui.html" class="menu-item">UX/UI Projects & Studies</a></li>
+                        <li><a href="../digital_media.html" class="menu-item">Digital Media Projects</a></li>
+                        <li><a href="../about_me.html" class="menu-item">About Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-contact">
+                <h3 class="h3-italic">Get in Touch</h3>
+                <ul>
+                    <li><a href="mailto:nahlania@gmail.com" class="contact-item" target="_blank">Email</a></li>
+                    <li class="linkedin"><a href="https://www.linkedin.com/in/nahlania" class="contact-item" target="_blank">LinkedIn</a></li>
+                    <li class="behance"><a href="https://www.behance.net/nahlania" class="contact-item" target="_blank">Behance</a></li>
+                    <li class="github"><a href="https://github.com/nahlania" class="contact-item" target="_blank">GitHub</a></li>
+                    <li class="instagram"><a href="https://www.instagram.com/nahlania_design" class="contact-item" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- dark mode -->
+<header id="top-light" class="max-width light">
+    <div class="header-container">
+        <div class="logo"><a href="../index.html"><img src="../Assets/Images/NahlaNia-logo-horizontal-light.svg" alt=""></a></div>
+        <button class="light-menu-on"><img src="../Assets/Icons/Icon-Menu-Light.svg" alt=""></button>
+    </div>
+    <div class="menu-container visually-hidden">
+        <div class="max-width">
+            <button class="dark-menu-off"><img src="../Assets/Icons/Icon-Close-Dark.svg" alt=""></button>
+            <div class="menu-navigation">
+                <h3 class="h3-italic">Explore the Site</h3>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html" class="menu-item">Home</a></li>
+                        <li><a href="../ux_ui.html" class="menu-item">UX/UI Projects & Studies</a></li>
+                        <li><a href="../digital_media.html" class="menu-item">Digital Media Projects</a></li>
+                        <li><a href="../about_me.html" class="menu-item">About Me</a></li>
                     </ul>
                 </nav>
             </div>
@@ -68,7 +102,7 @@
     <section class="hero max-width">
         <div class="hero-wrapper">
             <div class="main-hero-text">
-                <h1><span class="h1-italic">UX-UI </span><br>
+                <h1><span class="h1-italic">UX-UI & Product</span><br>
                 <span class="h1-bold">Projects</span>
             </h1>
             </div>
@@ -77,19 +111,19 @@
     <section class="projects max-width" style="margin:6rem auto 12rem auto">
         <section class="proj grid align-items-center">
             <a href="/UX-UI-Projects/Farayand.html" class="proj-img img-container col-m-5">
-                <div class="right-bottom-curved"><img src="Assets/Images/feat-Farayand.webp" alt=""></div>
+                <div class="right-bottom-curved"><img src="Assets/Images/Farayand/overview-dark.webp" alt=""></div>
             </a>            
             <div class="proj-info col-m-7">
                 <a href="/UX-UI-Projects/Farayand.html">
                     <h3 class="proj-title">Farayand</h3>
                 </a>
                 <span class="proj-subheading title">Product & Service Design | SaaS Workflow Mgt</span>
-                <p class="proj-excerpt">Worked with SAM Medical’s business owners to design and develop their responsive website for showcasing medical devices and solutions. I led the UX/UI design, creating a scalable WooCommerce structure and optimizing discoverability. The site not only presents products effectively but also sets up the business for future growth as an online store.</p>
+                <p class="proj-excerpt">Designed the end-to-end service workflow for a medical device repair company, connecting internal teams and external stakeholders. I led the UX/UI and service design, creating a SaaS that streamlined device tracking, optimized workflow efficiency, and turned complex operational data into actionable insights for the management team.</p>
             </div>            
         </section>
         <section class="proj grid align-items-center">
             <a href="/UX-UI-Projects/Dealicious.html" class="proj-img img-container col-m-5">
-                <div class="left-bottom-curved"><img src="Assets/Images/feat-Dealicious.webp" alt=""></div>
+                <div class="left-bottom-curved"><img src="Assets/Images/Dealicious/overview-dark.webp" alt=""></div>
             </a>
             <div class="proj-info col-m-7">
                 <a href="/UX-UI-Projects/Dealicious.html">
@@ -101,7 +135,7 @@
         </section>
         <section class="proj grid align-items-center">
             <a href="/UX-UI-Projects/Learnium.html" class="proj-img img-container col-m-5">
-                <div class="right-bottom-curved"><img src="Assets/Images/feat-Learnium.webp" alt=""></div>
+                <div class="right-bottom-curved"><img src="Assets/Images/Learnium/overview-dark.webp" alt=""></div>
             </a>            
             <div class="proj-info col-m-7">
                 <a href="/UX-UI-Projects/Learnium.html">
@@ -113,7 +147,7 @@
         </section>
                 <section class="proj grid align-items-center">
             <a href="/UX-UI-Projects/SAM-Med.html" class="proj-img img-container col-m-5">
-                <div class="right-bottom-curved"><img src="Assets/Images/feat-SAM.webp" alt=""></div>
+                <div class="right-bottom-curved"><img src="Assets/Images/SAM Med/overview-dark.webp" alt=""></div>
             </a>            
             <div class="proj-info col-m-7">
                 <a href="/UX-UI-Projects/SAM-Med.html">
@@ -125,7 +159,7 @@
         </section>
         <section class="proj grid align-items-center">
             <a href="/UX-UI-Projects/CAPA.html" class="proj-img img-container col-m-5">
-                <div class="left-bottom-curved"><img src="Assets/Images/feat-CAPA.webp" alt=""></div>
+                <div class="left-bottom-curved"><img src="Assets/Images/CAPA/overview-dark.webp" alt=""></div>
             </a>
             <div class="proj-info col-m-7">
                 <a href="/UX-UI-Projects/CAPA.html">
@@ -137,7 +171,7 @@
         </section>        
         <section class="proj grid align-items-center">
             <a href="/UX-UI-Projects/LinkedIn-Learning.html" class="proj-img img-container col-m-5">
-                <div class="right-bottom-curved"><img src="Assets/Images/feat-LinkedIn.webp" alt=""></div>
+                <div class="right-bottom-curved"><img src="Assets/Images/LinkedIn Learning/overview-dark.webp" alt=""></div>
             </a>
             <div class="proj-info col-m-7">
                 <a href="/UX-UI-Projects/LinkedIn-Learning.html">

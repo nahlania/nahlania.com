@@ -40,7 +40,9 @@
 
                 h1{
                     display: inline-block;
-                    background-color: c.$contrast-d;
+                    background-color: c.$base-m;
+                    //dark mode
+                    // background-color: c.$contrast-d;
                     margin-left: calc(-1.5 * v.$border-thickness);
                     padding-right: 1rem;
                 }

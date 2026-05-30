@@ -14,7 +14,9 @@ html{
 .body-home, .all-projects{
     .feat-projects section:hover, .projects section:hover, .digital-media-projects div:hover{
         & a {
-            color: c.$primary-l !important;
+            opacity: .7 !important;
+            //dark mode
+            // color: c.$primary-l !important;
 			text-decoration: underline !important;
         }
         & a div img{

@@ -3,7 +3,7 @@
 
 /* BUTTONS=================== */
 a.ext-link{
-	font-weight: normal;
+	font-weight: bold;
 	justify-self: end;
 	padding: 8px 32px;
 	margin-bottom: 8px;
@@ -12,10 +12,20 @@ a.ext-link{
 	color: c.$base-l;
 
 	&:hover{
-		background-color: c.$base-l;
+		background-color: c.$contrast-m;
 		box-shadow: -8px 8px 0 var(--accent-color-m);
 		color: var(--accent-color-m);
 	}
+	//dark mode
+	// background-color: var(--accent-color-m);
+	// box-shadow: -8px 8px 0 c.$base-l;
+	// color: c.$base-l;
+
+	// &:hover{
+	// 	background-color: c.$base-l;
+	// 	box-shadow: -8px 8px 0 var(--accent-color-m);
+	// 	color: var(--accent-color-m);
+	// }
 } 
 
 a.ext-link-onLight{

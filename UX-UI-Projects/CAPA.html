@@ -11,7 +11,7 @@
     <style>
         :root{
           --accent-color-l: #ffbabc;
-          --accent-color-m: #FF7075;              
+          --accent-color-m: #f04d4d;              
           --accent-color-d: #E62021;            
         }
     </style>
@@ -30,14 +30,48 @@
 </script>
 
 <body class="body-project">
-<header id="top" class="max-width">
+<!-- light mode -->
+<header id="top-dark" class="max-width dark">
     <div class="header-container">
-        <div class="logo"><a href="../index.html"><img src="../Assets/Images/NahlaNia-logo-horizontal.svg" alt=""></a></div>
-        <button class="menu-on"><img src="../Assets/Icons/Icon-Menu.svg" alt=""></button>
+        <div class="logo"><a href="../index.html"><img src="../Assets/Images/NahlaNia-logo-horizontal-dark.svg" alt=""></a></div>
+        <button class="dark-menu-on"><img src="../Assets/Icons/Icon-Menu-Dark.svg" alt=""></button>
     </div>
     <div class="menu-container visually-hidden">
         <div class="max-width">
-            <button class="menu-off"><img src="../Assets/Icons/Icon-Close.svg" alt=""></button>
+            <button class="light-menu-off"><img src="../Assets/Icons/Icon-Close-Light.svg" alt=""></button>
+            <div class="menu-navigation">
+                <h3 class="h3-italic">Explore the Site</h3>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html" class="menu-item">Home</a></li>
+                        <li><a href="../ux_ui.html" class="menu-item">UX/UI Projects & Studies</a></li>
+                        <li><a href="../digital_media.html" class="menu-item">Digital Media Projects</a></li>
+                        <li><a href="../about_me.html" class="menu-item">About Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-contact">
+                <h3 class="h3-italic">Get in Touch</h3>
+                <ul>
+                    <li><a href="mailto:nahlania@gmail.com" class="contact-item" target="_blank">Email</a></li>
+                    <li class="linkedin"><a href="https://www.linkedin.com/in/nahlania" class="contact-item" target="_blank">LinkedIn</a></li>
+                    <li class="behance"><a href="https://www.behance.net/nahlania" class="contact-item" target="_blank">Behance</a></li>
+                    <li class="github"><a href="https://github.com/nahlania" class="contact-item" target="_blank">GitHub</a></li>
+                    <li class="instagram"><a href="https://www.instagram.com/nahlania_design" class="contact-item" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- dark mode -->
+<header id="top-light" class="max-width light">
+    <div class="header-container">
+        <div class="logo"><a href="../index.html"><img src="../Assets/Images/NahlaNia-logo-horizontal-light.svg" alt=""></a></div>
+        <button class="light-menu-on"><img src="../Assets/Icons/Icon-Menu-Light.svg" alt=""></button>
+    </div>
+    <div class="menu-container visually-hidden">
+        <div class="max-width">
+            <button class="dark-menu-off"><img src="../Assets/Icons/Icon-Close-Dark.svg" alt=""></button>
             <div class="menu-navigation">
                 <h3 class="h3-italic">Explore the Site</h3>
                 <nav>
@@ -128,7 +162,7 @@
 
     <section id="intro">
         <section id="overview" class="max-width">
-            <div class="overview-img"><img src="../Assets/Images/CAPA/overview.webp" alt=""></div>
+            <div class="overview-img"><img src="../Assets/Images/CAPA/overview-dark.webp" alt=""></div>
             <div class="overview-txt">
                 <h2>Overview</h2>
                 <p>The Canadian Association for Photographic Art (CAPA) is a national organization of Canadian Camera clubs and individual Canadian members who have a common interest in photography. It's also the representative of the International Federation of Photographic Art(FIAP) in Canada, which holds international photo competitions, annually. <br> Compared to other FIAP representatives, CAPA's website has an outdated design and doesn't promote its features decently. In this study, I reviewed the whole user journey but focused on four of the main flows for redesign purposes.</p>

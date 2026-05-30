@@ -17,11 +17,11 @@ body {
 	font-weight: t.$fw-regular;
     font-size: map-get(t.$font-sizes , p );
 
-    background-color: c.$contrast-d;
-    color: c.$base-m;
+    background-color: c.$base-m;
+    color: c.$contrast-d;
 	
 	::selection {
-    background: var(--accent-color);
+    background: var(--accent-color-l);
 	}
 }
 
@@ -46,17 +46,20 @@ a{
 	text-decoration: none;
 	color: c.$primary-m;
 	&:visited {
-		color: c.$contrast-m;
+		color: c.$contrast-d;
 	}
 
 	&:hover {
-		color: c.$primary-l;
+		opacity: .7 !important;
+		// dark mode
+		// color: c.$contrast-m !important;
 	}
 }
 
+
 a.inline-link{
 	text-decoration: underline;		
-	color: var(--accent-color-m) !important;
+	color: var(--accent-color-d) !important;
 	box-shadow: none !important;
 	background-color: unset !important;
 	padding: unset !important;
@@ -65,13 +68,28 @@ a.inline-link{
 	}
 
 	&:hover {
-		color: c.$contrast-m;
+		color: c.$contrast-m !important;
 	}
 }
 
+// dark mode
+// a.inline-link{
+// 	text-decoration: underline;		
+// 	color: var(--accent-color-m) !important;
+// 	box-shadow: none !important;
+// 	background-color: unset !important;
+// 	padding: unset !important;
+// 	&:visited {
+// 		color: var(--accent-color-m);
+// 	}
+
+// 	&:hover {
+// 		color: c.$contrast-m;
+// 	}
+// }
+
 .social-media a {
 	text-decoration: none;
-	color: c.$primary-l;
 	font-size: 32px;
 }
 
@@ -179,14 +197,23 @@ h1 {
 	& .h1-italic{
 		font-style: italic;
 		font-weight:t.$fw-regular ;
-		color: c.$primary-l;
+		color: c.$primary-m;
+		//dark mode
+		// color: c.$primary-l;
 	}
 
 	& .h1-bold{
 		font-style: normal;
 		font-weight:t.$fw-bold ;	
-		color: c.$primary-l;	
+		color: c.$contrast-d;	
 	}
+
+	//dark mode
+	// & .h1-bold{
+	// 	font-style: normal;
+	// 	font-weight:t.$fw-bold ;	
+	// 	color: c.$primary-l;	
+	// }
 
 	& .h1-subheading{
 		font-style: italic;
@@ -243,8 +270,15 @@ h2{
 	& .h2-bold{
 		font-style: normal;
 		font-weight:t.$fw-bold ;
-		color: c.$primary-l;		
+		color: c.$contrast-d;		
 	}
+	
+	//dark mode
+	// & .h2-bold{
+	// 	font-style: normal;
+	// 	font-weight:t.$fw-bold ;
+	// 	color: c.$primary-m;		
+	// }
 }
 
 h3{
@@ -285,6 +319,7 @@ h4{
 .colored{
 	color: var(--accent-color-m);
 }
+
 .colored-d{
 	color: var(--accent-color-d);
 }
@@ -304,6 +339,7 @@ h4{
 		height: 3.5rem;
 	}
 }
+
 .half-free-space{
 	@media (orientation: landscape) {
 		height: 3.5rem;
@@ -329,6 +365,7 @@ ol.two-column{
 		margin-bottom: .5rem;          
 	}
 }
+
 .no-bullet-list-style{
 	list-style:none;
 	padding-left: 1rem;
@@ -400,8 +437,6 @@ ol.two-column{
 	color: c.$contrast-d;
 }
 
-
-
 .grid{
 	margin-bottom: 2rem;
 	display: grid;
@@ -424,9 +459,6 @@ ol.two-column{
 	& > *{
 		grid-column: span 12;
 	}
-
-
-
 
 	& .col-m-1{
 		@media screen and (min-width: v.$sw-m){
@@ -515,7 +547,6 @@ ol.two-column{
 			grid-column: span 9;
 		}
 	}
-
 	
 
 	& .start-3{

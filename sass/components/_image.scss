@@ -11,11 +11,15 @@
 .img-container{
     display: flex;
     align-items: center;
-    background-color: c.$base-l;  
+    background-color: c.$contrast-m;  
+    // dark mode
+    // background-color: c.$base-l;  
 }
 
 .left-bottom-curved{
-    background-color: c.$contrast-m;
+    background-color: c.$base-l;
+    // dark mode
+    // background-color: c.$contrast-m;
     border-bottom-left-radius:map-get(v.$curve-radius , xs );
     // border-top-right-radius:calc(map-get(v.$curve-radius , xs ) - 2.2rem);
     @media screen and (min-width: v.$sw-s-m){
@@ -34,7 +38,9 @@
     overflow: hidden;
 }
 .right-bottom-curved{
-    background-color: c.$contrast-m;
+    background-color: c.$base-l;
+    // dark mode
+    // background-color: c.$contrast-m;
     border-bottom-right-radius:map-get(v.$curve-radius , xs );
     @media screen and (min-width: v.$sw-s-m){
         border-bottom-right-radius:map-get(v.$curve-radius , s-m );

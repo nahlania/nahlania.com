@@ -26,8 +26,7 @@
 
 .body-project{
     ::selection {
-    background: var(--accent-color);
-    background: var(--accent-color-d);
+    background: var(--accent-color-m);
 	}
     section{
         margin: 4rem auto 4rem auto; 
@@ -73,11 +72,15 @@
 
                 h1{
                     display: inline-block;
-                    background-color: c.$contrast-d;
+                    background-color: c.$base-m;
+                    //dark mode
+                    // background-color: c.$contrast-d;
                     margin-left: calc(-1.5 * v.$border-thickness);
                     padding-right: 1rem;
                     span{
-                        color: c.$base-l;                    
+                        color: c.$contrast-d;                    
+                        // dark mode
+                        // color: c.$base-l;                    
                     }
 
                 }

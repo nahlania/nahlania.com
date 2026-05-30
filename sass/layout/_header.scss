@@ -4,6 +4,13 @@
 @use '../abstracts/typography' as t;
 
 header {
+    &.light{
+        display: none;
+    }
+    //dark mode
+    // &.dark{
+    //     display: none;
+    // }
     .header-container{
         display: flex;
         flex-flow: row, nowrap;
@@ -13,13 +20,16 @@ header {
         .logo{
             width:120px ;
         }
-        .menu-on img{
+        .menu-on, .light-menu-on img, .dark-menu-on img{
             width: 30px;
         }
+
     }
 
     .menu-container{
-        background-color: c.$base-m;
+        background-color: c.$contrast-d;
+        //dark mode
+        // background-color: c.$base-m;
         width: 100%;
         height: 40%;
         @media screen and (max-width: v.$sw-s-m){height: 100%}        
@@ -39,7 +49,8 @@ header {
             margin: unset auto;
             padding: 0 1rem;
             
-            .menu-off{
+            .menu-off, .dark-menu-off, .light-menu-off{
+                width: 30px;
                 grid-column:1/-1 ;
                 justify-self: end;
             }
@@ -68,7 +79,9 @@ header {
         }
         
         li a{
-            color: c.$contrast-d;
+            color: c.$base-l;
+            // dark mode
+            // color: c.$contrast-d;
             line-height: 2;
             padding-left: .5rem;
             font-weight: bold;

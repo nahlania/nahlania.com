@@ -82,7 +82,7 @@ footer{
         span.h3-italic{
         font-style: italic;
         font-weight:t.$fw-regular ;
-        color:c.$primary-l ;
+        color:c.$contrast-d !important;
         }
 
         span.h3-bold{
@@ -95,7 +95,7 @@ footer{
             align-self: flex-start;
 
             a.email{
-                color:c.$primary-l ;
+                color:c.$contrast-m !important ;
                 &:hover{
                     color: c.$primary-m;
                 }
@@ -114,9 +114,9 @@ footer{
                 //     display: none;
                 // }
                 a{
-                    color:c.$primary-l ;
+                    color:c.$contrast-d !important ;
                     &:hover{
-                        color: c.$primary-m;
+                        color: c.$primary-m !important;
                     }
                 }
             }
@@ -130,9 +130,9 @@ footer{
     @media screen and (min-width: v.$sw-m-l){
         padding:6rem 6rem 6rem 0;
     }
-    border-top: v.$border-thickness solid c.$primary-l;
-    border-right: v.$border-thickness solid c.$primary-l;
-    border-left: v.$border-thickness solid c.$primary-l;
+    border-top: v.$border-thickness solid c.$contrast-m;
+    border-right: v.$border-thickness solid c.$contrast-m;
+    border-left: v.$border-thickness solid c.$contrast-m;
     
     border-top-right-radius:map-get(v.$curve-radius , xs );
     @media screen and (min-width: v.$sw-s-m){

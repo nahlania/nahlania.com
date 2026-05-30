@@ -31,22 +31,23 @@
 
 <body class="body-template about">
 
-<header class="max-width">
+<!-- light mode -->
+<header id="top-dark" class="max-width dark">
     <div class="header-container">
-        <div class="logo"><a href="index.html"><img src="Assets/Images/NahlaNia-logo-horizontal.svg" alt=""></a></div>
-        <button class="menu-on"><img src="Assets/Icons/Icon-Menu.svg" alt=""></button>
+        <div class="logo"><a href="../index.html"><img src="../Assets/Images/NahlaNia-logo-horizontal-dark.svg" alt=""></a></div>
+        <button class="dark-menu-on"><img src="../Assets/Icons/Icon-Menu-Dark.svg" alt=""></button>
     </div>
     <div class="menu-container visually-hidden">
         <div class="max-width">
-            <button class="menu-off"><img src="Assets/Icons/Icon-Close.svg" alt=""></button>
+            <button class="light-menu-off"><img src="../Assets/Icons/Icon-Close-Light.svg" alt=""></button>
             <div class="menu-navigation">
                 <h3 class="h3-italic">Explore the Site</h3>
                 <nav>
                     <ul>
-                        <li><a href="index.html" class="menu-item">Home</a></li>
-                        <li><a href="ux_ui.html" class="menu-item">UX/UI Projects & Studies</a></li>
-                        <li><a href="digital_media.html" class="menu-item">Digital Media Projects</a></li>
-                        <li><a href="about_me.html" class="menu-item">About Me</a></li>
+                        <li><a href="../index.html" class="menu-item">Home</a></li>
+                        <li><a href="../ux_ui.html" class="menu-item">UX/UI Projects & Studies</a></li>
+                        <li><a href="../digital_media.html" class="menu-item">Digital Media Projects</a></li>
+                        <li><a href="../about_me.html" class="menu-item">About Me</a></li>
                     </ul>
                 </nav>
             </div>
@@ -63,7 +64,39 @@
         </div>
     </div>
 </header>
-
+<!-- dark mode -->
+<header id="top-light" class="max-width light">
+    <div class="header-container">
+        <div class="logo"><a href="../index.html"><img src="../Assets/Images/NahlaNia-logo-horizontal-light.svg" alt=""></a></div>
+        <button class="light-menu-on"><img src="../Assets/Icons/Icon-Menu-Light.svg" alt=""></button>
+    </div>
+    <div class="menu-container visually-hidden">
+        <div class="max-width">
+            <button class="dark-menu-off"><img src="../Assets/Icons/Icon-Close-Dark.svg" alt=""></button>
+            <div class="menu-navigation">
+                <h3 class="h3-italic">Explore the Site</h3>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html" class="menu-item">Home</a></li>
+                        <li><a href="../ux_ui.html" class="menu-item">UX/UI Projects & Studies</a></li>
+                        <li><a href="../digital_media.html" class="menu-item">Digital Media Projects</a></li>
+                        <li><a href="../about_me.html" class="menu-item">About Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-contact">
+                <h3 class="h3-italic">Get in Touch</h3>
+                <ul>
+                    <li><a href="mailto:nahlania@gmail.com" class="contact-item" target="_blank">Email</a></li>
+                    <li class="linkedin"><a href="https://www.linkedin.com/in/nahlania" class="contact-item" target="_blank">LinkedIn</a></li>
+                    <li class="behance"><a href="https://www.behance.net/nahlania" class="contact-item" target="_blank">Behance</a></li>
+                    <li class="github"><a href="https://github.com/nahlania" class="contact-item" target="_blank">GitHub</a></li>
+                    <li class="instagram"><a href="https://www.instagram.com/nahlania_design" class="contact-item" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
 <main>
     <section class="hero max-width">
         <div class="hero-wrapper">
@@ -99,7 +132,9 @@
             <blockquote cite="https://twitter.com/paulocoelho">&#8220; If you think adventure is dangerous, try routine - it's lethal.&#8221;</blockquote>
             <p>Over the past years, I integrated my adventurous instinct with my passion for telling stories through visuals, and I created a personal photo archive of travel pictures. So far, I've participated in some photo exhibitions and have my photos published as mentioned below:</p>
 
-
+            <br>
+            <img src="Assets/Images/Hobbies-LightMode.webp" alt="An arrangent of photoframe, notebooks and printed pictures" />            
+            <br>
             <span class="title">Photography Exhibitions:</span>
             <ul class="list-style">
                 <li>“<span class="inline-link">Local Inspiration</span>”, London Drugs Store, Vancouver, September 2024</li>
@@ -114,9 +149,7 @@
                 <li><span class="inline-link">1PIX Photo Book</span>, 2016</li>
                 <li><span class="inline-link">Baban Graphic Years</span>, 2015</li>               
             </ul>
-            <br>
-            <br>
-            <img src="Assets/Images/Hobbies.webp" alt="An arrangent of photoframe, notebooks and printed pictures" />
+
 
         </div>
     </section>
