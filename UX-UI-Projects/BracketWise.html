@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NahlaNia Design-Tax Optimization SaaS-BracketWise</title>
+    <title>NahlaNia Design-SaaS Product Design-Dealicious</title>
     <link rel="icon" href="../Assets/Images/NahlaNia-logo-sign.svg">
 
     <link rel="stylesheet" href="../dist/css/main.css">
@@ -13,7 +13,7 @@
         :root{
           --accent-color-l: #E1FAF7;
           --accent-color-m: #14B8A6;
-          --accent-color-d: #0F766E;
+          --accent-color-d: #0F766E;           
         }
     </style>
 </head>
@@ -102,7 +102,7 @@
     <div class="hero max-width">
         <div class="hero-wrapper">
             <div class="main-hero-text">
-                <h1><span class="h1-bold">BracketWise</span><br><span class="h1-subheading">Product Design & Dev</span></h1>
+                <h1><span class="h1-bold">BracketWise</span><br><span class="h1-subheading">Designing & Architecting a Tax-Optimization Engine</span></h1>
             </div>
         </div>
     </div>
@@ -121,6 +121,7 @@
             <div class="category-items">
                 <a href="#overview" class="category-item">Overview</a>
                 <a href="#proj-details" class="category-item">Details</a>
+                <a href="#ai-workflow" class="category-item">AI Workflow</a>
             </div>
         </div>
         <div class="sidebar-category sidebar-research">
@@ -129,8 +130,13 @@
                 <span>Research</span>
             </a>
             <div class="category-items">
-                <a href="#empathize" class="category-item">Empathize</a>
-                <a href="#market" class="category-item">Market Research</a>
+                <a href="#problem" class="category-item">Problem</a>
+                <!-- <a href="#user-research" class="category-item">User Research</a> -->
+                <a href="#logic-data" class="category-item">Logic & Data</a>
+                <!-- <a href="#persona" class="category-item">Persona</a> -->
+                <!-- <a href="#user-story" class="category-item">User Story</a> -->
+                <!-- <a href="#journey-map" class="category-item">Journey Map</a> -->
+                
             </div>
         </div>
         <div class="sidebar-category sidebar-uxi">
@@ -139,9 +145,11 @@
                 <span>UX-UI Design</span>
             </a>
             <div class="category-items">
-                <a href="#features" class="category-item">Main Features</a>
-                <a href="#principles" class="category-item">Defining Principles</a>
-                <a href="#user-flow" class="category-item">User Flow</a>
+                <a href="#architecture" class="category-item">Architecture Diagram</a>
+                <a href="#ux-strategy" class="category-item">UX Strategy</a>             
+                <a href="#product-scope" class="category-item">Scope & Trade-Offs</a>             
+                <a href="#validation" class="category-item">Validation</a>             
+                
             </div>
         </div>
         <div class="sidebar-category sidebar-reflection">
@@ -162,45 +170,55 @@
             <div class="overview-img"><img src="../Assets/Images/BracketWise/overview-dark.webp" alt=""></div>
             <div class="overview-txt">
                 <h2>Overview</h2>
-                <p>BracketWise is a Canadian income tax optimization web application for individuals with multi-stream income. It accepts T4 employment, self-employment, capital gains, and other income, applies CRA-accurate CPP tier rules, EI premiums, and federal and provincial tax brackets — then runs an iterative optimization engine to recommend the ideal split between RRSP, FHSA, and TFSA contributions. Users see a clear before-and-after view of their tax picture, April obligations, and take-home income.</p>
+                <p class="space-after">BracketWise is a financial planning tool built for Canadians with mixed income; such as freelancers who also have T4 employment, investors with capital gains, or anyone navigating more than one income stream. <br>
+
+                Unlike tax filing software, which works backward from what already happened, BracketWise is a forward-looking optimization engine. It calculates liability across tax brackets, accounts for dual-income CPP obligations, and models FHSA, RRSP, and TFSA contributions against available cash flow. By transitioning from historical summaries to predictive modeling, the platform enables precise financial decision-making before the tax year concludes.</p>
+                <a href="https://bracketwise.nahlania.com/" class="ext-link" target="_blank">Check Out the Application</a>
             </div>
         </section>
         <section id="proj-details" class="full-width">
             <div class="spacer-2rem"></div>
-            <ul class="overview-titles max-width">
-                <li>
+            <ul class="overview-titles max-width ">
+                <li class="">
                     <div>
                         <img src="../Assets/Icons/Icon-Impact.svg" alt=""><span class="title">Impact</span>
-                        <p>Designed and developed a fully functional, CRA-accurate tax optimization tool from concept to working application. The engine handles the self-referential nature of RRSP optimization through a 5-pass convergence algorithm, surfacing contribution recommendations that general-purpose calculators miss — particularly for Canadians juggling T4, self-employment, and capital gains income.</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="../Assets/Icons/Icon-HatsWorn.svg" alt=""><span class="title">Hats Worn</span>
-                        <ul>
-                            <li>Led product design and co-developed the application end-to-end. Defined information architecture, input forms, and output dashboards. Translated complex CRA rules and tax interactions into clear, user-facing inputs and actionable outputs.</li>
+                        <ul class="list-style">
+                            <li>Lowers the barrier to sophisticated tax planning by translating complex CRA regulatory logic into an intuitive, budget-aware tool, allowing users to make data-backed financial decisions with confidence.</li>
+                            <li>Provides instant optimization paths for mixed-income earners, by automating complex multi-stream tax calculations,</li>
+                            <li>Resolvs the self-referential nature of tax-sheltered contributions, capturing tax-saving opportunities that standard calculators consistently miss.</li>
                         </ul>
                     </div>
                 </li>
-                <li>
+                <li class="col-m-12">
+                    <div>
+                        <img src="../Assets/Icons/Icon-HatsWorn.svg" alt=""><span class="title">Hats Worn</span>
+                        <ul class="list-style">
+                            <li>Product Management: Problem framing, scope sequencing, MVP prioritization, feature tradeoff decisions</li>
+                            <li>UX Research: Domain research, pain point mapping, competitive analysis, algorithmic verification against CRA rules</li>
+                            <li>System Architecture: Tax engine design, 5-pass optimization logic, data flow, React implementation</li>
+                            <li>UI/UX Design: Design system tokens, information architecture, data visualization, copywriting</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="col-m-6">
                     <div>
                         <img src="../Assets/Icons/Icon-Tools.svg" alt=""><span class="title">Tools</span>
-                        <p>Figma & ChatGPT for Design - Gemini & Claude for Ideation & Validation - GitHub Copilot & Claude Code for Implementation </p>
+                        <p>Claude + Gemini for research and cross-validation, Figma for UX design, ChatGPT for brand identity, Claude Code + GitHub Copilot for implementation</p>
                     </div>
                 </li>
-                <li>
+                <li class="col-m-6">
                     <div>
                         <img src="../Assets/Icons/Icon-Timeline.svg" alt=""><span class="title">Timeline</span>
-                        <p>TBD</p>
+                        <p>Less than 2 weeks, from Ideation to Implementation</p>
                     </div>
                 </li>
-                <li>
+                <li class="col-m-6">
                     <div>
                         <img src="../Assets/Icons/Icon-Team.svg" alt=""><span class="title">Team</span>
-                        <p>TBD</p>
+                        <p>Solo Work</p>
                     </div>
                 </li>
-                <li>
+                <li class="col-m-6">
                     <div>
                         <img src="../Assets/Icons/Icon-Platform.svg" alt=""><span class="title">Platform</span>
                         <p>Responsive Web App, SaaS</p>
@@ -209,80 +227,299 @@
             </ul>
             <div class="spacer-2rem"></div>
         </section>
+        <section id="ai-workflow" class="max-width">
+            <h2>How AI Powered This Build</h2>
+            <div class="two-column">
+                <p>Instead of using AI as a shortcut, I built a system centered on cross-model validation and primary-source grounding. This allowed me to compress research and development cycles without sacrificing the precision required for financial software.</p>
+
+                <ul class="list-style">
+                    <li><span class="bold-text">Logic Verification:</span> I ran tax rules through Claude and Gemini at the same time. If they gave me different answers, I knew something was wrong. I treated those disagreements as a signal to stop and check the official CRA documents myself. This "dual-check" was non-negotiable for a financial tool.</li>
+                    <li><span class="bold-text">Brand & Visuals:</span> I used ChatGPT to brainstorm the brand identity, logo directions, and color palettes. </li>
+                    <li><span class="bold-text">System Architecture:</span> I used Claude Code to build the calculation engine and GitHub Copilot to help refine the UI components. I treated the AI like a pair-programmer: it drafted the architecture and code, but I remained the one auditing the logic and performance.</li>
+                </ul>
+
+                <p>This approach allowed me to build a production-grade application in two weeks without sacrificing quality. My role was to manage the AI, verify its outputs, and make the final decisions. It’s a workflow I intend to bring into future product roles: using AI to compress cycles while keeping the human in control of the rigor.</p>
+            </div>
+
+            <div class="spacer-1rem"></div>            
+        </section>        
+        
     </section>
     <section id="research">
-        <section id="empathize" class="max-width">
-            <h2>Empathize</h2>
-            <div class="two-column">
-                <p>Canadians with T4 employment plus self-employment, capital gains, or other income face layers of compounding tax complexity that standard calculators don't address. CPP spans two tiers with different rates and different treatment for employed versus self-employed individuals. The 2024 capital gains inclusion rate change added a second threshold. Most critically, RRSP optimization is self-referential: contributing reduces taxable income, which reduces tax owing, which frees up more cash to contribute — a loop no single-pass calculator resolves correctly.</p>
-                <p>To understand the real-world friction, we identified the core pain points users face when trying to make these decisions on their own:</p>
+        <section id="problem" class="full-width">
+            <h2>The Problem Landscape</h2>
+            <div class=" space-after">
+                <h3>The Core Tension: Reporting vs. Planning</h3>
+                <p>Most Canadians manage their taxes through a "historical" lens. They wait for tax slips to arrive, plug them into software, and see what the result is. This is retrospective reporting.</p>
+                <p>BracketWise flips this. It assumes the tax year is an active, strategic timeline. The core tension is that current financial tools are designed to report on the past, but the user's primary need is to optimize the future. By the time a user sees their tax liability on a filing platform, the window to leverage tax-advantaged accounts (FHSA/RRSP/TFSA) has already closed.</p>
+            </div>
+                        <div class="space-after">
+                <h3>Defining the Technical Complexity</h3>
+                <p>The challenge of building BracketWise was not UI—it was logic convergence. To build a tool that actually works, I had to architect a system that accounts for the recursive nature of Canadian tax law. For instance, contributing to an RRSP lowers your taxable income, which changes your marginal bracket, which changes how much tax you owe, which changes your cash flow, which changes how much you can contribute.</p>
+                <img class="zoomable" src="/Assets/Images/BracketWise/optimization-loop.webp" alt="">
+                <p>I solved this by building a 5-pass cyclical optimization loop. Instead of a simple "if/else" statement, the engine iterates through these variables until the result stabilizes. This is the difference between a "calculator" and an "optimization engine."</p>
+            </div>
+            <div class="space-after">
+                <h3>The "Mixed-Income" Blind Spot</h3>
+                <p>The market is increasingly populated by earners who do not fit the "standard T4" mold. This user group faces three specific systemic hurdles that current software ignores:</p>
                 <ul class="list-style">
-                    <li>Standard calculators don't model SE CPP correctly — they miss the employer half and Tier 2, understating the April liability for self-employed users.</li>
-                    <li>RRSP contribution advice typically ignores cash-flow constraints, leaving users at risk of a larger-than-expected balance owing in April.</li>
-                    <li>The dual benefit of FHSA — deductible contributions and tax-free withdrawals — is rarely surfaced together, so many eligible users under-utilize it.</li>
-                    <li>Mixed-income users don't know their true marginal rate. The T4-only rate chart gives the wrong answer once self-employment or capital gains enter the picture.</li>
+                    <li><span class="bold-text">The Dual-CPP Trap:</span> Freelancers earning mixed income are often penalized by CPP obligations on both employment and self-employment income, often triggering an unexpected tax bill in April.</li>
+                    <li><span class="bold-text">The Cash-Flow Constraint:</span> Optimization is usually taught in a vacuum (e.g., "Max out your RRSP!"). But for a user with limited monthly cash, "maxing out" is often physically impossible. The real problem isn't "what is the maximum contribution," but "what is the optimal contribution I can afford right now?"</li>
+                    <li><span class="bold-text">The Contribution Sequence:</span> There is no standard advice on the order of operations between FHSA, RRSP, and TFSA. Without an engine, users often default to the wrong account, missing out on lifetime savings.</li>
                 </ul>
             </div>
+
             <div class="highlight">
-                <p>For mixed-income Canadians, finding the optimal RRSP contribution means solving a circular dependency: the right amount depends on the tax savings, which depend on the amount.</p>
+                <p>Moving from retrospective reporting to predictive modeling by architecting a recursive optimization engine</p>
             </div>
-            <div class="spacer-1rem"></div>
+            <div class="spacer-1rem"></div>            
         </section>
-        <section id="market" class="full-width">
+        <section id="logic-data" class="max-width">
             <div class="spacer-1rem"></div>
-            <h2 class="max-width">Market Research</h2>
-            <p class="max-width">Several tools exist for Canadian tax filing and basic planning — Wealthsimple Tax, TurboTax, TaxTips.ca, and SimpleTax — but none optimizes registered contributions within a cash constraint or resolves the RRSP self-reference problem iteratively. BracketWise differentiates by handling all four income streams with correct CRA mechanics, solving the contribution optimization loop, surfacing the provincial tax-free income floor, and separating April liabilities from general tax owing so users can plan their cash position accurately.</p>
-            <div class="spacer-2rem"></div>
-        </section>
+            <h2 class="max-width">Logic Validation & Data Integrity</h2>
+            <p>Building an accurate tax engine required more than a functional UI; it demanded algorithmic reliability. To ensure the calculation engine produced precise outputs, I engineered a strict validation framework using dual-model parallel cross-checking against official CRA regulations.</p>
+            <div class="stickers">
+                <div class="sticker" style="background-image: url(../Assets/Images/Sticker-Light.svg);">
+                    <span class="title">CRA Regulatory Mapping</span>
+                    <ul class="no-bullet-list-style">
+                        <li>Convert CRA rules to variables</li>
+                        <li>Map fiscal year brackets</li>
+                        <li>Codify deductions and credits</li>
+                        <li>Establish rule dependencies</li>
+                    </ul>
+                </div>
+
+                <!-- <div class="sticker" style="background-image: url(../Assets/Images/Sticker-Light.svg);">
+                    <span class="title">Inspection</span>
+                    <ul class="no-bullet-list-style">
+                        <li>Inspect device condition</li>
+                        <li>Save photos of received device</li>
+                        <li>Label all parts & accessories</li>
+                        <li>Enter diagnostic report</li>
+                        <li>Suggest preventative repairs</li>
+                    </ul>
+                </div> -->
+
+                <div class="sticker" style="background-image: url(../Assets/Images/Sticker-Light.svg);">
+                    <span class="title">Calculation Loop Auditing</span>
+                    <ul class="no-bullet-list-style">
+                        <li>Trace full 5-pass recursive loop</li>
+                        <li>Validate calculation steps</li>
+                        <li>Audit all state transitions</li>
+                        <li>Verify convergence stability</li>
+                    </ul>
+                </div>
+
+                <div class="sticker" style="background-image: url(../Assets/Images/Sticker-Light.svg);">
+                    <span class="title">Logic & Data Validation</span>
+                    <ul class="no-bullet-list-style">
+                        <li>Cross check: Claude vs. Gemini</li>
+                        <li>CRA docs as final arbiter</li>
+                        <li>Run complex test cases</li>
+                        <li>Halt on any logic discrepancy</li>
+                        <li>Edge case analysis</li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="spacer-2rem"></div> 
+        </section>          
     </section>
     <section id="uxi-design">
-        <section id="features" class="full-width">
-            <div class="max-width">
-                <h2>Main Features</h2>
+        <section id="architecture" class="full-width">
+            <div class="max-width space-after">
+                <div class="spacer-1rem"></div>
+                <h2>Architecture Diagram</h2>
+                <p class="">I developed a comprehensive system map detailing how data moves through the platform. The architecture separates standard mandatory contributions (tax, EI and dual-tier CPP) from the core Optimization Engine, which runs a -pass recursive loop to balance RRSP headroom against available cash and FHSA limits.</p>
+                <!-- <a href="https://www.figma.com/board/gzumbXi6g8IFcIZtkHE6I0/Dealicious-User-Flow?node-id=0-1&t=Ig3x5eClnzvF4QhC-1" class="ext-link-onLight" target="blank">View on Figma</a> -->
+                <img class="zoomable" src="../Assets/Images/BracketWise/diagram.webp" alt="">
+            </div>
+        </section>
+        <section id="ux-strategy" class="max-width">
+            <div  class="max-width">
+                <h2>UX Strategy</h2>
+                <div class="spacer-1rem"></div>
+                <div>
+                    <h3>Contextual Onboarding & Trust</h3>
+                    <div class="grid row-gap1">
+                        <div class="col-m-6">
+                            <p>
+                                <span class="bold-text">The Problem:</span> <br> At the start of a financial tool, users face two major hurdles: they don't understand why they need to provide complex data (like CRA limits), and they hesitate to enter real numbers due to privacy fears. Standard pop-ups often skip the necessary context or overwhelm users with massive legal disclaimers, leading to drop-offs and bad data inputs.
+                            </p>
+                            <p>
+                                <span class="bold-text">The Solution:</span><br> I designed a 4-step onboarding overlay that tackles both education and privacy simultaneously. It explicitly explains the value of the required data and features a "Privacy & Security" badge, leveraging the app's browser-based setup to guarantee data never leaves the device. To keep the main workspace clean and welcoming, I moved the heavy legal compliance text into this overlay and placed only a short disclaimer in the footer. Finally, a permanent "How it works" button in the header ensures this context is always accessible on demand.
+                            </p>
+                        </div>
+                        <div class="col-m-6 figure">
+                            <img class="zoomable" src="../Assets/Images/BracketWise/onboarding.webp" alt="Onboarding Process">
+                            <span class="caption">Onboarding, Privacy & Disclaimer</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="spacer-2rem"></div>
-                <div class="max-width features">
-                    <div class="feature feature1">
-                        <img src="../Assets/Images/BracketWise/feature1.svg" alt="">
-                        <h3>Multi-Stream Tax Engine</h3>
-                        <p>BracketWise handles T4 employment, self-employment, capital gains (including the 2024 inclusion rate change), and other income. Each stream triggers different CPP tier calculations, EI rules, and deduction lines — all resolved automatically so users enter their income and get accurate results without needing to know which CRA line each item falls under.</p>
+                <div>
+                    <h3>Zero-State & Visual Affordance</h3>
+                    <div class="grid row-gap1">
+                        <div class="col-m-6">
+                            <p>
+                                <span class="bold-text">The Problem:</span> <br> When users first open a financial calculator, a blank results panel feels intimidating and gives zero context about what the application actually outputs.
+                            </p>
+                            <p>
+                                <span class="bold-text">The Solution:</span><br> Instead of leaving the right-hand dashboard empty on load, I designed a structured Skeleton UI. By displaying muted outlines of the final Cash Cascade cards and charts, the interface immediately previews what the output will look like. This provides clear visual affordance, helping users understand the cause-and-effect relationship between their inputs on the left and the optimized results on the right.
+                            </p>
+                        </div>
+                        <div class="col-m-6 figure">
+                            <img class="zoomable" src="../Assets/Images/BracketWise/zero-state.webp" alt="Zero-State Process">
+                            <span class="caption">Zero-State</span>
+                        </div>
                     </div>
-                    <div class="feature feature2">
-                        <img src="../Assets/Images/BracketWise/feature2.svg" alt="">
-                        <h3>5-Pass Contribution Optimizer</h3>
-                        <p>RRSP optimization is self-referential — contributing reduces tax owing, which frees more cash to contribute. BracketWise solves this with a 5-pass convergence loop that stabilizes on the correct amount. FHSA is always filled first, since its contributions are both deductible and withdrawn tax-free. RRSP is then maximized within the user's cash budget and a provincial tax-free income floor.</p>
+                </div>
+                <div class="spacer-2rem"></div>
+                <div>
+                    <h3>Visualizing the Cash Cascade</h3>
+                    <div class="grid gap1">
+                        <p  class="col-m-12">
+                            <span class="bold-text">The Problem:</span> <br> Showing users a massive wall of tax numbers is confusing. There is a real risk they might lock their cash into long-term investments and not have enough left to actually pay their tax bill in April.
+                        </p>
+                        <p class="col-m-6">
+                            <span class="bold-text">The Solution:</span><br> I designed the results section as a step-by-step "Cash Cascade" using progressive disclosure. The layout acts as a financial guardrail: it forces users to address their mandatory tax owings (Step 1) before unlocking their investment options for FHSA and RRSP (Steps 2 and 3). By breaking down massive annual limits into clear monthly targets, the design turns abstract math into a safe, easy-to-follow financial roadmap.
+                        </p>
+                        <div class="figure col-m-6">
+                            <img class="zoomable" src="../Assets/Images/BracketWise//cash-cascade.webp" alt="Cash Cascade">
+                            <span class="caption">Cash Cascade</span>
+                        </div>
                     </div>
-                    <div class="feature feature3">
-                        <img src="../Assets/Images/BracketWise/feature3.svg" alt="">
-                        <h3>Before & After Dashboard</h3>
-                        <p>Users see their tax picture before and after optimization side by side: total tax savings, April liability, effective rate, marginal rate, and take-home income. The April liability is shown separately from total tax owing — distinguishing the balance due from what the employer already withheld — so users can plan their cash position and avoid surprises at tax time.</p>
+                </div>
+                <div class="spacer-2rem"></div>
+                <div>
+                    <h3>Dynamic Alerts & Contextual Education</h3>
+                    <div class="grid  gap1">
+                  
+                            <p class="col-m-12">
+                                <span class="bold-text">The Problem:</span> <br> Tax terminology is intimidating, and users can easily miss critical legal thresholds or input invalid data during entry, leading to compliance errors and a lack of trust in the tool.
+                            </p>
+                            <p class="col-m-6">
+                                <span class="bold-text">The Solution:</span><br> I separated user education from system feedback. I implemented static, on-demand tooltips to explain complex rules (like capital gains inclusion rates) without cluttering the UI. Alongside this, I designed dynamic micro-copy and active input constraints. If a user triggers a legal threshold (like a freelancer crossing $30,000 for GST registration) a specific warning appears. Also, if a user inputs a value exceeding a hard legal limit (such as FHSA limit), the system automatically clears the input and displays an inline alert directly below the field explaining the restriction. This prevents invalid data entry while proactively keeping the user informed and compliant.
+                            </p>
+
+
+                        <div class="figure col-m-6">
+                            <img class="zoomable" src="../Assets/Images/BracketWise/micro-copy.webp" alt="Cash Cascade">
+                            <span class="caption">Conditional Micro-Copy & Contextual Tooltips</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer-2rem"></div>
+                <div>
+                    <h3>Data Visualization & Progressive Disclosure</h3>
+                    <div class="grid  gap1">
+                        <div class="col-m-6">
+                            <p class="col-m-12">
+                                <span class="bold-text">The Problem:</span> <br> Displaying comprehensive tax data is a balancing act. Dumping a massive spreadsheet of calculations onto the screen causes cognitive overload for the average user, but hiding the math entirely frustrates power users who need to verify where their money is going.
+                            </p>
+                            <p class="col-m-6">
+                                <span class="bold-text">The Solution:</span><br> I structured the results dashboard using progressive disclosure to serve both user types. The default view surfaces only high-impact takeaways—like total tax savings and the visual "Income Shielded Zone" chart—for immediate positive reinforcement. For power users requiring deeper transparency, a "See breakdown" toggle reveals a granular, line-by-line comparison of federal tax, provincial tax, and CPP/EI before and after optimization. This keeps the primary interface clean and approachable without sacrificing mathematical transparency.
+                            </p>
+                        </div>
+
+                        <div class="figure col-m-6">
+                            <img class="zoomable" src="../Assets/Images/BracketWise/data-viz.webp" alt="Cash Cascade">
+                            <span class="caption">Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer-2rem"></div>
+                <div>
+                    <h3>Time-Aware Cash Flow Planning</h3>
+                    <div class="grid row-gap0">
+                            <div class="col-m12">
+                                <p>
+                                    <span class="bold-text">The Problem:</span> <br> In my initial iterations, the system simply divided the user's annual tax liability by 12 to calculate their monthly savings goal. I quickly realized a critical flaw: this assumed everyone starts planning on January 1st. If a user inputs their data in July, dividing by 12 creates a false sense of security and guarantees a massive cash shortfall by tax season.
+                                </p>
+                                <p>
+                                    <span class="bold-text">The Solution:</span><br> I updated the logic to make the tool time-aware. The system now dynamically takes the total tax owed and available cash and divides it strictly by the remaining months in the year. This iteration ensures that the recommended monthly targets adjust based on the current calendar date, keeping the financial plan realistic and safe no matter when the user starts.
+                                </p>
+                            </div>
+                            <div class="figure">
+                                <img class="" src="../Assets/Images/BracketWise/time-aware-cash.webp" alt="Cash Cascade">
+                                <span class="caption">Time-Aware Cash Flow Planning</span>
+                            </div>
+                    </div>
+                </div>
+                <div class="spacer-3rem"></div>
+                <div>
+                    <h3>Accessible Design</h3>
+                    <div class="grid">
+                            <div class="col-m-12">
+                                <p>
+                                    <span class="bold-text">The Problem:</span> <br> During early iterations, instant reactivity caused "calculation panic"; numbers flashing on every keystroke made the tool feel unstable. Additionally, the dense financial inputs created visual clutter, and removing a traditional "Calculate" button broke the standard accessibility flow for screen readers and keyboard users.
+                                </p>
+                                <p>
+                                    <span class="bold-text">The Solution:</span><br> I cleaned up the interface by removing redundant placeholder numbers. To build trust and prevent calculation panic, I designed the engine to wait for explicit intent—updating the math only when the user clicks away from an input or presses 'Enter'. For accessibility, I managed keyboard focus to guide users automatically into newly revealed fields, and ensured screen readers quietly announce the updated tax results without page reloads. This approach makes the complex tool feel deliberate and inclusive.
+                                </p>
+                            </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <section id="product-scope" class="full-width">
+            <div class="max-width space-after">
+                <div class="spacer-1rem"></div>
+                <h2>Product Scope & Trade-Offs</h2>
+                <div>
+                    <h3>Actionable Optimization vs. One-Click Simplicity </h3>
+                    <div class="grid space-after">
+                        <p class="col-m-5"><span class="bold-text">The Trade-Off:</span><br> Standard online tax calculators (like WealthSimple's) prioritize extreme simplicity, usually asking for just a few aggregate numbers to spit out a rough tax estimate. While this is frictionless, it's after the fact andoffers zero strategic value for someone trying to actively lower their tax bill or plan their cash flow. </p>
+                        <p class="col-m-7"><span class="bold-text">The Decision:</span><br> I deliberately sacrificed bare-bones simplicity in favor of advanced optimization. By requiring more granular, varied inputs—like specific contribution limits, detailed income streams, and targeted expenses—BracketWise shifts from being a simple estimating calculator to a comprehensive planning tool. The trade-off of a longer data entry process is justified by the output: a highly actionable, personalized roadmap for wealth building.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Self-Employment Scope: Planning vs. Bookkeeping</h3>
+                    <div class="grid space-after">
+                        <p class="col-m-5"><span class="bold-text">The Trade-Off:</span><br> Self-employed users face massive complexities, from itemizing granular deductions (like home office or vehicle expenses) to tracking legal requirements like GST/HST registration thresholds. Building modules for receipt tracking or sales tax calculation would have caused severe scope creep, turning the app into a bookkeeping utility like QuickBooks.</p>
+                        <p class="col-m-7"><span class="bold-text">The Decision:</span> <br>I constrained the self-employment scope to focus purely on income tax planning. I restricted the inputs to just Gross Revenue and a single, aggregated "Deductible Business Expenses" field, forcing the user to calculate their itemized deductions elsewhere. However, to ensure users remain compliant, I leveraged the dynamic alert system: if their Gross Revenue exceeds the $30,000 threshold, the UI triggers a conditional alert advising them to register for GST/HST. This balanced keeping the product lean while protecting the user.</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3>Household Complexity vs. MVP Simplicity</h3>
+                    <div class="grid space-after">
+                        <p class="col-m-5"><span class="bold-text">The Trade-Off:</span><br> Canadian taxes often involve complex household dynamics, such as optimizing who claims specific expenses to maximize returns. Building a full multi-user family profile would have drastically expanded the scope, delayed the launch, and cluttered the interface.</p>
+                        <p class="col-m-7"><span class="bold-text">The Decision:</span><br> I chose to optimize the core product for the individual earner while still accommodating common family deductions. I included input fields for Medical and Child Care expenses, but rather than building complex logic to route those claims, I used on-demand tooltips to educate users on who in the household must or should claim them. This delivered the necessary utility while protecting the timeline and simplicity.</p>
                     </div>
                 </div>
             </div>
-            <div class="spacer-2rem"></div>
-        </section>
-        <section id="principles" class="max-width">
-            <h2>Defining Principles</h2>
-            <p>To align design and development decisions, we identified the key rules and interactions the application needed to model correctly:</p>
-            <ul class="list-style">
-                <li>How do CPP Tier 1 and Tier 2 interact when the user has both T4 and self-employment income? (T4 income consumes YMPE/YAMPE room first)</li>
-                <li>Which registered account should be filled first: FHSA, RRSP, or TFSA?</li>
-                <li>How do we keep the April cash liability visible so users don't over-contribute and be caught short at tax time?</li>
-                <li>What is the correct tax-free income floor per province, and how does it constrain RRSP contributions?</li>
-                <li>How do we communicate the self-referential nature of RRSP optimization without confusing users?</li>
-                <li>How should effective vs. marginal rate be displayed for mixed-income users, where the T4-only rate chart gives the wrong answer?</li>
-                <li>How should an employer RRSP match affect available contribution room?</li>
-            </ul>
-            <div class="spacer-2rem"></div>
-        </section>
-        <section id="user-flow" class="full-width">
+        </section>        
+        <section id="validation" class="max-width">
             <div class="max-width space-after">
                 <div class="spacer-1rem"></div>
-                <h2>User Flow</h2>
-                <p>The flow has three phases. In the <span class="bold-text">Income Input</span> phase, the user enters income across all four streams — T4, self-employment, capital gains, and other — along with their available cash budget, existing RRSP and FHSA room, and any childcare expenses. In the <span class="bold-text">Baseline Calculation</span> phase, the engine computes the unoptimized tax picture: tax owing, take-home income, effective rate, and marginal rate, with no registered contributions assumed. In the <span class="bold-text">Optimization</span> phase, the 5-pass loop converges on the optimal FHSA, RRSP, and TFSA amounts, and the dashboard presents the before-and-after comparison with tax savings and April obligations clearly separated.</p>
-                <img class="zoomable" src="../Assets/Images/BracketWise/user-flow.webp" alt="">
+                <h2>Validation & Usability Testing</h2>
+                <!-- <div>
+                    <h3>Actionable Optimization vs. One-Click Simplicity </h3>
+                    <div class="grid space-after">
+                        <p class="col-m-5"><span class="bold-text">The Trade-Off:</span><br> Standard online tax calculators (like WealthSimple's) prioritize extreme simplicity, usually asking for just a few aggregate numbers to spit out a rough tax estimate. While this is frictionless, it's after the fact andoffers zero strategic value for someone trying to actively lower their tax bill or plan their cash flow. </p>
+                        <p class="col-m-7"><span class="bold-text">The Decision:</span><br> I deliberately sacrificed bare-bones simplicity in favor of advanced optimization. By requiring more granular, varied inputs—like specific contribution limits, detailed income streams, and targeted expenses—BracketWise shifts from being a simple estimating calculator to a comprehensive planning tool. The trade-off of a longer data entry process is justified by the output: a highly actionable, personalized roadmap for wealth building.</p>
+                    </div>
+                </div>
+                <div>
+                    <h3>Self-Employment Scope: Planning vs. Bookkeeping</h3>
+                    <div class="grid space-after">
+                        <p class="col-m-5"><span class="bold-text">The Trade-Off:</span><br> Self-employed users face massive complexities, from itemizing granular deductions (like home office or vehicle expenses) to tracking legal requirements like GST/HST registration thresholds. Building modules for receipt tracking or sales tax calculation would have caused severe scope creep, turning the app into a bookkeeping utility like QuickBooks.</p>
+                        <p class="col-m-7"><span class="bold-text">The Decision:</span> <br>I constrained the self-employment scope to focus purely on income tax planning. I restricted the inputs to just Gross Revenue and a single, aggregated "Deductible Business Expenses" field, forcing the user to calculate their itemized deductions elsewhere. However, to ensure users remain compliant, I leveraged the dynamic alert system: if their Gross Revenue exceeds the $30,000 threshold, the UI triggers a conditional alert advising them to register for GST/HST. This balanced keeping the product lean while protecting the user.</p>
+                    </div>
+                </div>                
+                <div>
+                    <h3>Household Complexity vs. MVP Simplicity</h3>
+                    <div class="grid space-after">
+                        <p class="col-m-5"><span class="bold-text">The Trade-Off:</span><br> Canadian taxes often involve complex household dynamics, such as optimizing who claims specific expenses to maximize returns. Building a full multi-user family profile would have drastically expanded the scope, delayed the launch, and cluttered the interface.</p>
+                        <p class="col-m-7"><span class="bold-text">The Decision:</span><br> I chose to optimize the core product for the individual earner while still accommodating common family deductions. I included input fields for Medical and Child Care expenses, but rather than building complex logic to route those claims, I used on-demand tooltips to educate users on who in the household must or should claim them. This delivered the necessary utility while protecting the timeline and simplicity.</p>
+                    </div>
+                </div> -->
+                <div class="spacer-2rem"></div><a href="https://bracketwise.nahlania.com/" class="ext-link" target="_blank">Check Out the Application</a>  
             </div>
-        </section>
+        </section>        
     </section>
+
     <section id="reflection" class="full-width">
         <div class="max-width">
             <div class="spacer-1rem"></div>
@@ -291,53 +528,58 @@
                 <div class="col-m-6">
                     <h3>Lesson Learned</h3>
                     <ul class="no-bullet-list-style two-column">
-                        <li><span class="bold-text">Documenting tax rules as design decisions: </span><br><span>Translating CRA rules into an approachable UI required making many invisible interactions explicit — like the existence of a provincial tax-free floor, or how CPP Tier 2 interacts with self-employment income. Mapping each CRA line to the input it drives and the output it affects kept design and development tightly aligned throughout, and reduced the risk of a mathematically correct but confusing user experience.</span></li>
+                        <li><span class="bold-text ">Documentation is a lifesaver: </span><br><span>The importance of meticulous documentation became evident as the project progressed. Clear documentation facilitated smoother collaboration among team members, especially minimized friction among design and development teams. Having annotations on the wireframe and a design system, reduced the interpretations and contributed to a final product that was consistent and aligned with the design to a good extent.</span></li>
                     </ul>
                 </div>
                 <div class="col-m-6">
                     <h3>If We Had More Time</h3>
                     <ul class="no-bullet-list-style two-column">
-                        <li><span class="bold-text">Broader provincial coverage and full TFSA optimization: </span><br><span>The current engine models federal tax plus BC, Alberta, and Saskatchewan. Expanding to all provinces would make BracketWise useful to a much larger share of Canadians. Additionally, completing TFSA optimization — allocating remaining cash after FHSA and RRSP up to the annual limit — and adding a PDF export of the personalized tax summary would turn the tool into a shareable planning artifact for conversations with financial advisors.</span></li>
+                        <li><span class="bold-text">Design and development of POS Integration: </span><br><span>For a data-driven application increasing raw data leads to more accurate insights and improved marketing decisions. The MVP utilizes data solely from user input related to app campaigns, which may be impacted by human errors. To enhance data visualization and user experience, integrating Dealicious with existing POS systems in restaurants is suggested, supporting more reliable data collection and analysis.</span></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
     <div class="spacer-1rem"></div>
-    <section class="project-browser max-width">
+    <section  class="project-browser max-width">
         <h3 class="max-width">See More of My Work</h3>
         <div class="projects">
+            <!-- <div class="project">
+                <a href="/UX-UI-Projects/BracketWise.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-BracketWise.webp" alt="" >
+                </a>
+                <p class="caption">Tax Optimization SaaS</p>
+            </div> -->
             <div class="project">
-                <a href="/UX-UI-Projects/Farayand.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-Farayand.webp" alt="">
+                <a href="/UX-UI-Projects/Farayand.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-Farayand.webp" alt="" >
                 </a>
                 <p class="caption">Enterprise Service Design</p>
             </div>
             <div class="project">
-                <a href="/UX-UI-Projects/Dealicious.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-Dealicious.webp" alt="">
+                <a href="/UX-UI-Projects/Dealicious.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-Dealicious.webp" alt="" >
                 </a>
                 <p class="caption">Analytics Web-App Design</p>
             </div>
             <div class="project">
-                <a href="/UX-UI-Projects/Learnium.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-Learnium.webp" alt="">
+                <a href="/UX-UI-Projects/Learnium.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-Learnium.webp" alt="" >
                 </a>
                 <p class="caption">Mobile App Design</p>
             </div>
             <div class="project">
-                <a href="/UX-UI-Projects/SAM-Med.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-SAM.webp" alt="">
+                <a href="/UX-UI-Projects/SAM-Med.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-SAM.webp" alt="" >
                 </a>
                 <p class="caption">Ecommerce Design/Dev</p>
             </div>
             <div class="project">
-                <a href="/UX-UI-Projects/CAPA.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-CAPA.webp" alt="">
+                <a href="/UX-UI-Projects/CAPA.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-CAPA.webp" alt="" >
                 </a>
                 <p class="caption">UX/UI Case Study</p>
             </div>
             <div class="project">
-                <a href="/UX-UI-Projects/LinkedIn-Learning.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-LinkedIn.webp" alt="">
+                <a href="/UX-UI-Projects/LinkedIn-Learning.html" style="background-image: url(../Assets/Images/BG-illust-even_1.svg);"><img src="/Assets/Images/feat-LinkedIn.webp" alt="" >
                 </a>
                 <p class="caption">UX Case Study</p>
             </div>
-        </div>
+        </div>  
 
     </section>
     <div class="spacer-2rem"></div>
@@ -349,8 +591,9 @@
         <div class="copyright-txt"><span>Designed and developed with love by </span><span>NahlaNia @ 2026</span></div>
     </div>
     <div class="contact-wrapper">
-        <h3><span class="h3-italic">Get in</span><br><span class="h3-bold">touch</span></h3>
+        <h3><span class="h3-italic">Get in</span><br><span class="h3-bold">touch</span></h3>  
         <div class="contact-info">
+            <!-- <a href="mailto:nahlania@gmail.com" class="email" target="_blank">NahlaNia@gmail.com</a> -->
             <ul class="social-media">
                 <li class="email"><a href="mailto:nahlania@gmail.com" target="_blank"><span class="fa-solid fa-envelope"></span><span class="visually-hidden">Email Me</span></a></li>
                 <li class="linkedin"><a href="https://www.linkedin.com/in/nahlania" target="_blank"><span class="fa-brands fa-linkedin"></span><span class="visually-hidden">connect on LinkedIn</span></a></li>

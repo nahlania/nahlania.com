@@ -24,55 +24,22 @@
     }  
 
     .projects{
-        display: grid;
+        display: flex;
+        flex-wrap: nowrap;
         gap: 1rem;
-        grid-template-columns: repeat(3, 1fr);
+        overflow-x: auto;
+        padding-bottom: 1rem;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x proximity;
+        scroll-padding-left: 1rem;
+        scroll-padding-right: 1rem;
 
-        .project1{
-            grid-row:1;
-            grid-column: 1/2;
+        .project{
+            flex: 0 0 calc((100% - 4rem) / 5);
+            min-width: 220px;
+            max-width: 250px;
+            scroll-snap-align: start;
         }
-        .project2{
-            grid-row:1;
-            grid-column: 2/3;
-        }
-        .project3{
-            grid-row:1;
-            grid-column: 3/4;
-        }
-        .project4{
-            grid-row: 2;
-            grid-column: 1/2;
-        }
-        .project5{
-            grid-row:2;
-            grid-column: 2/3;
-        }
-
-    @media screen and (min-width: v.$sw-m){
-        grid-template-columns: repeat(5, 1fr);
-
-        .projects:nth-of-type(1){
-            grid-row: 1;
-            grid-column: 1/5;
-        }
-        .project:nth-of-type(2){
-            grid-row: 1;
-            grid-column: 2/3;
-        }
-        .project:nth-of-type(3){
-            grid-row: 1;
-            grid-column: 3/4;
-        }
-        .project:nth-of-type(4){
-            grid-row: 1;
-            grid-column: 4/5;
-        }
-        .project:nth-of-type(5){grid-row: 1;
-            grid-column: 5/6;
-        }
-    }
-
 
         a{
             background-repeat: no-repeat;
@@ -86,6 +53,22 @@
             text-align: center;
         }
 
+        &::-webkit-scrollbar{
+            height: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb{
+            background-color: c.$base-m;
+            border-radius: 999px;
+        }
+
+        &::-webkit-scrollbar-track{
+            background: c.$base-l;
+            border-radius: 999px;
+        }
+
+        scrollbar-width: thin;
+        scrollbar-color:c.$contrast-m c.$base-l ;
     }
          
 }

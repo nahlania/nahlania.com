@@ -172,27 +172,27 @@ h1 {
 	font-size: map-get(t.$font-sizes , h1 );
 	margin-bottom: 1.125rem;
 	& .h1-subheading{
-		font-size: calc(map-get(t.$font-sizes , h1 ) / t.$ratio3);		
+		font-size: calc(map-get(t.$font-sizes , h3 ) / t.$ratio3);		
 	}	
 
 	@media screen and (min-width: v.$sw-s-m){
 		font-size: t.$ratio3*map-get(t.$font-sizes , h1 );
 		margin-bottom: 0.75rem;
 		& .h1-subheading{
-			font-size: calc(t.$ratio3 * map-get(t.$font-sizes , h1 ) / t.$ratio3);		
+			font-size: calc(t.$ratio3 * map-get(t.$font-sizes , h3 ) / t.$ratio3);		
 		}
 	}
 	@media screen and (min-width: v.$sw-m){
 		font-size: t.$ratio4*map-get(t.$font-sizes , h1 );
 		& .h1-subheading{
-			font-size: calc(t.$ratio4 * map-get(t.$font-sizes , h1 ) / t.$ratio3);		
+			font-size: calc(t.$ratio4 * map-get(t.$font-sizes , h3 ) / t.$ratio3);		
 		}
 	}
 	@media screen and (min-width: v.$sw-m-l){
 		font-size: t.$ratio5*map-get(t.$font-sizes , h1 );
 		// margin-bottom: 1rem;
 		& .h1-subheading{
-			font-size: calc(t.$ratio5 * map-get(t.$font-sizes , h1 ) / t.$ratio3);		
+			font-size: calc(t.$ratio5 * map-get(t.$font-sizes , h3 ) / t.$ratio3);		
 		}
 	}
 
@@ -447,8 +447,28 @@ ol.two-column{
 	justify-content: center;
 	justify-items: center;
 
+	&.gap0{
+		grid-gap: 0rem !important;
+	}
+
+	&.row-gap0{
+		grid-row-gap: 0rem !important;
+	}
+
+	&.gap1{
+		grid-gap: 1rem !important;
+	}
+
+	&.row-gap1{
+		grid-row-gap: 1rem !important;
+	}
+
 	&.gap6{
 		grid-gap: 6rem !important;
+	}
+
+	&.row-gap6{
+		grid-row-gap: 6rem !important;
 	}
 
 	&.align-items-center{
@@ -456,6 +476,10 @@ ol.two-column{
 	}
 	&.justify-items-start{
 		justify-items: start;
+	}
+
+	& .justify-self-start{
+		justify-self: start !important;
 	}
 
 	& > *{
@@ -508,6 +532,21 @@ ol.two-column{
 			grid-column: span 9;
 		}
 	}
+	& .col-m-10{
+		@media screen and (min-width: v.$sw-m){
+			grid-column: span 10;
+		}
+	}
+	& .col-m-11{
+		@media screen and (min-width: v.$sw-m){
+			grid-column: span 11;
+		}
+	}
+	& .col-m-12{
+		@media screen and (min-width: v.$sw-m){
+			grid-column: span 12;
+		}
+	}
 
 	& .col-ml-1{
 		@media screen and (min-width: v.$sw-m-l){
@@ -550,6 +589,12 @@ ol.two-column{
 		}
 	}
 	
+
+	& .start-2{
+		@media screen and (min-width: v.$sw-m){
+			grid-column-start: 2 !important;
+		}
+	}
 
 	& .start-3{
 		@media screen and (min-width: v.$sw-m){

@@ -224,7 +224,7 @@
 
             }
 
-            .feat-proj:nth-of-type(2){
+            .feat-proj:nth-of-type(2), .feat-proj:nth-of-type(4){
                 padding:2rem 0 2rem 2rem;
                 @media screen and (min-width: v.$sw-m){
                     padding:4rem 0 4rem 2rem;

@@ -142,12 +142,19 @@
             display: grid;
             row-gap: 2rem;
             column-gap: 6rem;
+            justify-items: start;
             @media screen and (min-width: v.$sw-m){
                 grid-template-columns: repeat(2,1fr);
+            }
+            
+            li{
+                padding-left: 0;
             }
         }
         img{
             width: 120px;
+            height: 120px;
+            object-fit: contain;
         }        
     }
 
