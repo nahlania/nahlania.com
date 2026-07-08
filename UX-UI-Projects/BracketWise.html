@@ -11,7 +11,7 @@
     <script src="../main.js" defer></script>
     <style>
         :root{
-          --accent-color-l: #E1FAF7;
+          --accent-color-l: #8af4e7;
           --accent-color-m: #14B8A6;
           --accent-color-d: #0F766E;           
         }
@@ -357,24 +357,6 @@
                 </div>
                 <div class="spacer-2rem"></div>
                 <div>
-                    <h3>Zero-State & Visual Affordance</h3>
-                    <div class="grid row-gap1">
-                        <div class="col-m-6">
-                            <p>
-                                <span class="bold-text">The Problem:</span> <br> When users first open a financial calculator, a blank results panel feels intimidating and gives zero context about what the application actually outputs.
-                            </p>
-                            <p>
-                                <span class="bold-text">The Solution:</span><br> Instead of leaving the right-hand dashboard empty on load, I designed a structured Skeleton UI. By displaying muted outlines of the final Cash Cascade cards and charts, the interface immediately previews what the output will look like. This provides clear visual affordance, helping users understand the cause-and-effect relationship between their inputs on the left and the optimized results on the right.
-                            </p>
-                        </div>
-                        <div class="col-m-6 figure">
-                            <img class="zoomable" src="../Assets/Images/BracketWise/zero-state.webp" alt="Zero-State Process">
-                            <span class="caption">Zero-State</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="spacer-2rem"></div>
-                <div>
                     <h3>Visualizing the Cash Cascade</h3>
                     <div class="grid gap1">
                         <p  class="col-m-12">
@@ -386,25 +368,6 @@
                         <div class="figure col-m-6">
                             <img class="zoomable" src="../Assets/Images/BracketWise//cash-cascade.webp" alt="Cash Cascade">
                             <span class="caption">Cash Cascade</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="spacer-2rem"></div>
-                <div>
-                    <h3>Dynamic Alerts & Contextual Education</h3>
-                    <div class="grid  gap1">
-                  
-                            <p class="col-m-12">
-                                <span class="bold-text">The Problem:</span> <br> Tax terminology is intimidating, and users can easily miss critical legal thresholds or input invalid data during entry, leading to compliance errors and a lack of trust in the tool.
-                            </p>
-                            <p class="col-m-6">
-                                <span class="bold-text">The Solution:</span><br> I separated user education from system feedback. I implemented static, on-demand tooltips to explain complex rules (like capital gains inclusion rates) without cluttering the UI. Alongside this, I designed dynamic micro-copy and active input constraints. If a user triggers a legal threshold (like a freelancer crossing $30,000 for GST registration) a specific warning appears. Also, if a user inputs a value exceeding a hard legal limit (such as FHSA limit), the system automatically clears the input and displays an inline alert directly below the field explaining the restriction. This prevents invalid data entry while proactively keeping the user informed and compliant.
-                            </p>
-
-
-                        <div class="figure col-m-6">
-                            <img class="zoomable" src="../Assets/Images/BracketWise/micro-copy.webp" alt="Cash Cascade">
-                            <span class="caption">Conditional Micro-Copy & Contextual Tooltips</span>
                         </div>
                     </div>
                 </div>
@@ -429,6 +392,25 @@
                 </div>
                 <div class="spacer-2rem"></div>
                 <div>
+                    <h3>Dynamic Alerts & Contextual Education</h3>
+                    <div class="grid  gap1">
+                  
+                            <p class="col-m-12">
+                                <span class="bold-text">The Problem:</span> <br> Tax terminology is intimidating, and users can easily miss critical legal thresholds or input invalid data during entry, leading to compliance errors and a lack of trust in the tool.
+                            </p>
+                            <p class="col-m-6">
+                                <span class="bold-text">The Solution:</span><br> I separated user education from system feedback. I implemented static, on-demand tooltips to explain complex rules (like capital gains inclusion rates) without cluttering the UI. Alongside this, I designed dynamic micro-copy and active input constraints. If a user triggers a legal threshold (like a freelancer crossing $30,000 for GST registration) a specific warning appears. Also, if a user inputs a value exceeding a hard legal limit (such as FHSA limit), the system automatically clears the input and displays an inline alert directly below the field explaining the restriction. This prevents invalid data entry while proactively keeping the user informed and compliant.
+                            </p>
+
+
+                        <div class="figure col-m-6">
+                            <img class="zoomable" src="../Assets/Images/BracketWise/micro-copy.webp" alt="Cash Cascade">
+                            <span class="caption">Conditional Micro-Copy & Contextual Tooltips</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer-2rem"></div>
+                <div>
                     <h3>Time-Aware Cash Flow Planning</h3>
                     <div class="grid row-gap0">
                             <div class="col-m12">
@@ -445,7 +427,7 @@
                             </div>
                     </div>
                 </div>
-                <div class="spacer-3rem"></div>
+                <div class="spacer-2rem"></div>
                 <div>
                     <h3>Accessible Design</h3>
                     <div class="grid">
@@ -459,6 +441,25 @@
                             </div>
                     </div>
                 </div>
+                <div class="spacer-2rem"></div>
+                <div>
+                    <h3>Zero-State & Visual Affordance</h3>
+                    <div class="grid row-gap1">
+                        <div class="col-m-6">
+                            <p>
+                                <span class="bold-text">The Problem:</span> <br> When users first open a financial calculator, a blank results panel feels intimidating and gives zero context about what the application actually outputs.
+                            </p>
+                            <p>
+                                <span class="bold-text">The Solution:</span><br> Instead of leaving the right-hand dashboard empty on load, I designed a structured Skeleton UI. By displaying muted outlines of the final Cash Cascade cards and charts, the interface immediately previews what the output will look like. This provides clear visual affordance, helping users understand the cause-and-effect relationship between their inputs on the left and the optimized results on the right.
+                            </p>
+                        </div>
+                        <div class="col-m-6 figure">
+                            <img class="zoomable" src="../Assets/Images/BracketWise/zero-state.webp" alt="Zero-State Process">
+                            <span class="caption">Zero-State</span>
+                        </div>
+                    </div>
+                </div>
+                
             </div>    
         </section>
         <section id="product-scope" class="full-width">
@@ -466,26 +467,29 @@
                 <div class="spacer-1rem"></div>
                 <h2>Product Scope & Trade-Offs</h2>
                 <div>
-                    <h3>Actionable Optimization vs. One-Click Simplicity </h3>
-                    <div class="grid space-after">
-                        <p class="col-m-5"><span class="bold-text">The Trade-Off:</span><br> Standard online tax calculators (like WealthSimple's) prioritize extreme simplicity, usually asking for just a few aggregate numbers to spit out a rough tax estimate. While this is frictionless, it's after the fact andoffers zero strategic value for someone trying to actively lower their tax bill or plan their cash flow. </p>
-                        <p class="col-m-7"><span class="bold-text">The Decision:</span><br> I deliberately sacrificed bare-bones simplicity in favor of advanced optimization. By requiring more granular, varied inputs—like specific contribution limits, detailed income streams, and targeted expenses—BracketWise shifts from being a simple estimating calculator to a comprehensive planning tool. The trade-off of a longer data entry process is justified by the output: a highly actionable, personalized roadmap for wealth building.</p>
+                    <div class="highlight">
+                        <p>Traded a basic calculator approach for granular inputs to deliver an actionable financial roadmap.</p>
                     </div>
+                    <div class="grid">
+                        <p>Most tax calculators only ask for basic numbers to give a rough estimate. I decided to build a detailed planner instead. By asking users for specific inputs—like contribution limits and medical expenses—BracketWise takes a bit longer to fill out. However, this extra friction is worth it because it gives users an actionable, personalized roadmap to actually lower their taxes.</p>
+                    </div>                    
                 </div>
 
                 <div>
-                    <h3>Self-Employment Scope: Planning vs. Bookkeeping</h3>
-                    <div class="grid space-after">
-                        <p class="col-m-5"><span class="bold-text">The Trade-Off:</span><br> Self-employed users face massive complexities, from itemizing granular deductions (like home office or vehicle expenses) to tracking legal requirements like GST/HST registration thresholds. Building modules for receipt tracking or sales tax calculation would have caused severe scope creep, turning the app into a bookkeeping utility like QuickBooks.</p>
-                        <p class="col-m-7"><span class="bold-text">The Decision:</span> <br>I constrained the self-employment scope to focus purely on income tax planning. I restricted the inputs to just Gross Revenue and a single, aggregated "Deductible Business Expenses" field, forcing the user to calculate their itemized deductions elsewhere. However, to ensure users remain compliant, I leveraged the dynamic alert system: if their Gross Revenue exceeds the $30,000 threshold, the UI triggers a conditional alert advising them to register for GST/HST. This balanced keeping the product lean while protecting the user.</p>
+                    <div class="highlight">
+                        <p>Maintained lean MVP discipline against AI feature bloat</p>
                     </div>
+                    <div class="grid space-after">
+                        <p>Modern AI coding tools make it incredibly tempting to generate massive, complex feature sets right from the start, like linking family profiles to route household taxes. But sticking to lean MVP rules is the best way to build reliable software. I focused the app entirely on the individual earner. Instead of building complex logic to route family deductions, I used simple tooltips to explain who in the household should claim them.</p>
+                    </div>               
                 </div>
                 
                 <div>
-                    <h3>Household Complexity vs. MVP Simplicity</h3>
+                    <div class="highlight">
+                        <p>Avoided bookkeeping scope creep by aggregating expenses and using dynamic alerts for GST compliance</p>
+                    </div>
                     <div class="grid space-after">
-                        <p class="col-m-5"><span class="bold-text">The Trade-Off:</span><br> Canadian taxes often involve complex household dynamics, such as optimizing who claims specific expenses to maximize returns. Building a full multi-user family profile would have drastically expanded the scope, delayed the launch, and cluttered the interface.</p>
-                        <p class="col-m-7"><span class="bold-text">The Decision:</span><br> I chose to optimize the core product for the individual earner while still accommodating common family deductions. I included input fields for Medical and Child Care expenses, but rather than building complex logic to route those claims, I used on-demand tooltips to educate users on who in the household must or should claim them. This delivered the necessary utility while protecting the timeline and simplicity.</p>
+                        <p>Self-employed taxes are complicated. Building features to track receipts or calculate sales tax would have turned this app into QuickBooks. Instead, I kept the focus strictly on income tax planning by asking for just one total "expenses" number. To keep users legally safe without adding feature clutter, I used a dynamic alert that simply warns them to register for GST if their revenue passes $30,000.</p>
                     </div>
                 </div>
             </div>
@@ -494,28 +498,20 @@
             <div class="max-width space-after">
                 <div class="spacer-1rem"></div>
                 <h2>Validation & Usability Testing</h2>
-                <!-- <div>
-                    <h3>Actionable Optimization vs. One-Click Simplicity </h3>
-                    <div class="grid space-after">
-                        <p class="col-m-5"><span class="bold-text">The Trade-Off:</span><br> Standard online tax calculators (like WealthSimple's) prioritize extreme simplicity, usually asking for just a few aggregate numbers to spit out a rough tax estimate. While this is frictionless, it's after the fact andoffers zero strategic value for someone trying to actively lower their tax bill or plan their cash flow. </p>
-                        <p class="col-m-7"><span class="bold-text">The Decision:</span><br> I deliberately sacrificed bare-bones simplicity in favor of advanced optimization. By requiring more granular, varied inputs—like specific contribution limits, detailed income streams, and targeted expenses—BracketWise shifts from being a simple estimating calculator to a comprehensive planning tool. The trade-off of a longer data entry process is justified by the output: a highly actionable, personalized roadmap for wealth building.</p>
+                <div>
+                    <h3>Stress-Testing with AI</h3>
+                    <div class=" space-after">
+                        <p class="col-m-5"></span>A tax tool has to be mathematically bulletproof. Testing only simple, everyday scenarios wasn't enough to guarantee the app was reliable.<br> I used Gemini and Claude to generate extreme financial edge cases—like mixing high capital gains with maxed-out FHSA contributions. I ran these complex profiles through the app to verify that the calculations and charts held up perfectly under pressure.</p>
+                        <img src="/Assets/Images/BracketWise/validation.webp" alt="application screenshot" class="zoomable">
                     </div>
                 </div>
                 <div>
-                    <h3>Self-Employment Scope: Planning vs. Bookkeeping</h3>
+                    <h3>Validating the UX</h3>
                     <div class="grid space-after">
-                        <p class="col-m-5"><span class="bold-text">The Trade-Off:</span><br> Self-employed users face massive complexities, from itemizing granular deductions (like home office or vehicle expenses) to tracking legal requirements like GST/HST registration thresholds. Building modules for receipt tracking or sales tax calculation would have caused severe scope creep, turning the app into a bookkeeping utility like QuickBooks.</p>
-                        <p class="col-m-7"><span class="bold-text">The Decision:</span> <br>I constrained the self-employment scope to focus purely on income tax planning. I restricted the inputs to just Gross Revenue and a single, aggregated "Deductible Business Expenses" field, forcing the user to calculate their itemized deductions elsewhere. However, to ensure users remain compliant, I leveraged the dynamic alert system: if their Gross Revenue exceeds the $30,000 threshold, the UI triggers a conditional alert advising them to register for GST/HST. This balanced keeping the product lean while protecting the user.</p>
+                        <p>Even if the math is completely accurate, the interface fails if users can't easily understand their results.<br> I ran informal usability tests to observe how people interacted with the final dashboard. The tests confirmed my layout worked: average users easily grasped the visual charts, while power users could dig into the detailed breakdowns without feeling overwhelmed.</p>
                     </div>
                 </div>                
-                <div>
-                    <h3>Household Complexity vs. MVP Simplicity</h3>
-                    <div class="grid space-after">
-                        <p class="col-m-5"><span class="bold-text">The Trade-Off:</span><br> Canadian taxes often involve complex household dynamics, such as optimizing who claims specific expenses to maximize returns. Building a full multi-user family profile would have drastically expanded the scope, delayed the launch, and cluttered the interface.</p>
-                        <p class="col-m-7"><span class="bold-text">The Decision:</span><br> I chose to optimize the core product for the individual earner while still accommodating common family deductions. I included input fields for Medical and Child Care expenses, but rather than building complex logic to route those claims, I used on-demand tooltips to educate users on who in the household must or should claim them. This delivered the necessary utility while protecting the timeline and simplicity.</p>
-                    </div>
-                </div> -->
-                <div class="spacer-2rem"></div><a href="https://bracketwise.nahlania.com/" class="ext-link" target="_blank">Check Out the Application</a>  
+                <div class="spacer-2rem "></div><a href="https://bracketwise.nahlania.com/" class="extLink-fullWidth" target="_blank">Check Out the Application</a>  
             </div>
         </section>        
     </section>
@@ -524,20 +520,20 @@
         <div class="max-width">
             <div class="spacer-1rem"></div>
             <h2>Reflections</h2>
-            <!-- <div class="grid">
+            <div class="grid">
                 <div class="col-m-6">
                     <h3>Lesson Learned</h3>
                     <ul class="no-bullet-list-style two-column">
-                        <li><span class="bold-text ">Documentation is a lifesaver: </span><br><span>The importance of meticulous documentation became evident as the project progressed. Clear documentation facilitated smoother collaboration among team members, especially minimized friction among design and development teams. Having annotations on the wireframe and a design system, reduced the interpretations and contributed to a final product that was consistent and aligned with the design to a good extent.</span></li>
+                        <li><span class="bold-text ">Copywriting as a Functional System: </span><br><span>In a complex financial product, copywriting isn't just about tone—it is a critical piece of system logic. While the dynamic alerts I designed handle standard flows well, I realized that using generalized messaging during the tax optimization stage can be misleading for unique edge cases. Moving forward, I want to refine the content design to be much more granular, ensuring the text is as precise and responsive as the underlying math.</span></li>
                     </ul>
                 </div>
                 <div class="col-m-6">
-                    <h3>If We Had More Time</h3>
+                    <h3>What's Next</h3>
                     <ul class="no-bullet-list-style two-column">
-                        <li><span class="bold-text">Design and development of POS Integration: </span><br><span>For a data-driven application increasing raw data leads to more accurate insights and improved marketing decisions. The MVP utilizes data solely from user input related to app campaigns, which may be impacted by human errors. To enhance data visualization and user experience, integrating Dealicious with existing POS systems in restaurants is suggested, supporting more reliable data collection and analysis.</span></li>
+                        <li><span class="bold-text">Scaling the Optimization Logic: </span><br><span>The app already features intelligent optimization constraints, successfully evaluating efficiency by halting RRSP and FHSA contributions when taxable income drops below the Basic Personal Amount or when navigating the BC Tax Reduction clawback. For the next iteration, I plan to scale this algorithmic efficiency across all scenarios. Instead of defaulting to maximum contributions when room is available, the system will universally evaluate the marginal tax benefit of every dollar.</span></li>
                     </ul>
                 </div>
-            </div> -->
+            </div>
         </div>
     </section>
     <div class="spacer-1rem"></div>

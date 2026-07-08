@@ -21,7 +21,7 @@ body {
     color: c.$contrast-d;
 	
 	::selection {
-    background: var(--accent-color-l);
+    background: var(--accent-color-l) !important;
 	}
 }
 

@@ -26,7 +26,7 @@
 
 .body-project{
     ::selection {
-    background: var(--accent-color-m);
+    background: var(--accent-color-l);
 	}
     section{
         margin: 4rem auto 4rem auto; 
@@ -133,7 +133,7 @@
 
     #proj-details{
         ::selection {
-            background: var(--accent-color-m);
+            background: var(--accent-color-l);
 	    }
         grid-column: 1/-1;
         grid-row: 2/-1;

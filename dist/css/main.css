@@ -105,10 +105,10 @@ body {
   color: #27303d;
 }
 body ::-moz-selection {
-  background: var(--accent-color-l);
+  background: var(--accent-color-l) !important;
 }
 body ::selection {
-  background: var(--accent-color-l);
+  background: var(--accent-color-l) !important;
 }
 
 .bold-text {
@@ -731,16 +731,16 @@ a.ext-link:hover {
 }
 
 a.ext-link-onLight {
-  font-weight: normal;
+  font-weight: bold;
   justify-self: end;
   padding: 8px 32px;
   margin-bottom: 8px;
   background-color: var(--accent-color-m);
-  box-shadow: -8px 8px 0 #ECF0F6;
+  box-shadow: -8px 8px 0 #fff;
   color: #fff;
 }
 a.ext-link-onLight:hover {
-  background-color: #ECF0F6;
+  background-color: #fff !important;
   box-shadow: -8px 8px 0 var(--accent-color-m);
   color: var(--accent-color-m);
 }
@@ -758,6 +758,23 @@ button {
   color: #ECF0F6;
   border: none;
   box-shadow: none;
+}
+
+a.extLink-fullWidth {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px 32px;
+  margin-bottom: 8px;
+  background-color: var(--accent-color-m);
+  box-shadow: -8px 8px 0 #fff;
+  color: #fff;
+}
+a.extLink-fullWidth:hover {
+  background-color: #fff;
+  box-shadow: -8px 8px 0 var(--accent-color-m);
+  color: var(--accent-color-m);
 }
 
 .polygon-banner {
@@ -2152,11 +2169,11 @@ footer {
 }
 
 .body-project ::-moz-selection {
-  background: var(--accent-color-m);
+  background: var(--accent-color-l);
 }
 
 .body-project ::selection {
-  background: var(--accent-color-m);
+  background: var(--accent-color-l);
 }
 .body-project section {
   margin: 4rem auto 4rem auto;
@@ -2245,10 +2262,10 @@ footer {
   grid-row: 1/2;
 }
 .body-project #proj-details ::-moz-selection {
-  background: var(--accent-color-m);
+  background: var(--accent-color-l);
 }
 .body-project #proj-details ::selection {
-  background: var(--accent-color-m);
+  background: var(--accent-color-l);
 }
 .body-project #proj-details {
   grid-column: 1/-1;
