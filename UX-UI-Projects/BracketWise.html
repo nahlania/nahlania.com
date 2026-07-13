@@ -380,12 +380,12 @@
                                 <span class="bold-text">The Problem:</span> <br> Displaying comprehensive tax data is a balancing act. Dumping a massive spreadsheet of calculations onto the screen causes cognitive overload for the average user, but hiding the math entirely frustrates power users who need to verify where their money is going.
                             </p>
                             <p class="col-m-6">
-                                <span class="bold-text">The Solution:</span><br> I structured the results dashboard using progressive disclosure to serve both user types. The default view surfaces only high-impact takeaways—like total tax savings and the visual "Income Shielded Zone" chart—for immediate positive reinforcement. For power users requiring deeper transparency, a "See breakdown" toggle reveals a granular, line-by-line comparison of federal tax, provincial tax, and CPP/EI before and after optimization. This keeps the primary interface clean and approachable without sacrificing mathematical transparency.
+                                <span class="bold-text">The Solution:</span><br> I structured the results dashboard using progressive disclosure to serve both user types. The default view surfaces only high-impact takeaways. For power users requiring deeper transparency, a "See breakdown" toggle reveals a granular, line-by-line comparison of before and after optimization. <br>The graph acts as a <span class="bold-text">visual reward</span> where the UI turns an abstract deduction into a tangible win. This behavioral design leverages loss aversion, visually encouraging the user to follow through with their savings strategy so they don't leave that shielded money on the table.
                             </p>
                         </div>
 
                         <div class="figure col-m-6">
-                            <img class="zoomable" src="../Assets/Images/BracketWise/data-viz.webp" alt="Cash Cascade">
+                            <img class="zoomable" src="../Assets/Images/BracketWise/results-2nd-iteration.webp" alt="Cash Cascade">
                             <span class="caption">Data Visualization</span>
                         </div>
                     </div>
@@ -429,15 +429,18 @@
                 </div>
                 <div class="spacer-2rem"></div>
                 <div>
-                    <h3>Accessible Design</h3>
+                    <h3>Accessible Design & Keyboard Navigation</h3>
                     <div class="grid">
                             <div class="col-m-12">
                                 <p>
-                                    <span class="bold-text">The Problem:</span> <br> During early iterations, instant reactivity caused "calculation panic"; numbers flashing on every keystroke made the tool feel unstable. Additionally, the dense financial inputs created visual clutter, and removing a traditional "Calculate" button broke the standard accessibility flow for screen readers and keyboard users.
+                                    During early iterations, instant reactivity caused "calculation panic"; numbers flashing on every keystroke made the tool feel unstable. Furthermore, I needed to balance rapid data entry for power users with strict web accessibility standards, especially since the interface lacked a traditional "Calculate" button.<br>
+                                    I redesigned the interaction model to ensure the tool feels deliberate, fast, and fully inclusive:
                                 </p>
-                                <p>
-                                    <span class="bold-text">The Solution:</span><br> I cleaned up the interface by removing redundant placeholder numbers. To build trust and prevent calculation panic, I designed the engine to wait for explicit intent—updating the math only when the user clicks away from an input or presses 'Enter'. For accessibility, I managed keyboard focus to guide users automatically into newly revealed fields, and ensured screen readers quietly announce the updated tax results without page reloads. This approach makes the complex tool feel deliberate and inclusive.
-                                </p>
+                                <ul>
+                                    <li  class="space-after"><span class="bold-text">Intentional Reactivity:</span> To build trust and eliminate visual clutter, the engine waits for explicit intent. It updates the math only when a user clicks away from an input or explicitly presses 'Tab' or 'Enter'. </li>
+                                    <li class="space-after"><span class="bold-text">Rapid Scenario Testing:</span> To speed up data entry, users can adjust values using the up and down arrow keys in intuitive increments ($1,000 for cash, 0.5% for matches). Pressing 'Enter' triggers the calculation but intentionally keeps focus on the input, allowing users to rapidly tweak numbers and test scenarios without reaching for a mouse.</li>
+                                    <li class="space-after"><span class="bold-text">Invisible Accessibility:</span> To ensure these custom keyboard controls meet web standards, I made sure that assistive technologies recognize the step adjustments. Simultaneously, an aria-live="polite" region ensures screen readers quietly announce the newly calculated tax results in the background, keeping users perfectly informed without interrupting their workflow.</li>
+                                </ul>
                             </div>
                     </div>
                 </div>
@@ -498,17 +501,35 @@
             <div class="max-width space-after">
                 <div class="spacer-1rem"></div>
                 <h2>Validation & Usability Testing</h2>
+                
                 <div>
                     <h3>Stress-Testing with AI</h3>
                     <div class=" space-after">
                         <p class="col-m-5"></span>A tax tool has to be mathematically bulletproof. Testing only simple, everyday scenarios wasn't enough to guarantee the app was reliable.<br> I used Gemini and Claude to generate extreme financial edge cases—like mixing high capital gains with maxed-out FHSA contributions. I ran these complex profiles through the app to verify that the calculations and charts held up perfectly under pressure.</p>
-                        <img src="/Assets/Images/BracketWise/validation.webp" alt="application screenshot" class="zoomable">
+                        <div class="col-m-6 figure">
+                            <img class="zoomable" src="../Assets/Images/BracketWise/validation.webp" alt="math validation">
+                            <span class="caption">Mathematical Validation</span>
+                        </div>
                     </div>
                 </div>
                 <div>
                     <h3>Validating the UX</h3>
                     <div class="grid space-after">
-                        <p>Even if the math is completely accurate, the interface fails if users can't easily understand their results.<br> I ran informal usability tests to observe how people interacted with the final dashboard. The tests confirmed my layout worked: average users easily grasped the visual charts, while power users could dig into the detailed breakdowns without feeling overwhelmed.</p>
+                        <p class="col-m-12">Usability testing revealed a few friction points in both data entry and result comprehension. Users often missed the "Available Cash" input, were unsure if the RRSP match required a percentage or a flat dollar amount, and felt overwhelmed by the combined marginal tax graph sitting in the top-level results.<br> In response, I updated the UI to clarify the input formats. By leveraging progressive disclosure, I moved the complex tax graph into a detailed breakdown section—keeping the initial results highly scannable for the average user, while ensuring power users still retain full access to the granular visual data they need.</p>
+                        <div class="col-m-6 figure">
+                            <img class="zoomable" src="../Assets/Images/BracketWise/results-1st-iteration.webp" alt="results first iteration">
+                            <span class="caption">Results, First Iteration</span>
+                        </div>
+                        <div class="col-m-6 figure">
+                            <img class="zoomable" src="../Assets/Images/BracketWise/results-2nd-iteration.webp" alt="results second iteration">
+                            <span class="caption">Results, Second Iteration</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Expert Financial Validation</h3>
+                    <div class=" space-after">
+                        <p class="col-m-5"></span>Feedback from financial testing revealed that the MVP’s "maximize everything" algorithm was strategically flawed. While maxing out RRSP and FHSA room is crucial for high-income or self-employed users facing large tax bills, it actively harms lower-income users by burning their valuable contribution room for minimal immediate tax relief.</p><p> This validation directly informed the V2 roadmap. The next iteration will shift to contextual optimization, proactively advising lower-bracket users to utilize a TFSA instead, preserving their RRSP room for future, peak-earning years.</p>
                     </div>
                 </div>                
                 <div class="spacer-2rem "></div><a href="https://bracketwise.nahlania.com/" class="extLink-fullWidth" target="_blank">Check Out the Application</a>  
