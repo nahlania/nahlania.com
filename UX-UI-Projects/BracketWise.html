@@ -167,7 +167,7 @@
 
     <section id="intro">
         <section id="overview" class="max-width">
-            <div class="overview-img"><img src="../Assets/Images/BracketWise/overview-dark.webp" alt=""></div>
+            <div class="overview-img"><img class="zoomable" src="../Assets/Images/BracketWise/overview-dark.webp" alt=""></div>
             <div class="overview-txt">
                 <h2>Overview</h2>
                 <p class="space-after">BracketWise is a financial planning tool built for Canadians with mixed income; such as freelancers who also have T4 employment, investors with capital gains, or anyone navigating more than one income stream. <br>
@@ -209,7 +209,7 @@
                 <li class="col-m-6">
                     <div>
                         <img src="../Assets/Icons/Icon-Timeline.svg" alt=""><span class="title">Timeline</span>
-                        <p>Less than 2 weeks, from Ideation to Implementation</p>
+                        <p>Less than 3 weeks, from Ideation to Implementation</p>
                     </div>
                 </li>
                 <li class="col-m-6">
@@ -422,7 +422,7 @@
                                 </p>
                             </div>
                             <div class="figure">
-                                <img class="" src="../Assets/Images/BracketWise/time-aware-cash.webp" alt="Cash Cascade">
+                                <img class="zoomable" src="../Assets/Images/BracketWise/time-aware-cash.webp" alt="Cash Cascade">
                                 <span class="caption">Time-Aware Cash Flow Planning</span>
                             </div>
                     </div>
@@ -514,8 +514,8 @@
                 </div>
                 <div>
                     <h3>Validating the UX</h3>
-                    <div class="grid space-after">
-                        <p class="col-m-12">Usability testing revealed a few friction points in both data entry and result comprehension. Users often missed the "Available Cash" input, were unsure if the RRSP match required a percentage or a flat dollar amount, and felt overwhelmed by the combined marginal tax graph sitting in the top-level results.<br> In response, I updated the UI to clarify the input formats. By leveraging progressive disclosure, I moved the complex tax graph into a detailed breakdown section—keeping the initial results highly scannable for the average user, while ensuring power users still retain full access to the granular visual data they need.</p>
+                    <div class="grid row-gap0 space-after">
+                        <p class="col-m-12"><span class="bold-text">Data Analytitics:</span><br> Usability testing revealed a few friction points in result comprehension. Users felt overwhelmed by the combined marginal tax graph sitting in the top-level results.<br> In response, by leveraging progressive disclosure, I moved the complex tax graph into a detailed breakdown section—keeping the initial results highly scannable for the average user, while ensuring power users still retain full access to the granular visual data they need.</p>
                         <div class="col-m-6 figure">
                             <img class="zoomable" src="../Assets/Images/BracketWise/results-1st-iteration.webp" alt="results first iteration">
                             <span class="caption">Results, First Iteration</span>
@@ -523,6 +523,18 @@
                         <div class="col-m-6 figure">
                             <img class="zoomable" src="../Assets/Images/BracketWise/results-2nd-iteration.webp" alt="results second iteration">
                             <span class="caption">Results, Second Iteration</span>
+                        </div>
+                    </div>
+                    <div class="grid row-gap0 space-after">
+                        <p class="col-m-12"><span class="bold-text">Optional Inputs:</span><br>Because some inputs like childcare and medical expenses don't apply to every user, I hid them behind optional buttons to keep the default interface clean and avoid overwhelming the user.
+                        <p class="col-m-12">Initially, I used a standard toolbar design where clicking a button at the top spawned a new input field below. During user testing, I noticed friction with this approach. Users would click a button and then have to visually scan the page to find where the new input had just appeared.<br>To fix this, I redesigned the feature using an inline expansion model. Now, clicking "+ Medical Expenses" transforms the button directly into an input field in that exact spot.</p>
+                        <div class="col-m-6 figure">
+                            <img class="zoomable" src="../Assets/Images/BracketWise/inputs-1st-iteration.webp" alt="inputs first iteration">
+                            <span class="caption">Optional Inputs, First Iteration</span>
+                        </div>
+                        <div class="col-m-6 figure">
+                            <img class="zoomable" src="../Assets/Images/BracketWise/inputs-2nd-iteration.webp" alt="inputs second iteration">
+                            <span class="caption">Optional Inputs, Second Iteration</span>
                         </div>
                     </div>
                 </div>
@@ -551,7 +563,7 @@
                 <div class="col-m-6">
                     <h3>What's Next</h3>
                     <ul class="no-bullet-list-style two-column">
-                        <li><span class="bold-text">Scaling the Optimization Logic: </span><br><span>The app already features intelligent optimization constraints, successfully evaluating efficiency by halting RRSP and FHSA contributions when taxable income drops below the Basic Personal Amount or when navigating the BC Tax Reduction clawback. For the next iteration, I plan to scale this algorithmic efficiency across all scenarios. Instead of defaulting to maximum contributions when room is available, the system will universally evaluate the marginal tax benefit of every dollar.</span></li>
+                        <li><span class="bold-text">Scaling the Optimization Logic: </span><br><span>The app already features intelligent constraints, halting RRSP and FHSA contributions when income drops below the Basic Personal Amount or during the BC Tax Reduction clawback. For V2, I will scale this efficiency into a fully contextual engine. Instead of defaulting to maximum contributions, the system will evaluate the marginal tax benefit of every dollar, proactively advising lower-bracket users to prioritize TFSAs while preserving RRSP room for peak-earning years.</span></li>
                     </ul>
                 </div>
             </div>

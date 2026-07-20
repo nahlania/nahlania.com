@@ -482,6 +482,10 @@ ol.two-column{
 		justify-self: start !important;
 	}
 
+	& .justify-self-end{
+		justify-self: end !important;
+	}
+
 	& > *{
 		grid-column: span 12;
 	}
