@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NahlaNia Design-SaaS Product Design-Dealicious</title>
+    <title>NahlaNia Design-Fintech Product Design & Strategy-BracketWise</title>
     <link rel="icon" href="../Assets/Images/NahlaNia-logo-sign.svg">
 
     <link rel="stylesheet" href="../dist/css/main.css">
@@ -193,10 +193,10 @@
                     <div>
                         <img src="../Assets/Icons/Icon-HatsWorn.svg" alt=""><span class="title">Hats Worn</span>
                         <ul class="list-style">
-                            <li>Product Management: Problem framing, scope sequencing, MVP prioritization, feature tradeoff decisions</li>
-                            <li>UX Research: Domain research, pain point mapping, competitive analysis, algorithmic verification against CRA rules</li>
-                            <li>System Architecture: Tax engine design, 5-pass optimization logic, data flow, React implementation</li>
-                            <li>UI/UX Design: Design system tokens, information architecture, data visualization, copywriting</li>
+                            <li><span class="bold-text">Product Management:</span> Problem framing, scope sequencing, MVP prioritization, feature tradeoff decisions</li>
+                            <li><span class="bold-text">UX Research:</span> Domain research, pain point mapping, competitive analysis, algorithmic verification against CRA rules</li>
+                            <li><span class="bold-text">System Architecture:</span> Tax engine design, 5-pass optimization logic, data flow, React implementation</li>
+                            <li><span class="bold-text">UI/UX Design:</span> Design system tokens, information architecture, data visualization, copywriting</li>
                         </ul>
                     </div>
                 </li>
@@ -215,7 +215,7 @@
                 <li class="col-m-6">
                     <div>
                         <img src="../Assets/Icons/Icon-Team.svg" alt=""><span class="title">Team</span>
-                        <p>Solo Work</p>
+                        <p>Sole Designer + Researcher</p>
                     </div>
                 </li>
                 <li class="col-m-6">
@@ -228,7 +228,7 @@
             <div class="spacer-2rem"></div>
         </section>
         <section id="ai-workflow" class="max-width">
-            <h2>How AI Powered This Build</h2>
+            <h2>How Design+AI Powered This Build</h2>
             <div class="two-column">
                 <p>Instead of using AI as a shortcut, I built a system centered on cross-model validation and primary-source grounding. This allowed me to compress research and development cycles without sacrificing the precision required for financial software.</p>
 
@@ -356,7 +356,7 @@
                     </div>
                 </div>
                 <div class="spacer-2rem"></div>
-                <div>
+                <div >
                     <h3>Visualizing the Cash Cascade</h3>
                     <div class="grid gap1">
                         <p  class="col-m-12">
@@ -373,24 +373,26 @@
                 </div>
                 <div class="spacer-2rem"></div>
                 <div>
-                    <h3>Data Visualization & Progressive Disclosure</h3>
-                    <div class="grid  gap1">
-                        <div class="col-m-6">
-                            <p class="col-m-12">
-                                <span class="bold-text">The Problem:</span> <br> Displaying comprehensive tax data is a balancing act. Dumping a massive spreadsheet of calculations onto the screen causes cognitive overload for the average user, but hiding the math entirely frustrates power users who need to verify where their money is going.
-                            </p>
-                            <p class="col-m-6">
-                                <span class="bold-text">The Solution:</span><br> I structured the results dashboard using progressive disclosure to serve both user types. The default view surfaces only high-impact takeaways. For power users requiring deeper transparency, a "See breakdown" toggle reveals a granular, line-by-line comparison of before and after optimization. <br>The graph acts as a <span class="bold-text">visual reward</span> where the UI turns an abstract deduction into a tangible win. This behavioral design leverages loss aversion, visually encouraging the user to follow through with their savings strategy so they don't leave that shielded money on the table.
-                            </p>
-                        </div>
-
-                        <div class="figure col-m-6">
+                    <h3>Data Viz & Progressive Disclosure</h3>
+                    <div class="flow-content">
+                        <div class="figure img-float">
                             <img class="zoomable" src="../Assets/Images/BracketWise/results-2nd-iteration.webp" alt="Cash Cascade">
                             <span class="caption">Data Visualization</span>
                         </div>
+                        <p>
+                            <span class="bold-text">The Problem:</span> <br> Displaying comprehensive tax data is a balancing act. Dumping a massive spreadsheet of calculations causes cognitive overload for the average user, but hiding the math entirely frustrates power users who need to verify where their money is going.
+                        </p>
+                        <p>
+                            <span class="bold-text"></span><br> Instead of defaulting to a single chart type, I matched each visualization format to the specific job it needed to perform, using progressive disclosure to serve both user types effectively.
+                        </p>
+                        <ul class="list-style">
+                            <li><span class="bold-text">Stat Pills (Headline Figures):</span> Single scalar facts like Gross Income and Tax Savings are presented as text for immediate reading with zero decoding overhead. I applied a consistent visual language to the deltas, using an accent color to flag "good news", so users can instantly register the impact of their optimization at a glance. Gross income deliberately carries no delta, as it remains mathematically unaffected by the optimization.</li>
+                            <li><span class="bold-text">The Data Table (Auditing the Math):</span> Once users see their headline result, their next instinct is to verify it line by line. Since this is a precision lookup task rather than a trend analysis, a traditional table is the only format that works. It sits behind a "See breakdown" toggle, keeping the default view clean while providing power users with the granular transparency they need.</li>
+                            <li><span class="bold-text"> The Step Graph (Visualizing the "Aha" Moment):</span>The core insight is showing users where they sit on the tax curve. Since Canadian tax brackets jump discretely rather than rising smoothly, I used a step function to honestly reflect how the system behaves. A shaded "Income Shielded" zone turns the optimization into a tangible, spatial win.</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="spacer-2rem"></div>
+                <div class="spacer-3rem"></div>
                 <div>
                     <h3>Dynamic Alerts & Contextual Education</h3>
                     <div class="grid  gap1">
@@ -515,7 +517,7 @@
                 <div>
                     <h3>Validating the UX</h3>
                     <div class="grid row-gap0 space-after">
-                        <p class="col-m-12"><span class="bold-text">Data Analytitics:</span><br> Usability testing revealed a few friction points in result comprehension. Users felt overwhelmed by the combined marginal tax graph sitting in the top-level results.<br> In response, by leveraging progressive disclosure, I moved the complex tax graph into a detailed breakdown section—keeping the initial results highly scannable for the average user, while ensuring power users still retain full access to the granular visual data they need.</p>
+                        <p class="col-m-12"><span class="bold-text">Data Analytitics:</span><br> Usability testing revealed a few friction points in result comprehension. Users felt overwhelmed by the combined marginal tax graph sitting in the top-level results.<br> In response, by leveraging progressive disclosure, I moved the complex tax graph into a detailed breakdown section—keeping the initial results highly scannable for the average user, while ensuring power users still retain full access to the granular visual data they need.<br>I also added a lightweight delta indicator to the two pills that actually change post-optimization.</p>
                         <div class="col-m-6 figure">
                             <img class="zoomable" src="../Assets/Images/BracketWise/results-1st-iteration.webp" alt="results first iteration">
                             <span class="caption">Results, First Iteration</span>

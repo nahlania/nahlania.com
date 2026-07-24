@@ -623,3 +623,17 @@ ol.two-column{
 		}
 	}
 }
+
+/* Floats an image (or an image's wrapping container, eg. .figure) top-right, letting text wrap around it */
+.img-float{
+	@media screen and (min-width: v.$sw-m){
+		float: right;
+		max-width: 50%;
+		margin: 0 0 1rem 1rem;
+	}
+}
+
+/* Establishes a new block formatting context so a floated child (eg. .img-float) doesn't collapse the container's height */
+.flow-content{
+	display: flow-root;
+}
